@@ -137,6 +137,8 @@ h3{font-size:24px;font-weight:600}
 .branch h3{color:#fff;margin:.1em 0 .5em;font-size:28px}
 .branch .row{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:#e4d8bf;margin:9px 0}
 .branch .row .ic{color:var(--gold-soft);flex:0 0 18px}
+.branch .row .ic{display:inline-flex;align-items:center;justify-content:center;margin-top:1px}
+.branch .row .ic svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;display:block}
 .branch a.tel{color:#fff;font-weight:600}
 .branch .hours{font-style:italic;color:#c2b291;font-size:13.5px}
 .branch .b-cta{margin-top:18px}
@@ -237,7 +239,7 @@ h3{font-size:24px;font-weight:600}
 .services{background:var(--cream)}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .svc{background:var(--paper);border:1px solid var(--gline);border-radius:var(--r);padding:32px 30px;text-align:center}
-.svc .ic{font-size:26px;color:var(--red);margin-bottom:10px}
+.svc .ic{width:40px;height:40px;margin:0 auto 10px;background:center/contain no-repeat url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2740%27%20height%3D%2740%27%20viewBox%3D%270%200%2040%2040%27%3E%3Cg%20transform%3D%27translate%2820%2020%29%27%20fill%3D%27%23d6402c%27%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-9.6%27%20rx%3D%273.2%27%20ry%3D%279.6%27%20transform%3D%27rotate%280%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-9.6%27%20rx%3D%273.2%27%20ry%3D%279.6%27%20transform%3D%27rotate%2845%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-9.6%27%20rx%3D%273.2%27%20ry%3D%279.6%27%20transform%3D%27rotate%2890%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-9.6%27%20rx%3D%273.2%27%20ry%3D%279.6%27%20transform%3D%27rotate%28135%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-9.6%27%20rx%3D%273.2%27%20ry%3D%279.6%27%20transform%3D%27rotate%28180%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-9.6%27%20rx%3D%273.2%27%20ry%3D%279.6%27%20transform%3D%27rotate%28225%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-9.6%27%20rx%3D%273.2%27%20ry%3D%279.6%27%20transform%3D%27rotate%28270%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-9.6%27%20rx%3D%273.2%27%20ry%3D%279.6%27%20transform%3D%27rotate%28315%29%27%2F%3E%3Cg%20opacity%3D%270.82%27%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-6.0%27%20rx%3D%272.2%27%20ry%3D%276.0%27%20transform%3D%27rotate%2822%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-6.0%27%20rx%3D%272.2%27%20ry%3D%276.0%27%20transform%3D%27rotate%2867%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-6.0%27%20rx%3D%272.2%27%20ry%3D%276.0%27%20transform%3D%27rotate%28112%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-6.0%27%20rx%3D%272.2%27%20ry%3D%276.0%27%20transform%3D%27rotate%28157%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-6.0%27%20rx%3D%272.2%27%20ry%3D%276.0%27%20transform%3D%27rotate%28202%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-6.0%27%20rx%3D%272.2%27%20ry%3D%276.0%27%20transform%3D%27rotate%28247%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-6.0%27%20rx%3D%272.2%27%20ry%3D%276.0%27%20transform%3D%27rotate%28292%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-6.0%27%20rx%3D%272.2%27%20ry%3D%276.0%27%20transform%3D%27rotate%28337%29%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3Ccircle%20cx%3D%2720%27%20cy%3D%2720%27%20r%3D%272.6%27%20fill%3D%27%237a1418%27%2F%3E%3C%2Fsvg%3E")}
 .svc h3{color:var(--maroon);font-size:23px;margin:0 0 6px}
 .svc p{color:var(--muted);font-size:14.5px;margin:0}
 
@@ -354,9 +356,9 @@ details.menu-list-toggle[open] summary{margin-bottom:30px;background:var(--cream
 /* Signature Specialties — round dish photos */
 .signature{padding:66px 0;background:var(--cream)}
 .sig-row{display:flex;flex-wrap:wrap;justify-content:center;gap:38px;margin-top:34px}
-.sig{margin:0;text-align:center;width:172px}
-.sig-img{width:150px;height:150px;border-radius:50%;background:center/cover no-repeat;margin:0 auto 14px;box-shadow:var(--shadow);border:3px solid #fff;outline:1px solid var(--gline)}
+.sig{margin:0;text-align:center;width:200px}
+.sig-img{width:190px;height:180px;background:center/contain no-repeat;margin:0 auto 8px}
 .sig-img.sig-ph{display:grid;place-items:center;background:radial-gradient(circle at 50% 38%,#fff,var(--cream-2));color:var(--gold);font-family:var(--serif);font-style:italic;font-size:14px;border:1px dashed var(--gline);outline:none}
 .sig figcaption{font-family:var(--serif);font-size:21px;color:var(--maroon);font-weight:600;line-height:1.15}
 .sig-badge{display:inline-block;margin-top:8px;font-family:var(--sans);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--maroon);background:var(--gold-soft);border-radius:999px;padding:4px 11px}
-@media(max-width:640px){.sig-row{gap:22px}.sig{width:42%}.sig-img{width:120px;height:120px}}
+@media(max-width:640px){.sig-row{gap:16px}.sig{width:44%}.sig-img{width:150px;height:145px}}
