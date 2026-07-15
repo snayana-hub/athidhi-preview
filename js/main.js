@@ -94,7 +94,7 @@
     function layout() {
       els.forEach(function (d, i) {
         var turned = i < flipCur; d.classList.toggle("turned", turned);
-        d.style.zIndex = turned ? i : (N - i);
+        d.style.zIndex = (i === flipCur) ? (N + 10) : (turned ? i : (N - i));
       });
       if (curEl) curEl.textContent = Math.min(flipCur + 1, N);
       if (prev) prev.disabled = flipCur === 0;
