@@ -9,7 +9,7 @@
   --shadow:0 18px 50px rgba(58,40,20,.14);
   --maxw:1180px; --r:14px;
   --serif:"Cormorant Garamond",Georgia,serif;
-  --sans:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --sans:"Proza Libre",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -156,12 +156,17 @@ h3{font-size:24px;font-weight:600}
 
 /* ===== Footer ===== */
 .site-footer{background:#2a1417;color:#c9b89b;padding:64px 0 28px;font-size:15px}
-.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:44px;margin-bottom:44px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1.15fr;gap:56px;margin-bottom:44px}
 .foot-brand img{height:54px;margin-bottom:14px}
 .foot-brand p{max-width:330px;color:#a9977a;margin:0}
 .site-footer h4{font-family:var(--serif);color:#f0e6d2;font-size:20px;margin:0 0 14px;font-weight:600}
 .site-footer ul{list-style:none;padding:0;margin:0}
 .site-footer li{margin:8px 0}
+.foot-locs li{display:flex;justify-content:space-between;align-items:baseline;gap:18px;margin:11px 0;border-bottom:1px solid rgba(216,195,145,.14);padding-bottom:9px}
+.foot-locs .loc{font-family:var(--serif);font-size:17px;color:#f0e6d2}
+.foot-locs .tel{font-size:13.5px;color:#a9977a;letter-spacing:.02em;white-space:nowrap}
+.foot-locs .tel:hover,.foot-locs .loc:hover{color:var(--gold-soft)}
+.foot-mail{display:inline-block;margin-top:16px;color:#c9b89b}
 .site-footer a:hover{color:var(--gold-soft)}
 .socials{display:flex;gap:12px;margin-top:16px}
 .socials a{width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,195,145,.4);
