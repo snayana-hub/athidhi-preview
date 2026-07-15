@@ -26,9 +26,7 @@ h3{font-size:24px;font-weight:600}
   font-size:12px;font-weight:600;color:var(--gold);margin:0 0 14px}
 .section-head{text-align:center;max-width:660px;margin:0 auto 56px}
 .section-head p{color:var(--muted);margin:.5em 0 0;font-size:17px}
-.rule{width:70px;height:1px;background:var(--gold);margin:16px auto;position:relative}
-.rule::before{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;
-  background:var(--red);transform:translate(-50%,-50%) rotate(45deg)}
+.rule{width:120px;height:18px;margin:16px auto;background:center/contain no-repeat url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27120%27%20height%3D%2718%27%20viewBox%3D%270%200%20120%2018%27%3E%3Cg%20stroke%3D%27%23b28a3c%27%20stroke-width%3D%271%27%20stroke-linecap%3D%27round%27%3E%3Cline%20x1%3D%278%27%20y1%3D%279%27%20x2%3D%2747%27%20y2%3D%279%27%2F%3E%3Cline%20x1%3D%2773%27%20y1%3D%279%27%20x2%3D%27112%27%20y2%3D%279%27%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%278%27%20cy%3D%279%27%20r%3D%271.5%27%20fill%3D%27%23b28a3c%27%2F%3E%3Ccircle%20cx%3D%27112%27%20cy%3D%279%27%20r%3D%271.5%27%20fill%3D%27%23b28a3c%27%2F%3E%3Cg%20transform%3D%27translate%2860%209%29%27%20fill%3D%27%23b28a3c%27%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%280%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%2845%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%2890%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%28135%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%28180%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%28225%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%28270%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%28315%29%27%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%2760%27%20cy%3D%279%27%20r%3D%271.8%27%20fill%3D%27%235a1a1f%27%2F%3E%3C%2Fsvg%3E")}
 
 /* buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;
@@ -130,7 +128,7 @@ h3{font-size:24px;font-weight:600}
 .branches h2{color:#fbf3e2}
 .branches .eyebrow{color:var(--gold-soft)}
 .branches .section-head p{color:#d8c7ad}
-.branches .rule{background:var(--gold-soft)}
+.branches .rule{background:center/contain no-repeat url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27120%27%20height%3D%2718%27%20viewBox%3D%270%200%20120%2018%27%3E%3Cg%20stroke%3D%27%23d8c391%27%20stroke-width%3D%271%27%20stroke-linecap%3D%27round%27%3E%3Cline%20x1%3D%278%27%20y1%3D%279%27%20x2%3D%2747%27%20y2%3D%279%27%2F%3E%3Cline%20x1%3D%2773%27%20y1%3D%279%27%20x2%3D%27112%27%20y2%3D%279%27%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%278%27%20cy%3D%279%27%20r%3D%271.5%27%20fill%3D%27%23d8c391%27%2F%3E%3Ccircle%20cx%3D%27112%27%20cy%3D%279%27%20r%3D%271.5%27%20fill%3D%27%23d8c391%27%2F%3E%3Cg%20transform%3D%27translate%2860%209%29%27%20fill%3D%27%23d8c391%27%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%280%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%2845%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%2890%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%28135%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%28180%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%28225%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%28270%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%28315%29%27%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%2760%27%20cy%3D%279%27%20r%3D%271.8%27%20fill%3D%27%23f0e6d2%27%2F%3E%3C%2Fsvg%3E")}
 .branch-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
 .branch{background:rgba(255,255,255,.045);border:1px solid rgba(216,195,145,.28);
   border-radius:var(--r);padding:30px 30px 26px}
@@ -275,8 +273,7 @@ h3{font-size:24px;font-weight:600}
 .fullmenu{background:var(--cream)}
 .mcat{max-width:940px;margin:0 auto 40px}
 .mcat h3{text-align:center;color:var(--maroon);font-size:30px;margin:0 0 4px}
-.mcat .catrule{width:60px;height:1px;background:var(--gold);margin:10px auto 26px;position:relative}
-.mcat .catrule::before{content:"";position:absolute;left:50%;top:50%;width:6px;height:6px;background:var(--red);transform:translate(-50%,-50%) rotate(45deg)}
+.mcat .catrule{width:96px;height:15px;margin:10px auto 26px;background:center/contain no-repeat url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27120%27%20height%3D%2718%27%20viewBox%3D%270%200%20120%2018%27%3E%3Cg%20stroke%3D%27%23b28a3c%27%20stroke-width%3D%271%27%20stroke-linecap%3D%27round%27%3E%3Cline%20x1%3D%278%27%20y1%3D%279%27%20x2%3D%2747%27%20y2%3D%279%27%2F%3E%3Cline%20x1%3D%2773%27%20y1%3D%279%27%20x2%3D%27112%27%20y2%3D%279%27%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%278%27%20cy%3D%279%27%20r%3D%271.5%27%20fill%3D%27%23b28a3c%27%2F%3E%3Ccircle%20cx%3D%27112%27%20cy%3D%279%27%20r%3D%271.5%27%20fill%3D%27%23b28a3c%27%2F%3E%3Cg%20transform%3D%27translate%2860%209%29%27%20fill%3D%27%23b28a3c%27%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%280%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%2845%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%2890%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%28135%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%28180%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%28225%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%28270%29%27%2F%3E%3Cellipse%20cx%3D%270%27%20cy%3D%27-4.2%27%20rx%3D%271.5%27%20ry%3D%274.2%27%20transform%3D%27rotate%28315%29%27%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%2760%27%20cy%3D%279%27%20r%3D%271.8%27%20fill%3D%27%235a1a1f%27%2F%3E%3C%2Fsvg%3E")}
 .mcat-items{display:grid;grid-template-columns:1fr 1fr;gap:6px 48px}
 .mrow{display:flex;align-items:baseline;gap:8px;padding:10px 0;border-bottom:1px solid rgba(178,138,60,.12)}
 .mrow .mtext{display:flex;flex-direction:column;min-width:0}
@@ -353,3 +350,13 @@ details.menu-list-toggle[open] summary{margin-bottom:30px;background:var(--cream
 /* elegant line icons in branch contact rows */
 .info-card .row .ic{display:inline-flex;align-items:center;justify-content:center;margin-top:1px}
 .info-card .row .ic svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;display:block}
+
+/* Signature Specialties — round dish photos */
+.signature{padding:66px 0;background:var(--cream)}
+.sig-row{display:flex;flex-wrap:wrap;justify-content:center;gap:38px;margin-top:34px}
+.sig{margin:0;text-align:center;width:172px}
+.sig-img{width:150px;height:150px;border-radius:50%;background:center/cover no-repeat;margin:0 auto 14px;box-shadow:var(--shadow);border:3px solid #fff;outline:1px solid var(--gline)}
+.sig-img.sig-ph{display:grid;place-items:center;background:radial-gradient(circle at 50% 38%,#fff,var(--cream-2));color:var(--gold);font-family:var(--serif);font-style:italic;font-size:14px;border:1px dashed var(--gline);outline:none}
+.sig figcaption{font-family:var(--serif);font-size:21px;color:var(--maroon);font-weight:600;line-height:1.15}
+.sig-badge{display:inline-block;margin-top:8px;font-family:var(--sans);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--maroon);background:var(--gold-soft);border-radius:999px;padding:4px 11px}
+@media(max-width:640px){.sig-row{gap:22px}.sig{width:42%}.sig-img{width:120px;height:120px}}
