@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Athidhi — Reservations (Staff)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700&family=Proza+Libre:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+.st-top{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-bottom:1px solid var(--gline);background:var(--paper)}
+.st-top .brand img{height:38px;display:block}
+.st-title{font-family:var(--serif);font-size:20px;font-weight:600;color:var(--maroon)}
+.st-wrap{max-width:1180px;margin:0 auto;padding:22px}
+.login-box{max-width:380px;margin:8vh auto;background:var(--paper);border:1px solid var(--gline);border-radius:10px;box-shadow:var(--shadow);padding:30px}
+.login-box h1{font-family:var(--serif);font-size:26px;color:var(--maroon);margin:0 0 4px}
+.login-box p{color:var(--muted);font-size:14px;margin:0 0 20px}
+.login-box .fld{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.login-box label{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);opacity:.85}
+.login-box input{font-family:var(--sans);font-size:15px;padding:11px 12px;border:1px solid var(--gline);border-radius:6px}
+.login-box input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(178,138,60,.15)}
+.err{color:#8a2b25;font-size:14px;min-height:18px;margin-top:4px}
+.toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin-bottom:16px}
+.toolbar .fld{display:flex;flex-direction:column;gap:5px}
+.toolbar label{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.toolbar select,.toolbar input{font-family:var(--sans);font-size:14px;padding:9px 11px;border:1px solid var(--gline);border-radius:6px;background:#fff}
+.toolbar .grow{flex:1;min-width:160px}
+.count-line{color:var(--muted);font-size:14px;margin:0 0 10px}
+.count-line b{color:var(--ink)}
+.tbl-scroll{overflow-x:auto;border:1px solid var(--gline);border-radius:8px;background:var(--paper)}
+table.resv{width:100%;border-collapse:collapse;font-size:14px;min-width:820px}
+table.resv th{text-align:left;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);
+  padding:12px 14px;border-bottom:1px solid var(--gline);background:var(--cream-2);position:sticky;top:0}
+table.resv td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink)}
+table.resv tr:last-child td{border-bottom:none}
+.br-tag{display:inline-block;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px;background:var(--green-soft);color:#3f5a30}
+td.notes{max-width:240px;color:var(--muted)}
+.empty{padding:26px;text-align:center;color:var(--muted)}
+.st-actions{display:flex;gap:10px;align-items:center}
+.mini{font-size:13px;padding:8px 16px}
+@media(max-width:560px){.st-title{display:none}}
+</style>
+</head><body style="background:var(--cream)">
+
+<div id="staff-login" style="display:none">
+  <div class="login-box">
+    <h1>Athidhi</h1>
+    <p>Reservations — staff sign in</p>
+    <form id="login-form">
+      <div class="fld"><label>Email</label><input type="email" id="login-email" autocomplete="username" required></div>
+      <div class="fld"><label>Password</label><input type="password" id="login-pass" autocomplete="current-password" required></div>
+      <div id="login-err" class="err"></div>
+      <button type="submit" class="btn btn-primary" style="width:100%">Sign in</button>
+    </form>
+  </div>
+</div>
+
+<div id="staff-app" style="display:none">
+  <div class="st-top">
+    <div style="display:flex;align-items:center;gap:14px">
+      <a class="brand" href="index.html"><img src="assets/logo-green.png" alt="Athidhi"></a>
+      <span class="st-title">Reservations</span>
+    </div>
+    <div class="st-actions">
+      <span id="staff-who" style="font-size:13px;color:var(--muted)"></span>
+      <button id="logout-btn" class="btn btn-ghost mini">Sign out</button>
+    </div>
+  </div>
+  <div class="st-wrap">
+    <div class="toolbar">
+      <div class="fld"><label>Branch</label>
+        <select id="f-branch">
+          <option value="">All branches</option>
+          <option value="wiesloch">Wiesloch</option>
+          <option value="heidelberg">Heidelberg</option>
+          <option value="karlsruhe">Karlsruhe</option>
+          <option value="stuttgart">Stuttgart</option>
+        </select>
+      </div>
+      <div class="fld"><label>Date</label><input type="date" id="f-date"></div>
+      <div class="fld grow"><label>Search (name, phone, email)</label><input type="text" id="f-search" placeholder="Type to filter…"></div>
+      <button id="clear-filters" class="btn btn-ghost mini">Clear</button>
+      <button id="refresh-btn" class="btn mini" style="background:var(--maroon);color:#f7ecd8;border-color:var(--maroon)">Refresh</button>
+    </div>
+    <p class="count-line"><b id="resv-count">0</b> reservation(s)</p>
+    <div class="tbl-scroll">
+      <table class="resv">
+        <thead><tr>
+          <th>Date</th><th>Time</th><th>Branch</th><th>Name</th><th>Party</th><th>Contact</th><th>Notes</th>
+        </tr></thead>
+        <tbody id="resv-tbody"></tbody>
+      </table>
+      <div id="resv-empty" class="empty" style="display:none">No reservations match your filters.</div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+// Athidhi — Supabase client (publishable key is public and safe with RLS)
+window.ATHIDHI_SB = {
+  url: "https://greonfzhizexhjrwthuz.supabase.co",
+  key: "sb_publishable_9StZFe6SJFiRub3Lw2euFg_69Z7HRRT"
+};
+window.athidhiClient = function () {
+  return window.supabase.createClient(window.ATHIDHI_SB.url, window.ATHIDHI_SB.key);
+};
+
+(function () {
+  var sb = window.athidhiClient();
+  var $ = function (id) { return document.getElementById(id); };
+  var loginView = $("staff-login"), appView = $("staff-app");
+  var loginForm = $("login-form"), loginErr = $("login-err");
+  var tbody = $("resv-tbody"), countEl = $("resv-count"), emptyEl = $("resv-empty");
+  var fBranch = $("f-branch"), fDate = $("f-date"), fSearch = $("f-search");
+  var whoEl = $("staff-who");
+  var all = [];
+  var BR = { wiesloch:"Wiesloch", heidelberg:"Heidelberg", karlsruhe:"Karlsruhe", stuttgart:"Stuttgart" };
+
+  function show(el, on) { el.style.display = on ? "" : "none"; }
+  function fmtDate(d) { if (!d) return ""; var p = d.split("-"); return p.length === 3 ? (p[2] + "." + p[1] + "." + p[0]) : d; }
+  function esc(s) { return (s == null ? "" : String(s)).replace(/[&<>"]/g, function (c) {
+    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+  function render() {
+    var b = fBranch.value, dt = fDate.value, q = (fSearch.value || "").toLowerCase().trim();
+    var rows = all.filter(function (r) {
+      if (b && r.branch !== b) return false;
+      if (dt && r.reservation_date !== dt) return false;
+      if (q) {
+        var hay = (r.name + " " + (r.phone || "") + " " + (r.email || "") + " " + (r.notes || "")).toLowerCase();
+        if (hay.indexOf(q) === -1) return false;
+      }
+      return true;
+    });
+    countEl.textContent = rows.length;
+    tbody.innerHTML = rows.map(function (r) {
+      var contact = [r.phone, r.email].filter(Boolean).map(esc).join("<br>");
+      return "<tr>" +
+        "<td>" + fmtDate(r.reservation_date) + "</td>" +
+        "<td>" + esc(r.reservation_time) + "</td>" +
+        "<td><span class='br-tag'>" + esc(BR[r.branch] || r.branch) + "</span></td>" +
+        "<td>" + esc(r.name) + "</td>" +
+        "<td>" + esc(r.party_size) + "</td>" +
+        "<td>" + contact + "</td>" +
+        "<td class='notes'>" + esc(r.notes || "") + "</td>" +
+        "</tr>";
+    }).join("");
+    show(emptyEl, rows.length === 0);
+  }
+
+  function load() {
+    tbody.innerHTML = "";
+    return sb.from("reservations").select("*")
+      .order("reservation_date", { ascending: true })
+      .order("reservation_time", { ascending: true })
+      .then(function (res) {
+        if (res.error) {
+          all = [];
+          emptyEl.textContent = "Could not load reservations. Your account may not have staff access. (" + res.error.message + ")";
+          show(emptyEl, true);
+          return;
+        }
+        all = res.data || [];
+        emptyEl.textContent = "No reservations match your filters.";
+        render();
+      });
+  }
+
+  function enterApp(session) {
+    whoEl.textContent = (session && session.user && session.user.email) || "";
+    show(loginView, false); show(appView, true);
+    load();
+  }
+
+  loginForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    loginErr.textContent = "";
+    var em = $("login-email").value.trim(), pw = $("login-pass").value;
+    var btn = loginForm.querySelector("button[type=submit]");
+    btn.disabled = true; var old = btn.textContent; btn.textContent = "Signing in …";
+    sb.auth.signInWithPassword({ email: em, password: pw }).then(function (res) {
+      btn.disabled = false; btn.textContent = old;
+      if (res.error) { loginErr.textContent = "Sign in failed: " + res.error.message; return; }
+      enterApp(res.data.session);
+    });
+  });
+
+  $("logout-btn").addEventListener("click", function () {
+    sb.auth.signOut().then(function () { show(appView, false); show(loginView, true); });
+  });
+
+  [fBranch, fDate, fSearch].forEach(function (el) { el.addEventListener("input", render); });
+  $("refresh-btn").addEventListener("click", load);
+  $("clear-filters").addEventListener("click", function () { fBranch.value = ""; fDate.value = ""; fSearch.value = ""; render(); });
+
+  sb.auth.getSession().then(function (res) {
+    var s = res.data && res.data.session;
+    if (s) enterApp(s); else { show(loginView, true); show(appView, false); }
+  });
+})();
+
+</script>
+</body></html>
