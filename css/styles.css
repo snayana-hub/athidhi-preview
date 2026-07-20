@@ -90,7 +90,7 @@ h3{font-size:24px;font-weight:600}
 .about{background:var(--cream)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
 .about-img{position:relative}
-.about-img img{border-radius:var(--r);box-shadow:var(--shadow);height:460px;width:100%;object-fit:cover}
+.about-img img{border-radius:var(--r);box-shadow:var(--shadow);width:100%;height:auto;object-fit:contain;display:block}
 .about-img.ph{aspect-ratio:4/5;height:460px;display:grid;place-items:center;border:1px solid var(--gline);
   background:linear-gradient(135deg,#f3ecda,#e7dcc0);color:var(--gold);
   font-family:var(--serif);font-style:italic;font-size:24px;border-radius:var(--r)}
@@ -187,7 +187,7 @@ h3{font-size:24px;font-weight:600}
 @media(max-width:640px){.promo-social{top:10px;right:12px}.promo-social a{width:26px;height:26px}.promo-social a svg{width:13px;height:13px}}
 @media(max-width:900px){
   .about-grid,.foot-grid{grid-template-columns:1fr;gap:40px}
-  .about-img img,.about-img.ph{height:340px}
+  .about-img.ph{height:340px}
   .menu-list{grid-template-columns:1fr;gap:6px}
   .branch-grid{grid-template-columns:1fr}
 }
@@ -314,7 +314,7 @@ h3{font-size:24px;font-weight:600}
   /* dropdowns become inline on mobile */
   .dd{position:static;transform:none;opacity:1;visibility:visible;box-shadow:none;border:none;
     background:transparent;min-width:0;padding:2px 0 6px 14px;display:none}
-  .nav-links li.has-dd.open .dd{display:block}
+  .nav-links li.has-dd.open .dd{display:block;transform:none}
   .dd a{padding:8px 0;color:var(--muted)}
 }
 
@@ -374,3 +374,4 @@ details.menu-list-toggle[open] summary{margin-bottom:30px;background:var(--cream
 .sig figcaption{font-family:var(--serif);font-size:21px;color:var(--maroon);font-weight:600;line-height:1.15}
 .sig-badge{display:inline-block;margin-top:8px;font-family:var(--sans);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--maroon);background:var(--gold-soft);border-radius:999px;padding:4px 11px}
 @media(max-width:640px){.sig-row{gap:16px}.sig{width:44%}.sig-img{width:150px;height:145px}}
+
