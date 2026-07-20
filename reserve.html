@@ -73,6 +73,9 @@
 
   <div class="resv-card">
     <form id="resv-form" novalidate>
+      <div class="hp-field" aria-hidden="true" style="position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px;height:1px;overflow:hidden">
+        <label>Firma / Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+      </div>
       <div class="fld full">
         <label data-de="Standort" data-en="Location">Standort <span class="req">*</span></label>
         <select name="branch" required>
@@ -125,7 +128,7 @@
   <div class="wrap">
     <div class="foot-bottom">
       <span>© <span id="yr"></span> Athidhi · Flavours from India. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved.">Alle Rechte vorbehalten.</span></span>
-      <a class="foot-mail" href="mailto:info@athidhi.de">info@athidhi.de</a>
+      <a class="foot-mail mail-btn" role="button" tabindex="0" style="cursor:pointer" data-m="MTE4LjEyMy4xMTUuMTI0Ljc3LjExMC4xMjkuMTE3LjExOC4xMTMuMTE3LjExOC41OS4xMTMuMTE0" data-de="E-Mail schreiben" data-en="Email us">E-Mail schreiben</a>
     </div>
   </div>
 </footer>
@@ -168,6 +171,18 @@ window.athidhiClient = function () {
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
+      // anti-spam: throttle rapid repeat submits
+      var nowT = Date.now();
+      if (window.__resvLast && nowT - window.__resvLast < 4000) return;
+      // honeypot: bots fill the hidden "company" field; silently drop
+      var hp = (form.querySelector("[name=company]") || {}).value || "";
+      if (hp.trim() !== "") {
+        form.reset(); if (b) branchEl.value = b; applyPh();
+        status.className = "resv-status"; status.classList.add("ok");
+        status.textContent = t("Danke! Ihre Reservierungsanfrage ist eingegangen. Wir melden uns zur Bestätigung.",
+                               "Thank you! Your reservation request has been received. We will contact you to confirm.");
+        return;
+      }
       status.className = "resv-status";
       status.textContent = "";
       var fd = new FormData(form);
@@ -191,6 +206,17 @@ window.athidhiClient = function () {
         status.textContent = t("Bitte geben Sie eine Telefonnummer oder E-Mail an.", "Please provide a phone number or email.");
         return;
       }
+      // Turnstile-ready hook: if a Cloudflare Turnstile widget (.cf-turnstile) is added
+      // later, require its token before submitting. No widget present today = no-op.
+      if (form.querySelector(".cf-turnstile")) {
+        var tok = (form.querySelector('[name="cf-turnstile-response"]') || {}).value;
+        if (!tok) {
+          status.classList.add("err");
+          status.textContent = t("Bitte bestätigen Sie, dass Sie kein Roboter sind.", "Please confirm you are not a robot.");
+          return;
+        }
+      }
+      window.__resvLast = Date.now();
       var btn = form.querySelector("button[type=submit]");
       btn.disabled = true;
       var old = btn.textContent; btn.textContent = t("Wird gesendet …", "Sending …");
