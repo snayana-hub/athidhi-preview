@@ -26,7 +26,7 @@
 .count-line{color:var(--muted);font-size:14px;margin:0 0 10px}
 .count-line b{color:var(--ink)}
 .tbl-scroll{overflow-x:auto;border:1px solid var(--gline);border-radius:8px;background:var(--paper)}
-table.resv{width:100%;border-collapse:collapse;font-size:14px;min-width:820px}
+table.resv{width:100%;border-collapse:collapse;font-size:14px;min-width:1000px}
 table.resv th{text-align:left;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);
   padding:12px 14px;border-bottom:1px solid var(--gline);background:var(--cream-2);position:sticky;top:0}
 table.resv td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink)}
@@ -36,6 +36,19 @@ td.notes{max-width:240px;color:var(--muted)}
 .empty{padding:26px;text-align:center;color:var(--muted)}
 .st-actions{display:flex;gap:10px;align-items:center}
 .mini{font-size:13px;padding:8px 16px}
+.st-badge{display:inline-block;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px;white-space:nowrap}
+.st-badge.new{background:var(--cream-2);color:var(--muted);border:1px solid var(--gline)}
+.st-badge.confirmed{background:var(--green-soft);color:#3f5a30}
+.confirm-btn{font-size:13px;padding:7px 14px;background:var(--maroon);color:#f7ecd8;border:1px solid var(--maroon);border-radius:6px;cursor:pointer}
+.confirm-btn:hover{filter:brightness(1.08)}
+.confirm-btn:disabled{opacity:.6;cursor:default}
+td.act{white-space:nowrap}
+.st-dash{color:var(--muted)}
+#st-toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);max-width:520px;
+  background:#2c2320;color:#f7ecd8;padding:13px 18px;border-radius:8px;font-size:14px;line-height:1.45;
+  box-shadow:0 8px 26px rgba(0,0,0,.28);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:50}
+#st-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+#st-toast.err{background:#7c2b25}
 @media(max-width:560px){.st-title{display:none}}
 </style>
 </head><body style="background:var(--cream)">
@@ -84,7 +97,7 @@ td.notes{max-width:240px;color:var(--muted)}
     <div class="tbl-scroll">
       <table class="resv">
         <thead><tr>
-          <th>Date</th><th>Time</th><th>Branch</th><th>Name</th><th>Party</th><th>Contact</th><th>Notes</th>
+          <th>Date</th><th>Time</th><th>Branch</th><th>Name</th><th>No. of People</th><th>Contact</th><th>Notes</th><th>Status</th><th></th>
         </tr></thead>
         <tbody id="resv-tbody"></tbody>
       </table>
@@ -120,6 +133,50 @@ window.athidhiClient = function () {
   function esc(s) { return (s == null ? "" : String(s)).replace(/[&<>"]/g, function (c) {
     return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
 
+  var BR_ADDR = {
+    wiesloch:"Rohrgasse 1, 69168 Wiesloch", heidelberg:"Schwetzingerstr. 29, 69124 Heidelberg",
+    karlsruhe:"Insterburgerstr. 16A, 76139 Karlsruhe", stuttgart:"Gablenberger Hauptstr. 45, 70186 Stuttgart" };
+
+  function statusBadge(st) {
+    if (st === "confirmed") return "<span class='st-badge confirmed'>Confirmed</span>";
+    return "<span class='st-badge new'>New</span>";
+  }
+  function actionCell(r) {
+    if (r.status === "confirmed") return "<span class='st-dash'>\u2014</span>";
+    return "<button class='confirm-btn' data-id='" + esc(r.id) + "'>Confirm</button>";
+  }
+
+  var toastTimer = null;
+  function toast(msg, isErr) {
+    var el = $("st-toast");
+    el.textContent = msg;
+    el.className = isErr ? "show err" : "show";
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { el.className = el.className.replace("show", "").trim(); }, 6000);
+  }
+
+  function confirmReservation(id, btn) {
+    btn.disabled = true; var old = btn.textContent; btn.textContent = "Confirming \u2026";
+    sb.functions.invoke("confirm-reservation", { body: { id: id } }).then(function (res) {
+      if (res.error) {
+        btn.disabled = false; btn.textContent = old;
+        var m = (res.error && res.error.message) ? res.error.message : "Please try again.";
+        toast("Could not confirm this reservation. " + m, true);
+        return;
+      }
+      var d = res.data || {};
+      var row = all.filter(function (r) { return String(r.id) === String(id); })[0];
+      if (row) row.status = "confirmed";
+      render();
+      var msg = "Reservation confirmed.";
+      if (d.email_sent) msg += " A confirmation email was sent to the guest.";
+      else if (d.reason === "no_customer_email") msg += " No email on file for this guest, so nothing was sent.";
+      else if (d.reason === "email_not_configured") msg += " Email sending isn\u2019t set up yet, so no email was sent.";
+      else if (d.reason === "email_send_failed") { toast("Reservation confirmed, but the confirmation email failed to send.", true); return; }
+      toast(msg, false);
+    });
+  }
+
   function render() {
     var b = fBranch.value, dt = fDate.value, q = (fSearch.value || "").toLowerCase().trim();
     var rows = all.filter(function (r) {
@@ -142,6 +199,8 @@ window.athidhiClient = function () {
         "<td>" + esc(r.party_size) + "</td>" +
         "<td>" + contact + "</td>" +
         "<td class='notes'>" + esc(r.notes || "") + "</td>" +
+        "<td>" + statusBadge(r.status) + "</td>" +
+        "<td class='act'>" + actionCell(r) + "</td>" +
         "</tr>";
     }).join("");
     show(emptyEl, rows.length === 0);
@@ -190,6 +249,11 @@ window.athidhiClient = function () {
 
   [fBranch, fDate, fSearch].forEach(function (el) { el.addEventListener("input", render); });
   $("refresh-btn").addEventListener("click", load);
+  tbody.addEventListener("click", function (e) {
+    var btn = e.target && e.target.closest ? e.target.closest(".confirm-btn") : null;
+    if (!btn) return;
+    confirmReservation(btn.getAttribute("data-id"), btn);
+  });
   $("clear-filters").addEventListener("click", function () { fBranch.value = ""; fDate.value = ""; fSearch.value = ""; render(); });
 
   sb.auth.getSession().then(function (res) {
@@ -199,4 +263,6 @@ window.athidhiClient = function () {
 })();
 
 </script>
+<div id="st-toast" role="status" aria-live="polite"></div>
 </body></html>
+
