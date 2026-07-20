@@ -1,0 +1,221 @@
+<!DOCTYPE html><html lang="de"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Athidhi — Tisch reservieren | Reserve a table</title>
+<meta name="description" content="Reservieren Sie Ihren Tisch bei Athidhi — Wiesloch, Heidelberg, Karlsruhe, Stuttgart. Reserve your table at Athidhi.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+.resv-wrap{max-width:680px;margin:0 auto;padding:0 20px}
+.resv-hero{text-align:center;padding:54px 0 8px}
+.resv-hero .eyebrow{letter-spacing:.28em;text-transform:uppercase;font-size:12px;font-weight:600;color:var(--gold);margin-bottom:12px}
+.resv-hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5vw,44px);margin:0 0 10px;color:var(--maroon)}
+.resv-hero p{color:var(--ink);opacity:.8;margin:0 auto;max-width:520px}
+.resv-card{background:var(--paper);border:1px solid var(--gline);border-radius:10px;box-shadow:var(--shadow);padding:30px;margin:26px 0 60px}
+.resv-form{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.resv-form .full{grid-column:1 / -1}
+.fld{display:flex;flex-direction:column;gap:7px}
+.fld label{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);opacity:.85}
+.fld .req{color:var(--maroon)}
+.fld input,.fld select,.fld textarea{font-family:var(--sans);font-size:15px;color:var(--ink);background:#fff;
+  border:1px solid var(--gline);border-radius:6px;padding:12px 13px;width:100%;box-sizing:border-box}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(178,138,60,.15)}
+.fld textarea{resize:vertical;min-height:74px}
+.resv-hint{font-size:13px;color:var(--muted);margin:2px 0 0}
+.resv-actions{grid-column:1 / -1;margin-top:6px}
+.resv-actions .btn{width:100%}
+.resv-status{grid-column:1 / -1;border-radius:6px;padding:0;font-size:15px;line-height:1.5}
+.resv-status.ok{padding:14px 16px;background:var(--green-soft);border:1px solid rgba(95,125,74,.4);color:#3f5a30}
+.resv-status.err{padding:14px 16px;background:#fbe9e7;border:1px solid rgba(150,40,40,.35);color:#8a2b25}
+.resv-top{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;max-width:1120px;margin:0 auto}
+.resv-top .brand img{height:44px;display:block}
+.resv-back{font-size:14px;color:var(--maroon);text-decoration:none}
+.resv-back:hover{color:var(--gold)}
+@media(max-width:560px){.resv-form{grid-template-columns:1fr}.resv-card{padding:22px}}
+</style>
+
+<link rel="canonical" href="https://snayana-hub.github.io/athidhi-preview/reserve.html">
+<link rel="alternate" hreflang="de" href="https://snayana-hub.github.io/athidhi-preview/reserve.html?lang=de">
+<link rel="alternate" hreflang="en" href="https://snayana-hub.github.io/athidhi-preview/reserve.html?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://snayana-hub.github.io/athidhi-preview/reserve.html">
+<meta property="og:site_name" content="Athidhi">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Athidhi — Tisch reservieren | Reserve a table">
+<meta property="og:description" content="Reservieren Sie Ihren Tisch bei Athidhi — Wiesloch, Heidelberg, Karlsruhe, Stuttgart. Reserve your table at Athidhi.">
+<meta property="og:url" content="https://snayana-hub.github.io/athidhi-preview/reserve.html">
+<meta property="og:image" content="https://snayana-hub.github.io/athidhi-preview/assets/1-our-story.jpg">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Athidhi — Tisch reservieren | Reserve a table">
+<meta name="twitter:description" content="Reservieren Sie Ihren Tisch bei Athidhi — Wiesloch, Heidelberg, Karlsruhe, Stuttgart. Reserve your table at Athidhi.">
+<meta name="twitter:image" content="https://snayana-hub.github.io/athidhi-preview/assets/1-our-story.jpg">
+</head><body>
+<header class="site-header">
+  <div class="resv-top">
+    <a class="brand" href="index.html"><img src="assets/logo-green.png" alt="Athidhi — Flavours from India"></a>
+    <div style="display:flex;align-items:center;gap:16px">
+      <a class="resv-back" href="index.html#branches" data-de="← Zurück" data-en="← Back">← Zurück</a>
+      <div class="lang" role="group" aria-label="Language">
+        <button data-lang="de">DE</button><button data-lang="en">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="resv-wrap">
+  <div class="resv-hero">
+    <div class="eyebrow" data-de="Reservierung" data-en="Reservation">Reservierung</div>
+    <h1 data-de="Tisch reservieren" data-en="Reserve a table">Tisch reservieren</h1>
+    <p data-de="Senden Sie uns Ihre Reservierungsanfrage — wir bestätigen sie so schnell wie möglich."
+       data-en="Send us your reservation request — we will confirm it as soon as possible.">Senden Sie uns Ihre Reservierungsanfrage — wir bestätigen sie so schnell wie möglich.</p>
+  </div>
+
+  <div class="resv-card">
+    <form id="resv-form" novalidate>
+      <div class="fld full">
+        <label data-de="Standort" data-en="Location">Standort <span class="req">*</span></label>
+        <select name="branch" required>
+          <option value="wiesloch">Wiesloch</option>
+          <option value="heidelberg">Heidelberg</option>
+          <option value="karlsruhe">Karlsruhe</option>
+          <option value="stuttgart">Stuttgart</option>
+        </select>
+      </div>
+      <div class="fld full">
+        <label data-de="Name" data-en="Name">Name <span class="req">*</span></label>
+        <input type="text" name="name" autocomplete="name" required maxlength="120">
+      </div>
+      <div class="fld">
+        <label data-de="Telefon" data-en="Phone">Telefon</label>
+        <input type="tel" name="phone" autocomplete="tel" maxlength="40">
+      </div>
+      <div class="fld">
+        <label data-de="E-Mail" data-en="Email">E-Mail</label>
+        <input type="email" name="email" autocomplete="email" maxlength="160">
+      </div>
+      <div class="fld full">
+        <p class="resv-hint" data-de="Bitte Telefon oder E-Mail angeben." data-en="Please provide a phone number or email.">Bitte Telefon oder E-Mail angeben.</p>
+      </div>
+      <div class="fld">
+        <label data-de="Datum" data-en="Date">Datum <span class="req">*</span></label>
+        <input type="date" name="reservation_date" required>
+      </div>
+      <div class="fld">
+        <label data-de="Uhrzeit" data-en="Time">Uhrzeit <span class="req">*</span></label>
+        <input type="time" name="reservation_time" required>
+      </div>
+      <div class="fld full">
+        <label data-de="Personenzahl" data-en="No. of People">Personenzahl <span class="req">*</span></label>
+        <input type="number" name="party_size" min="1" max="40" step="1" required>
+      </div>
+      <div class="fld full">
+        <label data-de="Anmerkungen (optional)" data-en="Notes (optional)">Anmerkungen (optional)</label>
+        <textarea name="notes" maxlength="1000" data-de-placeholder="z. B. Anlass, Allergien, Kinderstuhl" data-en-placeholder="e.g. occasion, allergies, high chair"></textarea>
+      </div>
+      <div id="resv-status" class="resv-status" role="status" aria-live="polite"></div>
+      <div class="resv-actions">
+        <button type="submit" class="btn btn-primary btn-lg" data-de="Reservierung senden" data-en="Send reservation">Reservierung senden</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> Athidhi · Flavours from India. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved.">Alle Rechte vorbehalten.</span></span>
+      <a class="foot-mail" href="mailto:info@athidhi.de">info@athidhi.de</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+// Athidhi — Supabase client (publishable key is public and safe with RLS)
+window.ATHIDHI_SB = {
+  url: "https://greonfzhizexhjrwthuz.supabase.co",
+  key: "sb_publishable_9StZFe6SJFiRub3Lw2euFg_69Z7HRRT"
+};
+window.athidhiClient = function () {
+  return window.supabase.createClient(window.ATHIDHI_SB.url, window.ATHIDHI_SB.key);
+};
+
+(function () {
+  function lang() { return document.documentElement.getAttribute("lang") || "de"; }
+  function t(de, en) { return lang() === "en" ? en : de; }
+  function qs(k) { return (location.search.match(new RegExp("[?&]" + k + "=([^&]+)")) || [])[1]; }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var form = document.getElementById("resv-form");
+    if (!form) return;
+    var status = document.getElementById("resv-status");
+    var dateEl = form.querySelector("[name=reservation_date]");
+    var branchEl = form.querySelector("[name=branch]");
+
+    var today = new Date(); today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
+    dateEl.min = today.toISOString().slice(0, 10);
+
+    var b = (qs("branch") || "").toLowerCase();
+    if (b && branchEl.querySelector('option[value="' + b + '"]')) branchEl.value = b;
+
+    var sb = window.athidhiClient();
+
+    function applyPh(){var l=lang();form.querySelectorAll("[data-de-placeholder]").forEach(function(el){var v=el.getAttribute("data-"+l+"-placeholder");if(v!=null)el.setAttribute("placeholder",v);});}
+    applyPh();
+    document.querySelectorAll(".lang button").forEach(function(bt){bt.addEventListener("click",function(){setTimeout(applyPh,0);});});
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      status.className = "resv-status";
+      status.textContent = "";
+      var fd = new FormData(form);
+      var row = {
+        branch: fd.get("branch"),
+        name: (fd.get("name") || "").trim(),
+        phone: (fd.get("phone") || "").trim() || null,
+        email: (fd.get("email") || "").trim() || null,
+        reservation_date: fd.get("reservation_date"),
+        reservation_time: fd.get("reservation_time"),
+        party_size: parseInt(fd.get("party_size"), 10),
+        notes: (fd.get("notes") || "").trim() || null
+      };
+      if (!row.branch || !row.name || !row.reservation_date || !row.reservation_time || !row.party_size) {
+        status.classList.add("err");
+        status.textContent = t("Bitte füllen Sie alle Pflichtfelder aus.", "Please fill in all required fields.");
+        return;
+      }
+      if (!row.phone && !row.email) {
+        status.classList.add("err");
+        status.textContent = t("Bitte geben Sie eine Telefonnummer oder E-Mail an.", "Please provide a phone number or email.");
+        return;
+      }
+      var btn = form.querySelector("button[type=submit]");
+      btn.disabled = true;
+      var old = btn.textContent; btn.textContent = t("Wird gesendet …", "Sending …");
+
+      sb.from("reservations").insert(row).then(function (res) {
+        btn.disabled = false; btn.textContent = old;
+        if (res.error) {
+          status.classList.add("err");
+          status.textContent = t("Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder rufen Sie uns an.",
+                                 "Something went wrong. Please try again or call us.");
+          return;
+        }
+        form.reset();
+        if (b) branchEl.value = b;
+        applyPh();
+        status.classList.add("ok");
+        status.textContent = t("Danke! Ihre Reservierungsanfrage ist eingegangen. Wir melden uns zur Bestätigung.",
+                               "Thank you! Your reservation request has been received. We will contact you to confirm.");
+        status.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    });
+  });
+})();
+
+</script>
+</body></html>
+
+
