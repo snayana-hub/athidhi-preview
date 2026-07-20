@@ -31,6 +31,17 @@ window.athidhiClient = window.athidhiClient || function () {
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
+      // anti-spam: throttle rapid repeat submits
+      var nowT = Date.now();
+      if (window.__siLast && nowT - window.__siLast < 4000) return;
+      // honeypot: bots fill the hidden "company" field; silently drop
+      if ((val("company") || "").trim() !== "") {
+        form.reset(); applyPh();
+        status.className = "si-status"; status.classList.add("ok");
+        status.textContent = t("Danke! Ihre Anfrage ist eingegangen. Wir melden uns so schnell wie möglich.",
+                               "Thank you! Your enquiry has been received. We will get back to you as soon as possible.");
+        return;
+      }
       status.className = "si-status"; status.textContent = "";
       var name = val("name"), phone = val("phone"), email = val("email");
       if (!name) {
@@ -54,6 +65,17 @@ window.athidhiClient = window.athidhiClient || function () {
         guests: guests ? parseInt(guests, 10) : null,
         message: val("message") || null
       };
+      // Turnstile-ready hook: if a Cloudflare Turnstile widget (.cf-turnstile) is added
+      // later, require its token before submitting. No widget present today = no-op.
+      if (form.querySelector(".cf-turnstile")) {
+        var tok = (form.querySelector('[name="cf-turnstile-response"]') || {}).value;
+        if (!tok) {
+          status.classList.add("err");
+          status.textContent = t("Bitte bestätigen Sie, dass Sie kein Roboter sind.", "Please confirm you are not a robot.");
+          return;
+        }
+      }
+      window.__siLast = Date.now();
       var btn = form.querySelector("button[type=submit]");
       btn.disabled = true; var old = btn.textContent; btn.textContent = t("Wird gesendet …", "Sending …");
 
