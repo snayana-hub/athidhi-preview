@@ -386,3 +386,6 @@ details.menu-list-toggle[open] summary{margin-bottom:30px;background:var(--cream
 .menu-rotator .menu-page.is-active{opacity:1;visibility:visible;position:relative}
 @media(prefers-reduced-motion:reduce){.menu-rotator .menu-page{transition:none}}
 @media(max-width:720px){.menu-rotator .menu-page{grid-template-columns:1fr;gap:6px}}
+.si-form-wrap .wrap{max-width:780px;margin-left:auto;margin-right:auto}
+.si-form-wrap .section-head{text-align:center}
+.si-form-wrap .section-head .rule{margin-left:auto;margin-right:auto}
