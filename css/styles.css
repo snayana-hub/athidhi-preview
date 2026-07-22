@@ -381,3 +381,8 @@ details.menu-list-toggle[open] summary{margin-bottom:30px;background:var(--cream
 .hero-cta .btn{position:relative;z-index:2}
 .hero-cta .btn-ghost{background:var(--cream)}
 .hero-cta .btn-ghost:hover{background:var(--gold);color:#fff;border-color:var(--gold)}
+.menu-rotator{position:relative;max-width:900px;margin:0 auto}
+.menu-rotator .menu-page{display:grid;grid-template-columns:1fr 1fr;gap:14px 56px;opacity:0;visibility:hidden;position:absolute;top:0;left:0;right:0;transition:opacity .9s ease}
+.menu-rotator .menu-page.is-active{opacity:1;visibility:visible;position:relative}
+@media(prefers-reduced-motion:reduce){.menu-rotator .menu-page{transition:none}}
+@media(max-width:720px){.menu-rotator .menu-page{grid-template-columns:1fr;gap:6px}}
