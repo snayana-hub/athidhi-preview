@@ -175,6 +175,10 @@ h3{font-size:24px;font-weight:600}
 .foot-bottom{border-top:1px solid rgba(216,195,145,.2);padding-top:22px;
   display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;color:#8a795e;font-size:13px}
 
+.foot-careers{text-align:center;margin:0 0 30px}
+.foot-careers-btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:13px 40px;border-radius:3px;border:1px solid var(--gold-soft);background:transparent;color:#f0e6d2;transition:.2s}
+.foot-careers-btn:hover{background:var(--gold-soft);color:var(--maroon);border-color:var(--gold-soft)}
+
 [data-lang-hide]{display:none!important}
 
 /* ===== Responsive ===== */
