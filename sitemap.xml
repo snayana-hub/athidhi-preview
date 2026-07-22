@@ -15,6 +15,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://snayana-hub.github.io/athidhi-preview/menu.html"/>
   </url>
   <url>
+    <loc>https://snayana-hub.github.io/athidhi-preview/careers.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://snayana-hub.github.io/athidhi-preview/careers.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://snayana-hub.github.io/athidhi-preview/careers.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://snayana-hub.github.io/athidhi-preview/careers.html"/>
+  </url>
+  <url>
     <loc>https://snayana-hub.github.io/athidhi-preview/branches/wiesloch.html</loc>
     <lastmod>2026-07-20</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="https://snayana-hub.github.io/athidhi-preview/branches/wiesloch.html?lang=de"/>
@@ -372,4 +379,5 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://snayana-hub.github.io/athidhi-preview/blog/top-reasons-why-indian-spices-are-good-in-taste.html"/>
   </url>
 </urlset>
+
 
