@@ -39,3 +39,6 @@ Hours were pulled from athidhi.de per branch. Please confirm they are current be
 1. Create a repo (e.g. athidhi-web), upload these files at the repo root (keep the folder structure).
 2. Settings -> Pages -> Source: main branch, / (root). Site goes live at the Pages URL.
 3. Point athidhi.de at it later via a CNAME if desired.
+
+
+<!-- preview publish pipeline check 2026-07-22 -->
