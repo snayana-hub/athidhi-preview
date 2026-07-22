@@ -106,7 +106,10 @@
       </div>
       <div class="fld">
         <label data-de="Uhrzeit" data-en="Time">Uhrzeit <span class="req">*</span></label>
-        <input type="time" name="reservation_time" required>
+        <select name="reservation_time" required>
+          <option value="" data-de="Bitte Datum & Standort wählen" data-en="Please pick a date & location">Bitte Datum & Standort wählen</option>
+        </select>
+        <p class="resv-hint" id="time-hint" data-de="Reservierungen sind mindestens 2 Stunden im Voraus möglich." data-en="Reservations must be made at least 2 hours in advance.">Reservierungen sind mindestens 2 Stunden im Voraus möglich.</p>
       </div>
       <div class="fld full">
         <label data-de="Personenzahl" data-en="No. of People">Personenzahl <span class="req">*</span></label>
@@ -162,6 +165,52 @@ window.athidhiClient = function () {
 
     var b = (qs("branch") || "").toLowerCase();
     if (b && branchEl.querySelector('option[value="' + b + '"]')) branchEl.value = b;
+
+    // ---- Smart time picker: only OPEN hours selectable per branch (item H/I) ----
+    // Opening hours per branch, sourced from athidhi.de (Siri to verify on preview).
+    // dow: 0=Sun 1=Mon ... 6=Sat. Each entry is [ [startMin,endMin], ... ] open intervals. Missing/empty = closed.
+    var HOURS = {
+      wiesloch:  { 2:[[690,870],[1050,1290]],3:[[690,870],[1050,1290]],4:[[690,870],[1050,1290]],5:[[690,870],[1050,1290]],6:[[690,870],[1050,1290]],0:[[690,870],[1050,1290]] }, // Tue-Sun 11:30-14:30 & 17:30-21:30, Mon closed
+      heidelberg:{ 1:[[690,900],[1050,1350]],2:[[690,900],[1050,1350]],3:[[690,900],[1050,1350]],4:[[690,900],[1050,1350]],5:[[690,900],[1050,1350]],6:[[750,1320]],0:[[750,1320]] }, // Mon-Fri 11:30-15:00 & 17:30-22:30, Sat-Sun 12:30-22:00
+      karlsruhe: { 1:[[690,900],[1050,1320]],2:[[690,900],[1050,1320]],3:[[690,900],[1050,1320]],4:[[690,900],[1050,1320]],5:[[690,900],[1050,1320]],6:[[750,960],[1050,1320]],0:[[750,960],[1050,1320]] }, // Mon-Fri 11:30-15:00 & 17:30-22:00, Sat-Sun 12:30-16:00 & 17:30-22:00
+      stuttgart: { 2:[[690,900],[1050,1320]],3:[[690,900],[1050,1320]],4:[[690,900],[1050,1320]],5:[[690,900],[1050,1320]],6:[[750,960],[1050,1320]],0:[[750,960],[1050,1320]] } // Tue-Fri 11:30-15:00 & 17:30-22:00, Sat-Sun 12:30-16:00 & 17:30-22:00, Mon closed
+    };
+    var timeEl = form.querySelector("[name=reservation_time]");
+    var STEP = 30;      // minutes between slots
+    var LAST_BEFORE = 30; // no slot within the final 30 min before closing
+    var LEAD = 120;     // 2-hour advance rule (minutes)
+    function fmt(m){ var hh=Math.floor(m/60), mm=m%60; return (hh<10?"0":"")+hh+":"+(mm<10?"0":"")+mm; }
+    function todayStr(){ var d=new Date(); d.setMinutes(d.getMinutes()-d.getTimezoneOffset()); return d.toISOString().slice(0,10); }
+    function rebuildTimes(){
+      var br=(branchEl.value||"").toLowerCase();
+      var ds=dateEl.value;
+      var cur=timeEl.value;
+      timeEl.innerHTML="";
+      function addOpt(v,txtDe,txtEn){ var o=document.createElement("option"); o.value=v; o.setAttribute("data-de",txtDe); o.setAttribute("data-en",txtEn); o.textContent=lang()==="en"?txtEn:txtDe; timeEl.appendChild(o); }
+      if(!br||!ds){ addOpt("","Bitte Datum & Standort wählen","Please pick a date & location"); applyLang(); return; }
+      var dow=new Date(ds+"T00:00:00").getDay();
+      var iv=(HOURS[br]||{})[dow];
+      if(!iv||!iv.length){ addOpt("","An diesem Tag geschlossen","Closed on this day"); applyLang(); return; }
+      var isToday=(ds===todayStr());
+      var nowMin=0; if(isToday){ var n=new Date(); nowMin=n.getHours()*60+n.getMinutes()+LEAD; }
+      addOpt("","Uhrzeit wählen","Choose a time");
+      var count=0;
+      iv.forEach(function(range){
+        for(var m=range[0]; m<=range[1]-LAST_BEFORE; m+=STEP){
+          if(isToday && m<nowMin) continue;
+          var t=fmt(m); addOpt(t,t+" Uhr",t); count++;
+        }
+      });
+      if(count===0){ addOpt("", isToday?"Heute keine Zeiten mehr verfügbar":"Keine Zeiten verfügbar", isToday?"No more times available today":"No times available"); }
+      // preserve prior choice if still valid
+      if(cur && timeEl.querySelector('option[value="'+cur+'"]')) timeEl.value=cur;
+      applyLang();
+    }
+    function applyLang(){ var l=lang(); timeEl.querySelectorAll("option[data-de]").forEach(function(o){ var v=o.getAttribute("data-"+l); if(v!=null) o.textContent=v; }); }
+    branchEl.addEventListener("change", rebuildTimes);
+    dateEl.addEventListener("change", rebuildTimes);
+    document.querySelectorAll(".lang button").forEach(function(bt){ bt.addEventListener("click", function(){ setTimeout(rebuildTimes,0); }); });
+    rebuildTimes();
 
     var sb = window.athidhiClient();
 
