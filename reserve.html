@@ -56,6 +56,7 @@
     <a class="brand" href="index.html"><img src="assets/logo-green.png" alt="Athidhi — Flavours from India"></a>
     <div style="display:flex;align-items:center;gap:16px">
       <a class="resv-back" href="index.html#branches" data-de="← Zurück" data-en="← Back">← Zurück</a>
+      <a class="btn btn-ghost" href="order-online.html" data-de="Online bestellen" data-en="Order Online" style="font-size:12px;padding:8px 16px">Online bestellen</a>
       <div class="lang" role="group" aria-label="Language">
         <button data-lang="de">DE</button><button data-lang="en">EN</button>
       </div>
@@ -72,6 +73,17 @@
   </div>
 
   <div class="resv-card">
+  <div class="allo-resv" style="margin-bottom:26px;padding-bottom:22px;border-bottom:1px solid var(--gline)">
+    <h2 style="font-family:var(--serif);color:var(--maroon);font-size:22px;margin:0 0 6px" data-de="Sofort online reservieren" data-en="Reserve online instantly">Sofort online reservieren</h2>
+    <p style="margin:0 0 16px;color:#555;font-size:.95rem" data-de="Wählen Sie Ihren Standort — Sie werden zur Online-Reservierung weitergeleitet." data-en="Choose your location — you'll be taken to online booking.">Wählen Sie Ihren Standort — Sie werden zur Online-Reservierung weitergeleitet.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px">
+      <a class="btn btn-primary" href="https://reservations.allo.restaurant/de/athidhi-stuttgart" target="_blank" rel="noopener">Stuttgart</a>
+      <a class="btn btn-primary" href="https://reservations.allo.restaurant/de/athidhi-restaurant-karlsruhe-ka" target="_blank" rel="noopener">Karlsruhe</a>
+      <a class="btn btn-primary" href="https://reservations.allo.restaurant/de/athidhi-restaurant-heidelberg-hd" target="_blank" rel="noopener">Heidelberg</a>
+      <a class="btn btn-ghost tel call-btn" role="button" tabindex="0" style="cursor:pointer" data-c="NTYuNjUuNzAuNjcuNjMuNjMuNjMuNjQuNjIuNjkuNjYuNjQuNjYuNjQ=" data-d="NjEuNjcuNjMuNjMuNjMuNDUuNjAuNDUuNjQuNjIuNjkuNDUuNjYuNjQuNDUuNjYuNjQ=" data-de="Wiesloch – anrufen" data-en="Wiesloch – call to reserve">Wiesloch – anrufen</a>
+    </div>
+  </div>
+  
     <form id="resv-form" novalidate>
       <div class="hp-field" aria-hidden="true" style="position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px;height:1px;overflow:hidden">
         <label>Firma / Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
@@ -292,5 +304,6 @@ window.athidhiClient = function () {
 
 </script>
 </body></html>
+
 
 
