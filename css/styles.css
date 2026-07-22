@@ -324,8 +324,8 @@ h3{font-size:24px;font-weight:600}
 .nav-links{gap:19px}
 .nav-links a,.nav-links .dd-toggle{font-size:12px;letter-spacing:.08em;white-space:nowrap}
 .nav-right{gap:10px}
-.site-header .nav-right .btn-primary{padding:11px 18px;font-size:12px;white-space:nowrap}
-@media(max-width:1150px){ .site-header .nav-right .btn-primary{display:none} }
+.site-header .nav-right .btn-primary,.site-header .nav-right .btn-ghost{padding:11px 18px;font-size:12px;white-space:nowrap}
+@media(max-width:1150px){ .site-header .nav-right .btn-primary,.site-header .nav-right .btn-ghost{display:none} }
 @media(max-width:1040px){
   .nav-links{gap:14px}
   .nav-links a,.nav-links .dd-toggle{font-size:11px;letter-spacing:.05em}
@@ -390,3 +390,4 @@ details.menu-list-toggle[open] summary{margin-bottom:30px;background:var(--cream
 .si-form-wrap .section-head{text-align:center}
 .si-form-wrap .section-head .rule{margin-left:auto;margin-right:auto}
 .si-form-wrap .si-card{margin-left:auto;margin-right:auto}
+
