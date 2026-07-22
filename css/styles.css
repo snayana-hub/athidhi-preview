@@ -319,14 +319,15 @@ h3{font-size:24px;font-weight:600}
 }
 
 /* --- Round 2 header fit fixes --- */
-.nav{gap:14px}
+.nav{gap:11px}
 .brand{flex-shrink:0;display:flex;align-items:center}
 .nav .brand img{height:40px;width:auto;object-fit:contain;flex-shrink:0;max-width:none}
-.nav-links{gap:19px}
+.nav-links{gap:14px}
 .nav-links a,.nav-links .dd-toggle{font-size:12px;letter-spacing:.08em;white-space:nowrap}
-.nav-right{gap:10px}
-.site-header .nav-right .btn-primary,.site-header .nav-right .btn-ghost{padding:11px 18px;font-size:12px;white-space:nowrap}
-@media(max-width:1150px){ .site-header .nav-right .btn-primary,.site-header .nav-right .btn-ghost{display:none} }
+.nav-right{gap:9px}
+.site-header .nav-right .btn-primary,.site-header .nav-right .btn-ghost{padding:10px 15px;font-size:12px;white-space:nowrap}
+@media(max-width:1360px){ .site-header .nav-right .btn-primary{display:none} }
+@media(max-width:1180px){ .site-header .nav-right .btn-ghost{display:none} }
 @media(max-width:1040px){
   .nav-links{gap:14px}
   .nav-links a,.nav-links .dd-toggle{font-size:11px;letter-spacing:.05em}
