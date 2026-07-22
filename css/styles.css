@@ -406,3 +406,12 @@ details.menu-list-toggle[open] summary{margin-bottom:30px;background:var(--cream
 .si-form-wrap .si-card{margin-left:auto;margin-right:auto}
 
 
+/* --- Siri edits: hero centering + contact-page branch card contrast --- */
+.sub-hero .wrap{text-align:center}
+.sub-hero .rule{margin-left:auto;margin-right:auto}
+.branch-info .branch{background:var(--paper);border-color:var(--gline)}
+.branch-info .branch h3{color:var(--maroon)}
+.branch-info .branch .row{color:var(--ink)}
+.branch-info .branch .row .ic{color:var(--gold)}
+.branch-info .branch a.tel{color:var(--maroon)}
+.branch-info .branch .hours{color:var(--muted)}
