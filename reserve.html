@@ -67,12 +67,12 @@
   <div class="resv-hero">
     <div class="eyebrow" data-de="Reservierung" data-en="Reservation">Reservierung</div>
     <h1 data-de="Tisch reservieren" data-en="Reserve a table">Tisch reservieren</h1>
-    <p data-de="Senden Sie uns Ihre Reservierungsanfrage — wir bestätigen sie so schnell wie möglich."
-       data-en="Send us your reservation request — we will confirm it as soon as possible.">Senden Sie uns Ihre Reservierungsanfrage — wir bestätigen sie so schnell wie möglich.</p>
+    <p data-de="Reservieren Sie online für Stuttgart, Karlsruhe oder Heidelberg. Für Wiesloch rufen Sie uns bitte kurz an."
+       data-en="Book online for Stuttgart, Karlsruhe or Heidelberg. For Wiesloch, just give us a call.">Reservieren Sie online für Stuttgart, Karlsruhe oder Heidelberg. Für Wiesloch rufen Sie uns bitte kurz an.</p>
   </div>
 
   <div class="resv-card">
-  <div class="allo-resv" style="margin-bottom:26px;padding-bottom:22px;border-bottom:1px solid var(--gline)">
+  <div class="allo-resv" style="margin-bottom:4px">
     <h2 style="font-family:var(--serif);color:var(--maroon);font-size:22px;margin:0 0 6px" data-de="Sofort online reservieren" data-en="Reserve online instantly">Sofort online reservieren</h2>
     <p style="margin:0 0 16px;color:#555;font-size:.95rem" data-de="Wählen Sie Ihren Standort — Sie werden zur Online-Reservierung weitergeleitet." data-en="Choose your location — you'll be taken to online booking.">Wählen Sie Ihren Standort — Sie werden zur Online-Reservierung weitergeleitet.</p>
     <div style="display:flex;flex-wrap:wrap;gap:12px">
@@ -83,58 +83,7 @@
     </div>
   </div>
   
-    <form id="resv-form" novalidate>
-      <div class="hp-field" aria-hidden="true" style="position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px;height:1px;overflow:hidden">
-        <label>Firma / Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
-      </div>
-      <div class="fld full">
-        <label data-de="Standort" data-en="Location">Standort <span class="req">*</span></label>
-        <select name="branch" required>
-          <option value="wiesloch">Wiesloch</option>
-          <option value="heidelberg">Heidelberg</option>
-          <option value="karlsruhe">Karlsruhe</option>
-          <option value="stuttgart">Stuttgart</option>
-        </select>
-      </div>
-      <div class="fld full">
-        <label data-de="Name" data-en="Name">Name <span class="req">*</span></label>
-        <input type="text" name="name" autocomplete="name" required maxlength="120">
-      </div>
-      <div class="fld">
-        <label data-de="Telefon" data-en="Phone">Telefon</label>
-        <input type="tel" name="phone" autocomplete="tel" maxlength="40">
-      </div>
-      <div class="fld">
-        <label data-de="E-Mail" data-en="Email">E-Mail</label>
-        <input type="email" name="email" autocomplete="email" maxlength="160">
-      </div>
-      <div class="fld full">
-        <p class="resv-hint" data-de="Bitte Telefon oder E-Mail angeben." data-en="Please provide a phone number or email.">Bitte Telefon oder E-Mail angeben.</p>
-      </div>
-      <div class="fld">
-        <label data-de="Datum" data-en="Date">Datum <span class="req">*</span></label>
-        <input type="date" name="reservation_date" required>
-      </div>
-      <div class="fld">
-        <label data-de="Uhrzeit" data-en="Time">Uhrzeit <span class="req">*</span></label>
-        <select name="reservation_time" required>
-          <option value="" data-de="Bitte Datum & Standort wählen" data-en="Please pick a date & location">Bitte Datum & Standort wählen</option>
-        </select>
-        <p class="resv-hint" id="time-hint" data-de="Reservierungen sind mindestens 2 Stunden im Voraus möglich." data-en="Reservations must be made at least 2 hours in advance.">Reservierungen sind mindestens 2 Stunden im Voraus möglich.</p>
-      </div>
-      <div class="fld full">
-        <label data-de="Personenzahl" data-en="No. of People">Personenzahl <span class="req">*</span></label>
-        <input type="number" name="party_size" min="1" max="40" step="1" required>
-      </div>
-      <div class="fld full">
-        <label data-de="Anmerkungen (optional)" data-en="Notes (optional)">Anmerkungen (optional)</label>
-        <textarea name="notes" maxlength="1000" data-de-placeholder="z. B. Anlass, Allergien, Kinderstuhl" data-en-placeholder="e.g. occasion, allergies, high chair"></textarea>
-      </div>
-      <div id="resv-status" class="resv-status" role="status" aria-live="polite"></div>
-      <div class="resv-actions">
-        <button type="submit" class="btn btn-primary btn-lg" data-de="Reservierung senden" data-en="Send reservation">Reservierung senden</button>
-      </div>
-    </form>
+    <!-- Reservation form retired 2026-07-30: bookings run through allO above; Wiesloch by phone. Original form kept in reserve-supabase-form.html. -->
   </div>
 </main>
 
@@ -149,160 +98,7 @@
 </footer>
 
 <script src="js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script>
-// Athidhi — Supabase client (publishable key is public and safe with RLS)
-window.ATHIDHI_SB = {
-  url: "https://greonfzhizexhjrwthuz.supabase.co",
-  key: "sb_publishable_9StZFe6SJFiRub3Lw2euFg_69Z7HRRT"
-};
-window.athidhiClient = function () {
-  return window.supabase.createClient(window.ATHIDHI_SB.url, window.ATHIDHI_SB.key);
-};
 
-(function () {
-  function lang() { return document.documentElement.getAttribute("lang") || "de"; }
-  function t(de, en) { return lang() === "en" ? en : de; }
-  function qs(k) { return (location.search.match(new RegExp("[?&]" + k + "=([^&]+)")) || [])[1]; }
-
-  document.addEventListener("DOMContentLoaded", function () {
-    var form = document.getElementById("resv-form");
-    if (!form) return;
-    var status = document.getElementById("resv-status");
-    var dateEl = form.querySelector("[name=reservation_date]");
-    var branchEl = form.querySelector("[name=branch]");
-
-    var today = new Date(); today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
-    dateEl.min = today.toISOString().slice(0, 10);
-
-    var b = (qs("branch") || "").toLowerCase();
-    if (b && branchEl.querySelector('option[value="' + b + '"]')) branchEl.value = b;
-
-    // ---- Smart time picker: only OPEN hours selectable per branch (item H/I) ----
-    // Opening hours per branch, sourced from athidhi.de (Siri to verify on preview).
-    // dow: 0=Sun 1=Mon ... 6=Sat. Each entry is [ [startMin,endMin], ... ] open intervals. Missing/empty = closed.
-    var HOURS = {
-      wiesloch:  { 2:[[690,870],[1050,1290]],3:[[690,870],[1050,1290]],4:[[690,870],[1050,1290]],5:[[690,870],[1050,1290]],6:[[690,870],[1050,1290]],0:[[690,870],[1050,1290]] }, // Tue-Sun 11:30-14:30 & 17:30-21:30, Mon closed
-      heidelberg:{ 1:[[690,900],[1050,1350]],2:[[690,900],[1050,1350]],3:[[690,900],[1050,1350]],4:[[690,900],[1050,1350]],5:[[690,900],[1050,1350]],6:[[750,1320]],0:[[750,1320]] }, // Mon-Fri 11:30-15:00 & 17:30-22:30, Sat-Sun 12:30-22:00
-      karlsruhe: { 1:[[690,900],[1050,1320]],2:[[690,900],[1050,1320]],3:[[690,900],[1050,1320]],4:[[690,900],[1050,1320]],5:[[690,900],[1050,1320]],6:[[750,960],[1050,1320]],0:[[750,960],[1050,1320]] }, // Mon-Fri 11:30-15:00 & 17:30-22:00, Sat-Sun 12:30-16:00 & 17:30-22:00
-      stuttgart: { 2:[[690,900],[1050,1320]],3:[[690,900],[1050,1320]],4:[[690,900],[1050,1320]],5:[[690,900],[1050,1320]],6:[[750,960],[1050,1320]],0:[[750,960],[1050,1320]] } // Tue-Fri 11:30-15:00 & 17:30-22:00, Sat-Sun 12:30-16:00 & 17:30-22:00, Mon closed
-    };
-    var timeEl = form.querySelector("[name=reservation_time]");
-    var STEP = 30;      // minutes between slots
-    var LAST_BEFORE = 30; // no slot within the final 30 min before closing
-    var LEAD = 120;     // 2-hour advance rule (minutes)
-    function fmt(m){ var hh=Math.floor(m/60), mm=m%60; return (hh<10?"0":"")+hh+":"+(mm<10?"0":"")+mm; }
-    function todayStr(){ var d=new Date(); d.setMinutes(d.getMinutes()-d.getTimezoneOffset()); return d.toISOString().slice(0,10); }
-    function rebuildTimes(){
-      var br=(branchEl.value||"").toLowerCase();
-      var ds=dateEl.value;
-      var cur=timeEl.value;
-      timeEl.innerHTML="";
-      function addOpt(v,txtDe,txtEn){ var o=document.createElement("option"); o.value=v; o.setAttribute("data-de",txtDe); o.setAttribute("data-en",txtEn); o.textContent=lang()==="en"?txtEn:txtDe; timeEl.appendChild(o); }
-      if(!br||!ds){ addOpt("","Bitte Datum & Standort wählen","Please pick a date & location"); applyLang(); return; }
-      var dow=new Date(ds+"T00:00:00").getDay();
-      var iv=(HOURS[br]||{})[dow];
-      if(!iv||!iv.length){ addOpt("","An diesem Tag geschlossen","Closed on this day"); applyLang(); return; }
-      var isToday=(ds===todayStr());
-      var nowMin=0; if(isToday){ var n=new Date(); nowMin=n.getHours()*60+n.getMinutes()+LEAD; }
-      addOpt("","Uhrzeit wählen","Choose a time");
-      var count=0;
-      iv.forEach(function(range){
-        for(var m=range[0]; m<=range[1]-LAST_BEFORE; m+=STEP){
-          if(isToday && m<nowMin) continue;
-          var t=fmt(m); addOpt(t,t+" Uhr",t); count++;
-        }
-      });
-      if(count===0){ addOpt("", isToday?"Heute keine Zeiten mehr verfügbar":"Keine Zeiten verfügbar", isToday?"No more times available today":"No times available"); }
-      // preserve prior choice if still valid
-      if(cur && timeEl.querySelector('option[value="'+cur+'"]')) timeEl.value=cur;
-      applyLang();
-    }
-    function applyLang(){ var l=lang(); timeEl.querySelectorAll("option[data-de]").forEach(function(o){ var v=o.getAttribute("data-"+l); if(v!=null) o.textContent=v; }); }
-    branchEl.addEventListener("change", rebuildTimes);
-    dateEl.addEventListener("change", rebuildTimes);
-    document.querySelectorAll(".lang button").forEach(function(bt){ bt.addEventListener("click", function(){ setTimeout(rebuildTimes,0); }); });
-    rebuildTimes();
-
-    var sb = window.athidhiClient();
-
-    function applyPh(){var l=lang();form.querySelectorAll("[data-de-placeholder]").forEach(function(el){var v=el.getAttribute("data-"+l+"-placeholder");if(v!=null)el.setAttribute("placeholder",v);});}
-    applyPh();
-    document.querySelectorAll(".lang button").forEach(function(bt){bt.addEventListener("click",function(){setTimeout(applyPh,0);});});
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      // anti-spam: throttle rapid repeat submits
-      var nowT = Date.now();
-      if (window.__resvLast && nowT - window.__resvLast < 4000) return;
-      // honeypot: bots fill the hidden "company" field; silently drop
-      var hp = (form.querySelector("[name=company]") || {}).value || "";
-      if (hp.trim() !== "") {
-        form.reset(); if (b) branchEl.value = b; applyPh();
-        status.className = "resv-status"; status.classList.add("ok");
-        status.textContent = t("Danke! Ihre Reservierungsanfrage ist eingegangen. Wir melden uns zur Bestätigung.",
-                               "Thank you! Your reservation request has been received. We will contact you to confirm.");
-        return;
-      }
-      status.className = "resv-status";
-      status.textContent = "";
-      var fd = new FormData(form);
-      var row = {
-        branch: fd.get("branch"),
-        name: (fd.get("name") || "").trim(),
-        phone: (fd.get("phone") || "").trim() || null,
-        email: (fd.get("email") || "").trim() || null,
-        reservation_date: fd.get("reservation_date"),
-        reservation_time: fd.get("reservation_time"),
-        party_size: parseInt(fd.get("party_size"), 10),
-        notes: (fd.get("notes") || "").trim() || null
-      };
-      if (!row.branch || !row.name || !row.reservation_date || !row.reservation_time || !row.party_size) {
-        status.classList.add("err");
-        status.textContent = t("Bitte füllen Sie alle Pflichtfelder aus.", "Please fill in all required fields.");
-        return;
-      }
-      if (!row.phone && !row.email) {
-        status.classList.add("err");
-        status.textContent = t("Bitte geben Sie eine Telefonnummer oder E-Mail an.", "Please provide a phone number or email.");
-        return;
-      }
-      // Turnstile-ready hook: if a Cloudflare Turnstile widget (.cf-turnstile) is added
-      // later, require its token before submitting. No widget present today = no-op.
-      if (form.querySelector(".cf-turnstile")) {
-        var tok = (form.querySelector('[name="cf-turnstile-response"]') || {}).value;
-        if (!tok) {
-          status.classList.add("err");
-          status.textContent = t("Bitte bestätigen Sie, dass Sie kein Roboter sind.", "Please confirm you are not a robot.");
-          return;
-        }
-      }
-      window.__resvLast = Date.now();
-      var btn = form.querySelector("button[type=submit]");
-      btn.disabled = true;
-      var old = btn.textContent; btn.textContent = t("Wird gesendet …", "Sending …");
-
-      sb.from("reservations").insert(row).then(function (res) {
-        btn.disabled = false; btn.textContent = old;
-        if (res.error) {
-          status.classList.add("err");
-          status.textContent = t("Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder rufen Sie uns an.",
-                                 "Something went wrong. Please try again or call us.");
-          return;
-        }
-        form.reset();
-        if (b) branchEl.value = b;
-        applyPh();
-        status.classList.add("ok");
-        status.textContent = t("Danke! Ihre Reservierungsanfrage ist eingegangen. Wir melden uns zur Bestätigung.",
-                               "Thank you! Your reservation request has been received. We will contact you to confirm.");
-        status.scrollIntoView({ behavior: "smooth", block: "center" });
-      });
-    });
-  });
-})();
-
-</script>
 </body></html>
 
 
