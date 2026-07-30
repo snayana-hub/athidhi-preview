@@ -174,52 +174,116 @@
   <h2 data-de="Impressionen" data-en="Impressions">Impressionen</h2><div class="rule"></div></div>
   <div class="si-grid"><img src="assets/site/36-catering-buffet-line.jpg" alt="Indisches Catering" loading="lazy"><img src="assets/site/37-catering-dosa.jpg" alt="Buffet-Auswahl" loading="lazy"><img src="assets/site/35-catering-booth.jpg" alt="Ambiente bei Athidhi" loading="lazy"></div>
 </div></section><a id="anfrage"></a><section class="si-form-wrap"><div class="wrap">
-  <div class="section-head"><div class="eyebrow" data-de="Anfrage" data-en="Enquiry">Anfrage</div>
-  <h2 data-de="Schreiben Sie uns" data-en="Send us a message">Schreiben Sie uns</h2><div class="rule"></div>
-  <p data-de="Schildern Sie uns Ihren Anlass — wir melden uns mit einem Angebot." data-en="Describe your occasion - we'll get back to you with an offer.">Schildern Sie uns Ihren Anlass — wir melden uns mit einem Angebot.</p></div>
+  <div class="section-head"><div class="eyebrow" data-de="Catering-Anfrage" data-en="Catering enquiry">Catering-Anfrage</div>
+  <h2 data-de="Machen Sie Ihre Feier zu etwas Besonderem — mit Athidhi Catering!" data-en="Make Your Celebration Truly Special with Athidhi Catering!">Machen Sie Ihre Feier zu etwas Besonderem — mit Athidhi Catering!</h2><div class="rule"></div>
+  <p data-de="Von der kleinen Familienfeier bis zur großen Veranstaltung und zum Firmenevent: Wir bringen authentische indische Küche, abgestimmt auf Ihren Anlass." data-en="From intimate family gatherings to grand celebrations and corporate events, we're here to serve authentic Indian flavors tailored to your occasion.">Von der kleinen Familienfeier bis zur großen Veranstaltung und zum Firmenevent: Wir bringen authentische indische Küche, abgestimmt auf Ihren Anlass.</p>
+  <p data-de="Bitte füllen Sie die Angaben unten aus, wir melden uns in Kürze bei Ihnen." data-en="Please fill in the details below, and We will get in touch with you shortly.">Bitte füllen Sie die Angaben unten aus, wir melden uns in Kürze bei Ihnen.</p></div>
   <div class="si-card">
+  <style>
+  .si-form .grp{grid-column:1 / -1;margin:8px 0 -4px}
+  .si-form .grp:first-of-type{margin-top:0}
+  .si-form .grp h3{font-family:var(--sans);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--maroon);margin:0 0 4px}
+  .si-form .grp .grule{height:1px;background:rgba(178,138,60,.35)}
+  .si-form .note{font-size:13px;font-weight:400;letter-spacing:0;text-transform:none;opacity:.75;display:block;margin:-3px 0 1px;line-height:1.45}
+  .si-form .opts{display:flex;flex-direction:column;gap:8px;padding:2px 0}
+  .si-form .opts label{display:flex;align-items:flex-start;gap:9px;font-size:15px;font-weight:400;letter-spacing:0;text-transform:none;opacity:1}
+  .si-form .opts input[type=checkbox]{width:17px;height:17px;margin:1px 0 0;accent-color:var(--maroon)}
+  </style>
   <script>window.ATHIDHI_SERVICE="catering";</script>
-  <form id="si-form" class="si-form" novalidate>
+  <form id="si-catering-form" class="si-form" novalidate>
       <div class="hp-field" aria-hidden="true" style="position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px;height:1px;overflow:hidden">
         <label>Firma / Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
       </div>
+
+      <div class="grp"><h3 data-de="Sie und Ihr Anlass" data-en="You and your event">Sie und Ihr Anlass</h3><div class="grule"></div></div>
+
       <div class="fld full">
-        <label data-de="Standort (optional)" data-en="Location (optional)">Standort (optional)</label>
-        <select name="branch">
-          <option value="" data-de="Kein bestimmter Standort" data-en="No specific location">Kein bestimmter Standort</option>
-          <option value="wiesloch">Wiesloch</option>
-          <option value="heidelberg">Heidelberg</option>
-          <option value="karlsruhe">Karlsruhe</option>
-          <option value="stuttgart">Stuttgart</option>
-        </select>
-      </div>
-      <div class="fld full">
-        <label data-de="Name" data-en="Name">Name <span class="req">*</span></label>
-        <input type="text" name="name" autocomplete="name" required maxlength="120">
+        <label><span data-de="Name" data-en="Name">Name </span><span class="req">*</span></label>
+        <input type="text" name="Name" autocomplete="name" required maxlength="120">
       </div>
       <div class="fld">
-        <label data-de="Telefon" data-en="Phone">Telefon</label>
-        <input type="tel" name="phone" autocomplete="tel" maxlength="40">
+        <label><span data-de="Telefonnummer" data-en="Phone Number">Telefonnummer </span><span class="req">*</span></label>
+        <input type="tel" name="Phone Number" autocomplete="tel" required maxlength="40">
       </div>
       <div class="fld">
-        <label data-de="E-Mail" data-en="Email">E-Mail</label>
-        <input type="email" name="email" autocomplete="email" maxlength="160">
+        <label><span data-de="E-Mail" data-en="Email">E-Mail </span><span class="req">*</span></label>
+        <input type="email" name="Email" autocomplete="email" required maxlength="160">
+      </div>
+      <div class="fld">
+        <label><span data-de="Datum der Veranstaltung" data-en="Event date">Datum der Veranstaltung </span><span class="req">*</span></label>
+        <input type="date" name="Event date" required>
+      </div>
+      <div class="fld">
+        <label data-de="Beginn" data-en="Event start time">Beginn</label>
+        <input type="time" name="Event start time">
+      </div>
+      <div class="fld">
+        <label data-de="Ende" data-en="Event End time">Ende</label>
+        <input type="time" name="Event End time">
+      </div>
+
+      <div class="grp"><h3 data-de="Gäste und Essen" data-en="Guests and food">Gäste und Essen</h3><div class="grule"></div></div>
+
+      <div class="fld full">
+        <label><span data-de="Anzahl der Gäste" data-en="No. Of Guests">Anzahl der Gäste</span></label>
+        <span class="note" data-de="Bitte geben Sie die Gästezahl nach Kategorie an. Beispiel: Indische Gäste – 20, Internationale Gäste – 20" data-en="Please specify the number of guests by category. Example: Indian Guests – 20, International Guests – 20">Bitte geben Sie die Gästezahl nach Kategorie an. Beispiel: Indische Gäste – 20, Internationale Gäste – 20</span>
+        <textarea name="No. Of Guests" maxlength="600"></textarea>
       </div>
       <div class="fld full">
-        <p class="si-hint" data-de="Bitte Telefon oder E-Mail angeben." data-en="Please provide a phone number or email.">Bitte Telefon oder E-Mail angeben.</p>
-      </div>
-      <div class="fld">
-        <label data-de="Wunschdatum" data-en="Preferred date">Wunschdatum</label>
-        <input type="date" name="event_date">
-      </div>
-      <div class="fld">
-        <label data-de="Personenzahl" data-en="Guests">Personenzahl</label>
-        <input type="number" name="guests" min="1" max="600" step="1">
+        <label><span data-de="Anzahl der Kinder" data-en="No. of Kids">Anzahl der Kinder</span></label>
+        <span class="note" data-de="Bitte angeben. Kinder von 5 bis 10 Jahren zahlen den halben Preis. Kinder unter 5 Jahren essen kostenlos." data-en="Please mention. Children aged 5–10 are charged at half price. Children below 5 dine free.">Bitte angeben. Kinder von 5 bis 10 Jahren zahlen den halben Preis. Kinder unter 5 Jahren essen kostenlos.</span>
+        <textarea name="No. of Kids" maxlength="600"></textarea>
       </div>
       <div class="fld full">
-        <label data-de="Ihre Anfrage" data-en="Your enquiry">Ihre Anfrage</label>
-        <textarea name="message" maxlength="1500" data-de-placeholder="Erzählen Sie uns von Ihrem Anlass, Personenzahl, Wünschen …" data-en-placeholder="Tell us about your occasion, number of guests, any wishes …"></textarea>
+        <label><span data-de="Für Catering zu Hause" data-en="For Home Catering Options">Für Catering zu Hause</span></label>
+        <span class="note" data-de="Der Preis richtet sich nach der gewählten Option." data-en="Price Will Vary depending on your chosen option">Der Preis richtet sich nach der gewählten Option.</span>
+        <div class="opts">
+          <label><input type="checkbox" name="Home Catering Options" value="Food + Pick up"><span data-de="Essen + Abholung" data-en="Food + Pick up">Essen + Abholung</span></label>
+          <label><input type="checkbox" name="Home Catering Options" value="Food + Delivery"><span data-de="Essen + Lieferung" data-en="Food + Delivery">Essen + Lieferung</span></label>
+          <label><input type="checkbox" name="Home Catering Options" value="Cutlery Required (Includes Hot packs, Plates)"><span data-de="Geschirr benötigt (inkl. Warmhaltebehälter, Teller)" data-en="Cutlery Required (Includes Hot packs, Plates)">Geschirr benötigt (inkl. Warmhaltebehälter, Teller)</span></label>
+        </div>
       </div>
+      <div class="fld full">
+        <label><span data-de="Vorspeisen" data-en="List Starters">Vorspeisen</span></label>
+        <span class="note" data-de="Wählen Sie aus unserer Karte oder nennen Sie Ihre Favoriten. Bitte nennen Sie auch Unverträglichkeiten oder Allergien." data-en="Choose from our menu or your favorites. Please mention any dietary restrictions or food allergies">Wählen Sie aus unserer Karte oder nennen Sie Ihre Favoriten. Bitte nennen Sie auch Unverträglichkeiten oder Allergien.</span>
+        <textarea name="List Starters" maxlength="1500"></textarea>
+      </div>
+      <div class="fld full">
+        <label><span data-de="Hauptgerichte" data-en="List Main course">Hauptgerichte</span></label>
+        <span class="note" data-de="Wählen Sie aus unserer Karte oder nennen Sie Ihre Favoriten. Bitte nennen Sie auch Unverträglichkeiten oder Allergien." data-en="Choose from our menu or your favorites. Please mention any dietary restrictions or food allergies">Wählen Sie aus unserer Karte oder nennen Sie Ihre Favoriten. Bitte nennen Sie auch Unverträglichkeiten oder Allergien.</span>
+        <textarea name="List Main course" maxlength="1500"></textarea>
+      </div>
+      <div class="fld full">
+        <label><span data-de="Desserts" data-en="List Desserts">Desserts</span></label>
+        <span class="note" data-de="Wählen Sie aus unserer Karte oder nennen Sie Ihre Favoriten. Bitte nennen Sie auch Unverträglichkeiten oder Allergien." data-en="Choose from our menu or your favorites. Please mention any dietary restrictions or food allergies">Wählen Sie aus unserer Karte oder nennen Sie Ihre Favoriten. Bitte nennen Sie auch Unverträglichkeiten oder Allergien.</span>
+        <textarea name="List Desserts" maxlength="1500"></textarea>
+      </div>
+      <div class="fld full">
+        <label><span data-de="Getränkepaket" data-en="Drinks Menu Package">Getränkepaket</span></label>
+        <span class="note" data-de="ab 5 € – alle alkoholfreien Getränke" data-en="Starting from 5 € - All Soft drinks">ab 5 € – alle alkoholfreien Getränke</span>
+        <textarea name="Drinks Menu Package" maxlength="800"></textarea>
+      </div>
+      <div class="fld full">
+        <label><span data-de="Alkoholische Getränke zum Kartenpreis" data-en="Alcoholic Drinks at menu price">Alkoholische Getränke zum Kartenpreis</span></label>
+        <span class="note" data-de="können separat im Festsaal bestellt und bezahlt werden" data-en="can be ordered and Paid separately at the Party hall">können separat im Festsaal bestellt und bezahlt werden</span>
+        <textarea name="Alcoholic Drinks at menu price" maxlength="800"></textarea>
+      </div>
+
+      <div class="grp"><h3 data-de="Sonstiges" data-en="Anything else">Sonstiges</h3><div class="grule"></div></div>
+
+      <div class="fld full">
+        <label data-de="Wenn Sie im Festsaal von Athidhi feiern möchten, nennen Sie uns bitte Ihren Wunschstandort." data-en="If you'd like to celebrate at Athidhi's Party Hall, please mention your preferred location.">Wenn Sie im Festsaal von Athidhi feiern möchten, nennen Sie uns bitte Ihren Wunschstandort.</label>
+        <div class="opts">
+          <label><input type="checkbox" name="Party Hall location" value="Athidhi Heidelberg">Athidhi Heidelberg</label>
+          <label><input type="checkbox" name="Party Hall location" value="Athidhi Stuttgart">Athidhi Stuttgart</label>
+          <label><input type="checkbox" name="Party Hall location" value="Athidhi Karlsruhe">Athidhi Karlsruhe</label>
+        </div>
+      </div>
+      <div class="fld full">
+        <label data-de="Sonderwünsche / Anpassungen" data-en="Special Requests / Customizations">Sonderwünsche / Anpassungen</label>
+        <textarea name="Special Requests / Customizations" maxlength="1500"></textarea>
+      </div>
+
       <div id="si-status" class="si-status" role="status" aria-live="polite"></div>
       <div class="si-actions">
         <button type="submit" class="btn btn-primary btn-lg" data-de="Anfrage senden" data-en="Send enquiry">Anfrage senden</button>
@@ -256,6 +320,43 @@
 b.addEventListener('click',function(){var open=m.classList.toggle('open');b.setAttribute('aria-expanded',open?'true':'false');
 lab.setAttribute('data-de',open?'Weniger anzeigen':'Mehr lesen');lab.setAttribute('data-en',open?'Show less':'Read more');
 var lang=document.documentElement.getAttribute('lang')||'de';lab.textContent=lang==='en'?(open?'Show less':'Read more'):(open?'Weniger anzeigen':'Mehr lesen');});})();
+</script>
+<script>
+(function(){
+  var ACCESS_KEY="WEB3FORMS_ACCESS_KEY_HERE";
+  var f=document.getElementById('si-catering-form'); if(!f) return;
+  var st=document.getElementById('si-status'); var btn=f.querySelector('button[type=submit]');
+  function lang(){return document.documentElement.getAttribute('lang')==='en'?'en':'de';}
+  function say(msg,ok){st.textContent=msg[lang()];st.style.color=ok?'':'#8c2f39';}
+  function set(el,de,en){el.setAttribute('data-de',de);el.setAttribute('data-en',en);el.textContent=lang()==='en'?en:de;}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f.company.value){return;}
+    var need=[['Name',{de:'Bitte geben Sie Ihren Namen an.',en:'Please enter your name.'}],
+              ['Phone Number',{de:'Bitte geben Sie eine Telefonnummer an.',en:'Please enter a phone number.'}],
+              ['Email',{de:'Bitte geben Sie eine E-Mail-Adresse an.',en:'Please enter an email address.'}],
+              ['Event date',{de:'Bitte geben Sie das Datum der Veranstaltung an.',en:'Please enter the event date.'}]];
+    for(var i=0;i<need.length;i++){var el=f.elements[need[i][0]];
+      if(!el.value.trim()){say(need[i][1],false);el.focus();return;}}
+    var em=f.elements['Email'];
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em.value.trim())){say({de:'Bitte prüfen Sie die E-Mail-Adresse.',en:'Please check the email address.'},false);em.focus();return;}
+    var data={access_key:ACCESS_KEY,subject:'Catering-Anfrage — athidhi.de',from_name:'Athidhi Catering-Formular',botcheck:''};
+    var fd=new FormData(f); var keys=[];
+    fd.forEach(function(v,k){ if(k==='company')return; if(!String(v).trim())return;
+      if(data[k]!==undefined&&keys.indexOf(k)>-1){data[k]=data[k]+', '+v;}else{data[k]=v;keys.push(k);} });
+    if(!data['Party Hall location']) data['Party Hall location']='';
+    btn.disabled=true; set(btn,'Wird gesendet …','Sending …');
+    say({de:'',en:''},true);
+    fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
+      .then(function(r){return r.json();})
+      .then(function(j){
+        if(j.success){f.reset();say({de:'Vielen Dank! Ihre Anfrage ist bei uns eingegangen — wir melden uns in Kürze.',en:'Thank you! We have your enquiry and will get in touch shortly.'},true);}
+        else{say({de:'Das hat leider nicht geklappt. Bitte rufen Sie uns an oder schreiben Sie an info@athidhi.de.',en:'That did not go through. Please call us or write to info@athidhi.de.'},false);}
+      })
+      .catch(function(){say({de:'Das hat leider nicht geklappt. Bitte rufen Sie uns an oder schreiben Sie an info@athidhi.de.',en:'That did not go through. Please call us or write to info@athidhi.de.'},false);})
+      .finally(function(){btn.disabled=false;set(btn,'Anfrage senden','Send enquiry');});
+  });
+})();
 </script>
 </body></html>
 
