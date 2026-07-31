@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="de"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Athidhi — Wöchentliches Buffet | Weekly Buffet</title><meta name="description" content="Wöchentliches indisches Buffet bei Athidhi — Mo–Fr, wechselnde Gerichte zum Festpreis von 13,90 €. Weekly Indian buffet at Athidhi.">
+<title>Athidhi — Wöchentliches Buffet | Weekly Buffet</title><meta name="description" content="Wöchentliches indisches Buffet bei Athidhi — Mo–Fr, wechselnde Gerichte. Heidelberg Mo–Do 13,90 €, Fr 14,90 € · Stuttgart Mo–Fr 13,90 €. Weekly Indian buffet at Athidhi.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
@@ -56,9 +56,29 @@
 <section class="branch-info"><div class="wrap">
   <div class="bf-intro">
     <div class="eyebrow" data-de="Mittagsbuffet" data-en="Lunch buffet">Mittagsbuffet</div>
-    <h2 data-de="Ein Festpreis. Ganz Indien auf dem Teller." data-en="One price. All of India on your plate.">Ein Festpreis. Ganz Indien auf dem Teller.</h2>
-    <div class="bf-price"><span class="amt">13,90 €</span><span data-de="pro Person" data-en="per person">pro Person</span></div>
-    <p class="bf-meta" data-de="Montag bis Freitag, 11:30–15:00 Uhr. Nur in Heidelberg und Stuttgart." data-en="Monday to Friday, 11:30–15:00. In Heidelberg and Stuttgart only.">Montag bis Freitag, 11:30–15:00 Uhr. Nur in Heidelberg und Stuttgart.</p>
+    <style>
+      .bf-prices{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin:20px 0 10px}
+      .bf-pcard{min-width:196px;border:1px solid var(--gline);border-radius:10px;padding:16px 24px;background:var(--paper)}
+      .bf-pcity{font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px}
+      .bf-prow{display:flex;align-items:baseline;justify-content:center;gap:10px;font-family:var(--serif);color:var(--maroon)}
+      .bf-prow + .bf-prow{margin-top:2px}
+      .bf-prow .amt{font-size:34px;font-weight:700;line-height:1.15}
+      .bf-prow .amt.sm{font-size:27px}
+      .bf-days{font-family:var(--sans);font-size:13px;letter-spacing:.06em;color:var(--ink);opacity:.75}
+    </style>
+    <h2 data-de="Mittags ganz Indien auf dem Teller." data-en="All of India on your plate at lunch.">Mittags ganz Indien auf dem Teller.</h2>
+    <div class="bf-prices">
+      <div class="bf-pcard">
+        <div class="bf-pcity">Heidelberg</div>
+        <div class="bf-prow"><span class="amt">13,90 €</span><span class="bf-days" data-de="Mo–Do" data-en="Mon–Thu">Mo–Do</span></div>
+        <div class="bf-prow"><span class="amt sm">14,90 €</span><span class="bf-days" data-de="Freitag" data-en="Friday">Freitag</span></div>
+      </div>
+      <div class="bf-pcard">
+        <div class="bf-pcity">Stuttgart</div>
+        <div class="bf-prow"><span class="amt">13,90 €</span><span class="bf-days" data-de="Mo–Fr" data-en="Mon–Fri">Mo–Fr</span></div>
+      </div>
+    </div>
+    <p class="bf-meta" data-de="11:30–15:00 Uhr, Preis pro Person. Nur in Heidelberg und Stuttgart." data-en="11:30–15:00, price per person. In Heidelberg and Stuttgart only.">11:30–15:00 Uhr, Preis pro Person. Nur in Heidelberg und Stuttgart.</p>
     <p class="bf-note" data-de="Das Menü wechselt jede Woche — hier eine Beispielwoche." data-en="The menu changes every week — here is a sample week.">Das Menü wechselt jede Woche — hier eine Beispielwoche.</p>
   </div>
 </div></section>
