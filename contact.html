@@ -231,6 +231,37 @@ b.addEventListener('click',function(){var open=m.classList.toggle('open');b.setA
 lab.setAttribute('data-de',open?'Weniger anzeigen':'Mehr lesen');lab.setAttribute('data-en',open?'Show less':'Read more');
 var lang=document.documentElement.getAttribute('lang')||'de';lab.textContent=lang==='en'?(open?'Show less':'Read more'):(open?'Weniger anzeigen':'Mehr lesen');});})();
 </script>
+<script>
+(function(){
+  var ACCESS_KEY="2cd5c2aa-2125-4655-a44f-90d38e05ffaf";
+  var SUBJECT="Kontaktanfrage — athidhi.de", FROM="Athidhi Kontaktformular";
+  var f=document.getElementById('si-form'); if(!f) return;
+  var st=document.getElementById('si-status'); var btn=f.querySelector('button[type=submit]');
+  function lang(){return document.documentElement.getAttribute('lang')==='en'?'en':'de';}
+  function say(m,ok){st.textContent=m[lang()];st.className='si-status '+(ok?'ok':'err');}
+  function set(el,de,en){el.setAttribute('data-de',de);el.setAttribute('data-en',en);el.textContent=lang()==='en'?en:de;}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f.company&&f.company.value) return;
+    var nm=(f.elements['name'].value||'').trim();
+    var ph=(f.elements['phone'].value||'').trim();
+    var em=(f.elements['email'].value||'').trim();
+    if(!nm){say({de:'Bitte geben Sie Ihren Namen an.',en:'Please enter your name.'},false);f.elements['name'].focus();return;}
+    if(!ph&&!em){say({de:'Bitte geben Sie Telefon oder E-Mail an.',en:'Please provide a phone number or email.'},false);f.elements['phone'].focus();return;}
+    if(em&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){say({de:'Bitte prüfen Sie die E-Mail-Adresse.',en:'Please check the email address.'},false);f.elements['email'].focus();return;}
+    var data={access_key:ACCESS_KEY,subject:SUBJECT,from_name:FROM,botcheck:''};
+    new FormData(f).forEach(function(v,k){ if(k==='company')return; if(!String(v).trim())return;
+      data[k]=(data[k]!==undefined)?data[k]+', '+v:v; });
+    btn.disabled=true; set(btn,'Wird gesendet …','Sending …'); st.textContent='';
+    fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
+      .then(function(r){return r.json();})
+      .then(function(j){ if(j.success){f.reset();say({de:'Vielen Dank! Ihre Anfrage ist bei uns eingegangen — wir melden uns in Kürze.',en:'Thank you! We have your enquiry and will get in touch shortly.'},true);}
+        else{say({de:'Das hat leider nicht geklappt. Bitte rufen Sie uns an oder schreiben Sie an info@athidhi.de.',en:'That did not go through. Please call us or write to info@athidhi.de.'},false);} })
+      .catch(function(){say({de:'Das hat leider nicht geklappt. Bitte rufen Sie uns an oder schreiben Sie an info@athidhi.de.',en:'That did not go through. Please call us or write to info@athidhi.de.'},false);})
+      .finally(function(){btn.disabled=false;set(btn,'Anfrage senden','Send enquiry');});
+  });
+})();
+</script>
 </body></html>
 
 
