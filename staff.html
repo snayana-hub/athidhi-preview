@@ -365,7 +365,7 @@ window.athidhiClient = function () {
       var url = ORDER_LINKS[b] || "";
       var real = /^https?:\/\//i.test(url);
       var btn = real
-        ? "<a class='tk-btn' href='" + esc(url) + "' target='_blank' rel='noopener'>Order direct</a>"
+        ? "<a class='tk-btn' href='" + esc(url) + "' target='_blank' rel='noopener'>Order Online</a>"
         : "<button class='tk-btn pending' data-branch='" + b + "'>Link coming soon</button>";
       return "<div class='tk-card'><h3>" + esc(BR[b]) + "</h3><p>Takeaway &amp; delivery</p>" + btn + "</div>";
     }).join("");
