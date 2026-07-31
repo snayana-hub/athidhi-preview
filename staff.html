@@ -226,11 +226,11 @@ window.athidhiClient = function () {
   var TABLES = { wiesloch:mkTables(12), heidelberg:mkTables(8), karlsruhe:mkTables(6), stuttgart:mkTables(8) };
 
   // Direct ordering links — replace the placeholder tokens with the real URLs.
-  var LIEFERANDO = {
-    wiesloch:   "#LIEFERANDO_URL_WIESLOCH",
-    heidelberg: "#LIEFERANDO_URL_HEIDELBERG",
-    karlsruhe:  "#LIEFERANDO_URL_KARLSRUHE",
-    stuttgart:  "#LIEFERANDO_URL_STUTTGART"
+  var ORDER_LINKS = {
+    wiesloch:   "https://athidhi-bestellen.de/athidhi-restaurant-wiesloch",
+    heidelberg: "https://athidhi-bestellen.de/athidhi-restaurant-heidelberg",
+    karlsruhe:  "https://athidhi-bestellen.de/athidhi-restaurant-karlsruhe",
+    stuttgart:  "https://athidhi-bestellen.de/athidhi-restaurant-stuttgart"
   };
 
   function show(el, on) { el.style.display = on ? "" : "none"; }
@@ -362,7 +362,7 @@ window.athidhiClient = function () {
   // ---- TAKEAWAY ----
   function renderTakeaway() {
     $("tk-grid").innerHTML = BRANCH_KEYS.map(function (b) {
-      var url = LIEFERANDO[b] || "";
+      var url = ORDER_LINKS[b] || "";
       var real = /^https?:\/\//i.test(url);
       var btn = real
         ? "<a class='tk-btn' href='" + esc(url) + "' target='_blank' rel='noopener'>Order direct</a>"
