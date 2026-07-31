@@ -162,8 +162,8 @@ td.notes{max-width:220px;color:var(--muted)}
 
     <!-- TAKEAWAY -->
     <div id="view-takeaway" style="display:none">
-      <h2 class="sec-h">Takeaway — order via Lieferando</h2>
-      <p class="tk-hint">These buttons open each branch's Lieferando ordering page for takeaway/delivery. Links marked "coming soon" are placeholders until the real Lieferando URLs are added.</p>
+      <h2 class="sec-h">Takeaway — order direct</h2>
+      <p class="tk-hint">These buttons open each branch's direct ordering page for takeaway/delivery. Links marked "coming soon" are placeholders until the real ordering URLs are added.</p>
       <div class="tk-grid" id="tk-grid"></div>
     </div>
 
@@ -225,7 +225,7 @@ window.athidhiClient = function () {
   function mkTables(n){ var a=[]; for (var i=1;i<=n;i++) a.push("T"+i); return a; }
   var TABLES = { wiesloch:mkTables(12), heidelberg:mkTables(8), karlsruhe:mkTables(6), stuttgart:mkTables(8) };
 
-  // Lieferando takeaway links — replace the placeholder tokens with the real URLs.
+  // Direct ordering links — replace the placeholder tokens with the real URLs.
   var LIEFERANDO = {
     wiesloch:   "#LIEFERANDO_URL_WIESLOCH",
     heidelberg: "#LIEFERANDO_URL_HEIDELBERG",
@@ -365,7 +365,7 @@ window.athidhiClient = function () {
       var url = LIEFERANDO[b] || "";
       var real = /^https?:\/\//i.test(url);
       var btn = real
-        ? "<a class='tk-btn' href='" + esc(url) + "' target='_blank' rel='noopener'>Order on Lieferando</a>"
+        ? "<a class='tk-btn' href='" + esc(url) + "' target='_blank' rel='noopener'>Order direct</a>"
         : "<button class='tk-btn pending' data-branch='" + b + "'>Link coming soon</button>";
       return "<div class='tk-card'><h3>" + esc(BR[b]) + "</h3><p>Takeaway &amp; delivery</p>" + btn + "</div>";
     }).join("");
@@ -521,7 +521,7 @@ window.athidhiClient = function () {
 
   $("tk-grid").addEventListener("click", function (e) {
     var b = e.target && e.target.getAttribute && e.target.getAttribute("data-branch");
-    if (b) toast("The Lieferando link for " + (BR[b] || b) + " hasn’t been added yet.");
+    if (b) toast("The direct ordering link for " + (BR[b] || b) + " hasn’t been added yet.");
   });
 
   var views = ["list","board","tables","takeaway","inquiries"];
