@@ -76,10 +76,10 @@
     <h2 style="font-family:var(--serif);color:var(--maroon);font-size:22px;margin:0 0 6px" data-de="Sofort online reservieren" data-en="Reserve online instantly">Sofort online reservieren</h2>
     <p style="margin:0 0 16px;color:#555;font-size:.95rem" data-de="Wählen Sie Ihren Standort — Sie werden zur Online-Reservierung weitergeleitet." data-en="Choose your location — you'll be taken to online booking.">Wählen Sie Ihren Standort — Sie werden zur Online-Reservierung weitergeleitet.</p>
     <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
-      <a class="btn btn-primary" href="https://reservations.allo.restaurant/de/athidhi-stuttgart" target="_blank" rel="noopener">Stuttgart</a>
-      <a class="btn btn-primary" href="https://reservations.allo.restaurant/de/athidhi-restaurant-karlsruhe-ka" target="_blank" rel="noopener">Karlsruhe</a>
-      <a class="btn btn-primary" href="https://reservations.allo.restaurant/de/athidhi-restaurant-heidelberg-hd" target="_blank" rel="noopener">Heidelberg</a>
-      <a class="btn btn-primary" href="https://athidhi-bestellen.de/athidhi-restaurant-wiesloch/table-reservation" target="_blank" rel="noopener">Wiesloch</a>
+      <a class="btn btn-primary" data-branch="stuttgart" href="https://reservations.allo.restaurant/de/athidhi-stuttgart" target="_blank" rel="noopener">Stuttgart</a>
+      <a class="btn btn-primary" data-branch="karlsruhe" href="https://reservations.allo.restaurant/de/athidhi-restaurant-karlsruhe-ka" target="_blank" rel="noopener">Karlsruhe</a>
+      <a class="btn btn-primary" data-branch="heidelberg" href="https://reservations.allo.restaurant/de/athidhi-restaurant-heidelberg-hd" target="_blank" rel="noopener">Heidelberg</a>
+      <a class="btn btn-primary" data-branch="wiesloch" href="https://athidhi-bestellen.de/athidhi-restaurant-wiesloch/table-reservation" target="_blank" rel="noopener">Wiesloch</a>
     </div>
   </div>
   
@@ -98,6 +98,26 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script>
+(function(){
+  var raw=new URLSearchParams(location.search).get("branches");
+  if(!raw)return;
+  var allowed=raw.toLowerCase().split(",").filter(function(x){return /^(wiesloch|heidelberg|karlsruhe|stuttgart)$/.test(x)});
+  if(!allowed.length)return;
+  document.querySelectorAll("[data-branch]").forEach(function(a){a.hidden=allowed.indexOf(a.dataset.branch)<0});
+  var names={wiesloch:"Wiesloch",heidelberg:"Heidelberg",karlsruhe:"Karlsruhe",stuttgart:"Stuttgart"};
+  var list=allowed.map(function(x){return names[x]}).join(", ");
+  var intro=document.querySelector(".resv-hero p");
+  intro.setAttribute("data-de","Dieses Angebot gilt in: "+list+". Wählen Sie einen teilnehmenden Standort.");
+  intro.setAttribute("data-en","This offer is available in: "+list+". Choose a participating location.");
+  intro.textContent=(document.documentElement.lang==="en"?intro.getAttribute("data-en"):intro.getAttribute("data-de"));
+  var hint=document.querySelector(".allo-resv > p");
+  hint.setAttribute("data-de","Wählen Sie einen teilnehmenden Standort - Sie werden zur Online-Reservierung weitergeleitet.");
+  hint.setAttribute("data-en","Choose a participating location - you'll be taken to online booking.");
+  hint.textContent=(document.documentElement.lang==="en"?hint.getAttribute("data-en"):hint.getAttribute("data-de"));
+  document.body.classList.add("offer-reservation");
+})();
+</script>
 
 </body></html>
 
