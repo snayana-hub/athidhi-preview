@@ -17,10 +17,10 @@
 .login-box label{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);opacity:.85}
 .login-box input{font-family:var(--sans);font-size:15px;padding:11px 12px;border:1px solid var(--gline);border-radius:6px}
 .login-box input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(178,138,60,.15)}
-.err{color:#8a2b25;font-size:14px;min-height:18px;margin-top:4px}
+.err{color:#810809;font-size:14px;min-height:18px;margin-top:4px}
 .nav-tabs{display:flex;gap:4px;flex-wrap:wrap}
 .nav-tabs button{font-family:var(--sans);font-size:14px;font-weight:600;padding:8px 16px;border:1px solid var(--gline);background:#fff;color:var(--ink);border-radius:20px;cursor:pointer}
-.nav-tabs button.active{background:var(--maroon);color:#f7ecd8;border-color:var(--maroon)}
+.nav-tabs button.active{background:var(--maroon);color:#FFEBB0;border-color:var(--maroon)}
 .toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin-bottom:16px}
 .toolbar .fld{display:flex;flex-direction:column;gap:5px}
 .toolbar label{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
@@ -34,14 +34,14 @@ table.resv th{text-align:left;font-size:11px;letter-spacing:.06em;text-transform
   padding:12px 14px;border-bottom:1px solid var(--gline);background:var(--cream-2);position:sticky;top:0}
 table.resv td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink)}
 table.resv tr:last-child td{border-bottom:none}
-.br-tag{display:inline-block;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px;background:var(--green-soft);color:#3f5a30}
+.br-tag{display:inline-block;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px;background:var(--green-soft);color:#234915}
 td.notes{max-width:220px;color:var(--muted)}
 .empty{padding:26px;text-align:center;color:var(--muted)}
 .st-actions{display:flex;gap:10px;align-items:center}
 .mini{font-size:13px;padding:8px 16px}
 .st-badge{display:inline-block;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px;white-space:nowrap}
 .st-badge.new,.st-badge.waitlist{background:var(--cream-2);color:var(--muted);border:1px solid var(--gline)}
-.st-badge.confirmed{background:var(--green-soft);color:#3f5a30}
+.st-badge.confirmed{background:var(--green-soft);color:#234915}
 .st-badge.ongoing{background:#fdf0d5;color:#8a5a12;border:1px solid rgba(178,138,60,.35)}
 .st-badge.completed{background:#e9e3f5;color:#4a3d70}
 .mv-sel,.tb-sel{font-family:var(--sans);font-size:13px;padding:6px 8px;border:1px solid var(--gline);border-radius:6px;background:#fff}
@@ -58,7 +58,7 @@ td.notes{max-width:220px;color:var(--muted)}
 .card .c-meta b{color:var(--ink);font-weight:600}
 .card .c-foot{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px;align-items:center}
 .card .c-contact{font-size:12px;color:var(--muted);margin-top:5px;word-break:break-word}
-.tb-chip{display:inline-block;font-size:11px;font-weight:700;padding:2px 7px;border-radius:5px;background:#eef2e8;color:#3f5a30;border:1px solid rgba(95,125,74,.3)}
+.tb-chip{display:inline-block;font-size:11px;font-weight:700;padding:2px 7px;border-radius:5px;background:#eef2e8;color:#234915;border:1px solid rgba(95,125,74,.3)}
 .col-empty{color:var(--muted);font-size:13px;padding:8px 4px;text-align:center}
 /* tables view */
 .floor{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-bottom:22px}
@@ -79,7 +79,7 @@ td.notes{max-width:220px;color:var(--muted)}
 .tk-btn.pending{background:var(--cream-2);color:var(--muted);border:1px solid var(--gline)}
 .tk-hint{color:var(--muted);font-size:13px;margin:0 0 18px;max-width:640px}
 #st-toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);max-width:540px;
-  background:#2c2320;color:#f7ecd8;padding:13px 18px;border-radius:8px;font-size:14px;line-height:1.45;
+  background:#2c2320;color:#FFEBB0;padding:13px 18px;border-radius:8px;font-size:14px;line-height:1.45;
   box-shadow:0 8px 26px rgba(0,0,0,.28);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:50}
 #st-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 #st-toast.err{background:#7c2b25}
@@ -116,7 +116,7 @@ td.notes{max-width:220px;color:var(--muted)}
     </div>
     <div class="st-actions">
       <span id="staff-who" style="font-size:13px;color:var(--muted)"></span>
-      <button id="refresh-btn" class="btn mini" style="background:var(--maroon);color:#f7ecd8;border-color:var(--maroon)">Refresh</button>
+      <button id="refresh-btn" class="btn mini" style="background:var(--maroon);color:#FFEBB0;border-color:var(--maroon)">Refresh</button>
       <button id="logout-btn" class="btn btn-ghost mini">Sign out</button>
     </div>
   </div>
@@ -570,4 +570,3 @@ window.athidhiClient = function () {
 })();
 </script>
 </body></html>
-
