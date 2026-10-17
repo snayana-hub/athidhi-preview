@@ -423,3 +423,17 @@ details.menu-list-toggle[open] summary{margin-bottom:30px;background:var(--cream
 .branch-info .branch .row .ic{color:var(--gold)}
 .branch-info .branch a.tel{color:var(--maroon)}
 .branch-info .branch .hours{color:var(--muted)}
+
+/* Legal links in footer + legal pages (Impressum, Datenschutz) */
+.foot-legal{display:inline-flex;gap:18px;flex-wrap:wrap}
+.foot-legal a{color:#FFEBB0;text-decoration:none;opacity:.9}
+.foot-legal a:hover{opacity:1;text-decoration:underline}
+.legal-page{padding:56px 0 80px}
+.legal-page .wrap{max-width:820px}
+.legal-page h1{font-size:clamp(36px,5vw,52px);margin-bottom:.4em}
+.legal-page h2{font-size:26px;margin:1.8em 0 .4em}
+.legal-page p,.legal-page li{font-size:16px;line-height:1.65;color:var(--ink)}
+.legal-page ul{padding-left:1.2em;margin:.4em 0 1em}
+.legal-page a{color:var(--maroon);font-weight:600}
+.legal-page .fill{background:#FFEBB0;border-bottom:2px dashed var(--maroon);padding:0 3px;font-weight:600}
+.legal-page .note{font-size:14px;color:var(--muted);margin-top:2.2em}
