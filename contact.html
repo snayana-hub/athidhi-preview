@@ -31,6 +31,7 @@
 .si-form input:focus,.si-form select:focus,.si-form textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(178,138,60,.15)}
 .si-form textarea{resize:vertical;min-height:90px}
 .si-hint{font-size:13px;color:var(--muted);margin:2px 0 0}
+.si-privacy{font-size:13px;color:var(--muted);line-height:1.5;margin:0}.si-privacy a{color:var(--red);text-decoration:underline}
 .si-actions{grid-column:1 / -1;margin-top:6px}
 .si-actions .btn{width:100%}
 .si-status{grid-column:1 / -1;font-size:15px;line-height:1.5}
@@ -192,6 +193,9 @@
       <div class="fld full">
         <label data-de="Ihre Anfrage" data-en="Your enquiry">Ihre Anfrage</label>
         <textarea name="message" maxlength="1500" data-de-placeholder="Erzählen Sie uns von Ihrem Anlass, Personenzahl, Wünschen …" data-en-placeholder="Tell us about your occasion, number of guests, any wishes …"></textarea>
+      </div>
+      <div class="fld full">
+        <p class="si-privacy"><span data-de="Mit dem Absenden stimmen Sie zu, dass wir Ihre Angaben nur zur Beantwortung Ihrer Anfrage verwenden und sie danach löschen. Details in der" data-en="By sending, you agree that we use your details only to answer your enquiry and delete them afterwards. Details in our">Mit dem Absenden stimmen Sie zu, dass wir Ihre Angaben nur zur Beantwortung Ihrer Anfrage verwenden und sie danach löschen. Details in der</span> <a href="datenschutz.html" data-de="Datenschutzerklärung" data-en="privacy policy">Datenschutzerklärung</a><span data-de="." data-en=".">.</span></p>
       </div>
       <div id="si-status" class="si-status" role="status" aria-live="polite"></div>
       <div class="si-actions">

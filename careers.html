@@ -17,6 +17,7 @@
 .cform input:focus,.cform textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(178,138,60,.15)}
 .cform textarea{resize:vertical;min-height:90px}
 .cform-hint{font-size:13px;color:var(--muted);margin:2px 0 0}
+.cform-consent label{display:flex;gap:10px;align-items:flex-start;font-size:13px;font-weight:400;letter-spacing:normal;text-transform:none;color:var(--muted);opacity:1;line-height:1.5;cursor:pointer}.cform-consent input[type=checkbox]{width:auto;margin:3px 0 0;flex:0 0 auto}.cform-consent a{color:var(--red);text-decoration:underline}
 .cform-actions{grid-column:1 / -1;margin-top:6px}
 .cform-actions .btn{width:100%}
 .cform-status{grid-column:1 / -1;font-size:15px;line-height:1.5}
@@ -111,6 +112,11 @@
           <input type="file" name="cv" required accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
           <p class="cform-hint" data-de="Akzeptiert: PDF, DOC, DOCX." data-en="Accepted: PDF, DOC, DOCX.">Akzeptiert: PDF, DOC, DOCX.</p>
         </div>
+        <div class="fld full cform-consent">
+          <label><input type="checkbox" name="privacy_consent" required>
+            <span><span data-de="Ich habe die" data-en="I have read the">Ich habe die</span> <a href="datenschutz.html" target="_blank" rel="noopener" data-de="Datenschutzerklärung" data-en="privacy policy">Datenschutzerklärung</a> <span data-de="gelesen und stimme zu, dass meine Bewerbungsdaten zur Bearbeitung meiner Bewerbung gespeichert werden (Aufbewahrung bis zu 6 Monate)." data-en="and agree that my application data will be stored to process my application (kept for up to 6 months).">gelesen und stimme zu, dass meine Bewerbungsdaten zur Bearbeitung meiner Bewerbung gespeichert werden (Aufbewahrung bis zu 6 Monate).</span></span>
+          </label>
+        </div>
         <div id="careers-status" class="cform-status" role="status" aria-live="polite"></div>
         <div class="cform-actions">
           <button type="submit" class="btn btn-primary btn-lg" data-de="Bewerbung senden" data-en="Send application">Bewerbung senden</button>
@@ -173,6 +179,8 @@ window.ATHIDHI_SB = window.ATHIDHI_SB || { url: "https://greonfzhizexhjrwthuz.su
       var employer=(fd.get("current_employer")||"").trim().slice(0,300)||null;
       var file=fd.get("cv");
       if(!name||!contact||!role){ status.classList.add("err"); status.textContent=t("Bitte füllen Sie alle Pflichtfelder aus.","Please fill in all required fields."); return; }
+      var consentBox=form.querySelector("[name=privacy_consent]");
+      if(consentBox && !consentBox.checked){ status.classList.add("err"); status.textContent=t("Bitte bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben.","Please confirm that you have read the privacy policy."); return; }
       if(!file||!file.size){ status.classList.add("err"); status.textContent=t("Bitte laden Sie Ihren Lebenslauf hoch.","Please upload your CV."); return; }
       if(file.size>MAXB){ status.classList.add("err"); status.textContent=t("Die Datei ist zu groß (max. 10 MB.).","The file is too large (max 10 MB)."); return; }
       window.__careersLast=Date.now();
