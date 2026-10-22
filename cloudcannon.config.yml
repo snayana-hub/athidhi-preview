@@ -2,7 +2,6 @@
 # Repository connection / branch selection are set in CloudCannon Site settings.
 _enabled_editors:
   - data
-
 file_config:
   - glob: index.html
     _enabled_editors:
@@ -62,3 +61,14 @@ file_config:
         options:
           required: true
           max_length: 180
+collections_config:
+  pages:
+    path: /
+    name: Pages
+    icon: wysiwyg
+    glob:
+      - index.html
+    url: /
+    _enabled_editors:
+      - visual
+      - data
