@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /staff.html
 
-Sitemap: https://snayana-hub.github.io/athidhi-preview/sitemap.xml
+Sitemap: https://athidhi.de/sitemap.xml
