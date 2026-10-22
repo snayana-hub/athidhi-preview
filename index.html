@@ -1,6 +1,16 @@
+---
+seo_title: "Athidhi — Indische Fine-Dining-Küche | Heidelberg · Wiesloch · Karlsruhe · Stuttgart"
+seo_description: "Athidhi — Flavours from India. Authentische indische Küche in Heidelberg, Wiesloch, Karlsruhe und Stuttgart."
+hero_title_de: "Ein neues Kapitel indischer Küche"
+hero_title_en: "A new chapter of Indian dining"
+hero_intro_de: "Authentische Gerichte aus ganz Indien, echte Gewürze und die Kunst indischer Gastfreundschaft — an vier Standorten in Deutschland."
+hero_intro_en: "Authentic dishes from across India, real spices and the art of Indian hospitality — at four locations in Germany."
+about_image_src: "assets/site/39-owners.jpg"
+about_image_alt: "Athidhi Devo Bhava"
+---
 <!DOCTYPE html><html lang="de"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Athidhi — Indische Fine-Dining-Küche | Heidelberg · Wiesloch · Karlsruhe · Stuttgart</title><meta name="description" content="Athidhi — Flavours from India. Authentische indische Küche in Heidelberg, Wiesloch, Karlsruhe und Stuttgart.">
+<title>{{ page.seo_title | escape }}</title><meta name="description" content="{{ page.seo_description | escape }}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css"><style>a.svc{text-decoration:none;color:inherit;display:block;transition:transform .15s,box-shadow .15s}a.svc:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.svc-more{display:block;margin-top:12px;color:var(--gold);font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.02em}a.svc:hover .svc-more{text-decoration:underline}</style>
@@ -10,15 +20,15 @@
 <link rel="alternate" hreflang="x-default" href="https://athidhi.de/">
 <meta property="og:site_name" content="Athidhi">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Athidhi — Indische Fine-Dining-Küche | Heidelberg · Wiesloch · Karlsruhe · Stuttgart">
-<meta property="og:description" content="Athidhi — Flavours from India. Authentische indische Küche in Heidelberg, Wiesloch, Karlsruhe und Stuttgart.">
+<meta property="og:title" content="{{ page.seo_title | escape }}">
+<meta property="og:description" content="{{ page.seo_description | escape }}">
 <meta property="og:url" content="https://athidhi.de/">
 <meta property="og:image" content="https://athidhi.de/assets/1-our-story.jpg">
 <meta property="og:locale" content="de_DE">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Athidhi — Indische Fine-Dining-Küche | Heidelberg · Wiesloch · Karlsruhe · Stuttgart">
-<meta name="twitter:description" content="Athidhi — Flavours from India. Authentische indische Küche in Heidelberg, Wiesloch, Karlsruhe und Stuttgart.">
+<meta name="twitter:title" content="{{ page.seo_title | escape }}">
+<meta name="twitter:description" content="{{ page.seo_description | escape }}">
 <meta name="twitter:image" content="https://athidhi.de/assets/1-our-story.jpg">
 <script type="application/ld+json">
 {
@@ -92,6 +102,7 @@
 .why-more.open{max-height:4000px;opacity:1}
 </style>
 
+{% include tracking-codes.html %}
 </head><body><a id="top"></a><header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="#top"><img src="assets/logo-green.png" alt="Athidhi — Flavours from India"></a>
@@ -180,9 +191,8 @@ var wd=new Intl.DateTimeFormat('en-US',{weekday:'short',timeZone:'Europe/Berlin'
   <div class="hero-inner">
     <img class="hero-mandala" src="assets/mandala.svg" alt="" aria-hidden="true">
     <div class="hero-banner" data-de="Aromen aus Indien" data-en="Flavours from India">Aromen aus Indien</div>
-    <h1 data-de="Ein neues Kapitel indischer Küche" data-en="A new chapter of Indian dining">Ein neues Kapitel indischer Küche</h1>
-    <p class="lead" data-de="Authentische Gerichte aus ganz Indien, echte Gewürze und die Kunst indischer Gastfreundschaft — an vier Standorten in Deutschland."
-       data-en="Authentic dishes from across India, real spices and the art of Indian hospitality — at four locations in Germany.">Authentische Gerichte aus ganz Indien, echte Gewürze und die Kunst indischer Gastfreundschaft — an vier Standorten in Deutschland.</p>
+    <h1><span data-editable="text" data-prop="hero_title_de" data-only="de">{{ page.hero_title_de | escape }}</span><span data-editable="text" data-prop="hero_title_en" data-only="en" data-lang-hide>{{ page.hero_title_en | escape }}</span></h1>
+    <p class="lead"><span data-editable="text" data-prop="hero_intro_de" data-only="de">{{ page.hero_intro_de | escape }}</span><span data-editable="text" data-prop="hero_intro_en" data-only="en" data-lang-hide>{{ page.hero_intro_en | escape }}</span></p>
     <div class="hero-cta">
       <a class="btn btn-primary btn-lg" href="#branches" data-de="Tisch reservieren" data-en="Book a table">Tisch reservieren</a>
       <a class="btn btn-ghost btn-lg" href="#branches" data-de="Standorte ansehen" data-en="View locations">Standorte ansehen</a>
@@ -213,7 +223,7 @@ var wd=new Intl.DateTimeFormat('en-US',{weekday:'short',timeZone:'Europe/Berlin'
       <figcaption data-de="Street-Food-Favoriten" data-en="Street food favourites">Street-Food-Favoriten</figcaption><span class="sig-sub" data-de="Beliebte Klassiker wie Pani Puri und Chaat - spritzig, würzig und voller Aromen." data-en="Crowd-pleasers like pani puri and chaat - tangy, spicy and full of flavour.">Beliebte Klassiker wie Pani Puri und Chaat - spritzig, würzig und voller Aromen.</span></figure>
   </div>
 </div></section><section class="about" id="about"><div class="wrap about-grid">
-  <div class="about-img"><img src="assets/site/39-owners.jpg" alt="Athidhi Devo Bhava"></div>
+  <div class="about-img"><img data-editable="image" data-prop-src="about_image_src" data-prop-alt="about_image_alt" src="{{ page.about_image_src | relative_url }}" alt="{{ page.about_image_alt | escape }}"></div>
   <div class="about-text">
     <div class="eyebrow" data-de="Unsere Geschichte" data-en="Our Story">Unsere Geschichte</div>
     <blockquote><span data-de="„Athidhi Devo Bhava“ — der Gast ist Gott." data-en="&ldquo;Athidhi Devo Bhava&rdquo; — the guest is God.">„Athidhi Devo Bhava“ — der Gast ist Gott.</span>

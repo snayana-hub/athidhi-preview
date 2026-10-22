@@ -1,0 +1,64 @@
+# CloudCannon uses this on the Content-Edits staging Site only.
+# Repository connection / branch selection are set in CloudCannon Site settings.
+_enabled_editors:
+  - data
+
+file_config:
+  - glob: index.html
+    _enabled_editors:
+      - visual
+      - data
+    _inputs:
+      seo_title:
+        type: text
+        label: SEO title
+        options:
+          required: true
+          max_length: 70
+      seo_description:
+        type: textarea
+        label: SEO description
+        options:
+          required: true
+          max_length: 160
+      hero_title_de:
+        type: text
+        label: Homepage heading (German)
+        options:
+          required: true
+          max_length: 90
+      hero_title_en:
+        type: text
+        label: Homepage heading (English)
+        options:
+          required: true
+          max_length: 90
+      hero_intro_de:
+        type: textarea
+        label: Homepage introduction (German)
+        options:
+          required: true
+          max_length: 220
+      hero_intro_en:
+        type: textarea
+        label: Homepage introduction (English)
+        options:
+          required: true
+          max_length: 220
+      about_image_src:
+        type: image
+        label: About story image
+        options:
+          paths:
+            uploads: assets/uploads/homepage
+          accepts_mime_types:
+            - image/jpeg
+            - image/png
+            - image/webp
+          required: true
+      about_image_alt:
+        type: text
+        label: About story image alt text
+        options:
+          required: true
+          max_length: 180
