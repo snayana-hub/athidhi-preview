@@ -1,0 +1,71 @@
+# Pages CMS (https://pagescms.org) configuration.
+# This file lives ONLY on the Content-Edits branch. main intentionally has no
+# .pages.yml, so the CMS exposes nothing editable there: collaborators can only
+# touch draft content on Content-Edits, and Siri still controls every merge to live.
+media:
+  input: assets
+  output: /assets
+content:
+  - name: homepage
+    label: Homepage (index.html)
+    type: file
+    path: index.html
+    format: yaml-frontmatter
+    operations:
+      rename: false
+      delete: false
+    fields:
+      - name: seo_title
+        label: SEO title
+        type: string
+        required: true
+        options:
+          maxlength: 70
+      - name: seo_description
+        label: SEO description
+        type: text
+        required: true
+        options:
+          maxlength: 160
+      - name: hero_title_de
+        label: Homepage heading (German)
+        type: string
+        required: true
+        options:
+          maxlength: 90
+      - name: hero_title_en
+        label: Homepage heading (English)
+        type: string
+        required: true
+        options:
+          maxlength: 90
+      - name: hero_intro_de
+        label: Homepage introduction (German)
+        type: text
+        required: true
+        options:
+          maxlength: 220
+      - name: hero_intro_en
+        label: Homepage introduction (English)
+        type: text
+        required: true
+        options:
+          maxlength: 220
+      - name: about_image_src
+        label: About story image (path under assets/)
+        type: image
+        required: true
+        options:
+          media: false  # keep the stored path exactly as-is (no prefix rewriting)
+      - name: about_image_alt
+        label: About story image alt text
+        type: string
+        required: true
+        options:
+          maxlength: 180
+settings:
+  hide: false
+  content:
+    merge: true
+  commit:
+    identity: user
