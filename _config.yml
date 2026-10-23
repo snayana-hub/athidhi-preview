@@ -1,0 +1,10 @@
+# New blog posts only. Existing paths stay unchanged.
+url: https://athidhi.de
+baseurl: ""
+permalink: /blog/:title.html
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: admin-post
