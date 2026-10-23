@@ -1,6 +1,35 @@
+---
+seo:
+  field_0000: Athidhi — Speisekarte | Menu
+  field_0001: Die vollständige Speisekarte von Athidhi — authentische indische Spezialitäten. Blättern Sie durch unsere Karte.
+  field_0003: Die vollständige Speisekarte von Athidhi — authentische indische Spezialitäten.
+content:
+  field_0006: Speisekarte
+  field_0007: Menu
+  field_0009: Unsere Speisekarte
+  field_0010: Our Menu
+  field_0012: Blättern Sie durch unsere Karte
+  field_0013: Flip through our menu
+  field_0015: Startseite
+  field_0016: Home
+  field_0018: /
+  field_0022: Diese Speisekarte gilt für Heidelberg, Karlsruhe und Stuttgart. Für Wiesloch finden Sie die aktuellen Gerichte
+    und Preise in unserer
+  field_0023: This menu applies to Heidelberg, Karlsruhe and Stuttgart. For Wiesloch, see our
+  field_0025: Online-Bestellung
+  field_0026: online ordering page
+  field_0028: .
+  field_0029: for the current dishes and prices.
+  field_0031: ‹
+  field_0032: '1'
+  field_0034: '26'
+  field_0035: ›
+  field_0036: Tippen Sie auf die Pfeile zum Blättern
+  field_0037: Tap the arrows to turn pages
+---
 <!DOCTYPE html><html lang="de"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Athidhi — Speisekarte | Menu</title><meta name="description" content="Die vollständige Speisekarte von Athidhi — authentische indische Spezialitäten. Blättern Sie durch unsere Karte.">
+<title>{{ page.seo.field_0000 | escape }}</title><meta name="description" content="{{ page.seo.field_0001 | escape }}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
@@ -10,15 +39,15 @@
 <link rel="alternate" hreflang="x-default" href="https://athidhi.de/menu.html">
 <meta property="og:site_name" content="Athidhi">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Athidhi — Speisekarte | Menu">
-<meta property="og:description" content="Die vollständige Speisekarte von Athidhi — authentische indische Spezialitäten.">
+<meta property="og:title" content="{{ page.seo.field_0000 | escape }}">
+<meta property="og:description" content="{{ page.seo.field_0003 | escape }}">
 <meta property="og:url" content="https://athidhi.de/menu.html">
 <meta property="og:image" content="https://athidhi.de/assets/1-our-story.jpg">
 <meta property="og:locale" content="de_DE">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Athidhi — Speisekarte | Menu">
-<meta name="twitter:description" content="Die vollständige Speisekarte von Athidhi — authentische indische Spezialitäten.">
+<meta name="twitter:title" content="{{ page.seo.field_0000 | escape }}">
+<meta name="twitter:description" content="{{ page.seo.field_0003 | escape }}">
 <meta name="twitter:image" content="https://athidhi.de/assets/1-our-story.jpg">
 </head><body><a id="top"></a><header class="site-header">
   <div class="wrap nav">
@@ -51,14 +80,14 @@
   </div>
 </header><section class="sub-hero" style="background-image:url('assets/site/32-biryani-spread.jpg')">
   <div class="wrap">
-    <div class="eyebrow" data-de="Speisekarte" data-en="Menu">Speisekarte</div>
-    <h1 data-de="Unsere Speisekarte" data-en="Our Menu">Unsere Speisekarte</h1>
-    <div class="addr" data-de="Blättern Sie durch unsere Karte" data-en="Flip through our menu">Blättern Sie durch unsere Karte</div>
+    <div class="eyebrow" data-de="{{ page.content.field_0006 | escape }}" data-en="{{ page.content.field_0007 | escape }}">{{ page.content.field_0006 | escape }}</div>
+    <h1 data-de="{{ page.content.field_0009 | escape }}" data-en="{{ page.content.field_0010 | escape }}">{{ page.content.field_0009 | escape }}</h1>
+    <div class="addr" data-de="{{ page.content.field_0012 | escape }}" data-en="{{ page.content.field_0013 | escape }}">{{ page.content.field_0012 | escape }}</div>
   </div>
 </section><div class="crumb"><div class="wrap">
-  <a href="index.html" data-de="Startseite" data-en="Home">Startseite</a><span class="sep">/</span>
-  <span data-de="Speisekarte" data-en="Menu">Speisekarte</span>
-</div></div><div class="wrap" style="padding-top:32px;text-align:center"><p style="max-width:760px;margin:0 auto;color:var(--ink);line-height:1.65"><span data-de="Diese Speisekarte gilt für Heidelberg, Karlsruhe und Stuttgart. Für Wiesloch finden Sie die aktuellen Gerichte und Preise in unserer " data-en="This menu applies to Heidelberg, Karlsruhe and Stuttgart. For Wiesloch, see our ">Diese Speisekarte gilt für Heidelberg, Karlsruhe und Stuttgart. Für Wiesloch finden Sie die aktuellen Gerichte und Preise in unserer </span><a href="https://athidhi-bestellen.de/athidhi-restaurant-wiesloch" target="_blank" rel="noopener" data-de="Online-Bestellung" data-en="online ordering page">Online-Bestellung</a><span data-de="." data-en=" for the current dishes and prices.">.</span></p></div><section class="menu-flip"><div class="wrap">
+  <a href="index.html" data-de="{{ page.content.field_0015 | escape }}" data-en="{{ page.content.field_0016 | escape }}">{{ page.content.field_0015 | escape }}</a><span class="sep">{{ page.content.field_0018 | escape }}</span>
+  <span data-de="{{ page.content.field_0006 | escape }}" data-en="{{ page.content.field_0007 | escape }}">{{ page.content.field_0006 | escape }}</span>
+</div></div><div class="wrap" style="padding-top:32px;text-align:center"><p style="max-width:760px;margin:0 auto;color:var(--ink);line-height:1.65"><span data-de="{{ page.content.field_0022 | escape }} " data-en="{{ page.content.field_0023 | escape }} ">{{ page.content.field_0022 | escape }} </span><a href="https://athidhi-bestellen.de/athidhi-restaurant-wiesloch" target="_blank" rel="noopener" data-de="{{ page.content.field_0025 | escape }}" data-en="{{ page.content.field_0026 | escape }}">{{ page.content.field_0025 | escape }}</a><span data-de="{{ page.content.field_0028 | escape }}" data-en=" {{ page.content.field_0029 | escape }}">{{ page.content.field_0028 | escape }}</span></p></div><section class="menu-flip"><div class="wrap">
 <script>
 /* Full menu (DE + EN), rendered from Athidhi's menu PDFs. To update: upload new page images to assets/menu/de/ and assets/menu/en/ and list them in ATHIDHI_MENU_PAGES below (GitHub renames uploads that collide with existing filenames). */
 window.ATHIDHI_MENU_PAGES = { de: ["assets/menu/de/27-1.jpg","assets/menu/de/28-2.jpg","assets/menu/de/29-3.jpg","assets/menu/de/30-4.jpg","assets/menu/de/31-5.jpg","assets/menu/de/32-6.jpg","assets/menu/de/33-7.jpg","assets/menu/de/34-8.jpg","assets/menu/de/35-9.jpg","assets/menu/de/36-10.jpg","assets/menu/de/37-11.jpg","assets/menu/de/38-12.jpg","assets/menu/de/39-13.jpg","assets/menu/de/40-14.jpg","assets/menu/de/41-15.jpg","assets/menu/de/42-16.jpg","assets/menu/de/43-17.jpg","assets/menu/de/44-18.jpg","assets/menu/de/45-19.jpg","assets/menu/de/46-20.jpg","assets/menu/de/47-21.jpg","assets/menu/de/48-22.jpg","assets/menu/de/49-23.jpg","assets/menu/de/50-24.jpg","assets/menu/de/51-25.jpg","assets/menu/de/52-26.jpg"], en: ["assets/menu/en/1-1.jpg","assets/menu/en/2-2.jpg","assets/menu/en/3-3.jpg","assets/menu/en/4-4.jpg","assets/menu/en/5-5.jpg","assets/menu/en/6-6.jpg","assets/menu/en/7-7.jpg","assets/menu/en/8-8.jpg","assets/menu/en/9-9.jpg","assets/menu/en/10-10.jpg","assets/menu/en/11-11.jpg","assets/menu/en/12-12.jpg","assets/menu/en/13-13.jpg","assets/menu/en/14-14.jpg","assets/menu/en/15-15.jpg","assets/menu/en/16-16.jpg","assets/menu/en/17-17.jpg","assets/menu/en/18-18.jpg","assets/menu/en/19-19.jpg","assets/menu/en/20-20.jpg","assets/menu/en/21-21.jpg","assets/menu/en/22-22.jpg","assets/menu/en/23-23.jpg","assets/menu/en/24-24.jpg","assets/menu/en/25-25.jpg","assets/menu/en/26-26.jpg"] };
@@ -66,11 +95,11 @@ window.ATHIDHI_MENU_PAGES = { de: ["assets/menu/de/27-1.jpg","assets/menu/de/28-
 <div class="flipbook">
   <div class="fb-stage"></div>
   <div class="fb-controls">
-    <button class="fb-nav prev" aria-label="Vorherige Seite">&lsaquo;</button>
-    <div class="fb-count"><span class="fb-cur">1</span> / <span class="fb-total">26</span></div>
-    <button class="fb-nav next" aria-label="N&auml;chste Seite">&rsaquo;</button>
+    <button class="fb-nav prev" aria-label="Vorherige Seite">{{ page.content.field_0031 | escape }}</button>
+    <div class="fb-count"><span class="fb-cur">{{ page.content.field_0032 | escape }}</span> {{ page.content.field_0018 | escape }} <span class="fb-total">{{ page.content.field_0034 | escape }}</span></div>
+    <button class="fb-nav next" aria-label="N&auml;chste Seite">{{ page.content.field_0035 | escape }}</button>
   </div>
-  <p class="fb-hint" data-de="Tippen Sie auf die Pfeile zum Bl&auml;ttern" data-en="Tap the arrows to turn pages">Tippen Sie auf die Pfeile zum Bl&auml;ttern</p>
+  <p class="fb-hint" data-de="{{ page.content.field_0036 | escape }}" data-en="{{ page.content.field_0037 | escape }}">{{ page.content.field_0036 | escape }}</p>
 </div>
 </div></section><footer class="site-footer" id="contact">
   <div class="wrap">

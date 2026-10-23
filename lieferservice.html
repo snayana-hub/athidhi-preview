@@ -1,6 +1,79 @@
+---
+seo:
+  field_0000: Athidhi — Lieferservice | Delivery
+  field_0001: Ihre Lieblingsgerichte von Athidhi bequem nach Hause bestellt. Online bestellen bei Ihrem Standort.
+content:
+  field_0006: Service
+  field_0009: Lieferservice
+  field_0010: Ihre Lieblingsgerichte nach Hause
+  field_0011: Your favourites, delivered
+  field_0013: Startseite
+  field_0014: Home
+  field_0016: /
+  field_0017: Services
+  field_0018: Our Services
+  field_0022: Delivery
+  field_0027: Athidhi nach Hause
+  field_0028: Athidhi to your door
+  field_0030: Ihre Lieblingsgerichte von Athidhi bequem nach Hause bestellt. Bestellen Sie online bei Ihrem Standort — oder
+    schreiben Sie uns Ihre Anfrage.
+  field_0031: Your favourite Athidhi dishes delivered conveniently to your door. Order online from your location - or send
+    us your enquiry.
+  field_0033: Wählen Sie unten Ihren Standort für die Online-Bestellung. Für Fragen zu größeren Bestellungen erreichen Sie
+    uns jederzeit.
+  field_0034: Choose your location below to order online. For questions about larger orders, you can reach us any time.
+  field_0036: Kontakt & Anfrage
+  field_0037: Contact & enquiry
+  field_0039: Anrufen
+  field_0040: Call
+  field_0042: E-Mail schreiben
+  field_0043: Email us
+  field_0045: Anfrage senden
+  field_0046: Send enquiry
+  field_0048: Online bestellen
+  field_0049: Order Online
+  field_0051: Online bestellen bei Ihrem Standort
+  field_0052: Order online from your location
+  field_0054: Wiesloch
+  field_0055: Heidelberg
+  field_0056: Karlsruhe
+  field_0057: Stuttgart
+  field_0058: Eindrücke
+  field_0059: Gallery
+  field_0061: Impressionen
+  field_0062: Impressions
+  field_0064: Foto folgt
+  field_0065: Photo coming
+  field_0067: Frisch geliefert
+  field_0068: Freshly delivered
+  field_0073: Ihre Bestellung
+  field_0074: Your order
+  field_0079: Athidhi to go
+  field_0082: Anfrage
+  field_0083: Enquiry
+  field_0085: Schreiben Sie uns
+  field_0086: Send us a message
+  field_0088: Fragen zur Lieferung oder zu größeren Bestellungen? Schreiben Sie uns.
+  field_0089: Questions about delivery or larger orders? Send us a message.
+  field_0091: Firma / Company
+  field_0092: Standort (optional)
+  field_0093: Location (optional)
+  field_0095: Kein bestimmter Standort
+  field_0096: No specific location
+  field_0102: Name
+  field_0105: '*'
+  field_0106: Telefon
+  field_0107: Phone
+  field_0109: E-Mail
+  field_0110: Email
+  field_0112: Bitte Telefon oder E-Mail angeben.
+  field_0113: Please provide a phone number or email.
+  field_0115: Ihre Anfrage
+  field_0116: Your enquiry
+---
 <!DOCTYPE html><html lang="de"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Athidhi — Lieferservice | Delivery</title><meta name="description" content="Ihre Lieblingsgerichte von Athidhi bequem nach Hause bestellt. Online bestellen bei Ihrem Standort.">
+<title>{{ page.seo.field_0000 | escape }}</title><meta name="description" content="{{ page.seo.field_0001 | escape }}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
@@ -47,15 +120,15 @@
 <link rel="alternate" hreflang="x-default" href="https://athidhi.de/lieferservice.html">
 <meta property="og:site_name" content="Athidhi">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Athidhi — Lieferservice | Delivery">
-<meta property="og:description" content="Ihre Lieblingsgerichte von Athidhi bequem nach Hause bestellt. Online bestellen bei Ihrem Standort.">
+<meta property="og:title" content="{{ page.seo.field_0000 | escape }}">
+<meta property="og:description" content="{{ page.seo.field_0001 | escape }}">
 <meta property="og:url" content="https://athidhi.de/lieferservice.html">
 <meta property="og:image" content="https://athidhi.de/assets/1-our-story.jpg">
 <meta property="og:locale" content="de_DE">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Athidhi — Lieferservice | Delivery">
-<meta name="twitter:description" content="Ihre Lieblingsgerichte von Athidhi bequem nach Hause bestellt. Online bestellen bei Ihrem Standort.">
+<meta name="twitter:title" content="{{ page.seo.field_0000 | escape }}">
+<meta name="twitter:description" content="{{ page.seo.field_0001 | escape }}">
 <meta name="twitter:image" content="https://athidhi.de/assets/1-our-story.jpg">
 <script type="application/ld+json">
 {
@@ -113,84 +186,84 @@
   </div>
 </header><section class="sub-hero" style="background:linear-gradient(135deg,#810809,#810809)">
   <div class="wrap">
-    <div class="eyebrow" data-de="Service" data-en="Service">Service</div>
-    <h1>Lieferservice</h1>
-    <div class="addr" data-de="Ihre Lieblingsgerichte nach Hause" data-en="Your favourites, delivered">Ihre Lieblingsgerichte nach Hause</div>
+    <div class="eyebrow" data-de="{{ page.content.field_0006 | escape }}" data-en="{{ page.content.field_0006 | escape }}">{{ page.content.field_0006 | escape }}</div>
+    <h1>{{ page.content.field_0009 | escape }}</h1>
+    <div class="addr" data-de="{{ page.content.field_0010 | escape }}" data-en="{{ page.content.field_0011 | escape }}">{{ page.content.field_0010 | escape }}</div>
   </div>
 </section><div class="crumb"><div class="wrap">
-  <a href="index.html" data-de="Startseite" data-en="Home">Startseite</a><span class="sep">/</span>
-  <a href="index.html#services" data-de="Services" data-en="Our Services">Services</a><span class="sep">/</span>
-  <span data-de="Lieferservice" data-en="Delivery">Lieferservice</span>
+  <a href="index.html" data-de="{{ page.content.field_0013 | escape }}" data-en="{{ page.content.field_0014 | escape }}">{{ page.content.field_0013 | escape }}</a><span class="sep">{{ page.content.field_0016 | escape }}</span>
+  <a href="index.html#services" data-de="{{ page.content.field_0017 | escape }}" data-en="{{ page.content.field_0018 | escape }}">{{ page.content.field_0017 | escape }}</a><span class="sep">{{ page.content.field_0016 | escape }}</span>
+  <span data-de="{{ page.content.field_0009 | escape }}" data-en="{{ page.content.field_0022 | escape }}">{{ page.content.field_0009 | escape }}</span>
 </div></div><section class="branch-info"><div class="wrap info-grid">
   <div>
-    <div class="eyebrow" data-de="Lieferservice" data-en="Delivery">Lieferservice</div>
-    <h2 data-de="Athidhi nach Hause" data-en="Athidhi to your door">Athidhi nach Hause</h2>
+    <div class="eyebrow" data-de="{{ page.content.field_0009 | escape }}" data-en="{{ page.content.field_0022 | escape }}">{{ page.content.field_0009 | escape }}</div>
+    <h2 data-de="{{ page.content.field_0027 | escape }}" data-en="{{ page.content.field_0028 | escape }}">{{ page.content.field_0027 | escape }}</h2>
     <div class="rule" style="margin-left:0"></div>
-    <p class="lead-p" data-de="Ihre Lieblingsgerichte von Athidhi bequem nach Hause bestellt. Bestellen Sie online bei Ihrem Standort — oder schreiben Sie uns Ihre Anfrage." data-en="Your favourite Athidhi dishes delivered conveniently to your door. Order online from your location - or send us your enquiry.">Ihre Lieblingsgerichte von Athidhi bequem nach Hause bestellt. Bestellen Sie online bei Ihrem Standort — oder schreiben Sie uns Ihre Anfrage.</p>
-    <p data-de="Wählen Sie unten Ihren Standort für die Online-Bestellung. Für Fragen zu größeren Bestellungen erreichen Sie uns jederzeit." data-en="Choose your location below to order online. For questions about larger orders, you can reach us any time.">Wählen Sie unten Ihren Standort für die Online-Bestellung. Für Fragen zu größeren Bestellungen erreichen Sie uns jederzeit.</p>
+    <p class="lead-p" data-de="{{ page.content.field_0030 | escape }}" data-en="{{ page.content.field_0031 | escape }}">{{ page.content.field_0030 | escape }}</p>
+    <p data-de="{{ page.content.field_0033 | escape }}" data-en="{{ page.content.field_0034 | escape }}">{{ page.content.field_0033 | escape }}</p>
   </div>
   <div class="info-card">
-    <h4 data-de="Kontakt & Anfrage" data-en="Contact & enquiry">Kontakt & Anfrage</h4>
-    <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 4h3l1.4 3.7-1.9 1.4a11 11 0 0 0 4.8 4.8l1.4-1.9L19 15v3a1.8 1.8 0 0 1-1.9 1.8A15.5 15.5 0 0 1 4.2 6.9 1.8 1.8 0 0 1 6.6 4Z"/></svg></span><a class="tel call-btn" role="button" tabindex="0" style="cursor:pointer" data-c="NTYuNjUuNzAuNjcuNjMuNjMuNjMuNjQuNjIuNjkuNjYuNjQuNjYuNjQ=" data-d="NjEuNjcuNjMuNjMuNjMuNDUuNjAuNDUuNjQuNjIuNjkuNDUuNjYuNjQuNDUuNjYuNjQ=" data-de="Anrufen" data-en="Call">Anrufen</a></div>
-    <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span><a class="mail-btn" role="button" tabindex="0" style="cursor:pointer;color:var(--maroon);font-weight:600" data-m="MTE4LjEyMy4xMTUuMTI0Ljc3LjExMC4xMjkuMTE3LjExOC4xMTMuMTE3LjExOC41OS4xMTMuMTE0" data-de="E-Mail schreiben" data-en="Email us">E-Mail schreiben</a></div>
+    <h4 data-de="{{ page.content.field_0036 | escape }}" data-en="{{ page.content.field_0037 | escape }}">{{ page.content.field_0036 | escape }}</h4>
+    <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 4h3l1.4 3.7-1.9 1.4a11 11 0 0 0 4.8 4.8l1.4-1.9L19 15v3a1.8 1.8 0 0 1-1.9 1.8A15.5 15.5 0 0 1 4.2 6.9 1.8 1.8 0 0 1 6.6 4Z"/></svg></span><a class="tel call-btn" role="button" tabindex="0" style="cursor:pointer" data-c="NTYuNjUuNzAuNjcuNjMuNjMuNjMuNjQuNjIuNjkuNjYuNjQuNjYuNjQ=" data-d="NjEuNjcuNjMuNjMuNjMuNDUuNjAuNDUuNjQuNjIuNjkuNDUuNjYuNjQuNDUuNjYuNjQ=" data-de="{{ page.content.field_0039 | escape }}" data-en="{{ page.content.field_0040 | escape }}">{{ page.content.field_0039 | escape }}</a></div>
+    <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span><a class="mail-btn" role="button" tabindex="0" style="cursor:pointer;color:var(--maroon);font-weight:600" data-m="MTE4LjEyMy4xMTUuMTI0Ljc3LjExMC4xMjkuMTE3LjExOC4xMTMuMTE3LjExOC41OS4xMTMuMTE0" data-de="{{ page.content.field_0042 | escape }}" data-en="{{ page.content.field_0043 | escape }}">{{ page.content.field_0042 | escape }}</a></div>
     
-    <a class="btn btn-primary" href="#anfrage" data-de="Anfrage senden" data-en="Send enquiry">Anfrage senden</a>
+    <a class="btn btn-primary" href="#anfrage" data-de="{{ page.content.field_0045 | escape }}" data-en="{{ page.content.field_0046 | escape }}">{{ page.content.field_0045 | escape }}</a>
   </div>
 </div></section><section class="si-order"><div class="wrap">
-  <div class="section-head"><div class="eyebrow" data-de="Online bestellen" data-en="Order Online">Online bestellen</div>
-  <h2 data-de="Online bestellen bei Ihrem Standort" data-en="Order online from your location">Online bestellen bei Ihrem Standort</h2><div class="rule"></div></div>
+  <div class="section-head"><div class="eyebrow" data-de="{{ page.content.field_0048 | escape }}" data-en="{{ page.content.field_0049 | escape }}">{{ page.content.field_0048 | escape }}</div>
+  <h2 data-de="{{ page.content.field_0051 | escape }}" data-en="{{ page.content.field_0052 | escape }}">{{ page.content.field_0051 | escape }}</h2><div class="rule"></div></div>
   <div class="cards">
-    <a href="https://athidhi-bestellen.de/athidhi-restaurant-wiesloch" target="_blank" rel="noopener">Wiesloch</a>
-    <a href="https://athidhi-bestellen.de/athidhi-restaurant-heidelberg" target="_blank" rel="noopener">Heidelberg</a>
-    <a href="https://athidhi-bestellen.de/athidhi-restaurant-karlsruhe" target="_blank" rel="noopener">Karlsruhe</a>
-    <a href="https://athidhi-bestellen.de/athidhi-restaurant-stuttgart" target="_blank" rel="noopener">Stuttgart</a>
+    <a href="https://athidhi-bestellen.de/athidhi-restaurant-wiesloch" target="_blank" rel="noopener">{{ page.content.field_0054 | escape }}</a>
+    <a href="https://athidhi-bestellen.de/athidhi-restaurant-heidelberg" target="_blank" rel="noopener">{{ page.content.field_0055 | escape }}</a>
+    <a href="https://athidhi-bestellen.de/athidhi-restaurant-karlsruhe" target="_blank" rel="noopener">{{ page.content.field_0056 | escape }}</a>
+    <a href="https://athidhi-bestellen.de/athidhi-restaurant-stuttgart" target="_blank" rel="noopener">{{ page.content.field_0057 | escape }}</a>
   </div>
 </div></section><section class="si-gallery"><div class="wrap">
-  <div class="section-head"><div class="eyebrow" data-de="Eindrücke" data-en="Gallery">Eindrücke</div>
-  <h2 data-de="Impressionen" data-en="Impressions">Impressionen</h2><div class="rule"></div></div>
-  <div class="si-grid"><div class="si-ph"><!-- PLACEHOLDER: swap this for a real photo --><svg class="fl" viewBox="0 0 18 18" aria-hidden="true"><g transform="translate(9 9)" fill="#FFCB31"><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(0)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(45)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(90)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(135)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(180)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(225)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(270)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(315)"/></g><circle cx="9" cy="9" r="1.8" fill="#f7d9a0"/></svg><div class="pl" data-de="Foto folgt" data-en="Photo coming">Foto folgt</div><div class="pn" data-de="Frisch geliefert" data-en="Freshly delivered">Frisch geliefert</div></div><div class="si-ph"><!-- PLACEHOLDER: swap this for a real photo --><svg class="fl" viewBox="0 0 18 18" aria-hidden="true"><g transform="translate(9 9)" fill="#FFCB31"><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(0)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(45)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(90)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(135)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(180)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(225)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(270)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(315)"/></g><circle cx="9" cy="9" r="1.8" fill="#f7d9a0"/></svg><div class="pl" data-de="Foto folgt" data-en="Photo coming">Foto folgt</div><div class="pn" data-de="Ihre Bestellung" data-en="Your order">Ihre Bestellung</div></div><div class="si-ph"><!-- PLACEHOLDER: swap this for a real photo --><svg class="fl" viewBox="0 0 18 18" aria-hidden="true"><g transform="translate(9 9)" fill="#FFCB31"><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(0)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(45)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(90)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(135)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(180)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(225)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(270)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(315)"/></g><circle cx="9" cy="9" r="1.8" fill="#f7d9a0"/></svg><div class="pl" data-de="Foto folgt" data-en="Photo coming">Foto folgt</div><div class="pn" data-de="Athidhi to go" data-en="Athidhi to go">Athidhi to go</div></div></div>
+  <div class="section-head"><div class="eyebrow" data-de="{{ page.content.field_0058 | escape }}" data-en="{{ page.content.field_0059 | escape }}">{{ page.content.field_0058 | escape }}</div>
+  <h2 data-de="{{ page.content.field_0061 | escape }}" data-en="{{ page.content.field_0062 | escape }}">{{ page.content.field_0061 | escape }}</h2><div class="rule"></div></div>
+  <div class="si-grid"><div class="si-ph"><!-- PLACEHOLDER: swap this for a real photo --><svg class="fl" viewBox="0 0 18 18" aria-hidden="true"><g transform="translate(9 9)" fill="#FFCB31"><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(0)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(45)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(90)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(135)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(180)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(225)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(270)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(315)"/></g><circle cx="9" cy="9" r="1.8" fill="#f7d9a0"/></svg><div class="pl" data-de="{{ page.content.field_0064 | escape }}" data-en="{{ page.content.field_0065 | escape }}">{{ page.content.field_0064 | escape }}</div><div class="pn" data-de="{{ page.content.field_0067 | escape }}" data-en="{{ page.content.field_0068 | escape }}">{{ page.content.field_0067 | escape }}</div></div><div class="si-ph"><!-- PLACEHOLDER: swap this for a real photo --><svg class="fl" viewBox="0 0 18 18" aria-hidden="true"><g transform="translate(9 9)" fill="#FFCB31"><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(0)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(45)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(90)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(135)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(180)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(225)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(270)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(315)"/></g><circle cx="9" cy="9" r="1.8" fill="#f7d9a0"/></svg><div class="pl" data-de="{{ page.content.field_0064 | escape }}" data-en="{{ page.content.field_0065 | escape }}">{{ page.content.field_0064 | escape }}</div><div class="pn" data-de="{{ page.content.field_0073 | escape }}" data-en="{{ page.content.field_0074 | escape }}">{{ page.content.field_0073 | escape }}</div></div><div class="si-ph"><!-- PLACEHOLDER: swap this for a real photo --><svg class="fl" viewBox="0 0 18 18" aria-hidden="true"><g transform="translate(9 9)" fill="#FFCB31"><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(0)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(45)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(90)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(135)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(180)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(225)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(270)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(315)"/></g><circle cx="9" cy="9" r="1.8" fill="#f7d9a0"/></svg><div class="pl" data-de="{{ page.content.field_0064 | escape }}" data-en="{{ page.content.field_0065 | escape }}">{{ page.content.field_0064 | escape }}</div><div class="pn" data-de="{{ page.content.field_0079 | escape }}" data-en="{{ page.content.field_0079 | escape }}">{{ page.content.field_0079 | escape }}</div></div></div>
 </div></section><a id="anfrage"></a><section class="si-form-wrap"><div class="wrap">
-  <div class="section-head"><div class="eyebrow" data-de="Anfrage" data-en="Enquiry">Anfrage</div>
-  <h2 data-de="Schreiben Sie uns" data-en="Send us a message">Schreiben Sie uns</h2><div class="rule"></div>
-  <p data-de="Fragen zur Lieferung oder zu größeren Bestellungen? Schreiben Sie uns." data-en="Questions about delivery or larger orders? Send us a message.">Fragen zur Lieferung oder zu größeren Bestellungen? Schreiben Sie uns.</p></div>
+  <div class="section-head"><div class="eyebrow" data-de="{{ page.content.field_0082 | escape }}" data-en="{{ page.content.field_0083 | escape }}">{{ page.content.field_0082 | escape }}</div>
+  <h2 data-de="{{ page.content.field_0085 | escape }}" data-en="{{ page.content.field_0086 | escape }}">{{ page.content.field_0085 | escape }}</h2><div class="rule"></div>
+  <p data-de="{{ page.content.field_0088 | escape }}" data-en="{{ page.content.field_0089 | escape }}">{{ page.content.field_0088 | escape }}</p></div>
   <div class="si-card">
   <script>window.ATHIDHI_SERVICE="delivery";</script>
   <form id="si-form" class="si-form" novalidate>
       <div class="hp-field" aria-hidden="true" style="position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px;height:1px;overflow:hidden">
-        <label>Firma / Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+        <label>{{ page.content.field_0091 | escape }}<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
       </div>
       <div class="fld full">
-        <label data-de="Standort (optional)" data-en="Location (optional)">Standort (optional)</label>
+        <label data-de="{{ page.content.field_0092 | escape }}" data-en="{{ page.content.field_0093 | escape }}">{{ page.content.field_0092 | escape }}</label>
         <select name="branch">
-          <option value="" data-de="Kein bestimmter Standort" data-en="No specific location">Kein bestimmter Standort</option>
-          <option value="wiesloch">Wiesloch</option>
-          <option value="heidelberg">Heidelberg</option>
-          <option value="karlsruhe">Karlsruhe</option>
-          <option value="stuttgart">Stuttgart</option>
+          <option value="" data-de="{{ page.content.field_0095 | escape }}" data-en="{{ page.content.field_0096 | escape }}">{{ page.content.field_0095 | escape }}</option>
+          <option value="wiesloch">{{ page.content.field_0054 | escape }}</option>
+          <option value="heidelberg">{{ page.content.field_0055 | escape }}</option>
+          <option value="karlsruhe">{{ page.content.field_0056 | escape }}</option>
+          <option value="stuttgart">{{ page.content.field_0057 | escape }}</option>
         </select>
       </div>
       <div class="fld full">
-        <label><span data-de="Name" data-en="Name">Name </span><span class="req">*</span></label>
+        <label><span data-de="{{ page.content.field_0102 | escape }}" data-en="{{ page.content.field_0102 | escape }}">{{ page.content.field_0102 | escape }} </span><span class="req">{{ page.content.field_0105 | escape }}</span></label>
         <input type="text" name="name" autocomplete="name" required maxlength="120">
       </div>
       <div class="fld">
-        <label data-de="Telefon" data-en="Phone">Telefon</label>
+        <label data-de="{{ page.content.field_0106 | escape }}" data-en="{{ page.content.field_0107 | escape }}">{{ page.content.field_0106 | escape }}</label>
         <input type="tel" name="phone" autocomplete="tel" maxlength="40">
       </div>
       <div class="fld">
-        <label data-de="E-Mail" data-en="Email">E-Mail</label>
+        <label data-de="{{ page.content.field_0109 | escape }}" data-en="{{ page.content.field_0110 | escape }}">{{ page.content.field_0109 | escape }}</label>
         <input type="email" name="email" autocomplete="email" maxlength="160">
       </div>
       <div class="fld full">
-        <p class="si-hint" data-de="Bitte Telefon oder E-Mail angeben." data-en="Please provide a phone number or email.">Bitte Telefon oder E-Mail angeben.</p>
+        <p class="si-hint" data-de="{{ page.content.field_0112 | escape }}" data-en="{{ page.content.field_0113 | escape }}">{{ page.content.field_0112 | escape }}</p>
       </div>
       <div class="fld full">
-        <label data-de="Ihre Anfrage" data-en="Your enquiry">Ihre Anfrage</label>
+        <label data-de="{{ page.content.field_0115 | escape }}" data-en="{{ page.content.field_0116 | escape }}">{{ page.content.field_0115 | escape }}</label>
         <textarea name="message" maxlength="1500" data-de-placeholder="Erzählen Sie uns von Ihrem Anlass, Personenzahl, Wünschen …" data-en-placeholder="Tell us about your occasion, number of guests, any wishes …"></textarea>
       </div>
       <div id="si-status" class="si-status" role="status" aria-live="polite"></div>
       <div class="si-actions">
-        <button type="submit" class="btn btn-primary btn-lg" data-de="Anfrage senden" data-en="Send enquiry">Anfrage senden</button>
+        <button type="submit" class="btn btn-primary btn-lg" data-de="{{ page.content.field_0045 | escape }}" data-en="{{ page.content.field_0046 | escape }}">{{ page.content.field_0045 | escape }}</button>
       </div>
     </form>
   </div>

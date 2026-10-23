@@ -1,7 +1,55 @@
+---
+seo:
+  field_0000: Athidhi — Reservations (Staff)
+content:
+  field_0001: Athidhi
+  field_0002: Reservations — staff sign in
+  field_0003: Email
+  field_0004: Password
+  field_0005: Sign in
+  field_0007: Reservations
+  field_0008: List
+  field_0009: Board
+  field_0010: Tables
+  field_0011: Takeaway
+  field_0012: Inquiries
+  field_0013: Refresh
+  field_0014: Sign out
+  field_0015: Branch
+  field_0016: All branches
+  field_0017: Wiesloch
+  field_0018: Heidelberg
+  field_0019: Karlsruhe
+  field_0020: Stuttgart
+  field_0021: Date
+  field_0022: Search (name, phone, email)
+  field_0023: Clear
+  field_0024: '0'
+  field_0025: reservation(s)
+  field_0027: Time
+  field_0029: Name
+  field_0030: No. of People
+  field_0031: Contact
+  field_0032: Notes
+  field_0033: Status
+  field_0034: Table
+  field_0035: Move to
+  field_0036: No reservations match your filters.
+  field_0037: Takeaway — order online
+  field_0038: These buttons open each branch's direct ordering page for takeaway/delivery. Links marked "coming soon" are
+    placeholders until the real ordering URLs are added.
+  field_0040: service enquiry(ies)
+  field_0041: Received
+  field_0042: Service
+  field_0046: Event date
+  field_0047: Guests
+  field_0048: Message
+  field_0050: No service enquiries match your filters.
+---
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Athidhi — Reservations (Staff)</title>
+<title>{{ page.seo.field_0000 | escape }}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700&family=Proza+Libre:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
@@ -90,13 +138,13 @@ td.notes{max-width:220px;color:var(--muted)}
 
 <div id="staff-login" style="display:none">
   <div class="login-box">
-    <h1>Athidhi</h1>
-    <p>Reservations — staff sign in</p>
+    <h1>{{ page.content.field_0001 | escape }}</h1>
+    <p>{{ page.content.field_0002 | escape }}</p>
     <form id="login-form">
-      <div class="fld"><label>Email</label><input type="email" id="login-email" autocomplete="username" required></div>
-      <div class="fld"><label>Password</label><input type="password" id="login-pass" autocomplete="current-password" required></div>
+      <div class="fld"><label>{{ page.content.field_0003 | escape }}</label><input type="email" id="login-email" autocomplete="username" required></div>
+      <div class="fld"><label>{{ page.content.field_0004 | escape }}</label><input type="password" id="login-pass" autocomplete="current-password" required></div>
       <div id="login-err" class="err"></div>
-      <button type="submit" class="btn btn-primary" style="width:100%">Sign in</button>
+      <button type="submit" class="btn btn-primary" style="width:100%">{{ page.content.field_0005 | escape }}</button>
     </form>
   </div>
 </div>
@@ -104,49 +152,49 @@ td.notes{max-width:220px;color:var(--muted)}
 <div id="staff-app" style="display:none">
   <div class="st-top">
     <div style="display:flex;align-items:center;gap:14px">
-      <a class="brand" href="index.html"><img src="assets/logo-green.png" alt="Athidhi"></a>
-      <span class="st-title">Reservations</span>
+      <a class="brand" href="index.html"><img src="assets/logo-green.png" alt="{{ page.content.field_0001 | escape }}"></a>
+      <span class="st-title">{{ page.content.field_0007 | escape }}</span>
     </div>
     <div class="nav-tabs" id="nav-tabs">
-      <button data-view="list" class="active">List</button>
-      <button data-view="board">Board</button>
-      <button data-view="tables">Tables</button>
-      <button data-view="takeaway">Takeaway</button>
-      <button data-view="inquiries">Inquiries</button>
+      <button data-view="list" class="active">{{ page.content.field_0008 | escape }}</button>
+      <button data-view="board">{{ page.content.field_0009 | escape }}</button>
+      <button data-view="tables">{{ page.content.field_0010 | escape }}</button>
+      <button data-view="takeaway">{{ page.content.field_0011 | escape }}</button>
+      <button data-view="inquiries">{{ page.content.field_0012 | escape }}</button>
     </div>
     <div class="st-actions">
       <span id="staff-who" style="font-size:13px;color:var(--muted)"></span>
-      <button id="refresh-btn" class="btn mini" style="background:var(--maroon);color:#FFEBB0;border-color:var(--maroon)">Refresh</button>
-      <button id="logout-btn" class="btn btn-ghost mini">Sign out</button>
+      <button id="refresh-btn" class="btn mini" style="background:var(--maroon);color:#FFEBB0;border-color:var(--maroon)">{{ page.content.field_0013 | escape }}</button>
+      <button id="logout-btn" class="btn btn-ghost mini">{{ page.content.field_0014 | escape }}</button>
     </div>
   </div>
   <div class="st-wrap">
     <div class="toolbar" id="toolbar">
-      <div class="fld"><label>Branch</label>
+      <div class="fld"><label>{{ page.content.field_0015 | escape }}</label>
         <select id="f-branch">
-          <option value="">All branches</option>
-          <option value="wiesloch">Wiesloch</option>
-          <option value="heidelberg">Heidelberg</option>
-          <option value="karlsruhe">Karlsruhe</option>
-          <option value="stuttgart">Stuttgart</option>
+          <option value="">{{ page.content.field_0016 | escape }}</option>
+          <option value="wiesloch">{{ page.content.field_0017 | escape }}</option>
+          <option value="heidelberg">{{ page.content.field_0018 | escape }}</option>
+          <option value="karlsruhe">{{ page.content.field_0019 | escape }}</option>
+          <option value="stuttgart">{{ page.content.field_0020 | escape }}</option>
         </select>
       </div>
-      <div class="fld"><label>Date</label><input type="date" id="f-date"></div>
-      <div class="fld grow"><label>Search (name, phone, email)</label><input type="text" id="f-search" placeholder="Type to filter…"></div>
-      <button id="clear-filters" class="btn btn-ghost mini">Clear</button>
+      <div class="fld"><label>{{ page.content.field_0021 | escape }}</label><input type="date" id="f-date"></div>
+      <div class="fld grow"><label>{{ page.content.field_0022 | escape }}</label><input type="text" id="f-search" placeholder="Type to filter…"></div>
+      <button id="clear-filters" class="btn btn-ghost mini">{{ page.content.field_0023 | escape }}</button>
     </div>
 
     <!-- LIST -->
     <div id="view-list">
-      <p class="count-line"><b id="resv-count">0</b> reservation(s)</p>
+      <p class="count-line"><b id="resv-count">{{ page.content.field_0024 | escape }}</b> {{ page.content.field_0025 | escape }}</p>
       <div class="tbl-scroll">
         <table class="resv">
           <thead><tr>
-            <th>Date</th><th>Time</th><th>Branch</th><th>Name</th><th>No. of People</th><th>Contact</th><th>Notes</th><th>Status</th><th>Table</th><th>Move to</th>
+            <th>{{ page.content.field_0021 | escape }}</th><th>{{ page.content.field_0027 | escape }}</th><th>{{ page.content.field_0015 | escape }}</th><th>{{ page.content.field_0029 | escape }}</th><th>{{ page.content.field_0030 | escape }}</th><th>{{ page.content.field_0031 | escape }}</th><th>{{ page.content.field_0032 | escape }}</th><th>{{ page.content.field_0033 | escape }}</th><th>{{ page.content.field_0034 | escape }}</th><th>{{ page.content.field_0035 | escape }}</th>
           </tr></thead>
           <tbody id="resv-tbody"></tbody>
         </table>
-        <div id="resv-empty" class="empty" style="display:none">No reservations match your filters.</div>
+        <div id="resv-empty" class="empty" style="display:none">{{ page.content.field_0036 | escape }}</div>
       </div>
     </div>
 
@@ -162,22 +210,22 @@ td.notes{max-width:220px;color:var(--muted)}
 
     <!-- TAKEAWAY -->
     <div id="view-takeaway" style="display:none">
-      <h2 class="sec-h">Takeaway — order online</h2>
-      <p class="tk-hint">These buttons open each branch's direct ordering page for takeaway/delivery. Links marked "coming soon" are placeholders until the real ordering URLs are added.</p>
+      <h2 class="sec-h">{{ page.content.field_0037 | escape }}</h2>
+      <p class="tk-hint">{{ page.content.field_0038 | escape }}</p>
       <div class="tk-grid" id="tk-grid"></div>
     </div>
 
     <!-- INQUIRIES (service enquiries: party hall, catering, delivery) -->
     <div id="view-inquiries" style="display:none">
-      <p class="count-line"><b id="inq-count">0</b> service enquiry(ies)</p>
+      <p class="count-line"><b id="inq-count">{{ page.content.field_0024 | escape }}</b> {{ page.content.field_0040 | escape }}</p>
       <div class="tbl-scroll">
         <table class="resv">
           <thead><tr>
-            <th>Received</th><th>Service</th><th>Branch</th><th>Name</th><th>Contact</th><th>Event date</th><th>Guests</th><th>Message</th><th>Status</th>
+            <th>{{ page.content.field_0041 | escape }}</th><th>{{ page.content.field_0042 | escape }}</th><th>{{ page.content.field_0015 | escape }}</th><th>{{ page.content.field_0029 | escape }}</th><th>{{ page.content.field_0031 | escape }}</th><th>{{ page.content.field_0046 | escape }}</th><th>{{ page.content.field_0047 | escape }}</th><th>{{ page.content.field_0048 | escape }}</th><th>{{ page.content.field_0033 | escape }}</th>
           </tr></thead>
           <tbody id="inq-tbody"></tbody>
         </table>
-        <div id="inq-empty" class="empty" style="display:none">No service enquiries match your filters.</div>
+        <div id="inq-empty" class="empty" style="display:none">{{ page.content.field_0050 | escape }}</div>
       </div>
     </div>
   </div>
