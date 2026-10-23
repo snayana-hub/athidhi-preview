@@ -12,14 +12,12 @@ content:
   field_0013: Join our team
   field_0015: Startseite
   field_0016: Home
-  field_0018: /
   field_0022: Wir sind immer auf der Suche nach herzlichen, engagierten Menschen für unsere Restaurants. Feste Stellen schreiben
     wir nicht immer aus — sagen Sie uns einfach, welche Rolle Sie interessiert, und wir melden uns bei Ihnen.
   field_0023: We're always looking for warm, dedicated people to join our restaurants. We don't always post fixed openings
     — just tell us which role interests you and we'll get back to you.
   field_0025: Firma / Company
   field_0026: Name
-  field_0029: '*'
   field_0030: Kontakt (E-Mail oder Telefon)
   field_0031: Contact (email or phone)
   field_0034: Gewünschte Position
@@ -115,7 +113,7 @@ content:
     <div class="addr" data-de="{{ page.content.field_0012 | escape }}" data-en="{{ page.content.field_0013 | escape }}">{{ page.content.field_0012 | escape }}</div>
   </div>
 </section><div class="crumb"><div class="wrap">
-  <a href="index.html" data-de="{{ page.content.field_0015 | escape }}" data-en="{{ page.content.field_0016 | escape }}">{{ page.content.field_0015 | escape }}</a><span class="sep">{{ page.content.field_0018 | escape }}</span>
+  <a href="index.html" data-de="{{ page.content.field_0015 | escape }}" data-en="{{ page.content.field_0016 | escape }}">{{ page.content.field_0015 | escape }}</a><span class="sep">/</span>
   <span data-de="{{ page.content.field_0006 | escape }}" data-en="{{ page.content.field_0007 | escape }}">{{ page.content.field_0006 | escape }}</span>
 </div></div><section class="cform-wrap"><div class="wrap">
   <p class="cform-lead" data-de="{{ page.content.field_0022 | escape }}" data-en="{{ page.content.field_0023 | escape }}">{{ page.content.field_0022 | escape }}</p>
@@ -126,15 +124,15 @@ content:
       </div>
       <div class="cform">
         <div class="fld full">
-          <label><span data-de="{{ page.content.field_0026 | escape }}" data-en="{{ page.content.field_0026 | escape }}">{{ page.content.field_0026 | escape }} </span><span class="req">{{ page.content.field_0029 | escape }}</span></label>
+          <label><span data-de="{{ page.content.field_0026 | escape }}" data-en="{{ page.content.field_0026 | escape }}">{{ page.content.field_0026 | escape }} </span><span class="req">*</span></label>
           <input type="text" name="name" autocomplete="name" required maxlength="120">
         </div>
         <div class="fld full">
-          <label><span data-de="{{ page.content.field_0030 | escape }}" data-en="{{ page.content.field_0031 | escape }}">{{ page.content.field_0030 | escape }} </span><span class="req">{{ page.content.field_0029 | escape }}</span></label>
+          <label><span data-de="{{ page.content.field_0030 | escape }}" data-en="{{ page.content.field_0031 | escape }}">{{ page.content.field_0030 | escape }} </span><span class="req">*</span></label>
           <input type="text" name="contact" autocomplete="email" required maxlength="160">
         </div>
         <div class="fld full">
-          <label><span data-de="{{ page.content.field_0034 | escape }}" data-en="{{ page.content.field_0035 | escape }}">{{ page.content.field_0034 | escape }} </span><span class="req">{{ page.content.field_0029 | escape }}</span></label>
+          <label><span data-de="{{ page.content.field_0034 | escape }}" data-en="{{ page.content.field_0035 | escape }}">{{ page.content.field_0034 | escape }} </span><span class="req">*</span></label>
           <input type="text" name="role" required maxlength="160" data-de-placeholder="z. B. Koch, Servicekraft, Küchenhilfe" data-en-placeholder="e.g. chef, waiter, kitchen help">
         </div>
         <div class="fld full">
@@ -146,7 +144,7 @@ content:
           <input type="text" name="current_employer" maxlength="300">
         </div>
         <div class="fld full">
-          <label><span data-de="{{ page.content.field_0044 | escape }}" data-en="{{ page.content.field_0045 | escape }}">{{ page.content.field_0046 | escape }} </span><span class="req">{{ page.content.field_0029 | escape }}</span></label>
+          <label><span data-de="{{ page.content.field_0044 | escape }}" data-en="{{ page.content.field_0045 | escape }}">{{ page.content.field_0046 | escape }} </span><span class="req">*</span></label>
           <input type="file" name="cv" required accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
           <p class="cform-hint" data-de="{{ page.content.field_0048 | escape }}" data-en="{{ page.content.field_0049 | escape }}">{{ page.content.field_0048 | escape }}</p>
         </div>

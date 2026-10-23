@@ -12,7 +12,6 @@ content:
   field_0013: Flip through our menu
   field_0015: Startseite
   field_0016: Home
-  field_0018: /
   field_0022: Diese Speisekarte gilt für Heidelberg, Karlsruhe und Stuttgart. Für Wiesloch finden Sie die aktuellen Gerichte
     und Preise in unserer
   field_0023: This menu applies to Heidelberg, Karlsruhe and Stuttgart. For Wiesloch, see our
@@ -20,10 +19,6 @@ content:
   field_0026: online ordering page
   field_0028: .
   field_0029: for the current dishes and prices.
-  field_0031: ‹
-  field_0032: '1'
-  field_0034: '26'
-  field_0035: ›
   field_0036: Tippen Sie auf die Pfeile zum Blättern
   field_0037: Tap the arrows to turn pages
 ---
@@ -85,7 +80,7 @@ content:
     <div class="addr" data-de="{{ page.content.field_0012 | escape }}" data-en="{{ page.content.field_0013 | escape }}">{{ page.content.field_0012 | escape }}</div>
   </div>
 </section><div class="crumb"><div class="wrap">
-  <a href="index.html" data-de="{{ page.content.field_0015 | escape }}" data-en="{{ page.content.field_0016 | escape }}">{{ page.content.field_0015 | escape }}</a><span class="sep">{{ page.content.field_0018 | escape }}</span>
+  <a href="index.html" data-de="{{ page.content.field_0015 | escape }}" data-en="{{ page.content.field_0016 | escape }}">{{ page.content.field_0015 | escape }}</a><span class="sep">/</span>
   <span data-de="{{ page.content.field_0006 | escape }}" data-en="{{ page.content.field_0007 | escape }}">{{ page.content.field_0006 | escape }}</span>
 </div></div><div class="wrap" style="padding-top:32px;text-align:center"><p style="max-width:760px;margin:0 auto;color:var(--ink);line-height:1.65"><span data-de="{{ page.content.field_0022 | escape }} " data-en="{{ page.content.field_0023 | escape }} ">{{ page.content.field_0022 | escape }} </span><a href="https://athidhi-bestellen.de/athidhi-restaurant-wiesloch" target="_blank" rel="noopener" data-de="{{ page.content.field_0025 | escape }}" data-en="{{ page.content.field_0026 | escape }}">{{ page.content.field_0025 | escape }}</a><span data-de="{{ page.content.field_0028 | escape }}" data-en=" {{ page.content.field_0029 | escape }}">{{ page.content.field_0028 | escape }}</span></p></div><section class="menu-flip"><div class="wrap">
 <script>
@@ -95,9 +90,9 @@ window.ATHIDHI_MENU_PAGES = { de: ["assets/menu/de/27-1.jpg","assets/menu/de/28-
 <div class="flipbook">
   <div class="fb-stage"></div>
   <div class="fb-controls">
-    <button class="fb-nav prev" aria-label="Vorherige Seite">{{ page.content.field_0031 | escape }}</button>
-    <div class="fb-count"><span class="fb-cur">{{ page.content.field_0032 | escape }}</span> {{ page.content.field_0018 | escape }} <span class="fb-total">{{ page.content.field_0034 | escape }}</span></div>
-    <button class="fb-nav next" aria-label="N&auml;chste Seite">{{ page.content.field_0035 | escape }}</button>
+    <button class="fb-nav prev" aria-label="Vorherige Seite">‹</button>
+    <div class="fb-count"><span class="fb-cur">1</span> / <span class="fb-total">26</span></div>
+    <button class="fb-nav next" aria-label="N&auml;chste Seite">›</button>
   </div>
   <p class="fb-hint" data-de="{{ page.content.field_0036 | escape }}" data-en="{{ page.content.field_0037 | escape }}">{{ page.content.field_0036 | escape }}</p>
 </div>

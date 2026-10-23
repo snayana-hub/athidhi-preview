@@ -29,48 +29,56 @@ content:
       required: true
       options:
         maxlength: 70
+      fields: []
     - name: seo_description
       label: SEO description
       type: text
       required: true
       options:
         maxlength: 160
+      fields: []
     - name: hero_title_de
       label: Homepage heading (German)
       type: string
       required: true
       options:
         maxlength: 90
+      fields: []
     - name: hero_title_en
       label: Homepage heading (English)
       type: string
       required: true
       options:
         maxlength: 90
+      fields: []
     - name: hero_intro_de
       label: Homepage introduction (German)
       type: text
       required: true
       options:
         maxlength: 220
+      fields: []
     - name: hero_intro_en
       label: Homepage introduction (English)
       type: text
       required: true
       options:
         maxlength: 220
+      fields: []
     - name: about_image_src
       label: About story image (path under assets/)
       type: image
       required: true
       options:
         media: false
+      fields: []
     - name: about_image_alt
       label: About story image alt text
       type: string
       required: true
       options:
         maxlength: 180
+      fields: []
     - name: content
       label: Page content
       type: object
@@ -80,12 +88,6 @@ content:
         type: string
       - name: field_0001
         label: 'English: Order Online'
-        type: string
-      - name: field_0003
-        label: 'button: ‹'
-        type: string
-      - name: field_0004
-        label: 'button: ›'
         type: string
       - name: field_0005
         label: 'German: Aromen aus Indien'
@@ -313,7 +315,7 @@ content:
         label: 'English: A taste of what awaits. Find the full menu with prices on each location page.'
         type: string
       - name: field_0120
-        label: 'span: Chicken Dum Biryani'
+        label: 'Text: Chicken Dum Biryani'
         type: string
       - name: field_0121
         label: 'German: Fleisch'
@@ -334,10 +336,10 @@ content:
         label: 'English: Chicken thighs and rice with Indian spices. Fri–Sun only.'
         type: string
       - name: field_0130
-        label: 'span: €15,90'
+        label: 'Text: €15,90'
         type: string
       - name: field_0131
-        label: 'span: Punjabi Kukkad Masala'
+        label: 'Text: Punjabi Kukkad Masala'
         type: string
       - name: field_0135
         label: 'German: Königliche Mughal-Küche mit Hähnchen.'
@@ -346,10 +348,10 @@ content:
         label: 'English: Royal Mughal cuisine made with chicken.'
         type: string
       - name: field_0138
-        label: 'span: €16,90'
+        label: 'Text: €16,90'
         type: string
       - name: field_0139
-        label: 'span: Butter Chicken'
+        label: 'Text: Butter Chicken'
         type: string
       - name: field_0146
         label: 'German: Hähnchen in Butter-Sahne-Sauce mit Tomaten und Cashews.'
@@ -358,10 +360,10 @@ content:
         label: 'English: Chicken in a butter cream sauce with tomatoes and cashews.'
         type: string
       - name: field_0149
-        label: 'span: €17,90'
+        label: 'Text: €17,90'
         type: string
       - name: field_0150
-        label: 'span: Vegetable Korma'
+        label: 'Text: Vegetable Korma'
         type: string
       - name: field_0151
         label: 'German: Vegetarisch'
@@ -376,10 +378,10 @@ content:
         label: 'English: Vegetables in a mild sauce of spices, cream, coconut and cashew.'
         type: string
       - name: field_0157
-        label: 'span: €14,90'
+        label: 'Text: €14,90'
         type: string
       - name: field_0158
-        label: 'span: Kadai Paneer'
+        label: 'Text: Kadai Paneer'
         type: string
       - name: field_0162
         label: 'German: Hausgemachter Paneer mit Tomaten und Zwiebeln.'
@@ -388,10 +390,10 @@ content:
         label: 'English: Homemade paneer cheese with tomatoes and onions.'
         type: string
       - name: field_0165
-        label: 'span: €13,90'
+        label: 'Text: €13,90'
         type: string
       - name: field_0166
-        label: 'span: Dal Makhani'
+        label: 'Text: Dal Makhani'
         type: string
       - name: field_0170
         label: 'German: Schwarze Urad-Linsen, langsam gegart mit Butter und Sahne.'
@@ -400,7 +402,7 @@ content:
         label: 'English: Black urad lentils, slow-cooked with butter and cream.'
         type: string
       - name: field_0174
-        label: 'span: Chicken Tikka Masala'
+        label: 'Text: Chicken Tikka Masala'
         type: string
       - name: field_0178
         label: 'German: Gegrillte Hähnchenstücke in cremiger Tomaten-Masala-Sauce.'
@@ -409,7 +411,7 @@ content:
         label: 'English: Grilled chicken pieces in a creamy tomato masala sauce.'
         type: string
       - name: field_0182
-        label: 'span: Tandoori Chicken'
+        label: 'Text: Tandoori Chicken'
         type: string
       - name: field_0186
         label: 'German: Hähnchen am Knochen, mariniert in Joghurt und Gewürzen, im Tandoor gegrillt.'
@@ -418,7 +420,7 @@ content:
         label: 'English: Bone-in chicken marinated in yoghurt and spices, grilled in the tandoor.'
         type: string
       - name: field_0190
-        label: 'span: Kashmiri Rogan Josh'
+        label: 'Text: Kashmiri Rogan Josh'
         type: string
       - name: field_0194
         label: 'German: Zartes Lamm, geschmort in aromatischer Kaschmir-Sauce mit Kardamom und Zimt.'
@@ -427,10 +429,10 @@ content:
         label: 'English: Tender lamb braised in an aromatic Kashmiri sauce with cardamom and cinnamon.'
         type: string
       - name: field_0197
-        label: 'span: €18,90'
+        label: 'Text: €18,90'
         type: string
       - name: field_0198
-        label: 'span: Butter Paneer'
+        label: 'Text: Butter Paneer'
         type: string
       - name: field_0202
         label: 'German: Hausgemachter Paneer in cremiger Tomaten-Cashew-Sauce.'
@@ -439,7 +441,7 @@ content:
         label: 'English: Homemade paneer in a creamy tomato and cashew sauce.'
         type: string
       - name: field_0206
-        label: 'span: Palak Paneer'
+        label: 'Text: Palak Paneer'
         type: string
       - name: field_0210
         label: 'German: Paneer in cremigem Spinat mit Gewürzen.'
@@ -448,7 +450,7 @@ content:
         label: 'English: Paneer in creamy spinach with spices.'
         type: string
       - name: field_0214
-        label: 'span: Veg Dum Biryani'
+        label: 'Text: Veg Dum Biryani'
         type: string
       - name: field_0218
         label: 'German: Basmatireis mit Gemüse und Gewürzen geschichtet. Nur Fr–So.'
@@ -457,7 +459,7 @@ content:
         label: 'English: Basmati rice layered with vegetables and spices. Fri–Sun only.'
         type: string
       - name: field_0221
-        label: 'span: €12,90'
+        label: 'Text: €12,90'
         type: string
       - name: field_0222
         label: 'German: Vollständige Speisekarten je Standort'
@@ -535,13 +537,10 @@ content:
         label: 'English: Your table is waiting.'
         type: string
       - name: field_0267
-        label: 'h3: Wiesloch'
+        label: 'Heading: Wiesloch'
         type: string
       - name: field_0268
-        label: 'span: Röhrgasse 1, 69168 Wiesloch'
-        type: string
-      - name: field_0269
-        label: 'a: 📍'
+        label: 'Text: Röhrgasse 1, 69168 Wiesloch'
         type: string
       - name: field_0270
         label: 'German: Karte'
@@ -574,13 +573,10 @@ content:
         label: 'English: Branch & menu'
         type: string
       - name: field_0288
-        label: 'h3: Heidelberg'
+        label: 'Heading: Heidelberg'
         type: string
       - name: field_0289
-        label: 'span: Schwetzinger Str. 29, 69124 Heidelberg'
-        type: string
-      - name: field_0297
-        label: 'span: ·'
+        label: 'Text: Schwetzinger Str. 29, 69124 Heidelberg'
         type: string
       - name: field_0298
         label: 'Image alt text: 1'
@@ -598,10 +594,10 @@ content:
         label: 'English: Mon–Fri 11:30–15:00 & 17:30–22:30 · Sat–Sun 12:30–22:00 continuous'
         type: string
       - name: field_0314
-        label: 'h3: Karlsruhe'
+        label: 'Heading: Karlsruhe'
         type: string
       - name: field_0315
-        label: 'span: Insterburger Str. 16A, 76139 Karlsruhe'
+        label: 'Text: Insterburger Str. 16A, 76139 Karlsruhe'
         type: string
       - name: field_0328
         label: 'German: Mo–Fr 11:30–15:00 & 17:30–22:00 Uhr · Sa–So 12:30–16:00 & 17:30–22:00 Uhr'
@@ -610,10 +606,10 @@ content:
         label: 'English: Mon–Fri 11:30–15:00 & 17:30–22:00 · Sat–Sun 12:30–16:00 & 17:30–22:00'
         type: string
       - name: field_0340
-        label: 'h3: Stuttgart'
+        label: 'Heading: Stuttgart'
         type: string
       - name: field_0341
-        label: 'span: Gablenberger Hauptstraße 45, 70186 Stuttgart'
+        label: 'Text: Gablenberger Hauptstraße 45, 70186 Stuttgart'
         type: string
       - name: field_0354
         label: 'German: Di–Fr 11:30–15:00 & 17:30–22:00 Uhr · Sa–So 12:30–16:00 & 17:30–22:00 Uhr · Mo Ruh'
@@ -644,9 +640,6 @@ content:
         type: string
       - name: field_0376
         label: 'English: Read more'
-        type: string
-      - name: field_0378
-        label: 'span: +'
         type: string
       - name: field_0379
         label: 'German: Mehr als ein Restaurant. Eine Reise durch Indien.'
@@ -753,9 +746,6 @@ content:
       - name: field_0430
         label: 'English: Our Customers'' Reviews'
         type: string
-      - name: field_0432
-        label: 'div: ★★★★★'
-        type: string
       - name: field_0433
         label: 'blockquote: Wir waren am 02.10. hier essen. Wir waren von den Speisen sehr begeistert. Es war '
         type: text
@@ -793,58 +783,58 @@ content:
         label: 'English: Latest News & Blogs'
         type: string
       - name: field_0450
-        label: 'span: 23. Juni 2026'
+        label: 'Text: 23. Juni 2026'
         type: string
       - name: field_0451
-        label: 'h3: Indisches Restaurant Stuttgart: Eine aromatische Reise durch die Welt der indische'
+        label: 'Heading: Indisches Restaurant Stuttgart: Eine aromatische Reise durch die Welt der indische'
         type: string
       - name: field_0452
-        label: 'p: Entdecken Sie die faszinierende Welt der indischen Küche in Stuttgart und genießen'
+        label: 'Text: Entdecken Sie die faszinierende Welt der indischen Küche in Stuttgart und genießen'
         type: text
       - name: field_0453
         label: 'German: Weiterlesen'
         type: string
       - name: field_0456
-        label: 'span: May 22, 2026'
+        label: 'Text: May 22, 2026'
         type: string
       - name: field_0457
-        label: 'h3: Indian Restaurant Karlsruhe: Discover Authentic Indian Flavors in the Heart of the'
+        label: 'Heading: Indian Restaurant Karlsruhe: Discover Authentic Indian Flavors in the Heart of the'
         type: string
       - name: field_0458
-        label: 'p: Discover authentic Indian flavors in Karlsruhe and enjoy traditional Indian cuisin'
+        label: 'Text: Discover authentic Indian flavors in Karlsruhe and enjoy traditional Indian cuisin'
         type: text
       - name: field_0462
-        label: 'span: Apr 24, 2026'
+        label: 'Text: Apr 24, 2026'
         type: string
       - name: field_0463
-        label: 'h3: Best Indian Restaurant Stuttgart: Discover Authentic Indian Flavors in the Heart o'
+        label: 'Heading: Best Indian Restaurant Stuttgart: Discover Authentic Indian Flavors in the Heart o'
         type: string
       - name: field_0464
-        label: 'p: Looking for the best Indian restaurant in Stuttgart? Explore authentic Indian cuis'
+        label: 'Text: Looking for the best Indian restaurant in Stuttgart? Explore authentic Indian cuis'
         type: text
       - name: field_0468
-        label: 'span: Mar 27, 2026'
+        label: 'Text: Mar 27, 2026'
         type: string
       - name: field_0469
-        label: 'h3: Dosa: A Delicious South Indian Delight and Where to Find It in Germany'
+        label: 'Heading: Dosa: A Delicious South Indian Delight and Where to Find It in Germany'
         type: string
       - name: field_0474
-        label: 'span: 14. Okt. 2025'
+        label: 'Text: 14. Okt. 2025'
         type: string
       - name: field_0475
-        label: 'h3: Indisches Restaurant Stuttgart – Authentischer Genuss bei Athidhi'
+        label: 'Heading: Indisches Restaurant Stuttgart – Authentischer Genuss bei Athidhi'
         type: string
       - name: field_0476
-        label: 'p: Wer auf der Suche nach einem besonderen kulinarischen Erlebnis ist, sollte einen B'
+        label: 'Text: Wer auf der Suche nach einem besonderen kulinarischen Erlebnis ist, sollte einen B'
         type: text
       - name: field_0480
-        label: 'span: 9. Sep. 2025'
+        label: 'Text: 9. Sep. 2025'
         type: string
       - name: field_0481
-        label: 'h3: Entdecken Sie authentische Aromen im besten Indischen Restaurant in Stuttgart'
+        label: 'Heading: Entdecken Sie authentische Aromen im besten Indischen Restaurant in Stuttgart'
         type: string
       - name: field_0482
-        label: 'p: Indisches Essen hat weltweit Millionen von Menschen begeistert – mit seinen intens'
+        label: 'Text: Indisches Essen hat weltweit Millionen von Menschen begeistert – mit seinen intens'
         type: text
       - name: field_0486
         label: 'German: Alle Beiträge ansehen'
@@ -880,7 +870,7 @@ content:
         label: 'German: Service'
         type: string
       - name: field_0009
-        label: 'h1: Catering'
+        label: 'Heading: Catering'
         type: string
       - name: field_0010
         label: 'German: Indisches Catering für Ihren Anlass'
@@ -893,9 +883,6 @@ content:
         type: string
       - name: field_0014
         label: 'English: Home'
-        type: string
-      - name: field_0016
-        label: 'span: /'
         type: string
       - name: field_0017
         label: 'German: Services'
@@ -1105,7 +1092,7 @@ content:
         label: 'English: Please fill in the details below, and We will get in touch with you shortly.'
         type: string
       - name: field_0126
-        label: 'label: Firma / Company'
+        label: 'Text: Firma / Company'
         type: string
       - name: field_0127
         label: 'German: Sie und Ihr Anlass'
@@ -1115,9 +1102,6 @@ content:
         type: string
       - name: field_0130
         label: 'German: Name'
-        type: string
-      - name: field_0133
-        label: 'span: *'
         type: string
       - name: field_0134
         label: 'German: Telefonnummer'
@@ -1270,13 +1254,13 @@ content:
         label: 'English: If you''d like to celebrate at Athidhi''s Party Hall, please mention your preferred '
         type: string
       - name: field_0218
-        label: 'label: Athidhi Heidelberg'
+        label: 'Text: Athidhi Heidelberg'
         type: string
       - name: field_0219
-        label: 'label: Athidhi Stuttgart'
+        label: 'Text: Athidhi Stuttgart'
         type: string
       - name: field_0220
-        label: 'label: Athidhi Karlsruhe'
+        label: 'Text: Athidhi Karlsruhe'
         type: string
       - name: field_0221
         label: 'German: Sonderwünsche / Anpassungen'
@@ -1331,9 +1315,6 @@ content:
         type: string
       - name: field_0016
         label: 'English: Home'
-        type: string
-      - name: field_0018
-        label: 'span: /'
         type: string
       - name: field_0019
         label: 'German: Services'
@@ -1420,16 +1401,13 @@ content:
         label: 'English: Contact your nearest Athidhi branch with a party hall to check availability.'
         type: string
       - name: field_0068
-        label: 'span: Heidelberg'
+        label: 'Text: Heidelberg'
         type: string
       - name: field_0069
         label: 'German: Anrufen'
         type: string
       - name: field_0070
         label: 'English: Call'
-        type: string
-      - name: field_0072
-        label: 'span: ·'
         type: string
       - name: field_0073
         label: 'Image alt text: 1'
@@ -1441,10 +1419,10 @@ content:
         label: 'English: Alternative'
         type: string
       - name: field_0077
-        label: 'span: Stuttgart'
+        label: 'Text: Stuttgart'
         type: string
       - name: field_0086
-        label: 'span: Karlsruhe'
+        label: 'Text: Karlsruhe'
         type: string
       - name: field_0095
         label: 'German: E-Mail schreiben'
@@ -1498,7 +1476,7 @@ content:
         label: 'English: Tell us about your celebration - we''ll get back to you with a suitable proposal.'
         type: string
       - name: field_0119
-        label: 'label: Firma / Company'
+        label: 'Text: Firma / Company'
         type: string
       - name: field_0120
         label: 'German: Standort (optional)'
@@ -1514,9 +1492,6 @@ content:
         type: string
       - name: field_0129
         label: 'German: Name'
-        type: string
-      - name: field_0132
-        label: 'span: *'
         type: string
       - name: field_0133
         label: 'German: Telefon'
@@ -1605,9 +1580,6 @@ content:
       - name: field_0016
         label: 'English: Home'
         type: string
-      - name: field_0018
-        label: 'span: /'
-        type: string
       - name: field_0022
         label: 'German: Wir sind immer auf der Suche nach herzlichen, engagierten Menschen für unsere Rest'
         type: text
@@ -1615,13 +1587,10 @@ content:
         label: 'English: We''re always looking for warm, dedicated people to join our restaurants. We don''t '
         type: text
       - name: field_0025
-        label: 'label: Firma / Company'
+        label: 'Text: Firma / Company'
         type: string
       - name: field_0026
         label: 'German: Name'
-        type: string
-      - name: field_0029
-        label: 'span: *'
         type: string
       - name: field_0030
         label: 'German: Kontakt (E-Mail oder Telefon)'
@@ -1654,7 +1623,7 @@ content:
         label: 'English: CV / Résumé (PDF, DOC, max 10 MB)'
         type: string
       - name: field_0046
-        label: 'span: Lebenslauf'
+        label: 'Text: Lebenslauf'
         type: string
       - name: field_0048
         label: 'German: Akzeptiert: PDF, DOC, DOCX.'
@@ -1713,9 +1682,6 @@ content:
       - name: field_0016
         label: 'English: Home'
         type: string
-      - name: field_0018
-        label: 'span: /'
-        type: string
       - name: field_0023
         label: 'English: Get in touch'
         type: string
@@ -1732,13 +1698,10 @@ content:
         label: 'English: Questions, feedback, or a booking enquiry? Send us a message using the form below,'
         type: text
       - name: field_0031
-        label: 'h3: Wiesloch'
+        label: 'Heading: Wiesloch'
         type: string
       - name: field_0032
-        label: 'span: Röhrgasse 1, 69168 Wiesloch'
-        type: string
-      - name: field_0033
-        label: 'a: 📍'
+        label: 'Text: Röhrgasse 1, 69168 Wiesloch'
         type: string
       - name: field_0034
         label: 'German: Karte'
@@ -1759,13 +1722,10 @@ content:
         label: 'English: Tue–Sun 11:30–14:30 & 17:30–21:30 · Mon closed'
         type: string
       - name: field_0043
-        label: 'h3: Heidelberg'
+        label: 'Heading: Heidelberg'
         type: string
       - name: field_0044
-        label: 'span: Schwetzinger Str. 29, 69124 Heidelberg'
-        type: string
-      - name: field_0052
-        label: 'span: ·'
+        label: 'Text: Schwetzinger Str. 29, 69124 Heidelberg'
         type: string
       - name: field_0053
         label: 'Image alt text: 1'
@@ -1783,10 +1743,10 @@ content:
         label: 'English: Mon–Fri 11:30–15:00 & 17:30–22:30 · Sat–Sun 12:30–22:00 continuous'
         type: string
       - name: field_0060
-        label: 'h3: Karlsruhe'
+        label: 'Heading: Karlsruhe'
         type: string
       - name: field_0061
-        label: 'span: Insterburger Str. 16A, 76139 Karlsruhe'
+        label: 'Text: Insterburger Str. 16A, 76139 Karlsruhe'
         type: string
       - name: field_0074
         label: 'German: Mo–Fr 11:30–15:00 & 17:30–22:00 Uhr · Sa–So 12:30–16:00 & 17:30–22:00 Uhr'
@@ -1795,10 +1755,10 @@ content:
         label: 'English: Mon–Fri 11:30–15:00 & 17:30–22:00 · Sat–Sun 12:30–16:00 & 17:30–22:00'
         type: string
       - name: field_0077
-        label: 'h3: Stuttgart'
+        label: 'Heading: Stuttgart'
         type: string
       - name: field_0078
-        label: 'span: Gablenberger Hauptstraße 45, 70186 Stuttgart'
+        label: 'Text: Gablenberger Hauptstraße 45, 70186 Stuttgart'
         type: string
       - name: field_0091
         label: 'German: Di–Fr 11:30–15:00 & 17:30–22:00 Uhr · Sa–So 12:30–16:00 & 17:30–22:00 Uhr · Mo Ruh'
@@ -1825,7 +1785,7 @@ content:
         label: 'English: Whether it''s a reservation, catering, a celebration in the party hall or simply so'
         type: text
       - name: field_0103
-        label: 'label: Firma / Company'
+        label: 'Text: Firma / Company'
         type: string
       - name: field_0104
         label: 'German: Standort (optional)'
@@ -1841,9 +1801,6 @@ content:
         type: string
       - name: field_0113
         label: 'German: Name'
-        type: string
-      - name: field_0116
-        label: 'span: *'
         type: string
       - name: field_0117
         label: 'German: Telefon'
@@ -1915,7 +1872,7 @@ content:
         label: 'German: Service'
         type: string
       - name: field_0009
-        label: 'h1: Lieferservice'
+        label: 'Heading: Lieferservice'
         type: string
       - name: field_0010
         label: 'German: Ihre Lieblingsgerichte nach Hause'
@@ -1928,9 +1885,6 @@ content:
         type: string
       - name: field_0014
         label: 'English: Home'
-        type: string
-      - name: field_0016
-        label: 'span: /'
         type: string
       - name: field_0017
         label: 'German: Services'
@@ -1996,16 +1950,16 @@ content:
         label: 'English: Order online from your location'
         type: string
       - name: field_0054
-        label: 'a: Wiesloch'
+        label: 'Text: Wiesloch'
         type: string
       - name: field_0055
-        label: 'a: Heidelberg'
+        label: 'Text: Heidelberg'
         type: string
       - name: field_0056
-        label: 'a: Karlsruhe'
+        label: 'Text: Karlsruhe'
         type: string
       - name: field_0057
-        label: 'a: Stuttgart'
+        label: 'Text: Stuttgart'
         type: string
       - name: field_0058
         label: 'German: Eindrücke'
@@ -2059,7 +2013,7 @@ content:
         label: 'English: Questions about delivery or larger orders? Send us a message.'
         type: string
       - name: field_0091
-        label: 'label: Firma / Company'
+        label: 'Text: Firma / Company'
         type: string
       - name: field_0092
         label: 'German: Standort (optional)'
@@ -2075,9 +2029,6 @@ content:
         type: string
       - name: field_0102
         label: 'German: Name'
-        type: string
-      - name: field_0105
-        label: 'span: *'
         type: string
       - name: field_0106
         label: 'German: Telefon'
@@ -2151,9 +2102,6 @@ content:
       - name: field_0016
         label: 'English: Home'
         type: string
-      - name: field_0018
-        label: 'span: /'
-        type: string
       - name: field_0019
         label: 'German: Services'
         type: string
@@ -2173,16 +2121,16 @@ content:
         label: 'English: The quickest and easiest way to order is online. Just choose your location below:'
         type: string
       - name: field_0035
-        label: 'a: Wiesloch'
+        label: 'Text: Wiesloch'
         type: string
       - name: field_0036
-        label: 'a: Heidelberg'
+        label: 'Text: Heidelberg'
         type: string
       - name: field_0037
-        label: 'a: Karlsruhe'
+        label: 'Text: Karlsruhe'
         type: string
       - name: field_0038
-        label: 'a: Stuttgart'
+        label: 'Text: Stuttgart'
         type: string
       - name: field_0042
         label: 'German: Online-Bestellung'
@@ -2289,9 +2237,6 @@ content:
       - name: field_0016
         label: 'English: Home'
         type: string
-      - name: field_0018
-        label: 'span: /'
-        type: string
       - name: field_0022
         label: 'German: Diese Speisekarte gilt für Heidelberg, Karlsruhe und Stuttgart. Für Wiesloch finde'
         type: text
@@ -2309,18 +2254,6 @@ content:
         type: string
       - name: field_0029
         label: 'English: for the current dishes and prices.'
-        type: string
-      - name: field_0031
-        label: 'button: ‹'
-        type: string
-      - name: field_0032
-        label: 'span: 1'
-        type: string
-      - name: field_0034
-        label: 'span: 26'
-        type: string
-      - name: field_0035
-        label: 'button: ›'
         type: string
       - name: field_0036
         label: 'German: Tippen Sie auf die Pfeile zum Blättern'
@@ -2383,16 +2316,16 @@ content:
         label: 'English: Choose your location — you''ll be taken to online booking.'
         type: string
       - name: field_0021
-        label: 'a: Stuttgart'
+        label: 'Text: Stuttgart'
         type: string
       - name: field_0022
-        label: 'a: Karlsruhe'
+        label: 'Text: Karlsruhe'
         type: string
       - name: field_0023
-        label: 'a: Heidelberg'
+        label: 'Text: Heidelberg'
         type: string
       - name: field_0024
-        label: 'a: Wiesloch'
+        label: 'Text: Wiesloch'
         type: string
   - name: buffet_html
     label: Athidhi — Wöchentliches Buffet | Weekly Buffet
@@ -2449,10 +2382,10 @@ content:
         label: 'English: All of India on your plate at lunch.'
         type: string
       - name: field_0017
-        label: 'div: Heidelberg'
+        label: 'Text: Heidelberg'
         type: string
       - name: field_0018
-        label: 'span: €13,90'
+        label: 'Text: €13,90'
         type: string
       - name: field_0019
         label: 'German: Mo–Do'
@@ -2461,7 +2394,7 @@ content:
         label: 'English: Mon–Thu'
         type: string
       - name: field_0022
-        label: 'span: €14,90'
+        label: 'Text: €14,90'
         type: string
       - name: field_0023
         label: 'German: Freitag'
@@ -2494,7 +2427,7 @@ content:
         label: 'English: Starter'
         type: string
       - name: field_0038
-        label: 'li: Papdi Chaat'
+        label: 'Text: Papdi Chaat'
         type: string
       - name: field_0039
         label: 'German: Vegetarisch'
@@ -2503,7 +2436,7 @@ content:
         label: 'English: Vegetarian'
         type: string
       - name: field_0042
-        label: 'li: Dal Makhani, Mix Veg Curry'
+        label: 'Text: Dal Makhani, Mix Veg Curry'
         type: string
       - name: field_0043
         label: 'German: Mit Fleisch'
@@ -2512,7 +2445,7 @@ content:
         label: 'English: Non-veg'
         type: string
       - name: field_0046
-        label: 'li: Chicken Handi, Chicken Masala'
+        label: 'Text: Chicken Handi, Chicken Masala'
         type: string
       - name: field_0047
         label: 'German: Beilagen'
@@ -2530,7 +2463,7 @@ content:
         label: 'German: Dessert'
         type: string
       - name: field_0056
-        label: 'li: Gulab Jamun'
+        label: 'Text: Gulab Jamun'
         type: string
       - name: field_0057
         label: 'German: Dienstag'
@@ -2539,13 +2472,13 @@ content:
         label: 'English: Tuesday'
         type: string
       - name: field_0063
-        label: 'li: Sev Papdi Chaat'
+        label: 'Text: Sev Papdi Chaat'
         type: string
       - name: field_0067
-        label: 'li: Dal Tadka, Aloo Mutter'
+        label: 'Text: Dal Tadka, Aloo Mutter'
         type: string
       - name: field_0071
-        label: 'li: Chicken Do Pyaza, Dahi Chicken'
+        label: 'Text: Chicken Do Pyaza, Dahi Chicken'
         type: string
       - name: field_0075
         label: 'German: Kachumber Salat, Reis, Naan, Raita'
@@ -2554,7 +2487,7 @@ content:
         label: 'English: Kachumber Salad, Rice, Naan, Raita'
         type: string
       - name: field_0081
-        label: 'li: Mango Cream'
+        label: 'Text: Mango Cream'
         type: string
       - name: field_0082
         label: 'German: Mittwoch'
@@ -2563,10 +2496,10 @@ content:
         label: 'English: Wednesday'
         type: string
       - name: field_0092
-        label: 'li: Punjabi Dal Tadka, Haryali Mix Veg'
+        label: 'Text: Punjabi Dal Tadka, Haryali Mix Veg'
         type: string
       - name: field_0096
-        label: 'li: Chicken Bhuna Masala, Chicken Awadhi'
+        label: 'Text: Chicken Bhuna Masala, Chicken Awadhi'
         type: string
       - name: field_0100
         label: 'German: Butter Naan, Reis, Raita, Salat'
@@ -2575,7 +2508,7 @@ content:
         label: 'English: Butter Naan, Rice, Raita, Salad'
         type: string
       - name: field_0106
-        label: 'li: Mango Kheer'
+        label: 'Text: Mango Kheer'
         type: string
       - name: field_0107
         label: 'German: Donnerstag'
@@ -2584,13 +2517,13 @@ content:
         label: 'English: Thursday'
         type: string
       - name: field_0113
-        label: 'li: Veg Soup'
+        label: 'Text: Veg Soup'
         type: string
       - name: field_0117
-        label: 'li: Veg Hyderabadi, Dal Salsa'
+        label: 'Text: Veg Hyderabadi, Dal Salsa'
         type: string
       - name: field_0121
-        label: 'li: Peshawari Chicken, Chicken Lahori'
+        label: 'Text: Peshawari Chicken, Chicken Lahori'
         type: string
       - name: field_0125
         label: 'German: Garten-Salat, Reis, Naan, Raita'
@@ -2599,13 +2532,13 @@ content:
         label: 'English: Garden Salad, Rice, Naan, Raita'
         type: string
       - name: field_0138
-        label: 'li: Pani Puri'
+        label: 'Text: Pani Puri'
         type: string
       - name: field_0142
-        label: 'li: Rajma Aloo Masala, Dal Pappu'
+        label: 'Text: Rajma Aloo Masala, Dal Pappu'
         type: string
       - name: field_0146
-        label: 'li: Ghee Roast Chicken, Kerala Fish Curry'
+        label: 'Text: Ghee Roast Chicken, Kerala Fish Curry'
         type: string
       - name: field_0150
         label: 'German: Moong Dal Kuchumber Salat, Reis, Naan, Raita'
@@ -2614,7 +2547,7 @@ content:
         label: 'English: Moong Dal Kuchumber Salad, Rice, Naan, Raita'
         type: string
       - name: field_0156
-        label: 'li: Gajar Ka Halwa'
+        label: 'Text: Gajar Ka Halwa'
         type: string
       - name: field_0157
         label: 'German: Die Gerichte richten sich nach der Verfügbarkeit und können abweichen. An manchen '
@@ -2665,13 +2598,13 @@ content:
         label: 'English: Stories, recipes and news from the world of Athidhi.'
         type: string
       - name: field_0014
-        label: 'span: 23. Juni 2026'
+        label: 'Text: 23. Juni 2026'
         type: string
       - name: field_0015
-        label: 'h3: Indisches Restaurant Stuttgart: Eine aromatische Reise durch die Welt der indische'
+        label: 'Heading: Indisches Restaurant Stuttgart: Eine aromatische Reise durch die Welt der indische'
         type: string
       - name: field_0016
-        label: 'p: Entdecken Sie die faszinierende Welt der indischen Küche in Stuttgart und genießen'
+        label: 'Text: Entdecken Sie die faszinierende Welt der indischen Küche in Stuttgart und genießen'
         type: text
       - name: field_0017
         label: 'German: Weiterlesen →'
@@ -2680,334 +2613,334 @@ content:
         label: 'English: Read more →'
         type: string
       - name: field_0020
-        label: 'span: May 22, 2026'
+        label: 'Text: May 22, 2026'
         type: string
       - name: field_0021
-        label: 'h3: Indian Restaurant Karlsruhe: Discover Authentic Indian Flavors in the Heart of the'
+        label: 'Heading: Indian Restaurant Karlsruhe: Discover Authentic Indian Flavors in the Heart of the'
         type: string
       - name: field_0022
-        label: 'p: Discover authentic Indian flavors in Karlsruhe and enjoy traditional Indian cuisin'
+        label: 'Text: Discover authentic Indian flavors in Karlsruhe and enjoy traditional Indian cuisin'
         type: text
       - name: field_0026
-        label: 'span: Apr 24, 2026'
+        label: 'Text: Apr 24, 2026'
         type: string
       - name: field_0027
-        label: 'h3: Best Indian Restaurant Stuttgart: Discover Authentic Indian Flavors in the Heart o'
+        label: 'Heading: Best Indian Restaurant Stuttgart: Discover Authentic Indian Flavors in the Heart o'
         type: string
       - name: field_0028
-        label: 'p: Looking for the best Indian restaurant in Stuttgart? Explore authentic Indian cuis'
+        label: 'Text: Looking for the best Indian restaurant in Stuttgart? Explore authentic Indian cuis'
         type: text
       - name: field_0032
-        label: 'span: Mar 27, 2026'
+        label: 'Text: Mar 27, 2026'
         type: string
       - name: field_0033
-        label: 'h3: Dosa: A Delicious South Indian Delight and Where to Find It in Germany'
+        label: 'Heading: Dosa: A Delicious South Indian Delight and Where to Find It in Germany'
         type: string
       - name: field_0038
-        label: 'span: Mar 25, 2026'
+        label: 'Text: Mar 25, 2026'
         type: string
       - name: field_0039
-        label: 'h3: The Irresistible World of Biryanis: A Journey Through Flavor and Aroma'
+        label: 'Heading: The Irresistible World of Biryanis: A Journey Through Flavor and Aroma'
         type: string
       - name: field_0040
-        label: 'p: Few dishes capture the heart and heritage of Indian cuisine quite like biryani. It'
+        label: 'Text: Few dishes capture the heart and heritage of Indian cuisine quite like biryani. It'
         type: text
       - name: field_0044
-        label: 'span: Nov 7, 2025'
+        label: 'Text: Nov 7, 2025'
         type: string
       - name: field_0045
-        label: 'h3: Finding the Best Restaurant Near Me: Discover Authentic Indian Cuisine with Athidh'
+        label: 'Heading: Finding the Best Restaurant Near Me: Discover Authentic Indian Cuisine with Athidh'
         type: string
       - name: field_0046
-        label: 'p: In today’s fast-paced world, the phrase “restaurant near me” has become a common s'
+        label: 'Text: In today’s fast-paced world, the phrase “restaurant near me” has become a common s'
         type: text
       - name: field_0050
-        label: 'span: 14. Okt. 2025'
+        label: 'Text: 14. Okt. 2025'
         type: string
       - name: field_0051
-        label: 'h3: Indisches Restaurant Stuttgart – Authentischer Genuss bei Athidhi'
+        label: 'Heading: Indisches Restaurant Stuttgart – Authentischer Genuss bei Athidhi'
         type: string
       - name: field_0052
-        label: 'p: Wer auf der Suche nach einem besonderen kulinarischen Erlebnis ist, sollte einen B'
+        label: 'Text: Wer auf der Suche nach einem besonderen kulinarischen Erlebnis ist, sollte einen B'
         type: text
       - name: field_0056
-        label: 'span: 9. Sep. 2025'
+        label: 'Text: 9. Sep. 2025'
         type: string
       - name: field_0057
-        label: 'h3: Entdecken Sie authentische Aromen im besten Indischen Restaurant in Stuttgart'
+        label: 'Heading: Entdecken Sie authentische Aromen im besten Indischen Restaurant in Stuttgart'
         type: string
       - name: field_0058
-        label: 'p: Indisches Essen hat weltweit Millionen von Menschen begeistert – mit seinen intens'
+        label: 'Text: Indisches Essen hat weltweit Millionen von Menschen begeistert – mit seinen intens'
         type: text
       - name: field_0062
-        label: 'span: Sep 4, 2025'
+        label: 'Text: Sep 4, 2025'
         type: string
       - name: field_0063
-        label: 'h3: Discover the Flavors of Indian Food in Stuttgart with a Delightful Lunch Menu'
+        label: 'Heading: Discover the Flavors of Indian Food in Stuttgart with a Delightful Lunch Menu'
         type: string
       - name: field_0064
-        label: 'p: Indian cuisine is loved across the globe for its bold spices, rich flavors, and di'
+        label: 'Text: Indian cuisine is loved across the globe for its bold spices, rich flavors, and di'
         type: text
       - name: field_0068
-        label: 'span: Jul 15, 2025'
+        label: 'Text: Jul 15, 2025'
         type: string
       - name: field_0069
-        label: 'h3: Experience the Zaika of India with Flavorful Biryanis, Tandoor Dishes & Punjabi Th'
+        label: 'Heading: Experience the Zaika of India with Flavorful Biryanis, Tandoor Dishes & Punjabi Th'
         type: string
       - name: field_0070
-        label: 'p: India is a land of spices, stories, and unforgettable flavors—and at Athidhi, we b'
+        label: 'Text: India is a land of spices, stories, and unforgettable flavors—and at Athidhi, we b'
         type: text
       - name: field_0074
-        label: 'span: Jul 14, 2025'
+        label: 'Text: Jul 14, 2025'
         type: string
       - name: field_0075
-        label: 'h3: Athidhi – The Indian Restaurant Near You Serving Authentic Indian & South Indian C'
+        label: 'Heading: Athidhi – The Indian Restaurant Near You Serving Authentic Indian & South Indian C'
         type: string
       - name: field_0076
-        label: 'p: If you’ve ever found yourself searching for an Indian restaurant near me or cravin'
+        label: 'Text: If you’ve ever found yourself searching for an Indian restaurant near me or cravin'
         type: text
       - name: field_0080
-        label: 'span: Jul 4, 2025'
+        label: 'Text: Jul 4, 2025'
         type: string
       - name: field_0081
-        label: 'h3: Experience the Zaika of India with Flavorful Biryanis, Tandoor Dishes & Indian Tha'
+        label: 'Heading: Experience the Zaika of India with Flavorful Biryanis, Tandoor Dishes & Indian Tha'
         type: string
       - name: field_0086
-        label: 'span: Jun 13, 2025'
+        label: 'Text: Jun 13, 2025'
         type: string
       - name: field_0087
-        label: 'h3: Your Go-To Indian Restaurant Near You for Authentic Flavors'
+        label: 'Heading: Your Go-To Indian Restaurant Near You for Authentic Flavors'
         type: string
       - name: field_0088
-        label: 'p: Are you craving flavorful curries, sizzling tandoori dishes, or fresh naan straigh'
+        label: 'Text: Are you craving flavorful curries, sizzling tandoori dishes, or fresh naan straigh'
         type: text
       - name: field_0092
-        label: 'span: Jun 6, 2025'
+        label: 'Text: Jun 6, 2025'
         type: string
       - name: field_0093
-        label: 'h3: Mango Lassi – A Delicious Indian Drink with Incredible Benefits'
+        label: 'Heading: Mango Lassi – A Delicious Indian Drink with Incredible Benefits'
         type: string
       - name: field_0094
-        label: 'p: At Athidhi, we’re proud to serve more than just flavorful curries and tandoori dis'
+        label: 'Text: At Athidhi, we’re proud to serve more than just flavorful curries and tandoori dis'
         type: text
       - name: field_0098
-        label: 'span: 2. Juni 2025'
+        label: 'Text: 2. Juni 2025'
         type: string
       - name: field_0099
-        label: 'h3: Athidhi Karlsruhe – Authentisches Indisches Restaurant im Herzen von Karlsruhe (KA'
+        label: 'Heading: Athidhi Karlsruhe – Authentisches Indisches Restaurant im Herzen von Karlsruhe (KA'
         type: string
       - name: field_0100
-        label: 'p: Wenn Sie auf der Suche nach einem authentischen indischen Restaurant in Karlsruhe '
+        label: 'Text: Wenn Sie auf der Suche nach einem authentischen indischen Restaurant in Karlsruhe '
         type: text
       - name: field_0104
-        label: 'span: May 8, 2025'
+        label: 'Text: May 8, 2025'
         type: string
       - name: field_0105
-        label: 'h3: Start Your Day Right with Indian Breakfast at Athidhi'
+        label: 'Heading: Start Your Day Right with Indian Breakfast at Athidhi'
         type: string
       - name: field_0106
-        label: 'p: If you’ve been searching for “breakfast near me” and want something more than the '
+        label: 'Text: If you’ve been searching for “breakfast near me” and want something more than the '
         type: text
       - name: field_0110
-        label: 'span: May 5, 2025'
+        label: 'Text: May 5, 2025'
         type: string
       - name: field_0111
-        label: 'h3: Taste the Tradition: Why Athidhi is the Go-To Indian Restaurant for Authentic Flav'
+        label: 'Heading: Taste the Tradition: Why Athidhi is the Go-To Indian Restaurant for Authentic Flav'
         type: string
       - name: field_0112
-        label: 'p: When it comes to indulging in rich, flavorful Indian cuisine, Athidhi stands out a'
+        label: 'Text: When it comes to indulging in rich, flavorful Indian cuisine, Athidhi stands out a'
         type: text
       - name: field_0116
-        label: 'span: 16. Apr. 2025'
+        label: 'Text: 16. Apr. 2025'
         type: string
       - name: field_0117
-        label: 'h3: Athidhi – Ihr Indisches Restaurant in Karlsruhe für Authentische Küche und Herzlic'
+        label: 'Heading: Athidhi – Ihr Indisches Restaurant in Karlsruhe für Authentische Küche und Herzlic'
         type: string
       - name: field_0118
-        label: 'p: Sie suchen nach einem indischen Restaurant in Karlsruhe, das nicht nur mit Geschma'
+        label: 'Text: Sie suchen nach einem indischen Restaurant in Karlsruhe, das nicht nur mit Geschma'
         type: text
       - name: field_0122
-        label: 'span: Mar 7, 2025'
+        label: 'Text: Mar 7, 2025'
         type: string
       - name: field_0123
-        label: 'h3: The Best Indian Restaurant Near You for Authentic Flavors'
+        label: 'Heading: The Best Indian Restaurant Near You for Authentic Flavors'
         type: string
       - name: field_0124
-        label: 'p: Are you searching for an Indian restaurant near me that serves authentic and flavo'
+        label: 'Text: Are you searching for an Indian restaurant near me that serves authentic and flavo'
         type: text
       - name: field_0128
-        label: 'span: 8. Aug. 2024'
+        label: 'Text: 8. Aug. 2024'
         type: string
       - name: field_0129
-        label: 'h3: Authentische Indische Küche im Herzen von Karlsruhe bei Athidhi'
+        label: 'Heading: Authentische Indische Küche im Herzen von Karlsruhe bei Athidhi'
         type: string
       - name: field_0130
-        label: 'p: Wenn Sie auf der Suche nach einem einzigartigen kulinarischen Erlebnis sind, das d'
+        label: 'Text: Wenn Sie auf der Suche nach einem einzigartigen kulinarischen Erlebnis sind, das d'
         type: text
       - name: field_0134
-        label: 'span: Aug 8, 2024'
+        label: 'Text: Aug 8, 2024'
         type: string
       - name: field_0135
-        label: 'h3: Discover Authentic Indian Flavors at Athidhi: Karlsruhe’s Premier Indian Restauran'
+        label: 'Heading: Discover Authentic Indian Flavors at Athidhi: Karlsruhe’s Premier Indian Restauran'
         type: string
       - name: field_0136
-        label: 'p: If you’re in Karlsruhe and craving a culinary journey to India, look no further th'
+        label: 'Text: If you’re in Karlsruhe and craving a culinary journey to India, look no further th'
         type: text
       - name: field_0140
-        label: 'span: Jul 4, 2024'
+        label: 'Text: Jul 4, 2024'
         type: string
       - name: field_0141
-        label: 'h3: Savor the Essence of India in Heidelberg: A Culinary Journey with Athidhi'
+        label: 'Heading: Savor the Essence of India in Heidelberg: A Culinary Journey with Athidhi'
         type: string
       - name: field_0142
-        label: 'p: Nestled in the heart of Heidelberg, Germany, Athidhi stands as a beacon of authent'
+        label: 'Text: Nestled in the heart of Heidelberg, Germany, Athidhi stands as a beacon of authent'
         type: text
       - name: field_0146
-        label: 'span: 22. Dez. 2023'
+        label: 'Text: 22. Dez. 2023'
         type: string
       - name: field_0147
-        label: 'h3: Athidhis indisches Mittagsbuffet in Heidelberg'
+        label: 'Heading: Athidhis indisches Mittagsbuffet in Heidelberg'
         type: string
       - name: field_0148
-        label: 'p: Im Herzen Heidelbergs ist das Athidhi eine kulinarische Oase und bietet einen lebe'
+        label: 'Text: Im Herzen Heidelbergs ist das Athidhi eine kulinarische Oase und bietet einen lebe'
         type: text
       - name: field_0152
-        label: 'span: Dec 22, 2023'
+        label: 'Text: Dec 22, 2023'
         type: string
       - name: field_0153
-        label: 'h3: Athidhi’s Indian Lunch Buffet in Heidelberg'
+        label: 'Heading: Athidhi’s Indian Lunch Buffet in Heidelberg'
         type: string
       - name: field_0154
-        label: 'p: In the heart of Heidelberg, Athidhi stands as a culinary oasis, offering a vibrant'
+        label: 'Text: In the heart of Heidelberg, Athidhi stands as a culinary oasis, offering a vibrant'
         type: text
       - name: field_0158
-        label: 'span: Nov 2, 2023'
+        label: 'Text: Nov 2, 2023'
         type: string
       - name: field_0159
-        label: 'h3: Savoring Authentic Indian Flavors at Athidhi’s Indian Restaurant in Heidelberg, Ge'
+        label: 'Heading: Savoring Authentic Indian Flavors at Athidhi’s Indian Restaurant in Heidelberg, Ge'
         type: string
       - name: field_0160
-        label: 'p: In the heart of Heidelberg, Germany, a culinary gem awaits those in search of a de'
+        label: 'Text: In the heart of Heidelberg, Germany, a culinary gem awaits those in search of a de'
         type: text
       - name: field_0164
-        label: 'span: Oct 27, 2023'
+        label: 'Text: Oct 27, 2023'
         type: string
       - name: field_0165
-        label: 'h3: Athidhi: The Best Indian Restaurant in Heidelberg, Germany'
+        label: 'Heading: Athidhi: The Best Indian Restaurant in Heidelberg, Germany'
         type: string
       - name: field_0166
-        label: 'p: When it comes to dining out in Heidelberg, Germany, you are spoiled for choice. Th'
+        label: 'Text: When it comes to dining out in Heidelberg, Germany, you are spoiled for choice. Th'
         type: text
       - name: field_0170
-        label: 'span: Sep 28, 2023'
+        label: 'Text: Sep 28, 2023'
         type: string
       - name: field_0171
-        label: 'h3: Athidhi: Your Pet-Friendly Restaurant in Heidelberg'
+        label: 'Heading: Athidhi: Your Pet-Friendly Restaurant in Heidelberg'
         type: string
       - name: field_0172
-        label: 'p: Are you tired of leaving your furry friend behind when you head out for a deliciou'
+        label: 'Text: Are you tired of leaving your furry friend behind when you head out for a deliciou'
         type: text
       - name: field_0176
-        label: 'span: Oct 17, 2022'
+        label: 'Text: Oct 17, 2022'
         type: string
       - name: field_0177
-        label: 'h3: Why does  Food Delivery service play an important role in our daily lives?'
+        label: 'Heading: Why does  Food Delivery service play an important role in our daily lives?'
         type: string
       - name: field_0178
-        label: 'p: There are times when you don’t like cooking at home. Maybe you’re sick of why you '
+        label: 'Text: There are times when you don’t like cooking at home. Maybe you’re sick of why you '
         type: text
       - name: field_0182
-        label: 'span: 17. Okt. 2022'
+        label: 'Text: 17. Okt. 2022'
         type: string
       - name: field_0183
-        label: 'h3: Warum spielt der Lieferservice für Lebensmittel eine wichtige Rolle in unserem täg'
+        label: 'Heading: Warum spielt der Lieferservice für Lebensmittel eine wichtige Rolle in unserem täg'
         type: string
       - name: field_0184
-        label: 'p: Es gibt Zeiten, in denen Sie nicht gerne zu Hause kochen. Vielleicht bist du krank'
+        label: 'Text: Es gibt Zeiten, in denen Sie nicht gerne zu Hause kochen. Vielleicht bist du krank'
         type: text
       - name: field_0189
-        label: 'h3: How do I order Indian food online?'
+        label: 'Heading: How do I order Indian food online?'
         type: string
       - name: field_0190
-        label: 'p: In this technology world, everything changes with just one click, you can have eve'
+        label: 'Text: In this technology world, everything changes with just one click, you can have eve'
         type: text
       - name: field_0195
-        label: 'h3: Discover the authentic taste of India'
+        label: 'Heading: Discover the authentic taste of India'
         type: string
       - name: field_0196
-        label: 'p: The food in India is among the tastiest and most refined in the world. The culinar'
+        label: 'Text: The food in India is among the tastiest and most refined in the world. The culinar'
         type: text
       - name: field_0201
-        label: 'h3: The delicious Indian chaat and its variations'
+        label: 'Heading: The delicious Indian chaat and its variations'
         type: string
       - name: field_0202
-        label: 'p: Indian chaat and its variations of sweet, savory and spicy street food are loved b'
+        label: 'Text: Indian chaat and its variations of sweet, savory and spicy street food are loved b'
         type: text
       - name: field_0207
-        label: 'h3: Wie bestelle ich indisches Essen online?'
+        label: 'Heading: Wie bestelle ich indisches Essen online?'
         type: string
       - name: field_0208
-        label: 'p: In dieser Technologiewelt ändert sich alles mit nur einem Klick, Sie können alles '
+        label: 'Text: In dieser Technologiewelt ändert sich alles mit nur einem Klick, Sie können alles '
         type: text
       - name: field_0213
-        label: 'h3: Entdecken Sie den authentischen Geschmack Indiens'
+        label: 'Heading: Entdecken Sie den authentischen Geschmack Indiens'
         type: string
       - name: field_0214
-        label: 'p: Das Essen in Indien gehört zu den schmackhaftesten und raffiniertesten der Welt. D'
+        label: 'Text: Das Essen in Indien gehört zu den schmackhaftesten und raffiniertesten der Welt. D'
         type: text
       - name: field_0219
-        label: 'h3: Der köstliche indische Chaat und seine Variationen'
+        label: 'Heading: Der köstliche indische Chaat und seine Variationen'
         type: string
       - name: field_0220
-        label: 'p: Indischer Chaat und seine Variationen von süßem, würzigem und würzigem Street Food'
+        label: 'Text: Indischer Chaat und seine Variationen von süßem, würzigem und würzigem Street Food'
         type: text
       - name: field_0224
-        label: 'span: 14. Juli 2022'
+        label: 'Text: 14. Juli 2022'
         type: string
       - name: field_0225
-        label: 'h3: Erstaunliche gesundheitliche Vorteile des Trinkens von Mango Lassi'
+        label: 'Heading: Erstaunliche gesundheitliche Vorteile des Trinkens von Mango Lassi'
         type: string
       - name: field_0226
-        label: 'p: Lassi ist eines der berühmten Getränke Indiens, das von Millionen von Menschen gel'
+        label: 'Text: Lassi ist eines der berühmten Getränke Indiens, das von Millionen von Menschen gel'
         type: text
       - name: field_0231
-        label: 'h3: Was ist einzigartig an der indischen Küche in der Region Heidelberg?'
+        label: 'Heading: Was ist einzigartig an der indischen Küche in der Region Heidelberg?'
         type: string
       - name: field_0232
-        label: 'p: Indische Speisen und Rezepte gelten als eine der beliebtesten und schmackhaftesten'
+        label: 'Text: Indische Speisen und Rezepte gelten als eine der beliebtesten und schmackhaftesten'
         type: text
       - name: field_0236
-        label: 'span: Jul 14, 2022'
+        label: 'Text: Jul 14, 2022'
         type: string
       - name: field_0237
-        label: 'h3: Amazing Health Benefits of Drinking Mango Lassi'
+        label: 'Heading: Amazing Health Benefits of Drinking Mango Lassi'
         type: string
       - name: field_0238
-        label: 'p: Lassi is one of the famous drinks of India loved by millions of people. Due to its'
+        label: 'Text: Lassi is one of the famous drinks of India loved by millions of people. Due to its'
         type: text
       - name: field_0243
-        label: 'h3: What is unique about Indian cuisine in the Heidelberg region?'
+        label: 'Heading: What is unique about Indian cuisine in the Heidelberg region?'
         type: string
       - name: field_0244
-        label: 'p: Indian dishes and recipes are considered to be one of the most popular and tasties'
+        label: 'Text: Indian dishes and recipes are considered to be one of the most popular and tasties'
         type: text
       - name: field_0248
-        label: 'span: 12. Juli 2022'
+        label: 'Text: 12. Juli 2022'
         type: string
       - name: field_0249
-        label: 'h3: Die wichtigsten Gründe, warum indische Gewürze gut im Geschmack sind'
+        label: 'Heading: Die wichtigsten Gründe, warum indische Gewürze gut im Geschmack sind'
         type: string
       - name: field_0250
-        label: 'p: Wenn Sie indisches Essen probiert haben, müssen Sie bemerkt haben, dass die meiste'
+        label: 'Text: Wenn Sie indisches Essen probiert haben, müssen Sie bemerkt haben, dass die meiste'
         type: text
       - name: field_0254
-        label: 'span: Jul 11, 2022'
+        label: 'Text: Jul 11, 2022'
         type: string
       - name: field_0255
-        label: 'h3: Top reasons why Indian spices are good in taste'
+        label: 'Heading: Top reasons why Indian spices are good in taste'
         type: string
       - name: field_0256
-        label: 'p: If you have tasted Indian food, you must have noticed that most of the recipes are'
+        label: 'Text: If you have tasted Indian food, you must have noticed that most of the recipes are'
         type: text
 - name: locations
   label: Restaurant locations
@@ -3047,10 +2980,10 @@ content:
         label: 'English: Location'
         type: string
       - name: field_0009
-        label: 'h1: Athidhi Heidelberg'
+        label: 'Heading: Athidhi Heidelberg'
         type: string
       - name: field_0010
-        label: 'div: Schwetzinger Str. 29, 69124 Heidelberg'
+        label: 'Text: Schwetzinger Str. 29, 69124 Heidelberg'
         type: string
       - name: field_0011
         label: 'German: Startseite'
@@ -3058,14 +2991,11 @@ content:
       - name: field_0012
         label: 'English: Home'
         type: string
-      - name: field_0014
-        label: 'span: /'
-        type: string
       - name: field_0015
         label: 'German: Restaurants'
         type: string
       - name: field_0019
-        label: 'span: Heidelberg'
+        label: 'Text: Heidelberg'
         type: string
       - name: field_0020
         label: 'German: Willkommen'
@@ -3102,9 +3032,6 @@ content:
         type: string
       - name: field_0040
         label: 'English: Call'
-        type: string
-      - name: field_0042
-        label: 'span: ·'
         type: string
       - name: field_0043
         label: 'Image alt text: 1'
@@ -3205,15 +3132,6 @@ content:
       - name: field_0099
         label: 'English: Flip through our menu'
         type: string
-      - name: field_0101
-        label: 'button: ‹'
-        type: string
-      - name: field_0104
-        label: 'span: 26'
-        type: string
-      - name: field_0105
-        label: 'button: ›'
-        type: string
       - name: field_0106
         label: 'German: Tippen Sie auf die Pfeile zum Blättern'
         type: string
@@ -3254,10 +3172,10 @@ content:
         label: 'English: Location'
         type: string
       - name: field_0009
-        label: 'h1: Athidhi Karlsruhe'
+        label: 'Heading: Athidhi Karlsruhe'
         type: string
       - name: field_0010
-        label: 'div: Insterburger Str. 16A, 76139 Karlsruhe'
+        label: 'Text: Insterburger Str. 16A, 76139 Karlsruhe'
         type: string
       - name: field_0011
         label: 'German: Startseite'
@@ -3265,14 +3183,11 @@ content:
       - name: field_0012
         label: 'English: Home'
         type: string
-      - name: field_0014
-        label: 'span: /'
-        type: string
       - name: field_0015
         label: 'German: Restaurants'
         type: string
       - name: field_0019
-        label: 'span: Karlsruhe'
+        label: 'Text: Karlsruhe'
         type: string
       - name: field_0020
         label: 'German: Willkommen'
@@ -3309,9 +3224,6 @@ content:
         type: string
       - name: field_0040
         label: 'English: Call'
-        type: string
-      - name: field_0042
-        label: 'span: ·'
         type: string
       - name: field_0043
         label: 'Image alt text: 1'
@@ -3412,15 +3324,6 @@ content:
       - name: field_0099
         label: 'English: Flip through our menu'
         type: string
-      - name: field_0101
-        label: 'button: ‹'
-        type: string
-      - name: field_0104
-        label: 'span: 26'
-        type: string
-      - name: field_0105
-        label: 'button: ›'
-        type: string
       - name: field_0106
         label: 'German: Tippen Sie auf die Pfeile zum Blättern'
         type: string
@@ -3452,13 +3355,13 @@ content:
         label: 'English: All dishes are served with basmati rice, and with soup or salad on request. Just t'
         type: text
       - name: field_0121
-        label: 'span: Channa Masala'
+        label: 'Text: Channa Masala'
         type: string
       - name: field_0122
         label: 'sup: H'
         type: string
       - name: field_0123
-        label: 'span: €10,90'
+        label: 'Text: €10,90'
         type: string
       - name: field_0124
         label: 'German: Kichererbsencurry mit Zwiebeln, Ingwer und Knoblauch, verfeinert mit ausgewählten '
@@ -3467,7 +3370,7 @@ content:
         label: 'English: Chickpea curry with onions, ginger and garlic, finished with selected spices.'
         type: string
       - name: field_0127
-        label: 'span: Bagara Baingan'
+        label: 'Text: Bagara Baingan'
         type: string
       - name: field_0128
         label: 'sup: E,J'
@@ -3479,7 +3382,7 @@ content:
         label: 'English: spicy'
         type: string
       - name: field_0132
-        label: 'span: €11,90'
+        label: 'Text: €11,90'
         type: string
       - name: field_0133
         label: 'German: Frittierte Aubergine in einer Soße aus Erdnüssen, Zwiebeln, Tomaten und indischen '
@@ -3488,7 +3391,7 @@ content:
         label: 'English: Fried aubergine in a sauce of peanuts, onions, tomatoes and Indian spices.'
         type: string
       - name: field_0136
-        label: 'span: Matar Paneer'
+        label: 'Text: Matar Paneer'
         type: string
       - name: field_0137
         label: 'sup: G'
@@ -3500,7 +3403,7 @@ content:
         label: 'English: Indian cottage cheese and peas in a rich, spiced tomato-based sauce.'
         type: string
       - name: field_0142
-        label: 'span: Egg Masala'
+        label: 'Text: Egg Masala'
         type: string
       - name: field_0143
         label: 'sup: G,H'
@@ -3512,7 +3415,7 @@ content:
         label: 'English: Hard-boiled eggs in a thick, aromatic sauce.'
         type: string
       - name: field_0148
-        label: 'span: Chicken Sabzi'
+        label: 'Text: Chicken Sabzi'
         type: string
       - name: field_0149
         label: 'sup: G,H,L'
@@ -3524,7 +3427,7 @@ content:
         label: 'English: Tender chicken pieces with mixed vegetables in a hearty, aromatically spiced sauce'
         type: string
       - name: field_0157
-        label: 'span: Chicken Chettinad'
+        label: 'Text: Chicken Chettinad'
         type: string
       - name: field_0158
         label: 'German: sehr scharf'
@@ -3533,7 +3436,7 @@ content:
         label: 'English: very spicy'
         type: string
       - name: field_0161
-        label: 'span: €12,90'
+        label: 'Text: €12,90'
         type: string
       - name: field_0162
         label: 'German: Traditionelles Curry aus Chettinad (Südindien) mit einer für die Region typischen '
@@ -3542,7 +3445,7 @@ content:
         label: 'English: Traditional curry from Chettinad (South India) with the region''s typical spice ble'
         type: string
       - name: field_0165
-        label: 'span: Chicken Korma'
+        label: 'Text: Chicken Korma'
         type: string
       - name: field_0171
         label: 'German: Zartes Hühnerfleisch in einer cremigen Soße aus Cashewnüssen und Kokos.'
@@ -3551,7 +3454,7 @@ content:
         label: 'English: Tender chicken in a creamy cashew and coconut sauce.'
         type: string
       - name: field_0174
-        label: 'span: Tandoori Chicken Salad'
+        label: 'Text: Tandoori Chicken Salad'
         type: string
       - name: field_0177
         label: 'German: Chicken Tikka, Paprika und Salat in einem speziellen Dressing.'
@@ -3560,10 +3463,10 @@ content:
         label: 'English: Chicken tikka, peppers and salad with a special dressing.'
         type: string
       - name: field_0180
-        label: 'span: Lamb Tikka Masala'
+        label: 'Text: Lamb Tikka Masala'
         type: string
       - name: field_0182
-        label: 'span: €13,90'
+        label: 'Text: €13,90'
         type: string
       - name: field_0183
         label: 'German: Zartes Lammfleisch in würziger Tomatensoße.'
@@ -3572,7 +3475,7 @@ content:
         label: 'English: Tender lamb in a spicy tomato sauce.'
         type: string
       - name: field_0186
-        label: 'span: Lamb Korma'
+        label: 'Text: Lamb Korma'
         type: string
       - name: field_0189
         label: 'German: Zartes Lammfleisch in einer cremigen Soße aus Cashewnüssen und Kokos.'
@@ -3773,7 +3676,7 @@ content:
         label: 'English: For two'
         type: string
       - name: field_0298
-        label: 'div: €24,90'
+        label: 'Text: €24,90'
         type: string
       - name: field_0299
         label: 'German: 2 Hauptgerichte'
@@ -3842,7 +3745,7 @@ content:
         label: 'English: New · Netherlands'
         type: string
       - name: field_0009
-        label: 'h1: Het Huis van Athidhi'
+        label: 'Heading: Het Huis van Athidhi'
         type: string
       - name: field_0010
         label: 'German: Neu eröffnet · 18. Juli 2026'
@@ -3855,9 +3758,6 @@ content:
         type: string
       - name: field_0014
         label: 'English: Home'
-        type: string
-      - name: field_0016
-        label: 'span: /'
         type: string
       - name: field_0017
         label: 'German: Standorte'
@@ -3929,10 +3829,10 @@ content:
         label: 'English: Location'
         type: string
       - name: field_0009
-        label: 'h1: Athidhi Stuttgart'
+        label: 'Heading: Athidhi Stuttgart'
         type: string
       - name: field_0010
-        label: 'div: Gablenberger Hauptstraße 45, 70186 Stuttgart'
+        label: 'Text: Gablenberger Hauptstraße 45, 70186 Stuttgart'
         type: string
       - name: field_0011
         label: 'German: Startseite'
@@ -3940,14 +3840,11 @@ content:
       - name: field_0012
         label: 'English: Home'
         type: string
-      - name: field_0014
-        label: 'span: /'
-        type: string
       - name: field_0015
         label: 'German: Restaurants'
         type: string
       - name: field_0019
-        label: 'span: Stuttgart'
+        label: 'Text: Stuttgart'
         type: string
       - name: field_0020
         label: 'German: Willkommen'
@@ -3984,9 +3881,6 @@ content:
         type: string
       - name: field_0040
         label: 'English: Call'
-        type: string
-      - name: field_0042
-        label: 'span: ·'
         type: string
       - name: field_0043
         label: 'Image alt text: 1'
@@ -4087,15 +3981,6 @@ content:
       - name: field_0099
         label: 'English: Flip through our menu'
         type: string
-      - name: field_0101
-        label: 'button: ‹'
-        type: string
-      - name: field_0104
-        label: 'span: 26'
-        type: string
-      - name: field_0105
-        label: 'button: ›'
-        type: string
       - name: field_0106
         label: 'German: Tippen Sie auf die Pfeile zum Blättern'
         type: string
@@ -4127,7 +4012,7 @@ content:
         label: 'English: For one'
         type: string
       - name: field_0121
-        label: 'div: €13,90'
+        label: 'Text: €13,90'
         type: string
       - name: field_0122
         label: 'German: 1 Hauptgericht'
@@ -4166,7 +4051,7 @@ content:
         label: 'English: For two'
         type: string
       - name: field_0140
-        label: 'div: €24,90'
+        label: 'Text: €24,90'
         type: string
       - name: field_0141
         label: 'German: 2 Hauptgerichte'
@@ -4238,10 +4123,10 @@ content:
         label: 'English: Location'
         type: string
       - name: field_0009
-        label: 'h1: Athidhi Wiesloch'
+        label: 'Heading: Athidhi Wiesloch'
         type: string
       - name: field_0010
-        label: 'div: Röhrgasse 1, 69168 Wiesloch'
+        label: 'Text: Röhrgasse 1, 69168 Wiesloch'
         type: string
       - name: field_0011
         label: 'German: Startseite'
@@ -4249,14 +4134,11 @@ content:
       - name: field_0012
         label: 'English: Home'
         type: string
-      - name: field_0014
-        label: 'span: /'
-        type: string
       - name: field_0015
         label: 'German: Restaurants'
         type: string
       - name: field_0019
-        label: 'span: Wiesloch'
+        label: 'Text: Wiesloch'
         type: string
       - name: field_0020
         label: 'German: Willkommen'
@@ -4391,10 +4273,10 @@ content:
         label: 'English: Tuesday'
         type: string
       - name: field_0099
-        label: 'span: Rajma Masala'
+        label: 'Text: Rajma Masala'
         type: string
       - name: field_0100
-        label: 'span: €8,90'
+        label: 'Text: €8,90'
         type: string
       - name: field_0101
         label: 'German: Rote Kidneybohnen, langsam gekocht in einer würzigen Soße aus Zwiebeln, Tomaten un'
@@ -4403,13 +4285,13 @@ content:
         label: 'English: Red kidney beans slowly cooked in a spicy sauce of onions, tomatoes and Indian spi'
         type: string
       - name: field_0104
-        label: 'span: Dal Tadka'
+        label: 'Text: Dal Tadka'
         type: string
       - name: field_0105
         label: 'sup: J'
         type: string
       - name: field_0106
-        label: 'span: €9,90'
+        label: 'Text: €9,90'
         type: string
       - name: field_0107
         label: 'German: Gelbe Linsen mit gerösteten Zwiebeln und Knoblauch.'
@@ -4418,7 +4300,7 @@ content:
         label: 'English: Yellow lentils with roasted onions and garlic.'
         type: string
       - name: field_0110
-        label: 'span: Bhendi Masala'
+        label: 'Text: Bhendi Masala'
         type: string
       - name: field_0113
         label: 'German: Zarte Okra Schoten, pikante Zwiebeln, saftige Tomaten und eine feine Mischung aus '
@@ -4427,7 +4309,7 @@ content:
         label: 'English: Tender okra pods, spicy onions, juicy tomatoes and a delicate blend of Indian spic'
         type: text
       - name: field_0116
-        label: 'span: Chicken Curry'
+        label: 'Text: Chicken Curry'
         type: string
       - name: field_0118
         label: 'German: Ein klassisches Gericht mit zarten Hähnchenstücken, zubereitet in einer würzigen M'
@@ -4436,7 +4318,7 @@ content:
         label: 'English: A classic dish with tender chicken pieces, prepared in a spicy mixture of onions, '
         type: text
       - name: field_0121
-        label: 'span: Chicken Korma'
+        label: 'Text: Chicken Korma'
         type: string
       - name: field_0122
         label: 'sup: G,H,L'
@@ -4448,7 +4330,7 @@ content:
         label: 'English: Tender chicken with a creamy sauce made from cashews and coconut.'
         type: string
       - name: field_0127
-        label: 'span: Chicken Jalfrezi'
+        label: 'Text: Chicken Jalfrezi'
         type: string
       - name: field_0128
         label: 'sup: H,L'
@@ -4460,10 +4342,10 @@ content:
         label: 'English: Tender chicken in a spicy tomato sauce with peppers and onions.'
         type: string
       - name: field_0133
-        label: 'span: Lamb Curry'
+        label: 'Text: Lamb Curry'
         type: string
       - name: field_0135
-        label: 'span: €11,50'
+        label: 'Text: €11,50'
         type: string
       - name: field_0136
         label: 'German: Zarte Lammfleischstücke, gekocht in einer reichhaltigen und aromatischen Currysauc'
@@ -4472,7 +4354,7 @@ content:
         label: 'English: Tender pieces of lamb cooked in a rich and aromatic curry sauce, refined with a bl'
         type: text
       - name: field_0139
-        label: 'span: Lamb Palak'
+        label: 'Text: Lamb Palak'
         type: string
       - name: field_0142
         label: 'German: Zartes Lammfleisch, gekocht in einer reichhaltigen und cremigen Spinatsauce, verfe'
@@ -4481,13 +4363,13 @@ content:
         label: 'English: Tender lamb cooked in a rich and creamy spinach sauce, refined with aromatic spice'
         type: string
       - name: field_0145
-        label: 'span: Chicken Tikka'
+        label: 'Text: Chicken Tikka'
         type: string
       - name: field_0146
         label: 'sup: G,H,L,1'
         type: string
       - name: field_0147
-        label: 'span: €11,90'
+        label: 'Text: €11,90'
         type: string
       - name: field_0148
         label: 'German: Zartes Hühnerfleisch in Joghurt und ausgewählten Gewürzen mariniert und im Tandoor'
@@ -4502,7 +4384,7 @@ content:
         label: 'English: Wednesday'
         type: string
       - name: field_0154
-        label: 'span: Channa Masala'
+        label: 'Text: Channa Masala'
         type: string
       - name: field_0156
         label: 'German: Kichererbsencurry mit Zwiebeln, Ingwer und Knoblauch, verfeinert mit ausgewählten '
@@ -4511,10 +4393,10 @@ content:
         label: 'English: Chickpea curry with onions, ginger and garlic, refined with selected spices.'
         type: string
       - name: field_0159
-        label: 'span: Paneer Tikka'
+        label: 'Text: Paneer Tikka'
         type: string
       - name: field_0160
-        label: 'span: €10,90'
+        label: 'Text: €10,90'
         type: string
       - name: field_0161
         label: 'German: In gewürztem Joghurt marinierte und gegrillte Paneerstücke.'
@@ -4523,7 +4405,7 @@ content:
         label: 'English: Chunks of paneer marinated in spiced yogurt and grilled.'
         type: string
       - name: field_0164
-        label: 'span: Paneer Jalfrezi'
+        label: 'Text: Paneer Jalfrezi'
         type: string
       - name: field_0165
         label: 'sup: G'
@@ -4535,7 +4417,7 @@ content:
         label: 'English: Homemade Indian cheese in a spicy tomato sauce with peppers and onions.'
         type: string
       - name: field_0175
-        label: 'span: Palak Chicken'
+        label: 'Text: Palak Chicken'
         type: string
       - name: field_0178
         label: 'German: Zarte Hähnchenstücke, gekocht in einer reichhaltigen und cremigen Sauce auf Spinat'
@@ -4544,7 +4426,7 @@ content:
         label: 'English: Tender chicken pieces cooked in a rich and creamy spinach-based sauce, enriched wi'
         type: text
       - name: field_0181
-        label: 'span: Chicken Kadai'
+        label: 'Text: Chicken Kadai'
         type: string
       - name: field_0184
         label: 'German: Hühnerfleisch in einer scharfen Soße mit frisch gemahlenen Gewürzen (Sternanis, Ka'
@@ -4553,7 +4435,7 @@ content:
         label: 'English: Chicken in a spicy sauce with freshly ground spices (star anise, cardamom, pepper '
         type: string
       - name: field_0193
-        label: 'span: Lamb Vindaloo'
+        label: 'Text: Lamb Vindaloo'
         type: string
       - name: field_0196
         label: 'German: Zartes Lammfleisch in Vindaloo-Soße.'
@@ -4568,7 +4450,7 @@ content:
         label: 'English: Thursday'
         type: string
       - name: field_0207
-        label: 'span: Vegetable Korma'
+        label: 'Text: Vegetable Korma'
         type: string
       - name: field_0210
         label: 'German: Gemüsecurry mit einer cremigen Soße aus Cashewnüssen und Kokos.'
@@ -4577,7 +4459,7 @@ content:
         label: 'English: Vegetable curry with a creamy sauce made from cashews and coconut.'
         type: string
       - name: field_0213
-        label: 'span: Aloo Palak'
+        label: 'Text: Aloo Palak'
         type: string
       - name: field_0215
         label: 'German: Kartoffeln in cremigem Spinat mit Knoblauch, Ingwer und milden Gewürzen.'
@@ -4586,7 +4468,7 @@ content:
         label: 'English: Potatoes in creamy spinach with garlic, ginger and mild spices.'
         type: string
       - name: field_0229
-        label: 'span: Chicken Tikka Masala'
+        label: 'Text: Chicken Tikka Masala'
         type: string
       - name: field_0246
         label: 'German: Freitag'
@@ -4595,7 +4477,7 @@ content:
         label: 'English: Friday'
         type: string
       - name: field_0260
-        label: 'span: Palak Paneer'
+        label: 'Text: Palak Paneer'
         type: string
       - name: field_0263
         label: 'German: Hausgemachter indischer Käse gekocht mit Spinat und Bockshornklee.'
@@ -4604,7 +4486,7 @@ content:
         label: 'English: Homemade Indian cheese cooked with spinach and fenugreek.'
         type: string
       - name: field_0271
-        label: 'span: Chilli Chicken'
+        label: 'Text: Chilli Chicken'
         type: string
       - name: field_0272
         label: 'sup: L'
@@ -4616,7 +4498,7 @@ content:
         label: 'English: Chicken baked in egg and flour, in a sauce of soy, onions, peppers and hot chilli '
         type: string
       - name: field_0277
-        label: 'span: Butter Chicken'
+        label: 'Text: Butter Chicken'
         type: string
       - name: field_0280
         label: 'German: Hühnerbrust Stückchen aus dem Tandoor Ofen, gekocht in einer cremigen Soße aus Tom'
@@ -4638,9 +4520,6 @@ content:
         type: string
       - name: field_0294
         label: 'English: Cereals containing gluten'
-        type: string
-      - name: field_0296
-        label: 'span: ·'
         type: string
       - name: field_0297
         label: 'b: B'
@@ -4807,10 +4686,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: 16. Apr. 2025'
+        label: 'Text: 16. Apr. 2025'
         type: string
       - name: field_0009
-        label: 'h1: Athidhi – Ihr Indisches Restaurant in Karlsruhe für Authentische Küche und Herzlic'
+        label: 'Heading: Athidhi – Ihr Indisches Restaurant in Karlsruhe für Authentische Küche und Herzlic'
         type: string
   - name: blog_athidhi_the_best_indian_restaurant_heidelberg_germany_html
     label: 'Athidhi: The Best Indian Restaurant in Heidelberg, Germany | Athidhi'
@@ -4850,10 +4729,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Oct 27, 2023'
+        label: 'Text: Oct 27, 2023'
         type: string
       - name: field_0009
-        label: 'h1: Athidhi: The Best Indian Restaurant in Heidelberg, Germany'
+        label: 'Heading: Athidhi: The Best Indian Restaurant in Heidelberg, Germany'
         type: string
   - name: blog_athidhi_the_indian_restaurant_near_you_serving_authentic_indian_south_indian_cuisine_html
     label: Athidhi – The Indian Restaurant Near You Serving Authentic Indian & South Indian Cuisine | Athi
@@ -4893,10 +4772,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Jul 14, 2025'
+        label: 'Text: Jul 14, 2025'
         type: string
       - name: field_0009
-        label: 'h1: Athidhi – The Indian Restaurant Near You Serving Authentic Indian & South Indian C'
+        label: 'Heading: Athidhi – The Indian Restaurant Near You Serving Authentic Indian & South Indian C'
         type: string
   - name: blog_athidhi_your_pet_friendly_restaurant_in_heidelberg_html
     label: 'Athidhi: Your Pet-Friendly Restaurant in Heidelberg | Athidhi'
@@ -4936,10 +4815,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Sep 28, 2023'
+        label: 'Text: Sep 28, 2023'
         type: string
       - name: field_0009
-        label: 'h1: Athidhi: Your Pet-Friendly Restaurant in Heidelberg'
+        label: 'Heading: Athidhi: Your Pet-Friendly Restaurant in Heidelberg'
         type: string
   - name: blog_athidhis_indian_lunch_buffet_in_heidelberg_html
     label: Athidhi’s Indian Lunch Buffet in Heidelberg | Athidhi
@@ -4979,10 +4858,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Dec 22, 2023'
+        label: 'Text: Dec 22, 2023'
         type: string
       - name: field_0009
-        label: 'h1: Athidhi’s Indian Lunch Buffet in Heidelberg'
+        label: 'Heading: Athidhi’s Indian Lunch Buffet in Heidelberg'
         type: string
   - name: blog_athidhis_indisches_mittagsbuffet_in_heidelberg_html
     label: Athidhis indisches Mittagsbuffet in Heidelberg | Athidhi
@@ -5022,10 +4901,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: 22. Dez. 2023'
+        label: 'Text: 22. Dez. 2023'
         type: string
       - name: field_0009
-        label: 'h1: Athidhis indisches Mittagsbuffet in Heidelberg'
+        label: 'Heading: Athidhis indisches Mittagsbuffet in Heidelberg'
         type: string
   - name: blog_authentische_indische_kueche_im_herzen_von_karlsruhe_bei_athidhi_html
     label: Authentische Indische Küche im Herzen von Karlsruhe bei Athidhi | Athidhi
@@ -5065,10 +4944,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: 8. Aug. 2024'
+        label: 'Text: 8. Aug. 2024'
         type: string
       - name: field_0009
-        label: 'h1: Authentische Indische Küche im Herzen von Karlsruhe bei Athidhi'
+        label: 'Heading: Authentische Indische Küche im Herzen von Karlsruhe bei Athidhi'
         type: string
   - name: blog_authentisches_indisches_restaurant_im_herzen_von_karlsruhe_html
     label: Athidhi Karlsruhe – Authentisches Indisches Restaurant im Herzen von Karlsruhe (KA) | Athidhi
@@ -5108,10 +4987,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: 2. Juni 2025'
+        label: 'Text: 2. Juni 2025'
         type: string
       - name: field_0009
-        label: 'h1: Athidhi Karlsruhe – Authentisches Indisches Restaurant im Herzen von Karlsruhe (KA'
+        label: 'Heading: Athidhi Karlsruhe – Authentisches Indisches Restaurant im Herzen von Karlsruhe (KA'
         type: string
   - name: blog_best_indian_restaurant_stuttgart_discover_authentic_indian_flavors_in_the_heart_of_germany_html
     label: 'Best Indian Restaurant Stuttgart: Discover Authentic Indian Flavors in the Heart of Germany | A'
@@ -5151,10 +5030,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Apr 24, 2026'
+        label: 'Text: Apr 24, 2026'
         type: string
       - name: field_0009
-        label: 'h1: Best Indian Restaurant Stuttgart: Discover Authentic Indian Flavors in the Heart o'
+        label: 'Heading: Best Indian Restaurant Stuttgart: Discover Authentic Indian Flavors in the Heart o'
         type: string
   - name: blog_der_koestliche_indische_chaat_und_seine_variationen_html
     label: Der köstliche indische Chaat und seine Variationen | Athidhi
@@ -5194,10 +5073,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: 17. Okt. 2022'
+        label: 'Text: 17. Okt. 2022'
         type: string
       - name: field_0009
-        label: 'h1: Der köstliche indische Chaat und seine Variationen'
+        label: 'Heading: Der köstliche indische Chaat und seine Variationen'
         type: string
   - name: blog_discover_authentic_indian_flavors_at_athidhi_karlsruhes_premier_indian_restaurant_html
     label: 'Discover Authentic Indian Flavors at Athidhi: Karlsruhe’s Premier Indian Restaurant | Athidhi'
@@ -5237,10 +5116,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Aug 8, 2024'
+        label: 'Text: Aug 8, 2024'
         type: string
       - name: field_0009
-        label: 'h1: Discover Authentic Indian Flavors at Athidhi: Karlsruhe’s Premier Indian Restauran'
+        label: 'Heading: Discover Authentic Indian Flavors at Athidhi: Karlsruhe’s Premier Indian Restauran'
         type: string
   - name: blog_discover_the_authentic_taste_of_india_html
     label: Discover the authentic taste of India | Athidhi
@@ -5280,10 +5159,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Oct 17, 2022'
+        label: 'Text: Oct 17, 2022'
         type: string
       - name: field_0009
-        label: 'h1: Discover the authentic taste of India'
+        label: 'Heading: Discover the authentic taste of India'
         type: string
   - name: blog_discover_the_flavors_of_indian_food_in_stuttgart_with_a_delightful_lunch_buffet_html
     label: Discover the Flavors of Indian Food in Stuttgart with a Delightful Lunch Menu | Athidhi
@@ -5323,10 +5202,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Sep 4, 2025'
+        label: 'Text: Sep 4, 2025'
         type: string
       - name: field_0009
-        label: 'h1: Discover the Flavors of Indian Food in Stuttgart with a Delightful Lunch Menu'
+        label: 'Heading: Discover the Flavors of Indian Food in Stuttgart with a Delightful Lunch Menu'
         type: string
   - name: blog_dosa_a_delicious_south_indian_delight_and_where_to_find_it_in_germany_html
     label: 'Dosa: A Delicious South Indian Delight and Where to Find It in Germany | Athidhi'
@@ -5366,10 +5245,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Mar 27, 2026'
+        label: 'Text: Mar 27, 2026'
         type: string
       - name: field_0009
-        label: 'h1: Dosa: A Delicious South Indian Delight and Where to Find It in Germany'
+        label: 'Heading: Dosa: A Delicious South Indian Delight and Where to Find It in Germany'
         type: string
   - name: blog_entdecken_sie_authentische_aromen_im_besten_indischen_restaurant_in_stuttgart_html
     label: Entdecken Sie authentische Aromen im besten Indischen Restaurant in Stuttgart | Athidhi
@@ -5409,10 +5288,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: 9. Sep. 2025'
+        label: 'Text: 9. Sep. 2025'
         type: string
       - name: field_0009
-        label: 'h1: Entdecken Sie authentische Aromen im besten Indischen Restaurant in Stuttgart'
+        label: 'Heading: Entdecken Sie authentische Aromen im besten Indischen Restaurant in Stuttgart'
         type: string
   - name: blog_entdecken_sie_den_authentischen_geschmack_indiens_html
     label: Entdecken Sie den authentischen Geschmack Indiens | Athidhi
@@ -5452,10 +5331,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: 17. Okt. 2022'
+        label: 'Text: 17. Okt. 2022'
         type: string
       - name: field_0009
-        label: 'h1: Entdecken Sie den authentischen Geschmack Indiens'
+        label: 'Heading: Entdecken Sie den authentischen Geschmack Indiens'
         type: string
   - name: blog_erstaunliche_gesundheitliche_vorteile_des_trinkens_von_mango_lassi_html
     label: Erstaunliche gesundheitliche Vorteile des Trinkens von Mango Lassi | Athidhi
@@ -5495,10 +5374,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: 14. Juli 2022'
+        label: 'Text: 14. Juli 2022'
         type: string
       - name: field_0009
-        label: 'h1: Erstaunliche gesundheitliche Vorteile des Trinkens von Mango Lassi'
+        label: 'Heading: Erstaunliche gesundheitliche Vorteile des Trinkens von Mango Lassi'
         type: string
   - name: blog_experience_the_zaika_of_india_with_flavorful_biryanis_tandoor_dishes_indian_thalis_at_athidhi_html
     label: Experience the Zaika of India with Flavorful Biryanis, Tandoor Dishes & Indian Thalis at Athidh
@@ -5538,10 +5417,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Jul 4, 2025'
+        label: 'Text: Jul 4, 2025'
         type: string
       - name: field_0009
-        label: 'h1: Experience the Zaika of India with Flavorful Biryanis, Tandoor Dishes & Indian Tha'
+        label: 'Heading: Experience the Zaika of India with Flavorful Biryanis, Tandoor Dishes & Indian Tha'
         type: string
   - name: blog_experience_the_zaika_of_india_with_flavorful_biryanis_tandoor_dishes_punjabi_thalis_at_athidhi_html
     label: Experience the Zaika of India with Flavorful Biryanis, Tandoor Dishes & Punjabi Thalis at Athid
@@ -5581,10 +5460,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Jul 15, 2025'
+        label: 'Text: Jul 15, 2025'
         type: string
       - name: field_0009
-        label: 'h1: Experience the Zaika of India with Flavorful Biryanis, Tandoor Dishes & Punjabi Th'
+        label: 'Heading: Experience the Zaika of India with Flavorful Biryanis, Tandoor Dishes & Punjabi Th'
         type: string
   - name: blog_finding_the_best_restaurant_near_me_discover_authentic_indian_cuisine_with_athidhi_in_germany_html
     label: 'Finding the Best Restaurant Near Me: Discover Authentic Indian Cuisine with Athidhi in Germany '
@@ -5624,10 +5503,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Nov 7, 2025'
+        label: 'Text: Nov 7, 2025'
         type: string
       - name: field_0009
-        label: 'h1: Finding the Best Restaurant Near Me: Discover Authentic Indian Cuisine with Athidh'
+        label: 'Heading: Finding the Best Restaurant Near Me: Discover Authentic Indian Cuisine with Athidh'
         type: string
   - name: blog_how_do_i_order_indian_food_online_html
     label: How do I order Indian food online? | Athidhi
@@ -5667,10 +5546,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Oct 17, 2022'
+        label: 'Text: Oct 17, 2022'
         type: string
       - name: field_0009
-        label: 'h1: How do I order Indian food online?'
+        label: 'Heading: How do I order Indian food online?'
         type: string
   - name: blog_indian_restaurant_karlsruhe_discover_authentic_indian_flavors_in_the_heart_of_the_city_html
     label: 'Indian Restaurant Karlsruhe: Discover Authentic Indian Flavors in the Heart of the City | Athid'
@@ -5710,10 +5589,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: May 22, 2026'
+        label: 'Text: May 22, 2026'
         type: string
       - name: field_0009
-        label: 'h1: Indian Restaurant Karlsruhe: Discover Authentic Indian Flavors in the Heart of the'
+        label: 'Heading: Indian Restaurant Karlsruhe: Discover Authentic Indian Flavors in the Heart of the'
         type: string
   - name: blog_indian_restaurant_near_you_for_authentic_flavors_html
     label: The Best Indian Restaurant Near You for Authentic Flavors | Athidhi
@@ -5753,10 +5632,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Mar 7, 2025'
+        label: 'Text: Mar 7, 2025'
         type: string
       - name: field_0009
-        label: 'h1: The Best Indian Restaurant Near You for Authentic Flavors'
+        label: 'Heading: The Best Indian Restaurant Near You for Authentic Flavors'
         type: string
   - name: blog_indisches_restaurant_stuttgart_authentischer_genuss_bei_athidhi_html
     label: Indisches Restaurant Stuttgart – Authentischer Genuss bei Athidhi | Athidhi
@@ -5796,10 +5675,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: 14. Okt. 2025'
+        label: 'Text: 14. Okt. 2025'
         type: string
       - name: field_0009
-        label: 'h1: Indisches Restaurant Stuttgart – Authentischer Genuss bei Athidhi'
+        label: 'Heading: Indisches Restaurant Stuttgart – Authentischer Genuss bei Athidhi'
         type: string
   - name: blog_indisches_restaurant_stuttgart_eine_aromatische_reise_durch_die_welt_der_indischen_kueche_html
     label: 'Indisches Restaurant Stuttgart: Eine aromatische Reise durch die Welt der indischen Küche | Ath'
@@ -5839,10 +5718,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: 23. Juni 2026'
+        label: 'Text: 23. Juni 2026'
         type: string
       - name: field_0009
-        label: 'h1: Indisches Restaurant Stuttgart: Eine aromatische Reise durch die Welt der indische'
+        label: 'Heading: Indisches Restaurant Stuttgart: Eine aromatische Reise durch die Welt der indische'
         type: string
   - name: blog_mango_lassi_a_delicious_indian_drink_with_incredible_benefits_html
     label: Mango Lassi – A Delicious Indian Drink with Incredible Benefits | Athidhi
@@ -5882,10 +5761,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Jun 6, 2025'
+        label: 'Text: Jun 6, 2025'
         type: string
       - name: field_0009
-        label: 'h1: Mango Lassi – A Delicious Indian Drink with Incredible Benefits'
+        label: 'Heading: Mango Lassi – A Delicious Indian Drink with Incredible Benefits'
         type: string
   - name: blog_savor_the_essence_of_india_in_heidelberg_a_culinary_journey_with_athidhi_html
     label: 'Savor the Essence of India in Heidelberg: A Culinary Journey with Athidhi | Athidhi'
@@ -5925,10 +5804,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Jul 4, 2024'
+        label: 'Text: Jul 4, 2024'
         type: string
       - name: field_0009
-        label: 'h1: Savor the Essence of India in Heidelberg: A Culinary Journey with Athidhi'
+        label: 'Heading: Savor the Essence of India in Heidelberg: A Culinary Journey with Athidhi'
         type: string
   - name: blog_savoring_authentic_indian_flavors_at_athidhis_indian_restaurant_in_heidelberg_germany_html
     label: Savoring Authentic Indian Flavors at Athidhi’s Indian Restaurant in Heidelberg, Germany | Athid
@@ -5968,10 +5847,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Nov 2, 2023'
+        label: 'Text: Nov 2, 2023'
         type: string
       - name: field_0009
-        label: 'h1: Savoring Authentic Indian Flavors at Athidhi’s Indian Restaurant in Heidelberg, Ge'
+        label: 'Heading: Savoring Authentic Indian Flavors at Athidhi’s Indian Restaurant in Heidelberg, Ge'
         type: string
   - name: blog_start_your_day_right_with_indian_breakfast_at_athidhi_html
     label: Start Your Day Right with Indian Breakfast at Athidhi | Athidhi
@@ -6011,10 +5890,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: May 8, 2025'
+        label: 'Text: May 8, 2025'
         type: string
       - name: field_0009
-        label: 'h1: Start Your Day Right with Indian Breakfast at Athidhi'
+        label: 'Heading: Start Your Day Right with Indian Breakfast at Athidhi'
         type: string
   - name: blog_taste_the_tradition_why_athidhi_is_the_go_to_indian_restaurant_for_authentic_flavors_html
     label: 'Taste the Tradition: Why Athidhi is the Go-To Indian Restaurant for Authentic Flavors | Athidhi'
@@ -6054,10 +5933,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: May 5, 2025'
+        label: 'Text: May 5, 2025'
         type: string
       - name: field_0009
-        label: 'h1: Taste the Tradition: Why Athidhi is the Go-To Indian Restaurant for Authentic Flav'
+        label: 'Heading: Taste the Tradition: Why Athidhi is the Go-To Indian Restaurant for Authentic Flav'
         type: string
   - name: blog_the_delicious_indian_chaat_and_its_variations_html
     label: The delicious Indian chaat and its variations | Athidhi
@@ -6097,10 +5976,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Oct 17, 2022'
+        label: 'Text: Oct 17, 2022'
         type: string
       - name: field_0009
-        label: 'h1: The delicious Indian chaat and its variations'
+        label: 'Heading: The delicious Indian chaat and its variations'
         type: string
   - name: blog_the_irresistible_world_of_biryanis_a_journey_through_flavor_and_aroma_html
     label: 'The Irresistible World of Biryanis: A Journey Through Flavor and Aroma | Athidhi'
@@ -6140,10 +6019,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Mar 25, 2026'
+        label: 'Text: Mar 25, 2026'
         type: string
       - name: field_0009
-        label: 'h1: The Irresistible World of Biryanis: A Journey Through Flavor and Aroma'
+        label: 'Heading: The Irresistible World of Biryanis: A Journey Through Flavor and Aroma'
         type: string
   - name: blog_top_reasons_why_indian_spices_are_good_in_taste_html
     label: Top reasons why Indian spices are good in taste | Athidhi
@@ -6183,10 +6062,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Jul 11, 2022'
+        label: 'Text: Jul 11, 2022'
         type: string
       - name: field_0009
-        label: 'h1: Top reasons why Indian spices are good in taste'
+        label: 'Heading: Top reasons why Indian spices are good in taste'
         type: string
   - name: blog_warum_spielt_der_lieferservice_fuer_lebensmittel_eine_wichtige_rolle_in_unserem_taeglichen_leben_html
     label: Warum spielt der Lieferservice für Lebensmittel eine wichtige Rolle in unserem täglichen Leben?
@@ -6226,10 +6105,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: 17. Okt. 2022'
+        label: 'Text: 17. Okt. 2022'
         type: string
       - name: field_0009
-        label: 'h1: Warum spielt der Lieferservice für Lebensmittel eine wichtige Rolle in unserem täg'
+        label: 'Heading: Warum spielt der Lieferservice für Lebensmittel eine wichtige Rolle in unserem täg'
         type: string
   - name: blog_warum_verwenden_wir_es_html
     label: Was ist einzigartig an der indischen Küche in der Region Heidelberg? | Athidhi
@@ -6269,10 +6148,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: 14. Juli 2022'
+        label: 'Text: 14. Juli 2022'
         type: string
       - name: field_0009
-        label: 'h1: Was ist einzigartig an der indischen Küche in der Region Heidelberg?'
+        label: 'Heading: Was ist einzigartig an der indischen Küche in der Region Heidelberg?'
         type: string
   - name: blog_what_is_unique_about_indian_cuisine_in_the_heidelberg_region_html
     label: What is unique about Indian cuisine in the Heidelberg region? | Athidhi
@@ -6312,10 +6191,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Jul 14, 2022'
+        label: 'Text: Jul 14, 2022'
         type: string
       - name: field_0009
-        label: 'h1: What is unique about Indian cuisine in the Heidelberg region?'
+        label: 'Heading: What is unique about Indian cuisine in the Heidelberg region?'
         type: string
   - name: blog_why_do_we_use_it_html
     label: Amazing Health Benefits of Drinking Mango Lassi | Athidhi
@@ -6355,10 +6234,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Jul 14, 2022'
+        label: 'Text: Jul 14, 2022'
         type: string
       - name: field_0009
-        label: 'h1: Amazing Health Benefits of Drinking Mango Lassi'
+        label: 'Heading: Amazing Health Benefits of Drinking Mango Lassi'
         type: string
   - name: blog_why_does_grocery_delivery_service_play_an_important_role_in_our_daily_lives_html
     label: Why does  Food Delivery service play an important role in our daily lives? | Athidhi
@@ -6398,10 +6277,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Oct 17, 2022'
+        label: 'Text: Oct 17, 2022'
         type: string
       - name: field_0009
-        label: 'h1: Why does  Food Delivery service play an important role in our daily lives?'
+        label: 'Heading: Why does  Food Delivery service play an important role in our daily lives?'
         type: string
   - name: blog_wie_bestelle_ich_indisches_essen_online_html
     label: Wie bestelle ich indisches Essen online? | Athidhi
@@ -6441,10 +6320,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: 17. Okt. 2022'
+        label: 'Text: 17. Okt. 2022'
         type: string
       - name: field_0009
-        label: 'h1: Wie bestelle ich indisches Essen online?'
+        label: 'Heading: Wie bestelle ich indisches Essen online?'
         type: string
   - name: blog_your_deutsches_ipsum_is_ready_for_you_html
     label: Die wichtigsten Gründe, warum indische Gewürze gut im Geschmack sind | Athidhi
@@ -6484,10 +6363,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: 12. Juli 2022'
+        label: 'Text: 12. Juli 2022'
         type: string
       - name: field_0009
-        label: 'h1: Die wichtigsten Gründe, warum indische Gewürze gut im Geschmack sind'
+        label: 'Heading: Die wichtigsten Gründe, warum indische Gewürze gut im Geschmack sind'
         type: string
   - name: blog_your_go_to_indian_restaurant_near_you_for_authentic_flavors_html
     label: Your Go-To Indian Restaurant Near You for Authentic Flavors | Athidhi
@@ -6527,10 +6406,10 @@ content:
         label: 'English: ← Back to blog'
         type: string
       - name: field_0008
-        label: 'div: Jun 13, 2025'
+        label: 'Text: Jun 13, 2025'
         type: string
       - name: field_0009
-        label: 'h1: Your Go-To Indian Restaurant Near You for Authentic Flavors'
+        label: 'Heading: Your Go-To Indian Restaurant Near You for Authentic Flavors'
         type: string
 - name: advanced
   label: Existing helper pages (review first)
@@ -6591,13 +6470,13 @@ content:
         label: 'English: Choose your location — you''ll be taken to online booking.'
         type: string
       - name: field_0021
-        label: 'a: Stuttgart'
+        label: 'Text: Stuttgart'
         type: string
       - name: field_0022
-        label: 'a: Karlsruhe'
+        label: 'Text: Karlsruhe'
         type: string
       - name: field_0023
-        label: 'a: Heidelberg'
+        label: 'Text: Heidelberg'
         type: string
       - name: field_0024
         label: 'German: Wiesloch – anrufen'
@@ -6606,16 +6485,13 @@ content:
         label: 'English: Wiesloch – call to reserve'
         type: string
       - name: field_0027
-        label: 'label: Firma / Company'
+        label: 'Text: Firma / Company'
         type: string
       - name: field_0028
         label: 'German: Standort'
         type: string
       - name: field_0029
         label: 'English: Location'
-        type: string
-      - name: field_0031
-        label: 'span: *'
         type: string
       - name: field_0032
         label: 'option: Wiesloch'
@@ -6683,153 +6559,6 @@ content:
       - name: field_0071
         label: 'English: Send reservation'
         type: string
-  - name: staff_html
-    label: 'Advanced / existing helper: Athidhi — Reservations (Staff)'
-    type: file
-    path: staff.html
-    format: yaml-frontmatter
-    operations:
-      create: false
-      rename: false
-      delete: false
-    fields:
-    - name: seo
-      label: SEO and search snippets
-      type: object
-      fields:
-      - name: field_0000
-        label: 'SEO title: Athidhi — Reservations (Staff)'
-        type: string
-    - name: content
-      label: Page content
-      type: object
-      fields:
-      - name: field_0001
-        label: 'h1: Athidhi'
-        type: string
-      - name: field_0002
-        label: 'p: Reservations — staff sign in'
-        type: string
-      - name: field_0003
-        label: 'label: Email'
-        type: string
-      - name: field_0004
-        label: 'label: Password'
-        type: string
-      - name: field_0005
-        label: 'button: Sign in'
-        type: string
-      - name: field_0007
-        label: 'span: Reservations'
-        type: string
-      - name: field_0008
-        label: 'button: List'
-        type: string
-      - name: field_0009
-        label: 'button: Board'
-        type: string
-      - name: field_0010
-        label: 'button: Tables'
-        type: string
-      - name: field_0011
-        label: 'button: Takeaway'
-        type: string
-      - name: field_0012
-        label: 'button: Inquiries'
-        type: string
-      - name: field_0013
-        label: 'button: Refresh'
-        type: string
-      - name: field_0014
-        label: 'button: Sign out'
-        type: string
-      - name: field_0015
-        label: 'label: Branch'
-        type: string
-      - name: field_0016
-        label: 'option: All branches'
-        type: string
-      - name: field_0017
-        label: 'option: Wiesloch'
-        type: string
-      - name: field_0018
-        label: 'option: Heidelberg'
-        type: string
-      - name: field_0019
-        label: 'option: Karlsruhe'
-        type: string
-      - name: field_0020
-        label: 'option: Stuttgart'
-        type: string
-      - name: field_0021
-        label: 'label: Date'
-        type: string
-      - name: field_0022
-        label: 'label: Search (name, phone, email)'
-        type: string
-      - name: field_0023
-        label: 'button: Clear'
-        type: string
-      - name: field_0024
-        label: 'b: 0'
-        type: string
-      - name: field_0025
-        label: 'p: reservation(s)'
-        type: string
-      - name: field_0027
-        label: 'th: Time'
-        type: string
-      - name: field_0029
-        label: 'th: Name'
-        type: string
-      - name: field_0030
-        label: 'th: No. of People'
-        type: string
-      - name: field_0031
-        label: 'th: Contact'
-        type: string
-      - name: field_0032
-        label: 'th: Notes'
-        type: string
-      - name: field_0033
-        label: 'th: Status'
-        type: string
-      - name: field_0034
-        label: 'th: Table'
-        type: string
-      - name: field_0035
-        label: 'th: Move to'
-        type: string
-      - name: field_0036
-        label: 'div: No reservations match your filters.'
-        type: string
-      - name: field_0037
-        label: 'h2: Takeaway — order online'
-        type: string
-      - name: field_0038
-        label: 'p: These buttons open each branch''s direct ordering page for takeaway/delivery. Links'
-        type: text
-      - name: field_0040
-        label: 'p: service enquiry(ies)'
-        type: string
-      - name: field_0041
-        label: 'th: Received'
-        type: string
-      - name: field_0042
-        label: 'th: Service'
-        type: string
-      - name: field_0046
-        label: 'th: Event date'
-        type: string
-      - name: field_0047
-        label: 'th: Guests'
-        type: string
-      - name: field_0048
-        label: 'th: Message'
-        type: string
-      - name: field_0050
-        label: 'div: No service enquiries match your filters.'
-        type: string
   - name: branches_11_netherlands_html
     label: 'Advanced / existing helper: Het Huis van Athidhi — Athidhi Niederlande | Indisches Restaurant'
     type: file
@@ -6861,7 +6590,7 @@ content:
         label: 'English: New · Netherlands'
         type: string
       - name: field_0009
-        label: 'h1: Het Huis van Athidhi'
+        label: 'Heading: Het Huis van Athidhi'
         type: string
       - name: field_0010
         label: 'German: Neu eröffnet · 18. Juli 2026'
@@ -6874,9 +6603,6 @@ content:
         type: string
       - name: field_0014
         label: 'English: Home'
-        type: string
-      - name: field_0016
-        label: 'span: /'
         type: string
       - name: field_0017
         label: 'German: Standorte'

@@ -22,7 +22,6 @@ content:
   field_0027: Firma / Company
   field_0028: Standort
   field_0029: Location
-  field_0031: '*'
   field_0032: Wiesloch
   field_0036: Name
   field_0040: Telefon
@@ -137,7 +136,7 @@ content:
         <label>{{ page.content.field_0027 | escape }}<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
       </div>
       <div class="fld full">
-        <label data-de="{{ page.content.field_0028 | escape }}" data-en="{{ page.content.field_0029 | escape }}">{{ page.content.field_0028 | escape }} <span class="req">{{ page.content.field_0031 | escape }}</span></label>
+        <label data-de="{{ page.content.field_0028 | escape }}" data-en="{{ page.content.field_0029 | escape }}">{{ page.content.field_0028 | escape }} <span class="req">*</span></label>
         <select name="branch" required>
           <option value="wiesloch">{{ page.content.field_0032 | escape }}</option>
           <option value="heidelberg">{{ page.content.field_0023 | escape }}</option>
@@ -146,7 +145,7 @@ content:
         </select>
       </div>
       <div class="fld full">
-        <label data-de="{{ page.content.field_0036 | escape }}" data-en="{{ page.content.field_0036 | escape }}">{{ page.content.field_0036 | escape }} <span class="req">{{ page.content.field_0031 | escape }}</span></label>
+        <label data-de="{{ page.content.field_0036 | escape }}" data-en="{{ page.content.field_0036 | escape }}">{{ page.content.field_0036 | escape }} <span class="req">*</span></label>
         <input type="text" name="name" autocomplete="name" required maxlength="120">
       </div>
       <div class="fld">
@@ -161,18 +160,18 @@ content:
         <p class="resv-hint" data-de="{{ page.content.field_0046 | escape }}" data-en="{{ page.content.field_0047 | escape }}">{{ page.content.field_0046 | escape }}</p>
       </div>
       <div class="fld">
-        <label data-de="{{ page.content.field_0049 | escape }}" data-en="{{ page.content.field_0050 | escape }}">{{ page.content.field_0049 | escape }} <span class="req">{{ page.content.field_0031 | escape }}</span></label>
+        <label data-de="{{ page.content.field_0049 | escape }}" data-en="{{ page.content.field_0050 | escape }}">{{ page.content.field_0049 | escape }} <span class="req">*</span></label>
         <input type="date" name="reservation_date" required>
       </div>
       <div class="fld">
-        <label data-de="{{ page.content.field_0053 | escape }}" data-en="{{ page.content.field_0054 | escape }}">{{ page.content.field_0053 | escape }} <span class="req">{{ page.content.field_0031 | escape }}</span></label>
+        <label data-de="{{ page.content.field_0053 | escape }}" data-en="{{ page.content.field_0054 | escape }}">{{ page.content.field_0053 | escape }} <span class="req">*</span></label>
         <select name="reservation_time" required>
           <option value="" data-de="{{ page.content.field_0057 | escape }}" data-en="{{ page.content.field_0058 | escape }}">{{ page.content.field_0057 | escape }}</option>
         </select>
         <p class="resv-hint" id="time-hint" data-de="{{ page.content.field_0060 | escape }}" data-en="{{ page.content.field_0061 | escape }}">{{ page.content.field_0060 | escape }}</p>
       </div>
       <div class="fld full">
-        <label data-de="{{ page.content.field_0063 | escape }}" data-en="{{ page.content.field_0064 | escape }}">{{ page.content.field_0063 | escape }} <span class="req">{{ page.content.field_0031 | escape }}</span></label>
+        <label data-de="{{ page.content.field_0063 | escape }}" data-en="{{ page.content.field_0064 | escape }}">{{ page.content.field_0063 | escape }} <span class="req">*</span></label>
         <input type="number" name="party_size" min="1" max="40" step="1" required>
       </div>
       <div class="fld full">

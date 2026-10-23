@@ -11,7 +11,6 @@ content:
   field_0010: Gablenberger Hauptstraße 45, 70186 Stuttgart
   field_0011: Startseite
   field_0012: Home
-  field_0014: /
   field_0015: Restaurants
   field_0019: Stuttgart
   field_0020: Willkommen
@@ -28,7 +27,6 @@ content:
   field_0036: Visit & Reservations
   field_0039: Anrufen
   field_0040: Call
-  field_0042: ·
   field_0043: '1'
   field_0044: Alternativ
   field_0045: Alternative
@@ -64,9 +62,6 @@ content:
   field_0096: Our Menu
   field_0098: Blättern Sie durch unsere Karte
   field_0099: Flip through our menu
-  field_0101: ‹
-  field_0104: '26'
-  field_0105: ›
   field_0106: Tippen Sie auf die Pfeile zum Blättern
   field_0107: Tap the arrows to turn pages
   field_0109: Mittagsangebot
@@ -194,8 +189,8 @@ content:
   </div>
 </section>
 <div class="crumb"><div class="wrap">
-  <a href="../index.html" data-de="{{ page.content.field_0011 | escape }}" data-en="{{ page.content.field_0012 | escape }}">{{ page.content.field_0011 | escape }}</a><span class="sep">{{ page.content.field_0014 | escape }}</span>
-  <a href="../index.html#branches" data-de="{{ page.content.field_0015 | escape }}" data-en="{{ page.content.field_0015 | escape }}">{{ page.content.field_0015 | escape }}</a><span class="sep">{{ page.content.field_0014 | escape }}</span>
+  <a href="../index.html" data-de="{{ page.content.field_0011 | escape }}" data-en="{{ page.content.field_0012 | escape }}">{{ page.content.field_0011 | escape }}</a><span class="sep">/</span>
+  <a href="../index.html#branches" data-de="{{ page.content.field_0015 | escape }}" data-en="{{ page.content.field_0015 | escape }}">{{ page.content.field_0015 | escape }}</a><span class="sep">/</span>
   <span>{{ page.content.field_0019 | escape }}</span>
 </div></div>
 <section class="branch-info"><div class="wrap info-grid">
@@ -211,7 +206,7 @@ content:
   <div class="info-card" id="reserve">
     <h4 data-de="{{ page.content.field_0035 | escape }}" data-en="{{ page.content.field_0036 | escape }}">{{ page.content.field_0035 | escape }}</h4>
     <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg></span><span>{{ page.content.field_0010 | escape }}</span></div>
-    <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 4h3l1.4 3.7-1.9 1.4a11 11 0 0 0 4.8 4.8l1.4-1.9L19 15v3a1.8 1.8 0 0 1-1.9 1.8A15.5 15.5 0 0 1 4.2 6.9 1.8 1.8 0 0 1 6.6 4Z"/></svg></span><span class="tel-pair" style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><a class="tel call-btn" role="button" tabindex="0" style="cursor:pointer" data-c="NTYuNjUuNzAuNjkuNzAuNjcuNjMuNjEuNjkuNjQuNjYuNjMuNjg=" data-d="NjEuNjkuNzAuNDUuNjAuNDUuNjcuNjMuNjEuNDUuNjkuNjQuNjYuNDUuNjMuNjg=" data-de="{{ page.content.field_0039 | escape }}" data-en="{{ page.content.field_0040 | escape }}">{{ page.content.field_0039 | escape }}</a><span class="tel-sep" aria-hidden="true" style="opacity:.45">{{ page.content.field_0042 | escape }}</span><a class="tel call-btn" role="button" tabindex="0" style="cursor:pointer" data-alt="{{ page.content.field_0043 | escape }}" data-c="NTYuNjUuNzAuNjguNjIuNjIuNjkuNjYuNzAuNjkuNjIuNjYuNjcuNjI=" data-d="NjEuNjguNjIuNjIuNDUuNjAuNDUuNjkuNjYuNzAuNDUuNjkuNjIuNjYuNDUuNjcuNjI=" data-de="{{ page.content.field_0044 | escape }}" data-en="{{ page.content.field_0045 | escape }}">{{ page.content.field_0044 | escape }}</a></span></div>
+    <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 4h3l1.4 3.7-1.9 1.4a11 11 0 0 0 4.8 4.8l1.4-1.9L19 15v3a1.8 1.8 0 0 1-1.9 1.8A15.5 15.5 0 0 1 4.2 6.9 1.8 1.8 0 0 1 6.6 4Z"/></svg></span><span class="tel-pair" style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><a class="tel call-btn" role="button" tabindex="0" style="cursor:pointer" data-c="NTYuNjUuNzAuNjkuNzAuNjcuNjMuNjEuNjkuNjQuNjYuNjMuNjg=" data-d="NjEuNjkuNzAuNDUuNjAuNDUuNjcuNjMuNjEuNDUuNjkuNjQuNjYuNDUuNjMuNjg=" data-de="{{ page.content.field_0039 | escape }}" data-en="{{ page.content.field_0040 | escape }}">{{ page.content.field_0039 | escape }}</a><span class="tel-sep" aria-hidden="true" style="opacity:.45">·</span><a class="tel call-btn" role="button" tabindex="0" style="cursor:pointer" data-alt="{{ page.content.field_0043 | escape }}" data-c="NTYuNjUuNzAuNjguNjIuNjIuNjkuNjYuNzAuNjkuNjIuNjYuNjcuNjI=" data-d="NjEuNjguNjIuNjIuNDUuNjAuNDUuNjkuNjYuNzAuNDUuNjkuNjIuNjYuNDUuNjcuNjI=" data-de="{{ page.content.field_0044 | escape }}" data-en="{{ page.content.field_0045 | escape }}">{{ page.content.field_0044 | escape }}</a></span></div>
     <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.3"/><path d="M12 7.6V12l3 1.8"/></svg></span><span class="hours" data-de="{{ page.content.field_0047 | escape }}" data-en="{{ page.content.field_0048 | escape }}">{{ page.content.field_0047 | escape }}</span></div>
     <!-- allO booking hook: set href to this branch's allO booking link, or embed allO widget here -->
     <a class="btn btn-primary" href="../reserve.html?branch=stuttgart" data-de="{{ page.content.field_0050 | escape }}" data-en="{{ page.content.field_0051 | escape }}">{{ page.content.field_0050 | escape }}</a><a class="btn btn-ghost" href="https://reservations.allo.restaurant/de/athidhi-stuttgart" target="_blank" rel="noopener" data-de="{{ page.content.field_0053 | escape }}" data-en="{{ page.content.field_0054 | escape }}">{{ page.content.field_0053 | escape }}</a>
@@ -257,9 +252,9 @@ window.ATHIDHI_MENU_PAGES = { de: ["../assets/menu/de/27-1.jpg","../assets/menu/
 <div class="flipbook">
   <div class="fb-stage"></div>
   <div class="fb-controls">
-    <button class="fb-nav prev" aria-label="Vorherige Seite">{{ page.content.field_0101 | escape }}</button>
-    <div class="fb-count"><span class="fb-cur">{{ page.content.field_0043 | escape }}</span> {{ page.content.field_0014 | escape }} <span class="fb-total">{{ page.content.field_0104 | escape }}</span></div>
-    <button class="fb-nav next" aria-label="N&auml;chste Seite">{{ page.content.field_0105 | escape }}</button>
+    <button class="fb-nav prev" aria-label="Vorherige Seite">‹</button>
+    <div class="fb-count"><span class="fb-cur">{{ page.content.field_0043 | escape }}</span> / <span class="fb-total">26</span></div>
+    <button class="fb-nav next" aria-label="N&auml;chste Seite">›</button>
   </div>
   <p class="fb-hint" data-de="{{ page.content.field_0106 | escape }}" data-en="{{ page.content.field_0107 | escape }}">{{ page.content.field_0106 | escape }}</p>
 </div>
