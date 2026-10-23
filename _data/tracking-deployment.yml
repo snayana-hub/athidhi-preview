@@ -1,3 +1,6 @@
 # Not exposed in CMS. Owner approval, reviewed disclosures and tests required before activation.
 enabled: false
 revision: not-approved
+analytics_id: ""
+tag_manager_id: ""
+pixel_id: ""
