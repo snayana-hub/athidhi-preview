@@ -3,7 +3,7 @@ seo:
   field_0000: Het Huis van Athidhi — Athidhi Niederlande | Indisches Restaurant
   field_0001: Het Huis van Athidhi — das neue Athidhi in den Niederlanden, eröffnet am 18. Juli 2026. Folgen Sie uns auf Instagram
     für Neuigkeiten und Öffnungszeiten.
-content:
+copy:
   field_0006: Neu · Niederlande
   field_0007: New · Netherlands
   field_0009: Het Huis van Athidhi
@@ -71,7 +71,7 @@ content:
   }
 }
 </script>
-</head><body><a id="top"></a>
+{% include tracking-gated.html %}</head><body><a id="top"></a>
 <header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="../index.html"><img src="../assets/logo-green.png" alt="Athidhi — Flavours from India"></a>
@@ -100,23 +100,23 @@ content:
 </header>
 <section class="sub-hero" style="background:#810809">
   <div class="wrap">
-    <div class="eyebrow" data-de="{{ page.content.field_0006 | escape }}" data-en="{{ page.content.field_0007 | escape }}">{{ page.content.field_0006 | escape }}</div>
-    <h1>{{ page.content.field_0009 | escape }}</h1>
-    <div class="addr" data-de="{{ page.content.field_0010 | escape }}" data-en="{{ page.content.field_0011 | escape }}">{{ page.content.field_0010 | escape }}</div>
+    <div class="eyebrow" data-de="{{ page.copy.field_0006 | escape }}" data-en="{{ page.copy.field_0007 | escape }}">{{ page.copy.field_0006 | escape }}</div>
+    <h1>{{ page.copy.field_0009 | escape }}</h1>
+    <div class="addr" data-de="{{ page.copy.field_0010 | escape }}" data-en="{{ page.copy.field_0011 | escape }}">{{ page.copy.field_0010 | escape }}</div>
   </div>
 </section>
 <div class="crumb"><div class="wrap">
-  <a href="../index.html" data-de="{{ page.content.field_0013 | escape }}" data-en="{{ page.content.field_0014 | escape }}">{{ page.content.field_0013 | escape }}</a><span class="sep">/</span>
-  <a href="../index.html#branches" data-de="{{ page.content.field_0017 | escape }}" data-en="{{ page.content.field_0018 | escape }}">{{ page.content.field_0017 | escape }}</a><span class="sep">/</span>
-  <span>{{ page.content.field_0009 | escape }}</span>
+  <a href="../index.html" data-de="{{ page.copy.field_0013 | escape }}" data-en="{{ page.copy.field_0014 | escape }}">{{ page.copy.field_0013 | escape }}</a><span class="sep">/</span>
+  <a href="../index.html#branches" data-de="{{ page.copy.field_0017 | escape }}" data-en="{{ page.copy.field_0018 | escape }}">{{ page.copy.field_0017 | escape }}</a><span class="sep">/</span>
+  <span>{{ page.copy.field_0009 | escape }}</span>
 </div></div>
 <section class="branch-info"><div class="wrap" style="max-width:760px;margin:0 auto;text-align:center">
-  <div class="eyebrow" data-de="{{ page.content.field_0022 | escape }}" data-en="{{ page.content.field_0023 | escape }}">{{ page.content.field_0022 | escape }}</div>
-  <h2 data-de="{{ page.content.field_0025 | escape }}" data-en="{{ page.content.field_0026 | escape }}">{{ page.content.field_0025 | escape }}</h2>
+  <div class="eyebrow" data-de="{{ page.copy.field_0022 | escape }}" data-en="{{ page.copy.field_0023 | escape }}">{{ page.copy.field_0022 | escape }}</div>
+  <h2 data-de="{{ page.copy.field_0025 | escape }}" data-en="{{ page.copy.field_0026 | escape }}">{{ page.copy.field_0025 | escape }}</h2>
   <div class="rule"></div>
-  <p class="lead-p" data-de="{{ page.content.field_0028 | escape }}" data-en="{{ page.content.field_0029 | escape }}">{{ page.content.field_0028 | escape }}</p>
-  <p data-de="{{ page.content.field_0031 | escape }}" data-en="{{ page.content.field_0032 | escape }}">{{ page.content.field_0031 | escape }}</p>
-  <div style="margin-top:26px"><a class="btn btn-primary" href="https://www.instagram.com/hethuisvanathidhi" target="_blank" rel="noopener" data-de="{{ page.content.field_0034 | escape }}" data-en="{{ page.content.field_0035 | escape }}">{{ page.content.field_0034 | escape }}</a></div>
+  <p class="lead-p" data-de="{{ page.copy.field_0028 | escape }}" data-en="{{ page.copy.field_0029 | escape }}">{{ page.copy.field_0028 | escape }}</p>
+  <p data-de="{{ page.copy.field_0031 | escape }}" data-en="{{ page.copy.field_0032 | escape }}">{{ page.copy.field_0031 | escape }}</p>
+  <div style="margin-top:26px"><a class="btn btn-primary" href="https://www.instagram.com/hethuisvanathidhi" target="_blank" rel="noopener" data-de="{{ page.copy.field_0034 | escape }}" data-en="{{ page.copy.field_0035 | escape }}">{{ page.copy.field_0034 | escape }}</a></div>
 </div></section>
 <footer class="site-footer" id="contact">
   <div class="wrap">

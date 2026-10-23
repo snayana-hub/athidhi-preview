@@ -1,0 +1,5 @@
+{% if site.data.tracking-deployment.enabled %}
+<meta id="athidhi-tracking-config" data-ga="{{ site.data.tracking-review.analytics_id | escape }}" data-gtm="{{ site.data.tracking-review.tag_manager_id | escape }}" data-pixel="{{ site.data.tracking-review.pixel_id | escape }}" data-revision="{{ site.data.tracking-deployment.revision | escape }}">
+<style>#athidhi-consent{position:fixed;bottom:12px;left:12px;right:12px;z-index:10000;background:#fff9e6;color:#222;padding:20px;border:1px solid #30551c;box-shadow:0 6px 35px #0004;font:16px/1.5 sans-serif}#athidhi-consent[hidden]{display:none}#athidhi-consent div{display:flex;flex-wrap:wrap;gap:12px}#athidhi-consent button,#athidhi-consent-settings{font:inherit;border:1px solid #30551c;border-radius:4px;padding:10px;background:#fff9e6;color:#222;cursor:pointer}#athidhi-consent-settings{position:fixed;bottom:8px;left:8px;z-index:9999;font:12px sans-serif}</style>
+<script defer src="/js/consent-tracking.js"></script>
+{% endif %}

@@ -3,7 +3,7 @@ seo:
   field_0000: Athidhi — Tisch reservieren | Reserve a table
   field_0001: Reservieren Sie Ihren Tisch bei Athidhi — Wiesloch, Heidelberg, Karlsruhe, Stuttgart. Reserve your table at
     Athidhi.
-content:
+copy:
   field_0006: Reservierung
   field_0007: Reservation
   field_0009: Tisch reservieren
@@ -97,7 +97,7 @@ content:
 <meta name="twitter:title" content="{{ page.seo.field_0000 | escape }}">
 <meta name="twitter:description" content="{{ page.seo.field_0001 | escape }}">
 <meta name="twitter:image" content="https://athidhi.de/assets/1-our-story.jpg">
-</head><body>
+{% include tracking-gated.html %}</head><body>
 <header class="site-header">
   <div class="resv-top">
     <a class="brand" href="index.html"><img src="assets/logo-green.png" alt="Athidhi — Flavours from India"></a>
@@ -112,74 +112,74 @@ content:
 
 <main class="resv-wrap">
   <div class="resv-hero">
-    <div class="eyebrow" data-de="{{ page.content.field_0006 | escape }}" data-en="{{ page.content.field_0007 | escape }}">{{ page.content.field_0006 | escape }}</div>
-    <h1 data-de="{{ page.content.field_0009 | escape }}" data-en="{{ page.content.field_0010 | escape }}">{{ page.content.field_0009 | escape }}</h1>
-    <p data-de="{{ page.content.field_0012 | escape }}"
-       data-en="{{ page.content.field_0013 | escape }}">{{ page.content.field_0012 | escape }}</p>
+    <div class="eyebrow" data-de="{{ page.copy.field_0006 | escape }}" data-en="{{ page.copy.field_0007 | escape }}">{{ page.copy.field_0006 | escape }}</div>
+    <h1 data-de="{{ page.copy.field_0009 | escape }}" data-en="{{ page.copy.field_0010 | escape }}">{{ page.copy.field_0009 | escape }}</h1>
+    <p data-de="{{ page.copy.field_0012 | escape }}"
+       data-en="{{ page.copy.field_0013 | escape }}">{{ page.copy.field_0012 | escape }}</p>
   </div>
 
   <div class="resv-card">
   <div class="allo-resv" style="margin-bottom:26px;padding-bottom:22px;border-bottom:1px solid var(--gline)">
-    <h2 style="font-family:var(--serif);color:var(--maroon);font-size:22px;margin:0 0 6px" data-de="{{ page.content.field_0015 | escape }}" data-en="{{ page.content.field_0016 | escape }}">{{ page.content.field_0015 | escape }}</h2>
-    <p style="margin:0 0 16px;color:#555;font-size:.95rem" data-de="{{ page.content.field_0018 | escape }}" data-en="{{ page.content.field_0019 | escape }}">{{ page.content.field_0018 | escape }}</p>
+    <h2 style="font-family:var(--serif);color:var(--maroon);font-size:22px;margin:0 0 6px" data-de="{{ page.copy.field_0015 | escape }}" data-en="{{ page.copy.field_0016 | escape }}">{{ page.copy.field_0015 | escape }}</h2>
+    <p style="margin:0 0 16px;color:#555;font-size:.95rem" data-de="{{ page.copy.field_0018 | escape }}" data-en="{{ page.copy.field_0019 | escape }}">{{ page.copy.field_0018 | escape }}</p>
     <div style="display:flex;flex-wrap:wrap;gap:12px">
-      <a class="btn btn-primary" href="https://reservations.allo.restaurant/de/athidhi-stuttgart" target="_blank" rel="noopener">{{ page.content.field_0021 | escape }}</a>
-      <a class="btn btn-primary" href="https://reservations.allo.restaurant/de/athidhi-restaurant-karlsruhe-ka" target="_blank" rel="noopener">{{ page.content.field_0022 | escape }}</a>
-      <a class="btn btn-primary" href="https://reservations.allo.restaurant/de/athidhi-restaurant-heidelberg-hd" target="_blank" rel="noopener">{{ page.content.field_0023 | escape }}</a>
-      <a class="btn btn-ghost tel call-btn" role="button" tabindex="0" style="cursor:pointer" data-c="NTYuNjUuNzAuNjcuNjMuNjMuNjMuNjQuNjIuNjkuNjYuNjQuNjYuNjQ=" data-d="NjEuNjcuNjMuNjMuNjMuNDUuNjAuNDUuNjQuNjIuNjkuNDUuNjYuNjQuNDUuNjYuNjQ=" data-de="{{ page.content.field_0024 | escape }}" data-en="{{ page.content.field_0025 | escape }}">{{ page.content.field_0024 | escape }}</a>
+      <a class="btn btn-primary" href="https://reservations.allo.restaurant/de/athidhi-stuttgart" target="_blank" rel="noopener">{{ page.copy.field_0021 | escape }}</a>
+      <a class="btn btn-primary" href="https://reservations.allo.restaurant/de/athidhi-restaurant-karlsruhe-ka" target="_blank" rel="noopener">{{ page.copy.field_0022 | escape }}</a>
+      <a class="btn btn-primary" href="https://reservations.allo.restaurant/de/athidhi-restaurant-heidelberg-hd" target="_blank" rel="noopener">{{ page.copy.field_0023 | escape }}</a>
+      <a class="btn btn-ghost tel call-btn" role="button" tabindex="0" style="cursor:pointer" data-c="NTYuNjUuNzAuNjcuNjMuNjMuNjMuNjQuNjIuNjkuNjYuNjQuNjYuNjQ=" data-d="NjEuNjcuNjMuNjMuNjMuNDUuNjAuNDUuNjQuNjIuNjkuNDUuNjYuNjQuNDUuNjYuNjQ=" data-de="{{ page.copy.field_0024 | escape }}" data-en="{{ page.copy.field_0025 | escape }}">{{ page.copy.field_0024 | escape }}</a>
     </div>
   </div>
   
     <form id="resv-form" novalidate>
       <div class="hp-field" aria-hidden="true" style="position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px;height:1px;overflow:hidden">
-        <label>{{ page.content.field_0027 | escape }}<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+        <label>{{ page.copy.field_0027 | escape }}<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
       </div>
       <div class="fld full">
-        <label data-de="{{ page.content.field_0028 | escape }}" data-en="{{ page.content.field_0029 | escape }}">{{ page.content.field_0028 | escape }} <span class="req">*</span></label>
+        <label data-de="{{ page.copy.field_0028 | escape }}" data-en="{{ page.copy.field_0029 | escape }}">{{ page.copy.field_0028 | escape }} <span class="req">*</span></label>
         <select name="branch" required>
-          <option value="wiesloch">{{ page.content.field_0032 | escape }}</option>
-          <option value="heidelberg">{{ page.content.field_0023 | escape }}</option>
-          <option value="karlsruhe">{{ page.content.field_0022 | escape }}</option>
-          <option value="stuttgart">{{ page.content.field_0021 | escape }}</option>
+          <option value="wiesloch">{{ page.copy.field_0032 | escape }}</option>
+          <option value="heidelberg">{{ page.copy.field_0023 | escape }}</option>
+          <option value="karlsruhe">{{ page.copy.field_0022 | escape }}</option>
+          <option value="stuttgart">{{ page.copy.field_0021 | escape }}</option>
         </select>
       </div>
       <div class="fld full">
-        <label data-de="{{ page.content.field_0036 | escape }}" data-en="{{ page.content.field_0036 | escape }}">{{ page.content.field_0036 | escape }} <span class="req">*</span></label>
+        <label data-de="{{ page.copy.field_0036 | escape }}" data-en="{{ page.copy.field_0036 | escape }}">{{ page.copy.field_0036 | escape }} <span class="req">*</span></label>
         <input type="text" name="name" autocomplete="name" required maxlength="120">
       </div>
       <div class="fld">
-        <label data-de="{{ page.content.field_0040 | escape }}" data-en="{{ page.content.field_0041 | escape }}">{{ page.content.field_0040 | escape }}</label>
+        <label data-de="{{ page.copy.field_0040 | escape }}" data-en="{{ page.copy.field_0041 | escape }}">{{ page.copy.field_0040 | escape }}</label>
         <input type="tel" name="phone" autocomplete="tel" maxlength="40">
       </div>
       <div class="fld">
-        <label data-de="{{ page.content.field_0043 | escape }}" data-en="{{ page.content.field_0044 | escape }}">{{ page.content.field_0043 | escape }}</label>
+        <label data-de="{{ page.copy.field_0043 | escape }}" data-en="{{ page.copy.field_0044 | escape }}">{{ page.copy.field_0043 | escape }}</label>
         <input type="email" name="email" autocomplete="email" maxlength="160">
       </div>
       <div class="fld full">
-        <p class="resv-hint" data-de="{{ page.content.field_0046 | escape }}" data-en="{{ page.content.field_0047 | escape }}">{{ page.content.field_0046 | escape }}</p>
+        <p class="resv-hint" data-de="{{ page.copy.field_0046 | escape }}" data-en="{{ page.copy.field_0047 | escape }}">{{ page.copy.field_0046 | escape }}</p>
       </div>
       <div class="fld">
-        <label data-de="{{ page.content.field_0049 | escape }}" data-en="{{ page.content.field_0050 | escape }}">{{ page.content.field_0049 | escape }} <span class="req">*</span></label>
+        <label data-de="{{ page.copy.field_0049 | escape }}" data-en="{{ page.copy.field_0050 | escape }}">{{ page.copy.field_0049 | escape }} <span class="req">*</span></label>
         <input type="date" name="reservation_date" required>
       </div>
       <div class="fld">
-        <label data-de="{{ page.content.field_0053 | escape }}" data-en="{{ page.content.field_0054 | escape }}">{{ page.content.field_0053 | escape }} <span class="req">*</span></label>
+        <label data-de="{{ page.copy.field_0053 | escape }}" data-en="{{ page.copy.field_0054 | escape }}">{{ page.copy.field_0053 | escape }} <span class="req">*</span></label>
         <select name="reservation_time" required>
-          <option value="" data-de="{{ page.content.field_0057 | escape }}" data-en="{{ page.content.field_0058 | escape }}">{{ page.content.field_0057 | escape }}</option>
+          <option value="" data-de="{{ page.copy.field_0057 | escape }}" data-en="{{ page.copy.field_0058 | escape }}">{{ page.copy.field_0057 | escape }}</option>
         </select>
-        <p class="resv-hint" id="time-hint" data-de="{{ page.content.field_0060 | escape }}" data-en="{{ page.content.field_0061 | escape }}">{{ page.content.field_0060 | escape }}</p>
+        <p class="resv-hint" id="time-hint" data-de="{{ page.copy.field_0060 | escape }}" data-en="{{ page.copy.field_0061 | escape }}">{{ page.copy.field_0060 | escape }}</p>
       </div>
       <div class="fld full">
-        <label data-de="{{ page.content.field_0063 | escape }}" data-en="{{ page.content.field_0064 | escape }}">{{ page.content.field_0063 | escape }} <span class="req">*</span></label>
+        <label data-de="{{ page.copy.field_0063 | escape }}" data-en="{{ page.copy.field_0064 | escape }}">{{ page.copy.field_0063 | escape }} <span class="req">*</span></label>
         <input type="number" name="party_size" min="1" max="40" step="1" required>
       </div>
       <div class="fld full">
-        <label data-de="{{ page.content.field_0067 | escape }}" data-en="{{ page.content.field_0068 | escape }}">{{ page.content.field_0067 | escape }}</label>
+        <label data-de="{{ page.copy.field_0067 | escape }}" data-en="{{ page.copy.field_0068 | escape }}">{{ page.copy.field_0067 | escape }}</label>
         <textarea name="notes" maxlength="1000" data-de-placeholder="z. B. Anlass, Allergien, Kinderstuhl" data-en-placeholder="e.g. occasion, allergies, high chair"></textarea>
       </div>
       <div id="resv-status" class="resv-status" role="status" aria-live="polite"></div>
       <div class="resv-actions">
-        <button type="submit" class="btn btn-primary btn-lg" data-de="{{ page.content.field_0070 | escape }}" data-en="{{ page.content.field_0071 | escape }}">{{ page.content.field_0070 | escape }}</button>
+        <button type="submit" class="btn btn-primary btn-lg" data-de="{{ page.copy.field_0070 | escape }}" data-en="{{ page.copy.field_0071 | escape }}">{{ page.copy.field_0070 | escape }}</button>
       </div>
     </form>
   </div>

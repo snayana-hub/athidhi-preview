@@ -3,7 +3,7 @@ seo:
   field_0000: Athidhi — Wöchentliches Buffet | Weekly Buffet
   field_0001: Wöchentliches indisches Buffet bei Athidhi in Heidelberg — Mo–Do €13,90, freitags €14,90, 11:30–15:00 Uhr. Weekly
     Indian buffet at Athidhi in Heidelberg.
-content:
+copy:
   field_0006: Jede Woche
   field_0007: Every week
   field_0009: Wöchentliches Buffet
@@ -120,7 +120,7 @@ content:
 .bf-list li{margin:0 0 8px;color:var(--ink)}
 .bf-lbl{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--gold);opacity:.9}
 </style>
-</head><body><a id="top"></a><header class="site-header">
+{% include tracking-gated.html %}</head><body><a id="top"></a><header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="index.html"><img src="assets/logo-green.png" alt="Athidhi — Flavours from India"></a>
     <nav>
@@ -151,14 +151,14 @@ content:
 </header>
 <section class="sub-hero" style="background-image:url('assets/site/33-buffet-biryani.jpg')">
   <div class="wrap">
-    <div class="eyebrow" data-de="{{ page.content.field_0006 | escape }}" data-en="{{ page.content.field_0007 | escape }}">{{ page.content.field_0006 | escape }}</div>
-    <h1 data-de="{{ page.content.field_0009 | escape }}" data-en="{{ page.content.field_0010 | escape }}">{{ page.content.field_0009 | escape }}</h1>
-    <div class="addr" data-de="{{ page.content.field_0012 | escape }}" data-en="{{ page.content.field_0013 | escape }}">{{ page.content.field_0012 | escape }}</div>
+    <div class="eyebrow" data-de="{{ page.copy.field_0006 | escape }}" data-en="{{ page.copy.field_0007 | escape }}">{{ page.copy.field_0006 | escape }}</div>
+    <h1 data-de="{{ page.copy.field_0009 | escape }}" data-en="{{ page.copy.field_0010 | escape }}">{{ page.copy.field_0009 | escape }}</h1>
+    <div class="addr" data-de="{{ page.copy.field_0012 | escape }}" data-en="{{ page.copy.field_0013 | escape }}">{{ page.copy.field_0012 | escape }}</div>
   </div>
 </section>
 <section class="branch-info"><div class="wrap">
   <div class="bf-intro">
-    <div class="eyebrow" data-de="{{ page.content.field_0015 | escape }}" data-en="{{ page.content.field_0016 | escape }}">{{ page.content.field_0015 | escape }}</div>
+    <div class="eyebrow" data-de="{{ page.copy.field_0015 | escape }}" data-en="{{ page.copy.field_0016 | escape }}">{{ page.copy.field_0015 | escape }}</div>
     <style>
       .bf-prices{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin:20px 0 10px}
       .bf-pcard{min-width:196px;border:1px solid var(--gline);border-radius:10px;padding:16px 24px;background:var(--paper)}
@@ -170,71 +170,71 @@ content:
       @media(max-width:600px){.bf-pcard{width:100%;max-width:264px;box-sizing:border-box}}
       .bf-days{font-family:var(--sans);font-size:13px;letter-spacing:.06em;color:var(--ink);opacity:.75}
     </style>
-    <h2 data-de="{{ page.content.field_0018 | escape }}" data-en="{{ page.content.field_0019 | escape }}">{{ page.content.field_0018 | escape }}</h2>
+    <h2 data-de="{{ page.copy.field_0018 | escape }}" data-en="{{ page.copy.field_0019 | escape }}">{{ page.copy.field_0018 | escape }}</h2>
     <div class="bf-prices">
       <div class="bf-pcard">
-        <div class="bf-pcity">{{ page.content.field_0021 | escape }}</div>
-        <div class="bf-prow"><span class="amt">{{ page.content.field_0022 | escape }}</span><span class="bf-days" data-de="{{ page.content.field_0023 | escape }}" data-en="{{ page.content.field_0024 | escape }}">{{ page.content.field_0023 | escape }}</span></div>
-        <div class="bf-prow"><span class="amt sm">{{ page.content.field_0026 | escape }}</span><span class="bf-days" data-de="{{ page.content.field_0027 | escape }}" data-en="{{ page.content.field_0028 | escape }}">{{ page.content.field_0027 | escape }}</span></div>
+        <div class="bf-pcity">{{ page.copy.field_0021 | escape }}</div>
+        <div class="bf-prow"><span class="amt">{{ page.copy.field_0022 | escape }}</span><span class="bf-days" data-de="{{ page.copy.field_0023 | escape }}" data-en="{{ page.copy.field_0024 | escape }}">{{ page.copy.field_0023 | escape }}</span></div>
+        <div class="bf-prow"><span class="amt sm">{{ page.copy.field_0026 | escape }}</span><span class="bf-days" data-de="{{ page.copy.field_0027 | escape }}" data-en="{{ page.copy.field_0028 | escape }}">{{ page.copy.field_0027 | escape }}</span></div>
       </div>
     </div>
-    <p class="bf-meta" data-de="{{ page.content.field_0030 | escape }}" data-en="{{ page.content.field_0031 | escape }}">{{ page.content.field_0030 | escape }}</p>
-    <p class="bf-note" data-de="{{ page.content.field_0033 | escape }}" data-en="{{ page.content.field_0034 | escape }}">{{ page.content.field_0033 | escape }}</p>
+    <p class="bf-meta" data-de="{{ page.copy.field_0030 | escape }}" data-en="{{ page.copy.field_0031 | escape }}">{{ page.copy.field_0030 | escape }}</p>
+    <p class="bf-note" data-de="{{ page.copy.field_0033 | escape }}" data-en="{{ page.copy.field_0034 | escape }}">{{ page.copy.field_0033 | escape }}</p>
   </div>
 </div></section>
 <section class="bf-week-sec"><div class="bf-week">
     <div class="bf-day">
-      <div class="bf-dayname" data-de="{{ page.content.field_0036 | escape }}" data-en="{{ page.content.field_0037 | escape }}">{{ page.content.field_0036 | escape }}</div>
+      <div class="bf-dayname" data-de="{{ page.copy.field_0036 | escape }}" data-en="{{ page.copy.field_0037 | escape }}">{{ page.copy.field_0036 | escape }}</div>
       <ul class="bf-list">
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0039 | escape }}" data-en="{{ page.content.field_0040 | escape }}">{{ page.content.field_0039 | escape }}</span> {{ page.content.field_0042 | escape }}</li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0043 | escape }}" data-en="{{ page.content.field_0044 | escape }}">{{ page.content.field_0043 | escape }}</span> {{ page.content.field_0046 | escape }}</li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0047 | escape }}" data-en="{{ page.content.field_0048 | escape }}">{{ page.content.field_0047 | escape }}</span> {{ page.content.field_0050 | escape }}</li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0051 | escape }}" data-en="{{ page.content.field_0052 | escape }}">{{ page.content.field_0051 | escape }}</span> <span data-de="{{ page.content.field_0054 | escape }}" data-en="{{ page.content.field_0055 | escape }}">{{ page.content.field_0054 | escape }}</span></li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0057 | escape }}" data-en="{{ page.content.field_0057 | escape }}">{{ page.content.field_0057 | escape }}</span> {{ page.content.field_0060 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0039 | escape }}" data-en="{{ page.copy.field_0040 | escape }}">{{ page.copy.field_0039 | escape }}</span> {{ page.copy.field_0042 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0043 | escape }}" data-en="{{ page.copy.field_0044 | escape }}">{{ page.copy.field_0043 | escape }}</span> {{ page.copy.field_0046 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0047 | escape }}" data-en="{{ page.copy.field_0048 | escape }}">{{ page.copy.field_0047 | escape }}</span> {{ page.copy.field_0050 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0051 | escape }}" data-en="{{ page.copy.field_0052 | escape }}">{{ page.copy.field_0051 | escape }}</span> <span data-de="{{ page.copy.field_0054 | escape }}" data-en="{{ page.copy.field_0055 | escape }}">{{ page.copy.field_0054 | escape }}</span></li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0057 | escape }}" data-en="{{ page.copy.field_0057 | escape }}">{{ page.copy.field_0057 | escape }}</span> {{ page.copy.field_0060 | escape }}</li>
       </ul>
     </div>
     <div class="bf-day">
-      <div class="bf-dayname" data-de="{{ page.content.field_0061 | escape }}" data-en="{{ page.content.field_0062 | escape }}">{{ page.content.field_0061 | escape }}</div>
+      <div class="bf-dayname" data-de="{{ page.copy.field_0061 | escape }}" data-en="{{ page.copy.field_0062 | escape }}">{{ page.copy.field_0061 | escape }}</div>
       <ul class="bf-list">
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0039 | escape }}" data-en="{{ page.content.field_0040 | escape }}">{{ page.content.field_0039 | escape }}</span> {{ page.content.field_0067 | escape }}</li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0043 | escape }}" data-en="{{ page.content.field_0044 | escape }}">{{ page.content.field_0043 | escape }}</span> {{ page.content.field_0071 | escape }}</li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0047 | escape }}" data-en="{{ page.content.field_0048 | escape }}">{{ page.content.field_0047 | escape }}</span> {{ page.content.field_0075 | escape }}</li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0051 | escape }}" data-en="{{ page.content.field_0052 | escape }}">{{ page.content.field_0051 | escape }}</span> <span data-de="{{ page.content.field_0079 | escape }}" data-en="{{ page.content.field_0080 | escape }}">{{ page.content.field_0079 | escape }}</span></li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0057 | escape }}" data-en="{{ page.content.field_0057 | escape }}">{{ page.content.field_0057 | escape }}</span> {{ page.content.field_0085 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0039 | escape }}" data-en="{{ page.copy.field_0040 | escape }}">{{ page.copy.field_0039 | escape }}</span> {{ page.copy.field_0067 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0043 | escape }}" data-en="{{ page.copy.field_0044 | escape }}">{{ page.copy.field_0043 | escape }}</span> {{ page.copy.field_0071 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0047 | escape }}" data-en="{{ page.copy.field_0048 | escape }}">{{ page.copy.field_0047 | escape }}</span> {{ page.copy.field_0075 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0051 | escape }}" data-en="{{ page.copy.field_0052 | escape }}">{{ page.copy.field_0051 | escape }}</span> <span data-de="{{ page.copy.field_0079 | escape }}" data-en="{{ page.copy.field_0080 | escape }}">{{ page.copy.field_0079 | escape }}</span></li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0057 | escape }}" data-en="{{ page.copy.field_0057 | escape }}">{{ page.copy.field_0057 | escape }}</span> {{ page.copy.field_0085 | escape }}</li>
       </ul>
     </div>
     <div class="bf-day">
-      <div class="bf-dayname" data-de="{{ page.content.field_0086 | escape }}" data-en="{{ page.content.field_0087 | escape }}">{{ page.content.field_0086 | escape }}</div>
+      <div class="bf-dayname" data-de="{{ page.copy.field_0086 | escape }}" data-en="{{ page.copy.field_0087 | escape }}">{{ page.copy.field_0086 | escape }}</div>
       <ul class="bf-list">
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0039 | escape }}" data-en="{{ page.content.field_0040 | escape }}">{{ page.content.field_0039 | escape }}</span> {{ page.content.field_0042 | escape }}</li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0043 | escape }}" data-en="{{ page.content.field_0044 | escape }}">{{ page.content.field_0043 | escape }}</span> {{ page.content.field_0096 | escape }}</li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0047 | escape }}" data-en="{{ page.content.field_0048 | escape }}">{{ page.content.field_0047 | escape }}</span> {{ page.content.field_0100 | escape }}</li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0051 | escape }}" data-en="{{ page.content.field_0052 | escape }}">{{ page.content.field_0051 | escape }}</span> <span data-de="{{ page.content.field_0104 | escape }}" data-en="{{ page.content.field_0105 | escape }}">{{ page.content.field_0104 | escape }}</span></li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0057 | escape }}" data-en="{{ page.content.field_0057 | escape }}">{{ page.content.field_0057 | escape }}</span> {{ page.content.field_0110 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0039 | escape }}" data-en="{{ page.copy.field_0040 | escape }}">{{ page.copy.field_0039 | escape }}</span> {{ page.copy.field_0042 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0043 | escape }}" data-en="{{ page.copy.field_0044 | escape }}">{{ page.copy.field_0043 | escape }}</span> {{ page.copy.field_0096 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0047 | escape }}" data-en="{{ page.copy.field_0048 | escape }}">{{ page.copy.field_0047 | escape }}</span> {{ page.copy.field_0100 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0051 | escape }}" data-en="{{ page.copy.field_0052 | escape }}">{{ page.copy.field_0051 | escape }}</span> <span data-de="{{ page.copy.field_0104 | escape }}" data-en="{{ page.copy.field_0105 | escape }}">{{ page.copy.field_0104 | escape }}</span></li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0057 | escape }}" data-en="{{ page.copy.field_0057 | escape }}">{{ page.copy.field_0057 | escape }}</span> {{ page.copy.field_0110 | escape }}</li>
       </ul>
     </div>
     <div class="bf-day">
-      <div class="bf-dayname" data-de="{{ page.content.field_0111 | escape }}" data-en="{{ page.content.field_0112 | escape }}">{{ page.content.field_0111 | escape }}</div>
+      <div class="bf-dayname" data-de="{{ page.copy.field_0111 | escape }}" data-en="{{ page.copy.field_0112 | escape }}">{{ page.copy.field_0111 | escape }}</div>
       <ul class="bf-list">
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0039 | escape }}" data-en="{{ page.content.field_0040 | escape }}">{{ page.content.field_0039 | escape }}</span> {{ page.content.field_0117 | escape }}</li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0043 | escape }}" data-en="{{ page.content.field_0044 | escape }}">{{ page.content.field_0043 | escape }}</span> {{ page.content.field_0121 | escape }}</li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0047 | escape }}" data-en="{{ page.content.field_0048 | escape }}">{{ page.content.field_0047 | escape }}</span> {{ page.content.field_0125 | escape }}</li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0051 | escape }}" data-en="{{ page.content.field_0052 | escape }}">{{ page.content.field_0051 | escape }}</span> <span data-de="{{ page.content.field_0129 | escape }}" data-en="{{ page.content.field_0130 | escape }}">{{ page.content.field_0129 | escape }}</span></li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0057 | escape }}" data-en="{{ page.content.field_0057 | escape }}">{{ page.content.field_0057 | escape }}</span> {{ page.content.field_0085 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0039 | escape }}" data-en="{{ page.copy.field_0040 | escape }}">{{ page.copy.field_0039 | escape }}</span> {{ page.copy.field_0117 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0043 | escape }}" data-en="{{ page.copy.field_0044 | escape }}">{{ page.copy.field_0043 | escape }}</span> {{ page.copy.field_0121 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0047 | escape }}" data-en="{{ page.copy.field_0048 | escape }}">{{ page.copy.field_0047 | escape }}</span> {{ page.copy.field_0125 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0051 | escape }}" data-en="{{ page.copy.field_0052 | escape }}">{{ page.copy.field_0051 | escape }}</span> <span data-de="{{ page.copy.field_0129 | escape }}" data-en="{{ page.copy.field_0130 | escape }}">{{ page.copy.field_0129 | escape }}</span></li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0057 | escape }}" data-en="{{ page.copy.field_0057 | escape }}">{{ page.copy.field_0057 | escape }}</span> {{ page.copy.field_0085 | escape }}</li>
       </ul>
     </div>
     <div class="bf-day">
-      <div class="bf-dayname" data-de="{{ page.content.field_0027 | escape }}" data-en="{{ page.content.field_0028 | escape }}">{{ page.content.field_0027 | escape }}</div>
+      <div class="bf-dayname" data-de="{{ page.copy.field_0027 | escape }}" data-en="{{ page.copy.field_0028 | escape }}">{{ page.copy.field_0027 | escape }}</div>
       <ul class="bf-list">
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0039 | escape }}" data-en="{{ page.content.field_0040 | escape }}">{{ page.content.field_0039 | escape }}</span> {{ page.content.field_0142 | escape }}</li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0043 | escape }}" data-en="{{ page.content.field_0044 | escape }}">{{ page.content.field_0043 | escape }}</span> {{ page.content.field_0146 | escape }}</li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0047 | escape }}" data-en="{{ page.content.field_0048 | escape }}">{{ page.content.field_0047 | escape }}</span> {{ page.content.field_0150 | escape }}</li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0051 | escape }}" data-en="{{ page.content.field_0052 | escape }}">{{ page.content.field_0051 | escape }}</span> <span data-de="{{ page.content.field_0154 | escape }}" data-en="{{ page.content.field_0155 | escape }}">{{ page.content.field_0154 | escape }}</span></li>
-        <li><span class="bf-lbl" data-de="{{ page.content.field_0057 | escape }}" data-en="{{ page.content.field_0057 | escape }}">{{ page.content.field_0057 | escape }}</span> {{ page.content.field_0160 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0039 | escape }}" data-en="{{ page.copy.field_0040 | escape }}">{{ page.copy.field_0039 | escape }}</span> {{ page.copy.field_0142 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0043 | escape }}" data-en="{{ page.copy.field_0044 | escape }}">{{ page.copy.field_0043 | escape }}</span> {{ page.copy.field_0146 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0047 | escape }}" data-en="{{ page.copy.field_0048 | escape }}">{{ page.copy.field_0047 | escape }}</span> {{ page.copy.field_0150 | escape }}</li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0051 | escape }}" data-en="{{ page.copy.field_0052 | escape }}">{{ page.copy.field_0051 | escape }}</span> <span data-de="{{ page.copy.field_0154 | escape }}" data-en="{{ page.copy.field_0155 | escape }}">{{ page.copy.field_0154 | escape }}</span></li>
+        <li><span class="bf-lbl" data-de="{{ page.copy.field_0057 | escape }}" data-en="{{ page.copy.field_0057 | escape }}">{{ page.copy.field_0057 | escape }}</span> {{ page.copy.field_0160 | escape }}</li>
       </ul>
     </div>
   </div>
-  <p class="bf-note" style="max-width:760px;margin:0 auto 60px;padding:0 20px;text-align:center;font-size:15px;line-height:1.65" data-de="{{ page.content.field_0161 | escape }}" data-en="{{ page.content.field_0162 | escape }}">{{ page.content.field_0161 | escape }}</p>
+  <p class="bf-note" style="max-width:760px;margin:0 auto 60px;padding:0 20px;text-align:center;font-size:15px;line-height:1.65" data-de="{{ page.copy.field_0161 | escape }}" data-en="{{ page.copy.field_0162 | escape }}">{{ page.copy.field_0161 | escape }}</p>
 </section>
 <footer class="site-footer" id="contact">
   <div class="wrap">

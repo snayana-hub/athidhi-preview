@@ -75,7 +75,7 @@
 {% if page.featured_image and page.featured_image != '' %}<meta property="og:image" content="https://athidhi.de{{ page.featured_image }}">{% endif %}
 <meta name="twitter:card" content="summary_large_image">
 {% unless page.published %}<meta name="robots" content="noindex,nofollow">{% endunless %}
-</head><body><a id="top"></a><header class="site-header">
+{% include tracking-gated.html %}</head><body><a id="top"></a><header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="/index.html"><img src="/assets/logo-green.png" alt="Athidhi — Flavours from India"></a>
     <nav>

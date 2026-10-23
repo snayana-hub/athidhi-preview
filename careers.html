@@ -3,7 +3,7 @@ seo:
   field_0000: Athidhi — Karriere | Careers
   field_0001: Werden Sie Teil des Athidhi-Teams. Sagen Sie uns, welche Rolle Sie interessiert — wir freuen uns auf Ihre Bewerbung.
   field_0003: Werden Sie Teil des Athidhi-Teams.
-content:
+copy:
   field_0006: Karriere
   field_0007: Careers
   field_0009: Karriere bei Athidhi
@@ -76,7 +76,7 @@ content:
 <meta name="twitter:title" content="{{ page.seo.field_0000 | escape }}">
 <meta name="twitter:description" content="{{ page.seo.field_0003 | escape }}">
 <meta name="twitter:image" content="https://athidhi.de/assets/1-our-story.jpg">
-</head><body><a id="top"></a><header class="site-header">
+{% include tracking-gated.html %}</head><body><a id="top"></a><header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="index.html"><img src="assets/logo-green.png" alt="Athidhi — Flavours from India"></a>
     <nav>
@@ -107,49 +107,49 @@ content:
   </div>
 </header><section class="sub-hero" style="background-image:url('assets/site/32-biryani-spread.jpg')">
   <div class="wrap">
-    <div class="eyebrow" data-de="{{ page.content.field_0006 | escape }}" data-en="{{ page.content.field_0007 | escape }}">{{ page.content.field_0006 | escape }}</div>
-    <h1 data-de="{{ page.content.field_0009 | escape }}" data-en="{{ page.content.field_0010 | escape }}">{{ page.content.field_0009 | escape }}</h1>
-    <div class="addr" data-de="{{ page.content.field_0012 | escape }}" data-en="{{ page.content.field_0013 | escape }}">{{ page.content.field_0012 | escape }}</div>
+    <div class="eyebrow" data-de="{{ page.copy.field_0006 | escape }}" data-en="{{ page.copy.field_0007 | escape }}">{{ page.copy.field_0006 | escape }}</div>
+    <h1 data-de="{{ page.copy.field_0009 | escape }}" data-en="{{ page.copy.field_0010 | escape }}">{{ page.copy.field_0009 | escape }}</h1>
+    <div class="addr" data-de="{{ page.copy.field_0012 | escape }}" data-en="{{ page.copy.field_0013 | escape }}">{{ page.copy.field_0012 | escape }}</div>
   </div>
 </section><div class="crumb"><div class="wrap">
-  <a href="index.html" data-de="{{ page.content.field_0015 | escape }}" data-en="{{ page.content.field_0016 | escape }}">{{ page.content.field_0015 | escape }}</a><span class="sep">/</span>
-  <span data-de="{{ page.content.field_0006 | escape }}" data-en="{{ page.content.field_0007 | escape }}">{{ page.content.field_0006 | escape }}</span>
+  <a href="index.html" data-de="{{ page.copy.field_0015 | escape }}" data-en="{{ page.copy.field_0016 | escape }}">{{ page.copy.field_0015 | escape }}</a><span class="sep">/</span>
+  <span data-de="{{ page.copy.field_0006 | escape }}" data-en="{{ page.copy.field_0007 | escape }}">{{ page.copy.field_0006 | escape }}</span>
 </div></div><section class="cform-wrap"><div class="wrap">
-  <p class="cform-lead" data-de="{{ page.content.field_0022 | escape }}" data-en="{{ page.content.field_0023 | escape }}">{{ page.content.field_0022 | escape }}</p>
+  <p class="cform-lead" data-de="{{ page.copy.field_0022 | escape }}" data-en="{{ page.copy.field_0023 | escape }}">{{ page.copy.field_0022 | escape }}</p>
   <div class="cform-card">
     <form id="careers-form" novalidate>
       <div class="hp-field" aria-hidden="true" style="position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px;height:1px;overflow:hidden">
-        <label>{{ page.content.field_0025 | escape }}<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+        <label>{{ page.copy.field_0025 | escape }}<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
       </div>
       <div class="cform">
         <div class="fld full">
-          <label><span data-de="{{ page.content.field_0026 | escape }}" data-en="{{ page.content.field_0026 | escape }}">{{ page.content.field_0026 | escape }} </span><span class="req">*</span></label>
+          <label><span data-de="{{ page.copy.field_0026 | escape }}" data-en="{{ page.copy.field_0026 | escape }}">{{ page.copy.field_0026 | escape }} </span><span class="req">*</span></label>
           <input type="text" name="name" autocomplete="name" required maxlength="120">
         </div>
         <div class="fld full">
-          <label><span data-de="{{ page.content.field_0030 | escape }}" data-en="{{ page.content.field_0031 | escape }}">{{ page.content.field_0030 | escape }} </span><span class="req">*</span></label>
+          <label><span data-de="{{ page.copy.field_0030 | escape }}" data-en="{{ page.copy.field_0031 | escape }}">{{ page.copy.field_0030 | escape }} </span><span class="req">*</span></label>
           <input type="text" name="contact" autocomplete="email" required maxlength="160">
         </div>
         <div class="fld full">
-          <label><span data-de="{{ page.content.field_0034 | escape }}" data-en="{{ page.content.field_0035 | escape }}">{{ page.content.field_0034 | escape }} </span><span class="req">*</span></label>
+          <label><span data-de="{{ page.copy.field_0034 | escape }}" data-en="{{ page.copy.field_0035 | escape }}">{{ page.copy.field_0034 | escape }} </span><span class="req">*</span></label>
           <input type="text" name="role" required maxlength="160" data-de-placeholder="z. B. Koch, Servicekraft, Küchenhilfe" data-en-placeholder="e.g. chef, waiter, kitchen help">
         </div>
         <div class="fld full">
-          <label data-de="{{ page.content.field_0038 | escape }}" data-en="{{ page.content.field_0039 | escape }}">{{ page.content.field_0038 | escape }}</label>
+          <label data-de="{{ page.copy.field_0038 | escape }}" data-en="{{ page.copy.field_0039 | escape }}">{{ page.copy.field_0038 | escape }}</label>
           <textarea name="experience" maxlength="2000" data-de-placeholder="Kurz zu Ihrer Erfahrung" data-en-placeholder="A little about your experience"></textarea>
         </div>
         <div class="fld full">
-          <label data-de="{{ page.content.field_0041 | escape }}" data-en="{{ page.content.field_0042 | escape }}">{{ page.content.field_0041 | escape }}</label>
+          <label data-de="{{ page.copy.field_0041 | escape }}" data-en="{{ page.copy.field_0042 | escape }}">{{ page.copy.field_0041 | escape }}</label>
           <input type="text" name="current_employer" maxlength="300">
         </div>
         <div class="fld full">
-          <label><span data-de="{{ page.content.field_0044 | escape }}" data-en="{{ page.content.field_0045 | escape }}">{{ page.content.field_0046 | escape }} </span><span class="req">*</span></label>
+          <label><span data-de="{{ page.copy.field_0044 | escape }}" data-en="{{ page.copy.field_0045 | escape }}">{{ page.copy.field_0046 | escape }} </span><span class="req">*</span></label>
           <input type="file" name="cv" required accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
-          <p class="cform-hint" data-de="{{ page.content.field_0048 | escape }}" data-en="{{ page.content.field_0049 | escape }}">{{ page.content.field_0048 | escape }}</p>
+          <p class="cform-hint" data-de="{{ page.copy.field_0048 | escape }}" data-en="{{ page.copy.field_0049 | escape }}">{{ page.copy.field_0048 | escape }}</p>
         </div>
         <div id="careers-status" class="cform-status" role="status" aria-live="polite"></div>
         <div class="cform-actions">
-          <button type="submit" class="btn btn-primary btn-lg" data-de="{{ page.content.field_0051 | escape }}" data-en="{{ page.content.field_0052 | escape }}">{{ page.content.field_0051 | escape }}</button>
+          <button type="submit" class="btn btn-primary btn-lg" data-de="{{ page.copy.field_0051 | escape }}" data-en="{{ page.copy.field_0052 | escape }}">{{ page.copy.field_0051 | escape }}</button>
         </div>
       </div>
     </form>

@@ -8,3 +8,7 @@ defaults:
       type: posts
     values:
       layout: admin-post
+
+# Explicitly exclude unpublished and future posts from production builds.
+unpublished: false
+future: false

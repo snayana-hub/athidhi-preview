@@ -1,7 +1,7 @@
 ---
 seo:
   field_0000: Athidhi — Reservations (Staff)
-content:
+copy:
   field_0001: Athidhi
   field_0002: Reservations — staff sign in
   field_0003: Email
@@ -137,13 +137,13 @@ td.notes{max-width:220px;color:var(--muted)}
 
 <div id="staff-login" style="display:none">
   <div class="login-box">
-    <h1>{{ page.content.field_0001 | escape }}</h1>
-    <p>{{ page.content.field_0002 | escape }}</p>
+    <h1>{{ page.copy.field_0001 | escape }}</h1>
+    <p>{{ page.copy.field_0002 | escape }}</p>
     <form id="login-form">
-      <div class="fld"><label>{{ page.content.field_0003 | escape }}</label><input type="email" id="login-email" autocomplete="username" required></div>
-      <div class="fld"><label>{{ page.content.field_0004 | escape }}</label><input type="password" id="login-pass" autocomplete="current-password" required></div>
+      <div class="fld"><label>{{ page.copy.field_0003 | escape }}</label><input type="email" id="login-email" autocomplete="username" required></div>
+      <div class="fld"><label>{{ page.copy.field_0004 | escape }}</label><input type="password" id="login-pass" autocomplete="current-password" required></div>
       <div id="login-err" class="err"></div>
-      <button type="submit" class="btn btn-primary" style="width:100%">{{ page.content.field_0005 | escape }}</button>
+      <button type="submit" class="btn btn-primary" style="width:100%">{{ page.copy.field_0005 | escape }}</button>
     </form>
   </div>
 </div>
@@ -151,49 +151,49 @@ td.notes{max-width:220px;color:var(--muted)}
 <div id="staff-app" style="display:none">
   <div class="st-top">
     <div style="display:flex;align-items:center;gap:14px">
-      <a class="brand" href="index.html"><img src="assets/logo-green.png" alt="{{ page.content.field_0001 | escape }}"></a>
-      <span class="st-title">{{ page.content.field_0007 | escape }}</span>
+      <a class="brand" href="index.html"><img src="assets/logo-green.png" alt="{{ page.copy.field_0001 | escape }}"></a>
+      <span class="st-title">{{ page.copy.field_0007 | escape }}</span>
     </div>
     <div class="nav-tabs" id="nav-tabs">
-      <button data-view="list" class="active">{{ page.content.field_0008 | escape }}</button>
-      <button data-view="board">{{ page.content.field_0009 | escape }}</button>
-      <button data-view="tables">{{ page.content.field_0010 | escape }}</button>
-      <button data-view="takeaway">{{ page.content.field_0011 | escape }}</button>
-      <button data-view="inquiries">{{ page.content.field_0012 | escape }}</button>
+      <button data-view="list" class="active">{{ page.copy.field_0008 | escape }}</button>
+      <button data-view="board">{{ page.copy.field_0009 | escape }}</button>
+      <button data-view="tables">{{ page.copy.field_0010 | escape }}</button>
+      <button data-view="takeaway">{{ page.copy.field_0011 | escape }}</button>
+      <button data-view="inquiries">{{ page.copy.field_0012 | escape }}</button>
     </div>
     <div class="st-actions">
       <span id="staff-who" style="font-size:13px;color:var(--muted)"></span>
-      <button id="refresh-btn" class="btn mini" style="background:var(--maroon);color:#FFEBB0;border-color:var(--maroon)">{{ page.content.field_0013 | escape }}</button>
-      <button id="logout-btn" class="btn btn-ghost mini">{{ page.content.field_0014 | escape }}</button>
+      <button id="refresh-btn" class="btn mini" style="background:var(--maroon);color:#FFEBB0;border-color:var(--maroon)">{{ page.copy.field_0013 | escape }}</button>
+      <button id="logout-btn" class="btn btn-ghost mini">{{ page.copy.field_0014 | escape }}</button>
     </div>
   </div>
   <div class="st-wrap">
     <div class="toolbar" id="toolbar">
-      <div class="fld"><label>{{ page.content.field_0015 | escape }}</label>
+      <div class="fld"><label>{{ page.copy.field_0015 | escape }}</label>
         <select id="f-branch">
-          <option value="">{{ page.content.field_0016 | escape }}</option>
-          <option value="wiesloch">{{ page.content.field_0017 | escape }}</option>
-          <option value="heidelberg">{{ page.content.field_0018 | escape }}</option>
-          <option value="karlsruhe">{{ page.content.field_0019 | escape }}</option>
-          <option value="stuttgart">{{ page.content.field_0020 | escape }}</option>
+          <option value="">{{ page.copy.field_0016 | escape }}</option>
+          <option value="wiesloch">{{ page.copy.field_0017 | escape }}</option>
+          <option value="heidelberg">{{ page.copy.field_0018 | escape }}</option>
+          <option value="karlsruhe">{{ page.copy.field_0019 | escape }}</option>
+          <option value="stuttgart">{{ page.copy.field_0020 | escape }}</option>
         </select>
       </div>
-      <div class="fld"><label>{{ page.content.field_0021 | escape }}</label><input type="date" id="f-date"></div>
-      <div class="fld grow"><label>{{ page.content.field_0022 | escape }}</label><input type="text" id="f-search" placeholder="Type to filter…"></div>
-      <button id="clear-filters" class="btn btn-ghost mini">{{ page.content.field_0023 | escape }}</button>
+      <div class="fld"><label>{{ page.copy.field_0021 | escape }}</label><input type="date" id="f-date"></div>
+      <div class="fld grow"><label>{{ page.copy.field_0022 | escape }}</label><input type="text" id="f-search" placeholder="Type to filter…"></div>
+      <button id="clear-filters" class="btn btn-ghost mini">{{ page.copy.field_0023 | escape }}</button>
     </div>
 
     <!-- LIST -->
     <div id="view-list">
-      <p class="count-line"><b id="resv-count">{{ page.content.field_0024 | escape }}</b> {{ page.content.field_0025 | escape }}</p>
+      <p class="count-line"><b id="resv-count">{{ page.copy.field_0024 | escape }}</b> {{ page.copy.field_0025 | escape }}</p>
       <div class="tbl-scroll">
         <table class="resv">
           <thead><tr>
-            <th>{{ page.content.field_0021 | escape }}</th><th>{{ page.content.field_0027 | escape }}</th><th>{{ page.content.field_0015 | escape }}</th><th>{{ page.content.field_0029 | escape }}</th><th>{{ page.content.field_0030 | escape }}</th><th>{{ page.content.field_0031 | escape }}</th><th>{{ page.content.field_0032 | escape }}</th><th>{{ page.content.field_0033 | escape }}</th><th>{{ page.content.field_0034 | escape }}</th><th>{{ page.content.field_0035 | escape }}</th>
+            <th>{{ page.copy.field_0021 | escape }}</th><th>{{ page.copy.field_0027 | escape }}</th><th>{{ page.copy.field_0015 | escape }}</th><th>{{ page.copy.field_0029 | escape }}</th><th>{{ page.copy.field_0030 | escape }}</th><th>{{ page.copy.field_0031 | escape }}</th><th>{{ page.copy.field_0032 | escape }}</th><th>{{ page.copy.field_0033 | escape }}</th><th>{{ page.copy.field_0034 | escape }}</th><th>{{ page.copy.field_0035 | escape }}</th>
           </tr></thead>
           <tbody id="resv-tbody"></tbody>
         </table>
-        <div id="resv-empty" class="empty" style="display:none">{{ page.content.field_0036 | escape }}</div>
+        <div id="resv-empty" class="empty" style="display:none">{{ page.copy.field_0036 | escape }}</div>
       </div>
     </div>
 
@@ -209,22 +209,22 @@ td.notes{max-width:220px;color:var(--muted)}
 
     <!-- TAKEAWAY -->
     <div id="view-takeaway" style="display:none">
-      <h2 class="sec-h">{{ page.content.field_0037 | escape }}</h2>
-      <p class="tk-hint">{{ page.content.field_0038 | escape }}</p>
+      <h2 class="sec-h">{{ page.copy.field_0037 | escape }}</h2>
+      <p class="tk-hint">{{ page.copy.field_0038 | escape }}</p>
       <div class="tk-grid" id="tk-grid"></div>
     </div>
 
     <!-- INQUIRIES (service enquiries: party hall, catering, delivery) -->
     <div id="view-inquiries" style="display:none">
-      <p class="count-line"><b id="inq-count">{{ page.content.field_0024 | escape }}</b> {{ page.content.field_0040 | escape }}</p>
+      <p class="count-line"><b id="inq-count">{{ page.copy.field_0024 | escape }}</b> {{ page.copy.field_0040 | escape }}</p>
       <div class="tbl-scroll">
         <table class="resv">
           <thead><tr>
-            <th>{{ page.content.field_0041 | escape }}</th><th>{{ page.content.field_0042 | escape }}</th><th>{{ page.content.field_0015 | escape }}</th><th>{{ page.content.field_0029 | escape }}</th><th>{{ page.content.field_0031 | escape }}</th><th>{{ page.content.field_0046 | escape }}</th><th>{{ page.content.field_0047 | escape }}</th><th>{{ page.content.field_0048 | escape }}</th><th>{{ page.content.field_0033 | escape }}</th>
+            <th>{{ page.copy.field_0041 | escape }}</th><th>{{ page.copy.field_0042 | escape }}</th><th>{{ page.copy.field_0015 | escape }}</th><th>{{ page.copy.field_0029 | escape }}</th><th>{{ page.copy.field_0031 | escape }}</th><th>{{ page.copy.field_0046 | escape }}</th><th>{{ page.copy.field_0047 | escape }}</th><th>{{ page.copy.field_0048 | escape }}</th><th>{{ page.copy.field_0033 | escape }}</th>
           </tr></thead>
           <tbody id="inq-tbody"></tbody>
         </table>
-        <div id="inq-empty" class="empty" style="display:none">{{ page.content.field_0050 | escape }}</div>
+        <div id="inq-empty" class="empty" style="display:none">{{ page.copy.field_0050 | escape }}</div>
       </div>
     </div>
   </div>

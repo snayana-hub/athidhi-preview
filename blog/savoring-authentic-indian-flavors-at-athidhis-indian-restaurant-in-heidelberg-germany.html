@@ -3,7 +3,7 @@ seo:
   field_0000: Savoring Authentic Indian Flavors at Athidhi’s Indian Restaurant in Heidelberg, Germany | Athidhi
   field_0001: In the heart of Heidelberg, Germany, a culinary gem awaits those in search of a delectable dining experience
     – Athidhi’s Indian Restaurant. If you’re wondering, “Where can I find a
-content:
+copy:
   article_content: "\n<p>In the heart of Heidelberg, Germany, a culinary gem awaits those in search of a delectable dining\
     \ experience &#8211; Athidhi&#8217;s Indian Restaurant. If you&#8217;re wondering, &#8220;Where can I find an Indian restaurant\
     \ near me in Heidelberg?&#8221; look no further. Athidhi&#8217;s Indian Restaurant is your gateway to a flavorful journey\
@@ -111,7 +111,7 @@ content:
 .why-more.open{max-height:4000px;opacity:1}
 </style>
 
-</head><body><a id="top"></a><header class="site-header">
+{% include tracking-gated.html %}</head><body><a id="top"></a><header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="../index.html"><img src="../assets/logo-green.png" alt="Athidhi — Flavours from India"></a>
     <nav>
@@ -142,14 +142,14 @@ content:
   </div>
 </header>
 <main class="article-wrap">
-  <a class="article-back" href="../blog.html" data-de="{{ page.content.field_0005 | escape }}" data-en="{{ page.content.field_0006 | escape }}">{{ page.content.field_0005 | escape }}</a>
+  <a class="article-back" href="../blog.html" data-de="{{ page.copy.field_0005 | escape }}" data-en="{{ page.copy.field_0006 | escape }}">{{ page.copy.field_0005 | escape }}</a>
   <div class="article-hero">
-    <div class="date">{{ page.content.field_0008 | escape }}</div>
-    <h1>{{ page.content.field_0009 | escape }}</h1>
+    <div class="date">{{ page.copy.field_0008 | escape }}</div>
+    <h1>{{ page.copy.field_0009 | escape }}</h1>
   </div>
   
-  <article class="article-body">{{ page.content.article_content }}</article>
-  <a class="article-back" href="../blog.html" data-de="{{ page.content.field_0005 | escape }}" data-en="{{ page.content.field_0006 | escape }}">{{ page.content.field_0005 | escape }}</a>
+  <article class="article-body">{{ page.copy.article_content }}</article>
+  <a class="article-back" href="../blog.html" data-de="{{ page.copy.field_0005 | escape }}" data-en="{{ page.copy.field_0006 | escape }}">{{ page.copy.field_0005 | escape }}</a>
 </main>
 <footer class="site-footer" id="contact">
   <div class="wrap">

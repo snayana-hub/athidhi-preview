@@ -32,7 +32,7 @@ content:
       - name: field_0001
         label: 'description: Aktuelle Beiträge, Neuigkeiten und Geschichten von Athidhi — authentische indische'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -419,7 +419,7 @@ content:
       - name: field_0001
         label: 'description: Wöchentliches indisches Buffet bei Athidhi in Heidelberg — Mo–Do €13,90, freitags '
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -650,7 +650,7 @@ content:
       - name: field_0003
         label: 'og:description: Werden Sie Teil des Athidhi-Teams.'
         type: string
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -755,7 +755,7 @@ content:
       - name: field_0001
         label: 'description: Authentisches indisches Catering für Feste, Meetings und private Feiern — wo immer'
         type: string
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -1181,7 +1181,7 @@ content:
       - name: field_0001
         label: 'description: Athidhi — Kontaktieren Sie unsere Restaurants in Heidelberg, Wiesloch, Karlsruhe u'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -1385,7 +1385,7 @@ content:
       - name: field_0001
         label: 'description: Datenschutzerklärung von athidhi.de: keine Cookies, keine Tracker, Angaben zu Form'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -1631,7 +1631,7 @@ content:
       - name: field_0002
         label: 'og:title: Athidhi — Festsaal &amp; Feiern | Party Hall'
         type: string
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -1889,7 +1889,7 @@ content:
       - name: field_0001
         label: 'description: Impressum von Athidhi - Indisches Restaurant in Wiesloch, Heidelberg, Karlsruhe un'
         type: string
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -2027,7 +2027,7 @@ content:
       - name: field_0001
         label: 'description: Athidhi — Flavours from India. Authentische indische Küche in Heidelberg, Wiesloch'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -2822,7 +2822,7 @@ content:
       - name: field_0001
         label: 'description: Ihre Lieblingsgerichte von Athidhi bequem nach Hause bestellt. Online bestellen be'
         type: string
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -3035,7 +3035,7 @@ content:
       - name: field_0003
         label: 'og:description: Die vollständige Speisekarte von Athidhi — authentische indische Spezialitäten.'
         type: string
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -3107,7 +3107,7 @@ content:
       - name: field_0001
         label: 'description: Ihre Lieblingsgerichte von Athidhi bequem nach Hause bestellt. Online bestellen be'
         type: string
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -3236,7 +3236,7 @@ content:
       - name: field_0001
         label: 'description: Reservieren Sie Ihren Tisch bei Athidhi — Wiesloch, Heidelberg, Karlsruhe, Stuttga'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -3380,7 +3380,7 @@ content:
       - name: field_0001
         label: 'description: Reservieren Sie Ihren Tisch bei Athidhi — Wiesloch, Heidelberg, Karlsruhe, Stuttga'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -3450,7 +3450,7 @@ content:
       - name: field_0001
         label: 'description: Het Huis van Athidhi — das neue Athidhi in den Niederlanden, eröffnet am 18. Juli '
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -3534,7 +3534,7 @@ content:
       - name: field_0002
         label: 'og:title: Athidhi Heidelberg — Indisches Restaurant | Speisekarte &amp; Reservierung'
         type: string
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -3726,7 +3726,7 @@ content:
       - name: field_0002
         label: 'og:title: Athidhi Karlsruhe — Indisches Restaurant | Speisekarte &amp; Reservierung'
         type: string
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -4299,7 +4299,7 @@ content:
       - name: field_0001
         label: 'description: Het Huis van Athidhi — das neue Athidhi in den Niederlanden, eröffnet am 18. Juli '
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -4383,7 +4383,7 @@ content:
       - name: field_0002
         label: 'og:title: Athidhi Stuttgart — Indisches Restaurant | Speisekarte &amp; Reservierung'
         type: string
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -4677,7 +4677,7 @@ content:
       - name: field_0002
         label: 'og:title: Athidhi Wiesloch — Indisches Restaurant | Speisekarte &amp; Reservierung'
         type: string
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5287,7 +5287,7 @@ content:
       - name: field_0001
         label: 'description: Sie suchen nach einem indischen Restaurant in Karlsruhe, das nicht nur mit Geschma'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5330,7 +5330,7 @@ content:
       - name: field_0001
         label: 'description: When it comes to dining out in Heidelberg, Germany, you are spoiled for choice. Th'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5373,7 +5373,7 @@ content:
       - name: field_0001
         label: 'description: If you’ve ever found yourself searching for an Indian restaurant near me or cravin'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5416,7 +5416,7 @@ content:
       - name: field_0001
         label: 'description: Are you tired of leaving your furry friend behind when you head out for a deliciou'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5459,7 +5459,7 @@ content:
       - name: field_0001
         label: 'description: In the heart of Heidelberg, Athidhi stands as a culinary oasis, offering a vibrant'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5502,7 +5502,7 @@ content:
       - name: field_0001
         label: 'description: Im Herzen Heidelbergs ist das Athidhi eine kulinarische Oase und bietet einen lebe'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5545,7 +5545,7 @@ content:
       - name: field_0001
         label: 'description: Wenn Sie auf der Suche nach einem einzigartigen kulinarischen Erlebnis sind, das d'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5588,7 +5588,7 @@ content:
       - name: field_0001
         label: 'description: Wenn Sie auf der Suche nach einem authentischen indischen Restaurant in Karlsruhe '
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5631,7 +5631,7 @@ content:
       - name: field_0001
         label: 'description: Looking for the best Indian restaurant in Stuttgart? Explore authentic Indian cuis'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5674,7 +5674,7 @@ content:
       - name: field_0001
         label: 'description: Indischer Chaat und seine Variationen von süßem, würzigem und würzigem Street Food'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5717,7 +5717,7 @@ content:
       - name: field_0001
         label: 'description: If you’re in Karlsruhe and craving a culinary journey to India, look no further th'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5760,7 +5760,7 @@ content:
       - name: field_0001
         label: 'description: The food in India is among the tastiest and most refined in the world. The culinar'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5803,7 +5803,7 @@ content:
       - name: field_0001
         label: 'description: Indian cuisine is loved across the globe for its bold spices, rich flavors, and di'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5846,7 +5846,7 @@ content:
       - name: field_0001
         label: 'description: Looking for the best Indian restaurant in Stuttgart? Explore authentic Indian cuis'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5889,7 +5889,7 @@ content:
       - name: field_0001
         label: 'description: Indisches Essen hat weltweit Millionen von Menschen begeistert – mit seinen intens'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5932,7 +5932,7 @@ content:
       - name: field_0001
         label: 'description: Das Essen in Indien gehört zu den schmackhaftesten und raffiniertesten der Welt. D'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -5975,7 +5975,7 @@ content:
       - name: field_0001
         label: 'description: Lassi ist eines der berühmten Getränke Indiens, das von Millionen von Menschen gel'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6018,7 +6018,7 @@ content:
       - name: field_0001
         label: 'description: India is a land of spices, stories, and unforgettable flavors—and at Athidhi, we b'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6061,7 +6061,7 @@ content:
       - name: field_0001
         label: 'description: India is a land of spices, stories, and unforgettable flavors—and at Athidhi, we b'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6104,7 +6104,7 @@ content:
       - name: field_0001
         label: 'description: In today’s fast-paced world, the phrase “restaurant near me” has become a common s'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6147,7 +6147,7 @@ content:
       - name: field_0001
         label: 'description: In this technology world, everything changes with just one click, you can have eve'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6190,7 +6190,7 @@ content:
       - name: field_0001
         label: 'description: Discover authentic Indian flavors in Karlsruhe and enjoy traditional Indian cuisin'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6233,7 +6233,7 @@ content:
       - name: field_0001
         label: 'description: Are you searching for an Indian restaurant near me that serves authentic and flavo'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6276,7 +6276,7 @@ content:
       - name: field_0001
         label: 'description: Wer auf der Suche nach einem besonderen kulinarischen Erlebnis ist, sollte einen B'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6319,7 +6319,7 @@ content:
       - name: field_0001
         label: 'description: Entdecken Sie die faszinierende Welt der indischen Küche in Stuttgart und genießen'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6362,7 +6362,7 @@ content:
       - name: field_0001
         label: 'description: At Athidhi, we’re proud to serve more than just flavorful curries and tandoori dis'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6405,7 +6405,7 @@ content:
       - name: field_0001
         label: 'description: Nestled in the heart of Heidelberg, Germany, Athidhi stands as a beacon of authent'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6448,7 +6448,7 @@ content:
       - name: field_0001
         label: 'description: In the heart of Heidelberg, Germany, a culinary gem awaits those in search of a de'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6491,7 +6491,7 @@ content:
       - name: field_0001
         label: 'description: If you’ve been searching for “breakfast near me” and want something more than the '
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6534,7 +6534,7 @@ content:
       - name: field_0001
         label: 'description: When it comes to indulging in rich, flavorful Indian cuisine, Athidhi stands out a'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6577,7 +6577,7 @@ content:
       - name: field_0001
         label: 'description: Indian chaat and its variations of sweet, savory and spicy street food are loved b'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6620,7 +6620,7 @@ content:
       - name: field_0001
         label: 'description: Few dishes capture the heart and heritage of Indian cuisine quite like biryani. It'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6663,7 +6663,7 @@ content:
       - name: field_0001
         label: 'description: If you have tasted Indian food, you must have noticed that most of the recipes are'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6706,7 +6706,7 @@ content:
       - name: field_0001
         label: 'description: Es gibt Zeiten, in denen Sie nicht gerne zu Hause kochen. Vielleicht bist du krank'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6749,7 +6749,7 @@ content:
       - name: field_0001
         label: 'description: Indische Speisen und Rezepte gelten als eine der beliebtesten und schmackhaftesten'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6792,7 +6792,7 @@ content:
       - name: field_0001
         label: 'description: Indian dishes and recipes are considered to be one of the most popular and tasties'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6835,7 +6835,7 @@ content:
       - name: field_0001
         label: 'description: Lassi is one of the famous drinks of India loved by millions of people. Due to its'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6878,7 +6878,7 @@ content:
       - name: field_0001
         label: 'description: There are times when you don’t like cooking at home. Maybe you’re sick of why you '
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6921,7 +6921,7 @@ content:
       - name: field_0001
         label: 'description: In dieser Technologiewelt ändert sich alles mit nur einem Klick, Sie können alles '
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -6964,7 +6964,7 @@ content:
       - name: field_0001
         label: 'description: Wenn Sie indisches Essen probiert haben, müssen Sie bemerkt haben, dass die meiste'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:
@@ -7007,7 +7007,7 @@ content:
       - name: field_0001
         label: 'description: Are you craving flavorful curries, sizzling tandoori dishes, or fresh naan straigh'
         type: text
-    - name: content
+    - name: copy
       label: Page content
       type: object
       fields:

@@ -3,7 +3,7 @@ seo:
   field_0000: Athidhi — Speisekarte | Menu
   field_0001: Die vollständige Speisekarte von Athidhi — authentische indische Spezialitäten. Blättern Sie durch unsere Karte.
   field_0003: Die vollständige Speisekarte von Athidhi — authentische indische Spezialitäten.
-content:
+copy:
   field_0006: Speisekarte
   field_0007: Menu
   field_0009: Unsere Speisekarte
@@ -62,7 +62,7 @@ content:
   ]
 }
 </script>
-</head><body><a id="top"></a><header class="site-header">
+{% include tracking-gated.html %}</head><body><a id="top"></a><header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="index.html"><img src="assets/logo-green.png" alt="Athidhi — Flavours from India"></a>
     <nav>
@@ -93,14 +93,14 @@ content:
   </div>
 </header><section class="sub-hero" style="background-image:url('assets/site/32-biryani-spread.jpg')">
   <div class="wrap">
-    <div class="eyebrow" data-de="{{ page.content.field_0006 | escape }}" data-en="{{ page.content.field_0007 | escape }}">{{ page.content.field_0006 | escape }}</div>
-    <h1 data-de="{{ page.content.field_0009 | escape }}" data-en="{{ page.content.field_0010 | escape }}">{{ page.content.field_0009 | escape }}</h1>
-    <div class="addr" data-de="{{ page.content.field_0012 | escape }}" data-en="{{ page.content.field_0013 | escape }}">{{ page.content.field_0012 | escape }}</div>
+    <div class="eyebrow" data-de="{{ page.copy.field_0006 | escape }}" data-en="{{ page.copy.field_0007 | escape }}">{{ page.copy.field_0006 | escape }}</div>
+    <h1 data-de="{{ page.copy.field_0009 | escape }}" data-en="{{ page.copy.field_0010 | escape }}">{{ page.copy.field_0009 | escape }}</h1>
+    <div class="addr" data-de="{{ page.copy.field_0012 | escape }}" data-en="{{ page.copy.field_0013 | escape }}">{{ page.copy.field_0012 | escape }}</div>
   </div>
 </section><div class="crumb"><div class="wrap">
-  <a href="index.html" data-de="{{ page.content.field_0015 | escape }}" data-en="{{ page.content.field_0016 | escape }}">{{ page.content.field_0015 | escape }}</a><span class="sep">/</span>
-  <span data-de="{{ page.content.field_0006 | escape }}" data-en="{{ page.content.field_0007 | escape }}">{{ page.content.field_0006 | escape }}</span>
-</div></div><div class="wrap" style="padding-top:32px;text-align:center"><p style="max-width:760px;margin:0 auto;color:var(--ink);line-height:1.65"><span data-de="{{ page.content.field_0022 | escape }} " data-en="{{ page.content.field_0023 | escape }} ">{{ page.content.field_0022 | escape }} </span><a href="https://athidhi-bestellen.de/athidhi-restaurant-wiesloch" target="_blank" rel="noopener" data-de="{{ page.content.field_0025 | escape }}" data-en="{{ page.content.field_0026 | escape }}">{{ page.content.field_0025 | escape }}</a><span data-de="{{ page.content.field_0028 | escape }}" data-en=" {{ page.content.field_0029 | escape }}">{{ page.content.field_0028 | escape }}</span></p></div><section class="menu-flip"><div class="wrap">
+  <a href="index.html" data-de="{{ page.copy.field_0015 | escape }}" data-en="{{ page.copy.field_0016 | escape }}">{{ page.copy.field_0015 | escape }}</a><span class="sep">/</span>
+  <span data-de="{{ page.copy.field_0006 | escape }}" data-en="{{ page.copy.field_0007 | escape }}">{{ page.copy.field_0006 | escape }}</span>
+</div></div><div class="wrap" style="padding-top:32px;text-align:center"><p style="max-width:760px;margin:0 auto;color:var(--ink);line-height:1.65"><span data-de="{{ page.copy.field_0022 | escape }} " data-en="{{ page.copy.field_0023 | escape }} ">{{ page.copy.field_0022 | escape }} </span><a href="https://athidhi-bestellen.de/athidhi-restaurant-wiesloch" target="_blank" rel="noopener" data-de="{{ page.copy.field_0025 | escape }}" data-en="{{ page.copy.field_0026 | escape }}">{{ page.copy.field_0025 | escape }}</a><span data-de="{{ page.copy.field_0028 | escape }}" data-en=" {{ page.copy.field_0029 | escape }}">{{ page.copy.field_0028 | escape }}</span></p></div><section class="menu-flip"><div class="wrap">
 <script>
 /* Full menu (DE + EN), rendered from Athidhi's menu PDFs. To update: upload new page images to assets/menu/de/ and assets/menu/en/ and list them in ATHIDHI_MENU_PAGES below (GitHub renames uploads that collide with existing filenames). */
 window.ATHIDHI_MENU_PAGES = { de: ["assets/menu/de/27-1.jpg","assets/menu/de/28-2.jpg","assets/menu/de/29-3.jpg","assets/menu/de/30-4.jpg","assets/menu/de/31-5.jpg","assets/menu/de/32-6.jpg","assets/menu/de/33-7.jpg","assets/menu/de/34-8.jpg","assets/menu/de/35-9.jpg","assets/menu/de/36-10.jpg","assets/menu/de/37-11.jpg","assets/menu/de/38-12.jpg","assets/menu/de/39-13.jpg","assets/menu/de/40-14.jpg","assets/menu/de/41-15.jpg","assets/menu/de/42-16.jpg","assets/menu/de/43-17.jpg","assets/menu/de/44-18.jpg","assets/menu/de/45-19.jpg","assets/menu/de/46-20.jpg","assets/menu/de/47-21.jpg","assets/menu/de/48-22.jpg","assets/menu/de/49-23.jpg","assets/menu/de/50-24.jpg","assets/menu/de/51-25.jpg","assets/menu/de/52-26.jpg"], en: ["assets/menu/en/1-1.jpg","assets/menu/en/2-2.jpg","assets/menu/en/3-3.jpg","assets/menu/en/4-4.jpg","assets/menu/en/5-5.jpg","assets/menu/en/6-6.jpg","assets/menu/en/7-7.jpg","assets/menu/en/8-8.jpg","assets/menu/en/9-9.jpg","assets/menu/en/10-10.jpg","assets/menu/en/11-11.jpg","assets/menu/en/12-12.jpg","assets/menu/en/13-13.jpg","assets/menu/en/14-14.jpg","assets/menu/en/15-15.jpg","assets/menu/en/16-16.jpg","assets/menu/en/17-17.jpg","assets/menu/en/18-18.jpg","assets/menu/en/19-19.jpg","assets/menu/en/20-20.jpg","assets/menu/en/21-21.jpg","assets/menu/en/22-22.jpg","assets/menu/en/23-23.jpg","assets/menu/en/24-24.jpg","assets/menu/en/25-25.jpg","assets/menu/en/26-26.jpg"] };
@@ -112,7 +112,7 @@ window.ATHIDHI_MENU_PAGES = { de: ["assets/menu/de/27-1.jpg","assets/menu/de/28-
     <div class="fb-count"><span class="fb-cur">1</span> / <span class="fb-total">26</span></div>
     <button class="fb-nav next" aria-label="N&auml;chste Seite">›</button>
   </div>
-  <p class="fb-hint" data-de="{{ page.content.field_0036 | escape }}" data-en="{{ page.content.field_0037 | escape }}">{{ page.content.field_0036 | escape }}</p>
+  <p class="fb-hint" data-de="{{ page.copy.field_0036 | escape }}" data-en="{{ page.copy.field_0037 | escape }}">{{ page.copy.field_0036 | escape }}</p>
 </div>
 </div></section><footer class="site-footer" id="contact">
   <div class="wrap">

@@ -2,7 +2,7 @@
 seo:
   field_0000: Athidhi — Lieferservice | Delivery
   field_0001: Ihre Lieblingsgerichte von Athidhi bequem nach Hause bestellt. Online bestellen bei Ihrem Standort.
-content:
+copy:
   field_0006: Service
   field_0009: Lieferservice
   field_0010: Ihre Lieblingsgerichte nach Hause
@@ -153,7 +153,7 @@ content:
   ]
 }
 </script>
-</head><body><a id="top"></a><header class="site-header">
+{% include tracking-gated.html %}</head><body><a id="top"></a><header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="index.html"><img src="assets/logo-green.png" alt="Athidhi — Flavours from India"></a>
     <nav>
@@ -183,84 +183,84 @@ content:
   </div>
 </header><section class="sub-hero" style="background:linear-gradient(135deg,#810809,#810809)">
   <div class="wrap">
-    <div class="eyebrow" data-de="{{ page.content.field_0006 | escape }}" data-en="{{ page.content.field_0006 | escape }}">{{ page.content.field_0006 | escape }}</div>
-    <h1>{{ page.content.field_0009 | escape }}</h1>
-    <div class="addr" data-de="{{ page.content.field_0010 | escape }}" data-en="{{ page.content.field_0011 | escape }}">{{ page.content.field_0010 | escape }}</div>
+    <div class="eyebrow" data-de="{{ page.copy.field_0006 | escape }}" data-en="{{ page.copy.field_0006 | escape }}">{{ page.copy.field_0006 | escape }}</div>
+    <h1>{{ page.copy.field_0009 | escape }}</h1>
+    <div class="addr" data-de="{{ page.copy.field_0010 | escape }}" data-en="{{ page.copy.field_0011 | escape }}">{{ page.copy.field_0010 | escape }}</div>
   </div>
 </section><div class="crumb"><div class="wrap">
-  <a href="index.html" data-de="{{ page.content.field_0013 | escape }}" data-en="{{ page.content.field_0014 | escape }}">{{ page.content.field_0013 | escape }}</a><span class="sep">/</span>
-  <a href="index.html#services" data-de="{{ page.content.field_0017 | escape }}" data-en="{{ page.content.field_0018 | escape }}">{{ page.content.field_0017 | escape }}</a><span class="sep">/</span>
-  <span data-de="{{ page.content.field_0009 | escape }}" data-en="{{ page.content.field_0022 | escape }}">{{ page.content.field_0009 | escape }}</span>
+  <a href="index.html" data-de="{{ page.copy.field_0013 | escape }}" data-en="{{ page.copy.field_0014 | escape }}">{{ page.copy.field_0013 | escape }}</a><span class="sep">/</span>
+  <a href="index.html#services" data-de="{{ page.copy.field_0017 | escape }}" data-en="{{ page.copy.field_0018 | escape }}">{{ page.copy.field_0017 | escape }}</a><span class="sep">/</span>
+  <span data-de="{{ page.copy.field_0009 | escape }}" data-en="{{ page.copy.field_0022 | escape }}">{{ page.copy.field_0009 | escape }}</span>
 </div></div><section class="branch-info"><div class="wrap info-grid">
   <div>
-    <div class="eyebrow" data-de="{{ page.content.field_0009 | escape }}" data-en="{{ page.content.field_0022 | escape }}">{{ page.content.field_0009 | escape }}</div>
-    <h2 data-de="{{ page.content.field_0027 | escape }}" data-en="{{ page.content.field_0028 | escape }}">{{ page.content.field_0027 | escape }}</h2>
+    <div class="eyebrow" data-de="{{ page.copy.field_0009 | escape }}" data-en="{{ page.copy.field_0022 | escape }}">{{ page.copy.field_0009 | escape }}</div>
+    <h2 data-de="{{ page.copy.field_0027 | escape }}" data-en="{{ page.copy.field_0028 | escape }}">{{ page.copy.field_0027 | escape }}</h2>
     <div class="rule" style="margin-left:0"></div>
-    <p class="lead-p" data-de="{{ page.content.field_0030 | escape }}" data-en="{{ page.content.field_0031 | escape }}">{{ page.content.field_0030 | escape }}</p>
-    <p data-de="{{ page.content.field_0033 | escape }}" data-en="{{ page.content.field_0034 | escape }}">{{ page.content.field_0033 | escape }}</p>
+    <p class="lead-p" data-de="{{ page.copy.field_0030 | escape }}" data-en="{{ page.copy.field_0031 | escape }}">{{ page.copy.field_0030 | escape }}</p>
+    <p data-de="{{ page.copy.field_0033 | escape }}" data-en="{{ page.copy.field_0034 | escape }}">{{ page.copy.field_0033 | escape }}</p>
   </div>
   <div class="info-card">
-    <h4 data-de="{{ page.content.field_0036 | escape }}" data-en="{{ page.content.field_0037 | escape }}">{{ page.content.field_0036 | escape }}</h4>
-    <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 4h3l1.4 3.7-1.9 1.4a11 11 0 0 0 4.8 4.8l1.4-1.9L19 15v3a1.8 1.8 0 0 1-1.9 1.8A15.5 15.5 0 0 1 4.2 6.9 1.8 1.8 0 0 1 6.6 4Z"/></svg></span><a class="tel call-btn" role="button" tabindex="0" style="cursor:pointer" data-c="NTYuNjUuNzAuNjcuNjMuNjMuNjMuNjQuNjIuNjkuNjYuNjQuNjYuNjQ=" data-d="NjEuNjcuNjMuNjMuNjMuNDUuNjAuNDUuNjQuNjIuNjkuNDUuNjYuNjQuNDUuNjYuNjQ=" data-de="{{ page.content.field_0039 | escape }}" data-en="{{ page.content.field_0040 | escape }}">{{ page.content.field_0039 | escape }}</a></div>
-    <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span><a class="mail-btn" role="button" tabindex="0" style="cursor:pointer;color:var(--maroon);font-weight:600" data-m="MTE4LjEyMy4xMTUuMTI0Ljc3LjExMC4xMjkuMTE3LjExOC4xMTMuMTE3LjExOC41OS4xMTMuMTE0" data-de="{{ page.content.field_0042 | escape }}" data-en="{{ page.content.field_0043 | escape }}">{{ page.content.field_0042 | escape }}</a></div>
+    <h4 data-de="{{ page.copy.field_0036 | escape }}" data-en="{{ page.copy.field_0037 | escape }}">{{ page.copy.field_0036 | escape }}</h4>
+    <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 4h3l1.4 3.7-1.9 1.4a11 11 0 0 0 4.8 4.8l1.4-1.9L19 15v3a1.8 1.8 0 0 1-1.9 1.8A15.5 15.5 0 0 1 4.2 6.9 1.8 1.8 0 0 1 6.6 4Z"/></svg></span><a class="tel call-btn" role="button" tabindex="0" style="cursor:pointer" data-c="NTYuNjUuNzAuNjcuNjMuNjMuNjMuNjQuNjIuNjkuNjYuNjQuNjYuNjQ=" data-d="NjEuNjcuNjMuNjMuNjMuNDUuNjAuNDUuNjQuNjIuNjkuNDUuNjYuNjQuNDUuNjYuNjQ=" data-de="{{ page.copy.field_0039 | escape }}" data-en="{{ page.copy.field_0040 | escape }}">{{ page.copy.field_0039 | escape }}</a></div>
+    <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span><a class="mail-btn" role="button" tabindex="0" style="cursor:pointer;color:var(--maroon);font-weight:600" data-m="MTE4LjEyMy4xMTUuMTI0Ljc3LjExMC4xMjkuMTE3LjExOC4xMTMuMTE3LjExOC41OS4xMTMuMTE0" data-de="{{ page.copy.field_0042 | escape }}" data-en="{{ page.copy.field_0043 | escape }}">{{ page.copy.field_0042 | escape }}</a></div>
     
-    <a class="btn btn-primary" href="#anfrage" data-de="{{ page.content.field_0045 | escape }}" data-en="{{ page.content.field_0046 | escape }}">{{ page.content.field_0045 | escape }}</a>
+    <a class="btn btn-primary" href="#anfrage" data-de="{{ page.copy.field_0045 | escape }}" data-en="{{ page.copy.field_0046 | escape }}">{{ page.copy.field_0045 | escape }}</a>
   </div>
 </div></section><section class="si-order"><div class="wrap">
-  <div class="section-head"><div class="eyebrow" data-de="{{ page.content.field_0048 | escape }}" data-en="{{ page.content.field_0049 | escape }}">{{ page.content.field_0048 | escape }}</div>
-  <h2 data-de="{{ page.content.field_0051 | escape }}" data-en="{{ page.content.field_0052 | escape }}">{{ page.content.field_0051 | escape }}</h2><div class="rule"></div></div>
+  <div class="section-head"><div class="eyebrow" data-de="{{ page.copy.field_0048 | escape }}" data-en="{{ page.copy.field_0049 | escape }}">{{ page.copy.field_0048 | escape }}</div>
+  <h2 data-de="{{ page.copy.field_0051 | escape }}" data-en="{{ page.copy.field_0052 | escape }}">{{ page.copy.field_0051 | escape }}</h2><div class="rule"></div></div>
   <div class="cards">
-    <a href="https://athidhi-bestellen.de/athidhi-restaurant-wiesloch" target="_blank" rel="noopener">{{ page.content.field_0054 | escape }}</a>
-    <a href="https://athidhi-bestellen.de/athidhi-restaurant-heidelberg" target="_blank" rel="noopener">{{ page.content.field_0055 | escape }}</a>
-    <a href="https://athidhi-bestellen.de/athidhi-restaurant-karlsruhe" target="_blank" rel="noopener">{{ page.content.field_0056 | escape }}</a>
-    <a href="https://athidhi-bestellen.de/athidhi-restaurant-stuttgart" target="_blank" rel="noopener">{{ page.content.field_0057 | escape }}</a>
+    <a href="https://athidhi-bestellen.de/athidhi-restaurant-wiesloch" target="_blank" rel="noopener">{{ page.copy.field_0054 | escape }}</a>
+    <a href="https://athidhi-bestellen.de/athidhi-restaurant-heidelberg" target="_blank" rel="noopener">{{ page.copy.field_0055 | escape }}</a>
+    <a href="https://athidhi-bestellen.de/athidhi-restaurant-karlsruhe" target="_blank" rel="noopener">{{ page.copy.field_0056 | escape }}</a>
+    <a href="https://athidhi-bestellen.de/athidhi-restaurant-stuttgart" target="_blank" rel="noopener">{{ page.copy.field_0057 | escape }}</a>
   </div>
 </div></section><section class="si-gallery"><div class="wrap">
-  <div class="section-head"><div class="eyebrow" data-de="{{ page.content.field_0058 | escape }}" data-en="{{ page.content.field_0059 | escape }}">{{ page.content.field_0058 | escape }}</div>
-  <h2 data-de="{{ page.content.field_0061 | escape }}" data-en="{{ page.content.field_0062 | escape }}">{{ page.content.field_0061 | escape }}</h2><div class="rule"></div></div>
-  <div class="si-grid"><div class="si-ph"><!-- PLACEHOLDER: swap this for a real photo --><svg class="fl" viewBox="0 0 18 18" aria-hidden="true"><g transform="translate(9 9)" fill="#FFCB31"><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(0)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(45)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(90)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(135)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(180)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(225)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(270)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(315)"/></g><circle cx="9" cy="9" r="1.8" fill="#f7d9a0"/></svg><div class="pl" data-de="{{ page.content.field_0064 | escape }}" data-en="{{ page.content.field_0065 | escape }}">{{ page.content.field_0064 | escape }}</div><div class="pn" data-de="{{ page.content.field_0067 | escape }}" data-en="{{ page.content.field_0068 | escape }}">{{ page.content.field_0067 | escape }}</div></div><div class="si-ph"><!-- PLACEHOLDER: swap this for a real photo --><svg class="fl" viewBox="0 0 18 18" aria-hidden="true"><g transform="translate(9 9)" fill="#FFCB31"><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(0)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(45)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(90)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(135)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(180)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(225)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(270)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(315)"/></g><circle cx="9" cy="9" r="1.8" fill="#f7d9a0"/></svg><div class="pl" data-de="{{ page.content.field_0064 | escape }}" data-en="{{ page.content.field_0065 | escape }}">{{ page.content.field_0064 | escape }}</div><div class="pn" data-de="{{ page.content.field_0073 | escape }}" data-en="{{ page.content.field_0074 | escape }}">{{ page.content.field_0073 | escape }}</div></div><div class="si-ph"><!-- PLACEHOLDER: swap this for a real photo --><svg class="fl" viewBox="0 0 18 18" aria-hidden="true"><g transform="translate(9 9)" fill="#FFCB31"><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(0)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(45)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(90)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(135)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(180)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(225)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(270)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(315)"/></g><circle cx="9" cy="9" r="1.8" fill="#f7d9a0"/></svg><div class="pl" data-de="{{ page.content.field_0064 | escape }}" data-en="{{ page.content.field_0065 | escape }}">{{ page.content.field_0064 | escape }}</div><div class="pn" data-de="{{ page.content.field_0079 | escape }}" data-en="{{ page.content.field_0079 | escape }}">{{ page.content.field_0079 | escape }}</div></div></div>
+  <div class="section-head"><div class="eyebrow" data-de="{{ page.copy.field_0058 | escape }}" data-en="{{ page.copy.field_0059 | escape }}">{{ page.copy.field_0058 | escape }}</div>
+  <h2 data-de="{{ page.copy.field_0061 | escape }}" data-en="{{ page.copy.field_0062 | escape }}">{{ page.copy.field_0061 | escape }}</h2><div class="rule"></div></div>
+  <div class="si-grid"><div class="si-ph"><!-- PLACEHOLDER: swap this for a real photo --><svg class="fl" viewBox="0 0 18 18" aria-hidden="true"><g transform="translate(9 9)" fill="#FFCB31"><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(0)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(45)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(90)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(135)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(180)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(225)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(270)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(315)"/></g><circle cx="9" cy="9" r="1.8" fill="#f7d9a0"/></svg><div class="pl" data-de="{{ page.copy.field_0064 | escape }}" data-en="{{ page.copy.field_0065 | escape }}">{{ page.copy.field_0064 | escape }}</div><div class="pn" data-de="{{ page.copy.field_0067 | escape }}" data-en="{{ page.copy.field_0068 | escape }}">{{ page.copy.field_0067 | escape }}</div></div><div class="si-ph"><!-- PLACEHOLDER: swap this for a real photo --><svg class="fl" viewBox="0 0 18 18" aria-hidden="true"><g transform="translate(9 9)" fill="#FFCB31"><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(0)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(45)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(90)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(135)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(180)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(225)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(270)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(315)"/></g><circle cx="9" cy="9" r="1.8" fill="#f7d9a0"/></svg><div class="pl" data-de="{{ page.copy.field_0064 | escape }}" data-en="{{ page.copy.field_0065 | escape }}">{{ page.copy.field_0064 | escape }}</div><div class="pn" data-de="{{ page.copy.field_0073 | escape }}" data-en="{{ page.copy.field_0074 | escape }}">{{ page.copy.field_0073 | escape }}</div></div><div class="si-ph"><!-- PLACEHOLDER: swap this for a real photo --><svg class="fl" viewBox="0 0 18 18" aria-hidden="true"><g transform="translate(9 9)" fill="#FFCB31"><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(0)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(45)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(90)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(135)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(180)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(225)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(270)"/><ellipse cx="0" cy="-4.2" rx="1.5" ry="4.2" transform="rotate(315)"/></g><circle cx="9" cy="9" r="1.8" fill="#f7d9a0"/></svg><div class="pl" data-de="{{ page.copy.field_0064 | escape }}" data-en="{{ page.copy.field_0065 | escape }}">{{ page.copy.field_0064 | escape }}</div><div class="pn" data-de="{{ page.copy.field_0079 | escape }}" data-en="{{ page.copy.field_0079 | escape }}">{{ page.copy.field_0079 | escape }}</div></div></div>
 </div></section><a id="anfrage"></a><section class="si-form-wrap"><div class="wrap">
-  <div class="section-head"><div class="eyebrow" data-de="{{ page.content.field_0082 | escape }}" data-en="{{ page.content.field_0083 | escape }}">{{ page.content.field_0082 | escape }}</div>
-  <h2 data-de="{{ page.content.field_0085 | escape }}" data-en="{{ page.content.field_0086 | escape }}">{{ page.content.field_0085 | escape }}</h2><div class="rule"></div>
-  <p data-de="{{ page.content.field_0088 | escape }}" data-en="{{ page.content.field_0089 | escape }}">{{ page.content.field_0088 | escape }}</p></div>
+  <div class="section-head"><div class="eyebrow" data-de="{{ page.copy.field_0082 | escape }}" data-en="{{ page.copy.field_0083 | escape }}">{{ page.copy.field_0082 | escape }}</div>
+  <h2 data-de="{{ page.copy.field_0085 | escape }}" data-en="{{ page.copy.field_0086 | escape }}">{{ page.copy.field_0085 | escape }}</h2><div class="rule"></div>
+  <p data-de="{{ page.copy.field_0088 | escape }}" data-en="{{ page.copy.field_0089 | escape }}">{{ page.copy.field_0088 | escape }}</p></div>
   <div class="si-card">
   <script>window.ATHIDHI_SERVICE="delivery";</script>
   <form id="si-form" class="si-form" novalidate>
       <div class="hp-field" aria-hidden="true" style="position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px;height:1px;overflow:hidden">
-        <label>{{ page.content.field_0091 | escape }}<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+        <label>{{ page.copy.field_0091 | escape }}<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
       </div>
       <div class="fld full">
-        <label data-de="{{ page.content.field_0092 | escape }}" data-en="{{ page.content.field_0093 | escape }}">{{ page.content.field_0092 | escape }}</label>
+        <label data-de="{{ page.copy.field_0092 | escape }}" data-en="{{ page.copy.field_0093 | escape }}">{{ page.copy.field_0092 | escape }}</label>
         <select name="branch">
-          <option value="" data-de="{{ page.content.field_0095 | escape }}" data-en="{{ page.content.field_0096 | escape }}">{{ page.content.field_0095 | escape }}</option>
-          <option value="wiesloch">{{ page.content.field_0054 | escape }}</option>
-          <option value="heidelberg">{{ page.content.field_0055 | escape }}</option>
-          <option value="karlsruhe">{{ page.content.field_0056 | escape }}</option>
-          <option value="stuttgart">{{ page.content.field_0057 | escape }}</option>
+          <option value="" data-de="{{ page.copy.field_0095 | escape }}" data-en="{{ page.copy.field_0096 | escape }}">{{ page.copy.field_0095 | escape }}</option>
+          <option value="wiesloch">{{ page.copy.field_0054 | escape }}</option>
+          <option value="heidelberg">{{ page.copy.field_0055 | escape }}</option>
+          <option value="karlsruhe">{{ page.copy.field_0056 | escape }}</option>
+          <option value="stuttgart">{{ page.copy.field_0057 | escape }}</option>
         </select>
       </div>
       <div class="fld full">
-        <label><span data-de="{{ page.content.field_0102 | escape }}" data-en="{{ page.content.field_0102 | escape }}">{{ page.content.field_0102 | escape }} </span><span class="req">*</span></label>
+        <label><span data-de="{{ page.copy.field_0102 | escape }}" data-en="{{ page.copy.field_0102 | escape }}">{{ page.copy.field_0102 | escape }} </span><span class="req">*</span></label>
         <input type="text" name="name" autocomplete="name" required maxlength="120">
       </div>
       <div class="fld">
-        <label data-de="{{ page.content.field_0106 | escape }}" data-en="{{ page.content.field_0107 | escape }}">{{ page.content.field_0106 | escape }}</label>
+        <label data-de="{{ page.copy.field_0106 | escape }}" data-en="{{ page.copy.field_0107 | escape }}">{{ page.copy.field_0106 | escape }}</label>
         <input type="tel" name="phone" autocomplete="tel" maxlength="40">
       </div>
       <div class="fld">
-        <label data-de="{{ page.content.field_0109 | escape }}" data-en="{{ page.content.field_0110 | escape }}">{{ page.content.field_0109 | escape }}</label>
+        <label data-de="{{ page.copy.field_0109 | escape }}" data-en="{{ page.copy.field_0110 | escape }}">{{ page.copy.field_0109 | escape }}</label>
         <input type="email" name="email" autocomplete="email" maxlength="160">
       </div>
       <div class="fld full">
-        <p class="si-hint" data-de="{{ page.content.field_0112 | escape }}" data-en="{{ page.content.field_0113 | escape }}">{{ page.content.field_0112 | escape }}</p>
+        <p class="si-hint" data-de="{{ page.copy.field_0112 | escape }}" data-en="{{ page.copy.field_0113 | escape }}">{{ page.copy.field_0112 | escape }}</p>
       </div>
       <div class="fld full">
-        <label data-de="{{ page.content.field_0115 | escape }}" data-en="{{ page.content.field_0116 | escape }}">{{ page.content.field_0115 | escape }}</label>
+        <label data-de="{{ page.copy.field_0115 | escape }}" data-en="{{ page.copy.field_0116 | escape }}">{{ page.copy.field_0115 | escape }}</label>
         <textarea name="message" maxlength="1500" data-de-placeholder="Erzählen Sie uns von Ihrem Anlass, Personenzahl, Wünschen …" data-en-placeholder="Tell us about your occasion, number of guests, any wishes …"></textarea>
       </div>
       <div id="si-status" class="si-status" role="status" aria-live="polite"></div>
       <div class="si-actions">
-        <button type="submit" class="btn btn-primary btn-lg" data-de="{{ page.content.field_0045 | escape }}" data-en="{{ page.content.field_0046 | escape }}">{{ page.content.field_0045 | escape }}</button>
+        <button type="submit" class="btn btn-primary btn-lg" data-de="{{ page.copy.field_0045 | escape }}" data-en="{{ page.copy.field_0046 | escape }}">{{ page.copy.field_0045 | escape }}</button>
       </div>
     </form>
   </div>

@@ -3,7 +3,7 @@ seo:
   field_0000: 'Savor the Essence of India in Heidelberg: A Culinary Journey with Athidhi | Athidhi'
   field_0001: Nestled in the heart of Heidelberg, Germany, Athidhi stands as a beacon of authentic Indian cuisine. For locals
     and visitors alike, it offers a delicious escape to the vibrant and
-content:
+copy:
   article_content: "\n<p>Nestled in the heart of Heidelberg, Germany, Athidhi stands as a beacon of authentic Indian cuisine.\
     \ For locals and visitors alike, it offers a delicious escape to the vibrant and diverse flavors of India. This blog explores\
     \ the unique culinary experience Athidhi provides and why it has become a favorite among Indian food enthusiasts in Heidelberg.</p>\n\
@@ -127,7 +127,7 @@ content:
 .why-more.open{max-height:4000px;opacity:1}
 </style>
 
-</head><body><a id="top"></a><header class="site-header">
+{% include tracking-gated.html %}</head><body><a id="top"></a><header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="../index.html"><img src="../assets/logo-green.png" alt="Athidhi — Flavours from India"></a>
     <nav>
@@ -158,14 +158,14 @@ content:
   </div>
 </header>
 <main class="article-wrap">
-  <a class="article-back" href="../blog.html" data-de="{{ page.content.field_0005 | escape }}" data-en="{{ page.content.field_0006 | escape }}">{{ page.content.field_0005 | escape }}</a>
+  <a class="article-back" href="../blog.html" data-de="{{ page.copy.field_0005 | escape }}" data-en="{{ page.copy.field_0006 | escape }}">{{ page.copy.field_0005 | escape }}</a>
   <div class="article-hero">
-    <div class="date">{{ page.content.field_0008 | escape }}</div>
-    <h1>{{ page.content.field_0009 | escape }}</h1>
+    <div class="date">{{ page.copy.field_0008 | escape }}</div>
+    <h1>{{ page.copy.field_0009 | escape }}</h1>
   </div>
-  <figure class="article-feat"><img src="../assets/blog/34-Frame-4-8-scaled.jpg" alt="{{ page.content.field_0009 | escape }}"></figure>
-  <article class="article-body">{{ page.content.article_content }}</article>
-  <a class="article-back" href="../blog.html" data-de="{{ page.content.field_0005 | escape }}" data-en="{{ page.content.field_0006 | escape }}">{{ page.content.field_0005 | escape }}</a>
+  <figure class="article-feat"><img src="../assets/blog/34-Frame-4-8-scaled.jpg" alt="{{ page.copy.field_0009 | escape }}"></figure>
+  <article class="article-body">{{ page.copy.article_content }}</article>
+  <a class="article-back" href="../blog.html" data-de="{{ page.copy.field_0005 | escape }}" data-en="{{ page.copy.field_0006 | escape }}">{{ page.copy.field_0005 | escape }}</a>
 </main>
 <footer class="site-footer" id="contact">
   <div class="wrap">

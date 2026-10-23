@@ -3,7 +3,7 @@ seo:
   field_0000: Athidhi — Tisch reservieren | Reserve a table
   field_0001: Reservieren Sie Ihren Tisch bei Athidhi — Wiesloch, Heidelberg, Karlsruhe, Stuttgart. Reserve your table at
     Athidhi.
-content:
+copy:
   field_0006: Reservierung
   field_0007: Reservation
   field_0009: Tisch reservieren
@@ -71,7 +71,7 @@ content:
 <meta name="twitter:title" content="{{ page.seo.field_0000 | escape }}">
 <meta name="twitter:description" content="{{ page.seo.field_0001 | escape }}">
 <meta name="twitter:image" content="https://athidhi.de/assets/1-our-story.jpg">
-</head><body>
+{% include tracking-gated.html %}</head><body>
 <header class="site-header">
   <div class="resv-top">
     <a class="brand" href="index.html"><img src="assets/logo-green.png" alt="Athidhi — Flavours from India"></a>
@@ -86,21 +86,21 @@ content:
 
 <main class="resv-wrap">
   <div class="resv-hero">
-    <div class="eyebrow" data-de="{{ page.content.field_0006 | escape }}" data-en="{{ page.content.field_0007 | escape }}">{{ page.content.field_0006 | escape }}</div>
-    <h1 data-de="{{ page.content.field_0009 | escape }}" data-en="{{ page.content.field_0010 | escape }}">{{ page.content.field_0009 | escape }}</h1>
-    <p data-de="{{ page.content.field_0012 | escape }}"
-       data-en="{{ page.content.field_0013 | escape }}">{{ page.content.field_0012 | escape }}</p>
+    <div class="eyebrow" data-de="{{ page.copy.field_0006 | escape }}" data-en="{{ page.copy.field_0007 | escape }}">{{ page.copy.field_0006 | escape }}</div>
+    <h1 data-de="{{ page.copy.field_0009 | escape }}" data-en="{{ page.copy.field_0010 | escape }}">{{ page.copy.field_0009 | escape }}</h1>
+    <p data-de="{{ page.copy.field_0012 | escape }}"
+       data-en="{{ page.copy.field_0013 | escape }}">{{ page.copy.field_0012 | escape }}</p>
   </div>
 
   <div class="resv-card">
   <div class="allo-resv" style="margin-bottom:4px;text-align:center">
-    <h2 style="font-family:var(--serif);color:var(--maroon);font-size:22px;margin:0 0 6px" data-de="{{ page.content.field_0015 | escape }}" data-en="{{ page.content.field_0016 | escape }}">{{ page.content.field_0015 | escape }}</h2>
-    <p style="margin:0 0 16px;color:#555;font-size:.95rem" data-de="{{ page.content.field_0018 | escape }}" data-en="{{ page.content.field_0019 | escape }}">{{ page.content.field_0018 | escape }}</p>
+    <h2 style="font-family:var(--serif);color:var(--maroon);font-size:22px;margin:0 0 6px" data-de="{{ page.copy.field_0015 | escape }}" data-en="{{ page.copy.field_0016 | escape }}">{{ page.copy.field_0015 | escape }}</h2>
+    <p style="margin:0 0 16px;color:#555;font-size:.95rem" data-de="{{ page.copy.field_0018 | escape }}" data-en="{{ page.copy.field_0019 | escape }}">{{ page.copy.field_0018 | escape }}</p>
     <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
-      <a class="btn btn-primary" data-branch="stuttgart" href="https://reservations.allo.restaurant/de/athidhi-stuttgart" target="_blank" rel="noopener">{{ page.content.field_0021 | escape }}</a>
-      <a class="btn btn-primary" data-branch="karlsruhe" href="https://reservations.allo.restaurant/de/athidhi-restaurant-karlsruhe-ka" target="_blank" rel="noopener">{{ page.content.field_0022 | escape }}</a>
-      <a class="btn btn-primary" data-branch="heidelberg" href="https://reservations.allo.restaurant/de/athidhi-restaurant-heidelberg-hd" target="_blank" rel="noopener">{{ page.content.field_0023 | escape }}</a>
-      <a class="btn btn-primary" data-branch="wiesloch" href="https://athidhi-bestellen.de/athidhi-restaurant-wiesloch/table-reservation" target="_blank" rel="noopener">{{ page.content.field_0024 | escape }}</a>
+      <a class="btn btn-primary" data-branch="stuttgart" href="https://reservations.allo.restaurant/de/athidhi-stuttgart" target="_blank" rel="noopener">{{ page.copy.field_0021 | escape }}</a>
+      <a class="btn btn-primary" data-branch="karlsruhe" href="https://reservations.allo.restaurant/de/athidhi-restaurant-karlsruhe-ka" target="_blank" rel="noopener">{{ page.copy.field_0022 | escape }}</a>
+      <a class="btn btn-primary" data-branch="heidelberg" href="https://reservations.allo.restaurant/de/athidhi-restaurant-heidelberg-hd" target="_blank" rel="noopener">{{ page.copy.field_0023 | escape }}</a>
+      <a class="btn btn-primary" data-branch="wiesloch" href="https://athidhi-bestellen.de/athidhi-restaurant-wiesloch/table-reservation" target="_blank" rel="noopener">{{ page.copy.field_0024 | escape }}</a>
     </div>
   </div>
   

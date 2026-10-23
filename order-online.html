@@ -2,7 +2,7 @@
 seo:
   field_0000: Athidhi — Online bestellen | Order Online
   field_0001: Ihre Lieblingsgerichte von Athidhi bequem nach Hause bestellt. Online bestellen bei Ihrem Standort.
-content:
+copy:
   field_0006: Service
   field_0009: Online bestellen
   field_0010: Order Online
@@ -127,7 +127,7 @@ content:
   ]
 }
 </script>
-</head><body><a id="top"></a><header class="site-header">
+{% include tracking-gated.html %}</head><body><a id="top"></a><header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="index.html"><img src="assets/logo-green.png" alt="Athidhi — Flavours from India"></a>
     <nav>
@@ -157,40 +157,40 @@ content:
   </div>
 </header><section class="sub-hero" style="background:linear-gradient(135deg,#810809,#810809)">
   <div class="wrap">
-    <div class="eyebrow" data-de="{{ page.content.field_0006 | escape }}" data-en="{{ page.content.field_0006 | escape }}">{{ page.content.field_0006 | escape }}</div>
-    <h1 data-de="{{ page.content.field_0009 | escape }}" data-en="{{ page.content.field_0010 | escape }}">{{ page.content.field_0009 | escape }}</h1>
-    <div class="addr" data-de="{{ page.content.field_0012 | escape }}" data-en="{{ page.content.field_0013 | escape }}">{{ page.content.field_0012 | escape }}</div>
+    <div class="eyebrow" data-de="{{ page.copy.field_0006 | escape }}" data-en="{{ page.copy.field_0006 | escape }}">{{ page.copy.field_0006 | escape }}</div>
+    <h1 data-de="{{ page.copy.field_0009 | escape }}" data-en="{{ page.copy.field_0010 | escape }}">{{ page.copy.field_0009 | escape }}</h1>
+    <div class="addr" data-de="{{ page.copy.field_0012 | escape }}" data-en="{{ page.copy.field_0013 | escape }}">{{ page.copy.field_0012 | escape }}</div>
   </div>
 </section><div class="crumb"><div class="wrap">
-  <a href="index.html" data-de="{{ page.content.field_0015 | escape }}" data-en="{{ page.content.field_0016 | escape }}">{{ page.content.field_0015 | escape }}</a><span class="sep">/</span>
-  <a href="index.html#services" data-de="{{ page.content.field_0019 | escape }}" data-en="{{ page.content.field_0020 | escape }}">{{ page.content.field_0019 | escape }}</a><span class="sep">/</span>
-  <span data-de="{{ page.content.field_0009 | escape }}" data-en="{{ page.content.field_0010 | escape }}">{{ page.content.field_0009 | escape }}</span>
+  <a href="index.html" data-de="{{ page.copy.field_0015 | escape }}" data-en="{{ page.copy.field_0016 | escape }}">{{ page.copy.field_0015 | escape }}</a><span class="sep">/</span>
+  <a href="index.html#services" data-de="{{ page.copy.field_0019 | escape }}" data-en="{{ page.copy.field_0020 | escape }}">{{ page.copy.field_0019 | escape }}</a><span class="sep">/</span>
+  <span data-de="{{ page.copy.field_0009 | escape }}" data-en="{{ page.copy.field_0010 | escape }}">{{ page.copy.field_0009 | escape }}</span>
 </div></div><section class="si-order"><div class="wrap">
-  <div class="section-head"><div class="eyebrow" data-de="{{ page.content.field_0026 | escape }}" data-en="{{ page.content.field_0027 | escape }}">{{ page.content.field_0026 | escape }}</div>
-  <h2 data-de="{{ page.content.field_0009 | escape }}" data-en="{{ page.content.field_0010 | escape }}">{{ page.content.field_0009 | escape }}</h2><div class="rule"></div></div>
-  <p style="max-width:640px;margin:0 auto 26px;text-align:center;color:var(--muted,#8a7f7a)" data-de="{{ page.content.field_0032 | escape }}" data-en="{{ page.content.field_0033 | escape }}">{{ page.content.field_0032 | escape }}</p>
+  <div class="section-head"><div class="eyebrow" data-de="{{ page.copy.field_0026 | escape }}" data-en="{{ page.copy.field_0027 | escape }}">{{ page.copy.field_0026 | escape }}</div>
+  <h2 data-de="{{ page.copy.field_0009 | escape }}" data-en="{{ page.copy.field_0010 | escape }}">{{ page.copy.field_0009 | escape }}</h2><div class="rule"></div></div>
+  <p style="max-width:640px;margin:0 auto 26px;text-align:center;color:var(--muted,#8a7f7a)" data-de="{{ page.copy.field_0032 | escape }}" data-en="{{ page.copy.field_0033 | escape }}">{{ page.copy.field_0032 | escape }}</p>
   <div class="cards">
-    <a href="https://athidhi-bestellen.de/athidhi-restaurant-wiesloch" target="_blank" rel="noopener">{{ page.content.field_0035 | escape }}</a>
-    <a href="https://athidhi-bestellen.de/athidhi-restaurant-heidelberg" target="_blank" rel="noopener">{{ page.content.field_0036 | escape }}</a>
-    <a href="https://athidhi-bestellen.de/athidhi-restaurant-karlsruhe" target="_blank" rel="noopener">{{ page.content.field_0037 | escape }}</a>
-    <a href="https://athidhi-bestellen.de/athidhi-restaurant-stuttgart" target="_blank" rel="noopener">{{ page.content.field_0038 | escape }}</a>
+    <a href="https://athidhi-bestellen.de/athidhi-restaurant-wiesloch" target="_blank" rel="noopener">{{ page.copy.field_0035 | escape }}</a>
+    <a href="https://athidhi-bestellen.de/athidhi-restaurant-heidelberg" target="_blank" rel="noopener">{{ page.copy.field_0036 | escape }}</a>
+    <a href="https://athidhi-bestellen.de/athidhi-restaurant-karlsruhe" target="_blank" rel="noopener">{{ page.copy.field_0037 | escape }}</a>
+    <a href="https://athidhi-bestellen.de/athidhi-restaurant-stuttgart" target="_blank" rel="noopener">{{ page.copy.field_0038 | escape }}</a>
   </div>
 </div></section><section class="branch-info" style="padding-top:0"><div class="wrap info-grid">
   <div>
-    <div class="eyebrow" data-de="{{ page.content.field_0009 | escape }}" data-en="{{ page.content.field_0010 | escape }}">{{ page.content.field_0009 | escape }}</div>
-    <h2 data-de="{{ page.content.field_0042 | escape }}" data-en="{{ page.content.field_0043 | escape }}">{{ page.content.field_0042 | escape }}</h2>
+    <div class="eyebrow" data-de="{{ page.copy.field_0009 | escape }}" data-en="{{ page.copy.field_0010 | escape }}">{{ page.copy.field_0009 | escape }}</div>
+    <h2 data-de="{{ page.copy.field_0042 | escape }}" data-en="{{ page.copy.field_0043 | escape }}">{{ page.copy.field_0042 | escape }}</h2>
     <div class="rule" style="margin-left:0"></div>
-    <p class="lead-p" data-de="{{ page.content.field_0045 | escape }}" data-en="{{ page.content.field_0046 | escape }}">{{ page.content.field_0045 | escape }}</p>
-    <p class="lead-p" data-de="{{ page.content.field_0048 | escape }}" data-en="{{ page.content.field_0049 | escape }}">{{ page.content.field_0048 | escape }}</p>
-    <p data-de="{{ page.content.field_0051 | escape }}" data-en="{{ page.content.field_0052 | escape }}">{{ page.content.field_0051 | escape }}</p>
-    <p style="font-size:.85rem;color:var(--muted,#8a7f7a)" data-de="{{ page.content.field_0054 | escape }}" data-en="{{ page.content.field_0055 | escape }}">{{ page.content.field_0054 | escape }}</p>
+    <p class="lead-p" data-de="{{ page.copy.field_0045 | escape }}" data-en="{{ page.copy.field_0046 | escape }}">{{ page.copy.field_0045 | escape }}</p>
+    <p class="lead-p" data-de="{{ page.copy.field_0048 | escape }}" data-en="{{ page.copy.field_0049 | escape }}">{{ page.copy.field_0048 | escape }}</p>
+    <p data-de="{{ page.copy.field_0051 | escape }}" data-en="{{ page.copy.field_0052 | escape }}">{{ page.copy.field_0051 | escape }}</p>
+    <p style="font-size:.85rem;color:var(--muted,#8a7f7a)" data-de="{{ page.copy.field_0054 | escape }}" data-en="{{ page.copy.field_0055 | escape }}">{{ page.copy.field_0054 | escape }}</p>
   </div>
   <div class="info-card">
-    <h4 data-de="{{ page.content.field_0057 | escape }}" data-en="{{ page.content.field_0058 | escape }}">{{ page.content.field_0057 | escape }}</h4>
-    <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 4h3l1.4 3.7-1.9 1.4a11 11 0 0 0 4.8 4.8l1.4-1.9L19 15v3a1.8 1.8 0 0 1-1.9 1.8A15.5 15.5 0 0 1 4.2 6.9 1.8 1.8 0 0 1 6.6 4Z"/></svg></span><a class="tel call-btn" role="button" tabindex="0" style="cursor:pointer" data-c="NTYuNjUuNzAuNjcuNjMuNjMuNjMuNjQuNjIuNjkuNjYuNjQuNjYuNjQ=" data-d="NjEuNjcuNjMuNjMuNjMuNDUuNjAuNDUuNjQuNjIuNjkuNDUuNjYuNjQuNDUuNjYuNjQ=" data-de="{{ page.content.field_0060 | escape }}" data-en="{{ page.content.field_0061 | escape }}">{{ page.content.field_0060 | escape }}</a></div>
-    <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span><a class="mail-btn" role="button" tabindex="0" style="cursor:pointer;color:var(--maroon);font-weight:600" data-m="MTE4LjEyMy4xMTUuMTI0Ljc3LjExMC4xMjkuMTE3LjExOC4xMTMuMTE3LjExOC41OS4xMTMuMTE0" data-de="{{ page.content.field_0063 | escape }}" data-en="{{ page.content.field_0064 | escape }}">{{ page.content.field_0063 | escape }}</a></div>
+    <h4 data-de="{{ page.copy.field_0057 | escape }}" data-en="{{ page.copy.field_0058 | escape }}">{{ page.copy.field_0057 | escape }}</h4>
+    <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 4h3l1.4 3.7-1.9 1.4a11 11 0 0 0 4.8 4.8l1.4-1.9L19 15v3a1.8 1.8 0 0 1-1.9 1.8A15.5 15.5 0 0 1 4.2 6.9 1.8 1.8 0 0 1 6.6 4Z"/></svg></span><a class="tel call-btn" role="button" tabindex="0" style="cursor:pointer" data-c="NTYuNjUuNzAuNjcuNjMuNjMuNjMuNjQuNjIuNjkuNjYuNjQuNjYuNjQ=" data-d="NjEuNjcuNjMuNjMuNjMuNDUuNjAuNDUuNjQuNjIuNjkuNDUuNjYuNjQuNDUuNjYuNjQ=" data-de="{{ page.copy.field_0060 | escape }}" data-en="{{ page.copy.field_0061 | escape }}">{{ page.copy.field_0060 | escape }}</a></div>
+    <div class="row"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span><a class="mail-btn" role="button" tabindex="0" style="cursor:pointer;color:var(--maroon);font-weight:600" data-m="MTE4LjEyMy4xMTUuMTI0Ljc3LjExMC4xMjkuMTE3LjExOC4xMTMuMTE3LjExOC41OS4xMTMuMTE0" data-de="{{ page.copy.field_0063 | escape }}" data-en="{{ page.copy.field_0064 | escape }}">{{ page.copy.field_0063 | escape }}</a></div>
     
-    <a class="btn btn-primary" href="contact.html" data-de="{{ page.content.field_0066 | escape }}" data-en="{{ page.content.field_0067 | escape }}">{{ page.content.field_0066 | escape }}</a>
+    <a class="btn btn-primary" href="contact.html" data-de="{{ page.copy.field_0066 | escape }}" data-en="{{ page.copy.field_0067 | escape }}">{{ page.copy.field_0066 | escape }}</a>
   </div>
 </div></section>
 <footer class="site-footer" id="contact">
